@@ -74,16 +74,18 @@ header {
   z-index:5;
 }
 .brand {
+  min-width:0;
   display:flex;
   align-items:center;
   gap:12px;
   color:var(--ink);
-  font-size:17px;
+  font-size:16px;
   font-weight:600;
   margin-right:auto;
   line-height:1.3;
 }
 .brand img {
+  flex-shrink:0;
   border-radius:7px;
 }
 header button {
@@ -104,6 +106,7 @@ kbd {
   font-size:13px;
 }
 #nav-toggle {
+  flex-shrink:0;
   display:none;
 }
 .layout {
@@ -375,7 +378,7 @@ dialog::backdrop {
     gap:12px;
   }
   .brand {
-    font-size:15px;
+    font-size:14px;
   }
   .brand img {
     width:32px;
@@ -385,6 +388,7 @@ dialog::backdrop {
     display:none;
   }
   #search-open {
+    flex-shrink:0;
     font-size:0;
     border:0;
     background:transparent;
