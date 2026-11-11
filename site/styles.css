@@ -164,14 +164,11 @@ main {
 }
 .page-tools {
   display:flex;
-  justify-content:space-between;
+  justify-content:flex-end;
   gap:12px;
   color:var(--muted);
   font-size:11px;
   margin-bottom:20px;
-}
-.page-tools>span {
-  letter-spacing:.04em;
 }
 article {
   overflow-wrap:anywhere;
