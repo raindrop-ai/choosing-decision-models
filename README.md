@@ -1,8 +1,5 @@
 <a href="https://www.raindrop.ai/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/raindrop-wordmark-light.svg">
-    <img src="docs/assets/raindrop-wordmark-ink.svg" alt="Raindrop" width="180">
-  </picture>
+  <img src="docs/assets/raindrop-logo.jpg" alt="Raindrop" width="88" height="88">
 </a>
 
 # The subtle art of making judgment calls

@@ -1,6 +1,6 @@
-# Raindrop wordmark
+# Raindrop logo
 
-The wordmark identifies this as a Raindrop research companion. It is copied from Raindrop's existing website artwork; the light version changes only the ink color for dark backgrounds.
+The logo is copied without alteration from [Raindrop’s website artwork](https://www.raindrop.ai/assets/raindrop-slack-avatar.jpg), also used on the Triage Agent page. Its background keeps the mark visible in both light and dark themes.
 
 Raindrop names and marks remain the property of their owners. Including the artwork does not grant rights to use the brand.
 
