@@ -1,0 +1,10 @@
+{
+  "scope": "Offline reconstruction of original inputs; no source text bundled in this tool.",
+  "owning_repository_commit": "32449d1a29c3f352efbc1a20a348eae1d934862f",
+  "source_file_sha256": {
+    "decision_lab/corpus_adapters.py": "0954e1fa32bffa328670ed10ad45c997f1c97833307c6dd2d1686c9f8ed07faf",
+    "decision_lab/profile_formats.py": "ecfd905283d3243fba44a51d0ed872035de7125c0b151bae11aeb3f5644b334e"
+  },
+  "adaptations": "Direct static-data readers plus the historical MiniSCAN grammar-choice construction; all selected inputs verified against frozen input hashes.",
+  "tool_sha256": "046c8814dce58913795b4b18c5343549bdcc305a6e0345169db0515cdb366f2b"
+}

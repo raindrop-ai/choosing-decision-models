@@ -1,0 +1,85 @@
+# Evidence position · Place the relevant information at the beginning variant
+
+[Original question](../../../questions/spatial-cognition/babi-bac48ca11edbaf4f5a6f.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The hallway is west of the office.
+> The bathroom is east of the kitchen.
+> The office is north of the garden.
+> The kitchen is south of the bedroom.
+> The bedroom is east of the office.
+> The poem is untitled.
+> Its author is anonymous.
+> Its narrator speaks in the first person.
+> It contains a refrain.
+
+## Question
+
+> How do you go from the kitchen to the office?
+
+## Answer choices
+
+- **A.** w,n
+- **B.** w,s
+- **C.** n,w
+- **D.** e,w
+
+**Reference answer:** `C`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The hallway is west of the office.\nThe bathroom is east of the kitchen.\nThe office is north of the garden.\nThe kitchen is south of the bedroom.\nThe bedroom is east of the office.\nThe poem is untitled.\nIts author is anonymous.\nIts narrator speaks in the first person.\nIt contains a refrain.",
+  "question": "How do you go from the kitchen to the office?",
+  "choices": {
+    "A": "w,n",
+    "B": "w,s",
+    "C": "n,w",
+    "D": "e,w"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `C` — n,w | `C` — n,w | Same answer |
+| Decider v1.1 | `C` — n,w | `C` — n,w | Same answer |
+| Jev | `A` — w,n | `C` — n,w | Different answer |
+| Microsoft Decision-1 | `C` — n,w | `C` — n,w | Same answer |
+| Clef | `C` — n,w | `C` — n,w | Same answer |
+| Luna Decisions | `C` — n,w | `C` — n,w | Same answer |
+| Clef Flash | `A` — w,n | `A` — w,n | Same answer |
+| Strands Decider | `C` — n,w | `C` — n,w | Same answer |
+| GLiNER2.5 Decide | `A` — w,n | `A` — w,n | Same answer |
+| Laya | `A` — w,n | `A` — w,n | Same answer |
+| CalDec v1 | `A` — w,n | `A` — w,n | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `babi/bac48ca11edbaf4f5a6f/evidence_position/start/clean-source_first_babi_static_domains_positions_full_0091`
+
+**Input fingerprint:** `0342d05b552b9f0aa58340b4cbacf09281e16f9e9f3f9c421434432f8e9f4e5c`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence position | Place the relevant information at the beginning |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/spatial-cognition/babi-bac48ca11edbaf4f5a6f.md).

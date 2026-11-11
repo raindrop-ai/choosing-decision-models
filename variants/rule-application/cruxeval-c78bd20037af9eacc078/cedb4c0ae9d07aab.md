@@ -1,0 +1,82 @@
+# Unrelated examples · Add examples unrelated to the question variant
+
+[Original question](../../../questions/rule-application/cruxeval-c78bd20037af9eacc078.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+```text
+def f(text, n):
+    length = len(text)
+    return text[length*(n%4):length ]
+# Luma is an otter. Every otter is an animal. Is Luma an animal? Answer: yes.
+```
+
+## Question
+
+> What does f('abc', 1) return?
+
+## Answer choices
+
+- **A.** &#x27;b&#x27;
+- **B.** &#x27;a&#x27;
+- **C.** &#x27;0&#x27;
+- **D.** &#x27;&#x27;
+
+**Reference answer:** `D`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "def f(text, n):\n    length = len(text)\n    return text[length*(n%4):length ]\n# Luma is an otter. Every otter is an animal. Is Luma an animal? Answer: yes.",
+  "question": "What does f('abc', 1) return?",
+  "choices": {
+    "A": "'b'",
+    "B": "'a'",
+    "C": "'0'",
+    "D": "''"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `D` — &#x27;&#x27; | `D` — &#x27;&#x27; | Same answer |
+| Decider v1.1 | `D` — &#x27;&#x27; | `D` — &#x27;&#x27; | Same answer |
+| Jev | `D` — &#x27;&#x27; | `D` — &#x27;&#x27; | Same answer |
+| Microsoft Decision-1 | `B` — &#x27;a&#x27; | `B` — &#x27;a&#x27; | Same answer |
+| Clef | `D` — &#x27;&#x27; | `D` — &#x27;&#x27; | Same answer |
+| Luna Decisions | `D` — &#x27;&#x27; | `A` — &#x27;b&#x27; | Different answer |
+| Clef Flash | `D` — &#x27;&#x27; | `D` — &#x27;&#x27; | Same answer |
+| Strands Decider | `D` — &#x27;&#x27; | `D` — &#x27;&#x27; | Same answer |
+| GLiNER2.5 Decide | `A` — &#x27;b&#x27; | `A` — &#x27;b&#x27; | Same answer |
+| Laya | `A` — &#x27;b&#x27; | `A` — &#x27;b&#x27; | Same answer |
+| CalDec v1 | `A` — &#x27;b&#x27; | `A` — &#x27;b&#x27; | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `cruxeval/c78bd20037af9eacc078/examples/irrelevant/clean-source_first_crux_comment_contexts_full_0080`
+
+**Input fingerprint:** `c72a4274b8d9d4cdd53693e490a46baea2d3c1c8cd7a1db296f65cd864a3adeb`
+
+| Change | Recorded version |
+| --- | --- |
+| Unrelated examples | Add examples unrelated to the question |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/rule-application/cruxeval-c78bd20037af9eacc078.md).

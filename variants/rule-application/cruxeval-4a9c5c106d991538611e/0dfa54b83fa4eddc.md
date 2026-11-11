@@ -1,0 +1,88 @@
+# Option order · Move the first answer choice to the end variant
+
+[Original question](../../../questions/rule-application/cruxeval-4a9c5c106d991538611e.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** answer choices or their order.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+```text
+def f(text):
+    ans = []
+    for char in text:
+        if char.isdigit():
+            ans.append(char)
+        else:
+            ans.append(' ')
+    return ''.join(ans)
+```
+
+## Question
+
+> What does f('m4n2o') return?
+
+## Answer choices
+
+- **B.** &#x27; 442 &#x27;
+- **C.** &#x27; 4 2 &#x27;
+- **D.** &#x27;44 2 &#x27;
+- **A.** &#x27;24 2 &#x27;
+
+**Reference answer:** `C`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "def f(text):\n    ans = []\n    for char in text:\n        if char.isdigit():\n            ans.append(char)\n        else:\n            ans.append(' ')\n    return ''.join(ans)",
+  "question": "What does f('m4n2o') return?",
+  "choices": {
+    "B": "' 442 '",
+    "C": "' 4 2 '",
+    "D": "'44 2 '",
+    "A": "'24 2 '"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| Decider v1.1 | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| Jev | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| Microsoft Decision-1 | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| Clef | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| Luna Decisions | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| Clef Flash | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| Strands Decider | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| GLiNER2.5 Decide | `A` — &#x27;24 2 &#x27; | `A` — &#x27;24 2 &#x27; | Same answer |
+| Laya | `A` — &#x27;24 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Different answer |
+| CalDec v1 | `A` — &#x27;24 2 &#x27; | `B` — &#x27; 442 &#x27; | Different answer |
+
+Clef and Clef Flash sort answer choices in their published input-processing code. Their choice-order results describe that preprocessing.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `cruxeval/4a9c5c106d991538611e/option_order/rotate_1`
+
+**Input fingerprint:** `49336a55e96b74eb883df5d361d25f428c012d7224d0ce8785ed8774003464dd`
+
+| Change | Recorded version |
+| --- | --- |
+| Option order | Move the first answer choice to the end |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/rule-application/cruxeval-4a9c5c106d991538611e.md).

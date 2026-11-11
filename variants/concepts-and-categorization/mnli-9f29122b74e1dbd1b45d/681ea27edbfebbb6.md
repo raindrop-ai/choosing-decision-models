@@ -1,0 +1,81 @@
+# Similar distractors · Add more similar but irrelevant items variant
+
+[Original question](../../../questions/concepts-and-categorization/mnli-9f29122b74e1dbd1b45d.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Rukeyser's Sphinx was not very affable, either.)
+
+## Question
+
+> Does the premise entail, contradict, or leave undetermined this statement? The Sphinx wasn't very friendly.
+>
+> «The object velmin is a cedar box. Does this establish that the object velmin is wooden?»
+>
+> «The shape norvia is a triangle. Does this rule out that the shape norvia has three sides?»
+>
+> «The marker selwin is crimson. Does this establish that the marker selwin is green?»
+
+## Answer choices
+
+- **0.** Entailment
+- **1.** Neither entailed nor contradicted
+- **2.** Contradiction
+
+**Reference answer:** `0`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Rukeyser's Sphinx was not very affable, either.)",
+  "question": "Does the premise entail, contradict, or leave undetermined this statement? The Sphinx wasn't very friendly.\n\n«The object velmin is a cedar box. Does this establish that the object velmin is wooden?»\n\n«The shape norvia is a triangle. Does this rule out that the shape norvia has three sides?»\n\n«The marker selwin is crimson. Does this establish that the marker selwin is green?»",
+  "choices": {
+    "0": "Entailment",
+    "1": "Neither entailed nor contradicted",
+    "2": "Contradiction"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `0` — Entailment | `0` — Entailment | Same answer |
+| Decider v1.1 | `0` — Entailment | `0` — Entailment | Same answer |
+| Jev | `0` — Entailment | `0` — Entailment | Same answer |
+| Microsoft Decision-1 | `0` — Entailment | `0` — Entailment | Same answer |
+| Clef | `0` — Entailment | `0` — Entailment | Same answer |
+| Luna Decisions | `0` — Entailment | `0` — Entailment | Same answer |
+| Clef Flash | `0` — Entailment | `0` — Entailment | Same answer |
+| Strands Decider | `0` — Entailment | `1` — Neither entailed nor contradicted | Different answer |
+| GLiNER2.5 Decide | `1` — Neither entailed nor contradicted | `1` — Neither entailed nor contradicted | Same answer |
+| Laya | `0` — Entailment | `2` — Contradiction | Different answer |
+| CalDec v1 | `0` — Entailment | `1` — Neither entailed nor contradicted | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `mnli/9f29122b74e1dbd1b45d/similar_distractors/high/clean-source_first_wildguard_mnli_near_full_0273`
+
+**Input fingerprint:** `b1149fa1af19d2ebde9cf740bcc5a1008f29bb9e94e558dd2bad8700873e2692`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add more similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/concepts-and-categorization/mnli-9f29122b74e1dbd1b45d.md).

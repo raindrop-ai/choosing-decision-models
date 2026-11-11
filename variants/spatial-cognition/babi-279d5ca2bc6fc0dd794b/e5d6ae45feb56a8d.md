@@ -1,0 +1,82 @@
+# Similar distractors · Add fewer similar but irrelevant items variant
+
+[Original question](../../../questions/spatial-cognition/babi-279d5ca2bc6fc0dd794b.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The office is south of the kitchen.
+> The bedroom is south of the bathroom.
+> The hallway is west of the office.
+> The garden is north of the bathroom.
+> The office is west of the bathroom.
+> The atrium is north of the ballroom. The ballroom is west of the observatory.
+
+## Question
+
+> How do you go from the bedroom to the office?
+
+## Answer choices
+
+- **A.** n,w
+- **B.** s,w
+- **C.** w,w
+- **D.** w,n
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The office is south of the kitchen.\nThe bedroom is south of the bathroom.\nThe hallway is west of the office.\nThe garden is north of the bathroom.\nThe office is west of the bathroom.\nThe atrium is north of the ballroom. The ballroom is west of the observatory.",
+  "question": "How do you go from the bedroom to the office?",
+  "choices": {
+    "A": "n,w",
+    "B": "s,w",
+    "C": "w,w",
+    "D": "w,n"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — n,w | `A` — n,w | Same answer |
+| Decider v1.1 | `A` — n,w | `A` — n,w | Same answer |
+| Jev | `C` — w,w | `C` — w,w | Same answer |
+| Microsoft Decision-1 | `A` — n,w | `A` — n,w | Same answer |
+| Clef | `A` — n,w | `A` — n,w | Same answer |
+| Luna Decisions | `A` — n,w | `A` — n,w | Same answer |
+| Clef Flash | `A` — n,w | `A` — n,w | Same answer |
+| Strands Decider | `A` — n,w | `A` — n,w | Same answer |
+| GLiNER2.5 Decide | `B` — s,w | `B` — s,w | Same answer |
+| Laya | `B` — s,w | `C` — w,w | Different answer |
+| CalDec v1 | `B` — s,w | `B` — s,w | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `babi/279d5ca2bc6fc0dd794b/similar_distractors/low/clean-source_first_route_distractors_full_0143`
+
+**Input fingerprint:** `3c74b913f475cc48679a6709a8318090eeea716fbf08dd069a99a1e6e0c90380`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add fewer similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/spatial-cognition/babi-279d5ca2bc6fc0dd794b.md).

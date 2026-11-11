@@ -1,0 +1,77 @@
+# Repetition · Present the same evidence twice variant
+
+[Original question](../../../questions/communication/pub-b6d354c59fe02f99a1a2.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Speaker\_1: The house was inviting.
+> Speaker\_2: Of course, The house was as inviting as a crackling fire
+
+## Question
+
+> Choose the interpretation or answer requested by the text.
+>
+> «Speaker\_1: The house was inviting.
+> Speaker\_2: Of course, The house was as inviting as a crackling fire»
+
+## Answer choices
+
+- **A.** Agrees
+- **B.** Sarcastic
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Speaker_1: The house was inviting.\nSpeaker_2: Of course, The house was as inviting as a crackling fire",
+  "question": "Choose the interpretation or answer requested by the text.\n\n«Speaker_1: The house was inviting.\nSpeaker_2: Of course, The house was as inviting as a crackling fire»",
+  "choices": {
+    "A": "Agrees",
+    "B": "Sarcastic"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — Agrees | `A` — Agrees | Same answer |
+| Decider v1.1 | `A` — Agrees | `A` — Agrees | Same answer |
+| Jev | `A` — Agrees | `A` — Agrees | Same answer |
+| Microsoft Decision-1 | `A` — Agrees | `A` — Agrees | Same answer |
+| Clef | `A` — Agrees | `B` — Sarcastic | Different answer |
+| Luna Decisions | `B` — Sarcastic | `A` — Agrees | Different answer |
+| Clef Flash | `A` — Agrees | `A` — Agrees | Same answer |
+| Strands Decider | `A` — Agrees | `A` — Agrees | Same answer |
+| GLiNER2.5 Decide | `B` — Sarcastic | `B` — Sarcastic | Same answer |
+| Laya | `B` — Sarcastic | `B` — Sarcastic | Same answer |
+| CalDec v1 | `B` — Sarcastic | `B` — Sarcastic | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `pub/b6d354c59fe02f99a1a2/evidence_repetition/2/clean-source_first_pub_record_quote_completion_contexts_full_0228`
+
+**Input fingerprint:** `b25357771c913266f7e443b2c9fc7bb5f203bb83bcc427442463cf6d2409f051`
+
+| Change | Recorded version |
+| --- | --- |
+| Repetition | Present the same evidence twice |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/communication/pub-b6d354c59fe02f99a1a2.md).

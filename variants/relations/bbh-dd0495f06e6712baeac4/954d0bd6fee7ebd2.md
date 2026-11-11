@@ -1,0 +1,83 @@
+# Repetition · Present the same evidence three times variant
+
+[Original question](../../../questions/relations/bbh-dd0495f06e6712baeac4.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Question
+
+> The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were seven golfers: Eve, Rob, Dan, Mel, Ana, Eli, and Ada. Ada finished above Rob. Eve finished below Rob. Mel finished above Eli. Ada finished below Dan. Ana finished third. Eli finished second.
+>
+> The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were seven golfers: Eve, Rob, Dan, Mel, Ana, Eli, and Ada. Ada finished above Rob. Eve finished below Rob. Mel finished above Eli. Ada finished below Dan. Ana finished third. Eli finished second.
+>
+> The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were seven golfers: Eve, Rob, Dan, Mel, Ana, Eli, and Ada. Ada finished above Rob. Eve finished below Rob. Mel finished above Eli. Ada finished below Dan. Ana finished third. Eli finished second.
+
+## Answer choices
+
+- **A.** Eve finished third-to-last
+- **B.** Rob finished third-to-last
+- **C.** Dan finished third-to-last
+- **D.** Mel finished third-to-last
+- **E.** Ana finished third-to-last
+- **F.** Eli finished third-to-last
+- **G.** Ada finished third-to-last
+
+**Reference answer:** `G`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "",
+  "question": "The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were seven golfers: Eve, Rob, Dan, Mel, Ana, Eli, and Ada. Ada finished above Rob. Eve finished below Rob. Mel finished above Eli. Ada finished below Dan. Ana finished third. Eli finished second.\n\nThe following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were seven golfers: Eve, Rob, Dan, Mel, Ana, Eli, and Ada. Ada finished above Rob. Eve finished below Rob. Mel finished above Eli. Ada finished below Dan. Ana finished third. Eli finished second.\n\nThe following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were seven golfers: Eve, Rob, Dan, Mel, Ana, Eli, and Ada. Ada finished above Rob. Eve finished below Rob. Mel finished above Eli. Ada finished below Dan. Ana finished third. Eli finished second.",
+  "choices": {
+    "A": "Eve finished third-to-last",
+    "B": "Rob finished third-to-last",
+    "C": "Dan finished third-to-last",
+    "D": "Mel finished third-to-last",
+    "E": "Ana finished third-to-last",
+    "F": "Eli finished third-to-last",
+    "G": "Ada finished third-to-last"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `G` — Ada finished third-to-last | `G` — Ada finished third-to-last | Same answer |
+| Decider v1.1 | `B` — Rob finished third-to-last | `G` — Ada finished third-to-last | Different answer |
+| Jev | `G` — Ada finished third-to-last | `G` — Ada finished third-to-last | Same answer |
+| Microsoft Decision-1 | `B` — Rob finished third-to-last | `B` — Rob finished third-to-last | Same answer |
+| Clef | `B` — Rob finished third-to-last | `B` — Rob finished third-to-last | Same answer |
+| Luna Decisions | `A` — Eve finished third-to-last | `B` — Rob finished third-to-last | Different answer |
+| Clef Flash | `B` — Rob finished third-to-last | `B` — Rob finished third-to-last | Same answer |
+| Strands Decider | `E` — Ana finished third-to-last | `C` — Dan finished third-to-last | Different answer |
+| GLiNER2.5 Decide | `G` — Ada finished third-to-last | `G` — Ada finished third-to-last | Same answer |
+| Laya | `E` — Ana finished third-to-last | `G` — Ada finished third-to-last | Different answer |
+| CalDec v1 | `E` — Ana finished third-to-last | `G` — Ada finished third-to-last | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/dd0495f06e6712baeac4/evidence_repetition/3/clean-source_first_ordinal_problem_repetition_full_0194`
+
+**Input fingerprint:** `36e991ce2e7285b6151409dd2e86bf7ce49614b07f47e4fe6d94414a15edfa83`
+
+| Change | Recorded version |
+| --- | --- |
+| Repetition | Present the same evidence three times |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/bbh-dd0495f06e6712baeac4.md).

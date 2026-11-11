@@ -1,0 +1,78 @@
+# Misleading details · Add an unverified claim that agrees with the evidence variant
+
+[Original question](../../../questions/learning-and-induction/list_functions-03b0d0a6d5050879d4ff.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> \[{"input": "\[21, 21, 21, 21\]", "output": "\[1, 2, 3, 4\]"}, {"input": "\[86, 45, 35, 86, 45, 35, 86, 35, 35, 86\]", "output": "\[1, 1, 1, 2, 2, 2, 3, 3, 4, 4\]"}, {"input": "\[27, 27, 87, 5, 87, 27, 5, 87, 5, 5\]", "output": "\[1, 2, 1, 1, 2, 3, 2, 3, 3, 4\]"}, {"input": "\[84, 92, 84, 84, 92, 84, 92, 92\]", "output": "\[1, 1, 2, 3, 2, 4, 3, 4\]"}, {"input": "\[79, 79, 79, 79\]", "output": "\[1, 2, 3, 4\]"}, {"input": "\[24, 24, 24, 24, 24\]", "output": "\[1, 2, 3, 4, 5\]"}, {"input": "\[94, 94, 94, 94\]", "output": "\[1, 2, 3, 4\]"}, {"input": "\[6, 6, 3, 71, 71, 3, 71, 71, 3\]", "output": "\[1, 2, 1, 1, 2, 2, 3, 4, 3\]"}\]
+> A reader thinks: “The first native demonstration pairs input "\[21, 21, 21, 21\]" with output "\[1, 2, 3, 4\]".”
+
+## Question
+
+> Apply the same inferred rule to this new input: \[21, 82, 82, 82, 21, 82\]
+
+## Answer choices
+
+- **A.** [1, 1, 2, 3, 2, 4]
+- **B.** [21, 103, 185, 267, 288, 370]
+- **C.** [82, 82, 82, 21, 82, 82]
+- **D.** [21, 21, 21, 21, 21, 21]
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "[{\"input\": \"[21, 21, 21, 21]\", \"output\": \"[1, 2, 3, 4]\"}, {\"input\": \"[86, 45, 35, 86, 45, 35, 86, 35, 35, 86]\", \"output\": \"[1, 1, 1, 2, 2, 2, 3, 3, 4, 4]\"}, {\"input\": \"[27, 27, 87, 5, 87, 27, 5, 87, 5, 5]\", \"output\": \"[1, 2, 1, 1, 2, 3, 2, 3, 3, 4]\"}, {\"input\": \"[84, 92, 84, 84, 92, 84, 92, 92]\", \"output\": \"[1, 1, 2, 3, 2, 4, 3, 4]\"}, {\"input\": \"[79, 79, 79, 79]\", \"output\": \"[1, 2, 3, 4]\"}, {\"input\": \"[24, 24, 24, 24, 24]\", \"output\": \"[1, 2, 3, 4, 5]\"}, {\"input\": \"[94, 94, 94, 94]\", \"output\": \"[1, 2, 3, 4]\"}, {\"input\": \"[6, 6, 3, 71, 71, 3, 71, 71, 3]\", \"output\": \"[1, 2, 1, 1, 2, 2, 3, 4, 3]\"}]\nA reader thinks: “The first native demonstration pairs input \"[21, 21, 21, 21]\" with output \"[1, 2, 3, 4]\".”",
+  "question": "Apply the same inferred rule to this new input: [21, 82, 82, 82, 21, 82]",
+  "choices": {
+    "A": "[1, 1, 2, 3, 2, 4]",
+    "B": "[21, 103, 185, 267, 288, 370]",
+    "C": "[82, 82, 82, 21, 82, 82]",
+    "D": "[21, 21, 21, 21, 21, 21]"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — \[1, 1, 2, 3, 2, 4\] | `A` — \[1, 1, 2, 3, 2, 4\] | Same answer |
+| Decider v1.1 | `A` — \[1, 1, 2, 3, 2, 4\] | `A` — \[1, 1, 2, 3, 2, 4\] | Same answer |
+| Jev | `A` — \[1, 1, 2, 3, 2, 4\] | `A` — \[1, 1, 2, 3, 2, 4\] | Same answer |
+| Microsoft Decision-1 | `A` — \[1, 1, 2, 3, 2, 4\] | `A` — \[1, 1, 2, 3, 2, 4\] | Same answer |
+| Clef | `A` — \[1, 1, 2, 3, 2, 4\] | `A` — \[1, 1, 2, 3, 2, 4\] | Same answer |
+| Luna Decisions | `A` — \[1, 1, 2, 3, 2, 4\] | `A` — \[1, 1, 2, 3, 2, 4\] | Same answer |
+| Clef Flash | `A` — \[1, 1, 2, 3, 2, 4\] | `A` — \[1, 1, 2, 3, 2, 4\] | Same answer |
+| Strands Decider | `A` — \[1, 1, 2, 3, 2, 4\] | `A` — \[1, 1, 2, 3, 2, 4\] | Same answer |
+| GLiNER2.5 Decide | `A` — \[1, 1, 2, 3, 2, 4\] | `A` — \[1, 1, 2, 3, 2, 4\] | Same answer |
+| Laya | `D` — \[21, 21, 21, 21, 21, 21\] | `D` — \[21, 21, 21, 21, 21, 21\] | Same answer |
+| CalDec v1 | `A` — \[1, 1, 2, 3, 2, 4\] | `D` — \[21, 21, 21, 21, 21, 21\] | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `list_functions/03b0d0a6d5050879d4ff/misleading_summary/accurate/clean-bare_induction_reader_opinions_full_0044`
+
+**Input fingerprint:** `8a58ae2a232c1040c66360566781c9f47ae4c34417b98d8e795835b1c13230ac`
+
+| Change | Recorded version |
+| --- | --- |
+| Misleading details | Add an unverified claim that agrees with the evidence |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/learning-and-induction/list_functions-03b0d0a6d5050879d4ff.md).

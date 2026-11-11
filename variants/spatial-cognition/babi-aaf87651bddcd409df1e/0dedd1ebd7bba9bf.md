@@ -1,0 +1,83 @@
+# Irrelevant details · Add a small amount of irrelevant detail variant
+
+[Original question](../../../questions/spatial-cognition/babi-aaf87651bddcd409df1e.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The kitchen is west of the bathroom.
+> The office is east of the bathroom.
+> The hallway is north of the garden.
+> The bedroom is south of the bathroom.
+> The garden is west of the bedroom.
+>
+> The poem is untitled.
+
+## Question
+
+> How do you go from the garden to the bathroom?
+
+## Answer choices
+
+- **A.** n,s
+- **B.** e,n
+- **C.** w,s
+- **D.** s,e
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The kitchen is west of the bathroom.\nThe office is east of the bathroom.\nThe hallway is north of the garden.\nThe bedroom is south of the bathroom.\nThe garden is west of the bedroom.\n\nThe poem is untitled.",
+  "question": "How do you go from the garden to the bathroom?",
+  "choices": {
+    "A": "n,s",
+    "B": "e,n",
+    "C": "w,s",
+    "D": "s,e"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — e,n | `B` — e,n | Same answer |
+| Decider v1.1 | `B` — e,n | `B` — e,n | Same answer |
+| Jev | `B` — e,n | `B` — e,n | Same answer |
+| Microsoft Decision-1 | `B` — e,n | `B` — e,n | Same answer |
+| Clef | `D` — s,e | `D` — s,e | Same answer |
+| Luna Decisions | `B` — e,n | `B` — e,n | Same answer |
+| Clef Flash | `A` — n,s | `A` — n,s | Same answer |
+| Strands Decider | `D` — s,e | `D` — s,e | Same answer |
+| GLiNER2.5 Decide | `C` — w,s | `C` — w,s | Same answer |
+| Laya | `C` — w,s | `B` — e,n | Different answer |
+| CalDec v1 | `A` — n,s | `A` — n,s | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `babi/aaf87651bddcd409df1e/irrelevant_details/low/clean-source_first_babi_route_worlds_full_0090`
+
+**Input fingerprint:** `f75c68ae3413fefbb24d7eebb22d99469ac036f80ab9994b1354aba33f8f8192`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a small amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/spatial-cognition/babi-aaf87651bddcd409df1e.md).

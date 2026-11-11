@@ -1,0 +1,79 @@
+# Unrelated examples · No worked example (prose-control recipe) variant
+
+[Original question](../../../questions/social-cognition/tombench-fc2c3bc4503a6ae61a6c.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Xiaoming, Liucui, and Donger are colleagues. Recently, they are discussing going to a nearby tourist spot together on the weekend. Xiaoming and Liucui plan in advance. When Donger walks into their office, Xiaoming deliberately tells Donger about the recent food poisoning incident at the tourist spot they want to go to. At the last moment, Liucui looks at Xiaoming and secretly shows a smile. Xiaoming also nods. Donger sees all this and does not ask further about other situations of the tourist spot.
+>
+> Merovan has a melodic refrain.
+
+## Question
+
+> What do you think Donger thinks?
+
+## Answer choices
+
+- **A.** Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him.
+- **B.** Donger feels happy, he looks forward to this trip.
+- **C.** Donger feels comforted, he thinks Xiaoming cares about his safety.
+- **D.** Donger feels surprised, he does not expect food poisoning to occur at the attraction.
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Xiaoming, Liucui, and Donger are colleagues. Recently, they are discussing going to a nearby tourist spot together on the weekend. Xiaoming and Liucui plan in advance. When Donger walks into their office, Xiaoming deliberately tells Donger about the recent food poisoning incident at the tourist spot they want to go to. At the last moment, Liucui looks at Xiaoming and secretly shows a smile. Xiaoming also nods. Donger sees all this and does not ask further about other situations of the tourist spot.\n\nMerovan has a melodic refrain.",
+  "question": "What do you think Donger thinks?",
+  "choices": {
+    "A": "Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him.",
+    "B": "Donger feels happy, he looks forward to this trip.",
+    "C": "Donger feels comforted, he thinks Xiaoming cares about his safety.",
+    "D": "Donger feels surprised, he does not expect food poisoning to occur at the attraction."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | Same answer |
+| Decider v1.1 | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | Same answer |
+| Jev | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | Same answer |
+| Microsoft Decision-1 | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | Same answer |
+| Clef | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | Same answer |
+| Luna Decisions | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | Same answer |
+| Clef Flash | `C` — Donger feels comforted, he thinks Xiaoming cares about his safety. | `C` — Donger feels comforted, he thinks Xiaoming cares about his safety. | Same answer |
+| Strands Decider | `C` — Donger feels comforted, he thinks Xiaoming cares about his safety. | `C` — Donger feels comforted, he thinks Xiaoming cares about his safety. | Same answer |
+| GLiNER2.5 Decide | `D` — Donger feels surprised, he does not expect food poisoning to occur at the attraction. | `D` — Donger feels surprised, he does not expect food poisoning to occur at the attraction. | Same answer |
+| Laya | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | `D` — Donger feels surprised, he does not expect food poisoning to occur at the attraction. | Different answer |
+| CalDec v1 | `D` — Donger feels surprised, he does not expect food poisoning to occur at the attraction. | `D` — Donger feels surprised, he does not expect food poisoning to occur at the attraction. | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `tombench/fc2c3bc4503a6ae61a6c/examples/prose_control/clean-source_first_tombench_music_contexts_full_0155`
+
+**Input fingerprint:** `9514d3b71d59483e2f4349b5855e60533a8f2bae291a7e5fe885494631018a6c`
+
+| Change | Recorded version |
+| --- | --- |
+| Unrelated examples | No worked example (prose-control recipe) |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/social-cognition/tombench-fc2c3bc4503a6ae61a6c.md).

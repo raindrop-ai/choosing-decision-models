@@ -1,0 +1,80 @@
+# Extra events · Add 12 unrelated events variant
+
+[Original question](../../../questions/rule-application/mmlu-757b7f30fb2d3c8a089a.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Nolan is the editor of a poetry catalog. Its entries are Virel, Zorven, Kesil, Nereth, Pavrel, and Sovrin.
+> Nolan classifies Virel as a dialogue. Nolan classifies Zorven as a monologue. Nolan classifies Kesil as an elegy. Nolan classifies Nereth as a satire. Nolan classifies Pavrel as a fable. Nolan classifies Sovrin as a ballad. Nolan reclassifies Virel as a monologue. Nolan reclassifies Zorven as a dialogue. Nolan reclassifies Kesil as a ballad. Nolan reclassifies Nereth as a fable. Nolan reclassifies Pavrel as a satire. Nolan reclassifies Sovrin as an elegy.
+
+## Question
+
+> Use indirect truth tables to determine whether the following argument is valid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)
+> E ⊃ F
+> G ⊃ ~F / ~G ∨ ~E
+
+## Answer choices
+
+- **A.** Valid
+- **B.** Invalid. Counterexample when E, F, and G are true
+- **C.** Invalid. Counterexample when E and G are true and F is false
+- **D.** Invalid. Counterexample when F and G are true and E is false
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Nolan is the editor of a poetry catalog. Its entries are Virel, Zorven, Kesil, Nereth, Pavrel, and Sovrin.\nNolan classifies Virel as a dialogue. Nolan classifies Zorven as a monologue. Nolan classifies Kesil as an elegy. Nolan classifies Nereth as a satire. Nolan classifies Pavrel as a fable. Nolan classifies Sovrin as a ballad. Nolan reclassifies Virel as a monologue. Nolan reclassifies Zorven as a dialogue. Nolan reclassifies Kesil as a ballad. Nolan reclassifies Nereth as a fable. Nolan reclassifies Pavrel as a satire. Nolan reclassifies Sovrin as an elegy.",
+  "question": "Use indirect truth tables to determine whether the following argument is valid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\nE ⊃ F\nG ⊃ ~F / ~G ∨ ~E",
+  "choices": {
+    "A": "Valid",
+    "B": "Invalid. Counterexample when E, F, and G are true",
+    "C": "Invalid. Counterexample when E and G are true and F is false",
+    "D": "Invalid. Counterexample when F and G are true and E is false"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — Valid | `A` — Valid | Same answer |
+| Decider v1.1 | `A` — Valid | `A` — Valid | Same answer |
+| Jev | `A` — Valid | `A` — Valid | Same answer |
+| Microsoft Decision-1 | `A` — Valid | `A` — Valid | Same answer |
+| Clef | `A` — Valid | `A` — Valid | Same answer |
+| Luna Decisions | `A` — Valid | `A` — Valid | Same answer |
+| Clef Flash | `A` — Valid | `A` — Valid | Same answer |
+| Strands Decider | `B` — Invalid. Counterexample when E, F, and G are true | `B` — Invalid. Counterexample when E, F, and G are true | Same answer |
+| GLiNER2.5 Decide | `A` — Valid | `B` — Invalid. Counterexample when E, F, and G are true | Different answer |
+| Laya | `A` — Valid | `A` — Valid | Same answer |
+| CalDec v1 | `A` — Valid | `C` — Invalid. Counterexample when E and G are true and F is false | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `mmlu/757b7f30fb2d3c8a089a/event_count/12/clean-source_first_mmlu_other_short_contexts_full_0100`
+
+**Input fingerprint:** `3eb9fe271582d9b80c18ffe92d24ea49034f9ee8cf936b5aaffbbca5fd229937`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 12 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/rule-application/mmlu-757b7f30fb2d3c8a089a.md).

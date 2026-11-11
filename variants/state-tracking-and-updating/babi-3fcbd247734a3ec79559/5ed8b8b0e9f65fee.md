@@ -1,0 +1,118 @@
+# Evidence position · Place the relevant information at the beginning variant
+
+[Original question](../../../questions/state-tracking-and-updating/babi-3fcbd247734a3ec79559.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Mary grabbed the football there.
+> Sandra took the milk there.
+> Mary dropped the football.
+> Sandra left the milk.
+> Mary went back to the hallway.
+> Sandra picked up the apple there.
+> John went to the garden.
+> Daniel went back to the garden.
+> Sandra grabbed the milk there.
+> Mary moved to the garden.
+> Sandra discarded the milk.
+> Sandra put down the apple.
+> Sandra journeyed to the bedroom.
+> Sandra journeyed to the garden.
+> Mary went to the hallway.
+> Daniel moved to the kitchen.
+> Mary moved to the garden.
+> Mary journeyed to the hallway.
+> Daniel journeyed to the garden.
+> Sandra travelled to the bedroom.
+> John went back to the office.
+> Mary journeyed to the office.
+> Sandra travelled to the bathroom.
+> Daniel went to the hallway.
+> John took the football there.
+> Sandra moved to the hallway.
+> Sandra moved to the bathroom.
+> Sandra moved to the kitchen.
+> John journeyed to the garden.
+> Mary went to the bathroom.
+> Mary grabbed the apple there.
+> Daniel journeyed to the bedroom.
+> Mary travelled to the garden.
+> Sandra went to the office.
+> The poem is untitled.
+> Its author is anonymous.
+> Its narrator speaks in the first person.
+> It contains a refrain.
+
+## Question
+
+> Where is the apple? 
+
+## Answer choices
+
+- **A.** garden
+- **B.** bathroom
+- **C.** hallway
+- **D.** kitchen
+- **E.** office
+- **F.** bedroom
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Mary grabbed the football there.\nSandra took the milk there.\nMary dropped the football.\nSandra left the milk.\nMary went back to the hallway.\nSandra picked up the apple there.\nJohn went to the garden.\nDaniel went back to the garden.\nSandra grabbed the milk there.\nMary moved to the garden.\nSandra discarded the milk.\nSandra put down the apple.\nSandra journeyed to the bedroom.\nSandra journeyed to the garden.\nMary went to the hallway.\nDaniel moved to the kitchen.\nMary moved to the garden.\nMary journeyed to the hallway.\nDaniel journeyed to the garden.\nSandra travelled to the bedroom.\nJohn went back to the office.\nMary journeyed to the office.\nSandra travelled to the bathroom.\nDaniel went to the hallway.\nJohn took the football there.\nSandra moved to the hallway.\nSandra moved to the bathroom.\nSandra moved to the kitchen.\nJohn journeyed to the garden.\nMary went to the bathroom.\nMary grabbed the apple there.\nDaniel journeyed to the bedroom.\nMary travelled to the garden.\nSandra went to the office.\nThe poem is untitled.\nIts author is anonymous.\nIts narrator speaks in the first person.\nIt contains a refrain.",
+  "question": "Where is the apple? ",
+  "choices": {
+    "A": "garden",
+    "B": "bathroom",
+    "C": "hallway",
+    "D": "kitchen",
+    "E": "office",
+    "F": "bedroom"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — garden | `A` — garden | Same answer |
+| Decider v1.1 | `A` — garden | `A` — garden | Same answer |
+| Jev | `A` — garden | `A` — garden | Same answer |
+| Microsoft Decision-1 | `A` — garden | `A` — garden | Same answer |
+| Clef | `A` — garden | `A` — garden | Same answer |
+| Luna Decisions | `A` — garden | `A` — garden | Same answer |
+| Clef Flash | `A` — garden | `A` — garden | Same answer |
+| Strands Decider | `B` — bathroom | `B` — bathroom | Same answer |
+| GLiNER2.5 Decide | `E` — office | `E` — office | Same answer |
+| Laya | `C` — hallway | `C` — hallway | Same answer |
+| CalDec v1 | `C` — hallway | `C` — hallway | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `babi/3fcbd247734a3ec79559/evidence_position/start/clean-source_first_babi_object_lengths_positions_full_0093`
+
+**Input fingerprint:** `a6b1099249211d747197e9bc1c1b6ca3de63adb28f9e3ed64b206a361047cdf5`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence position | Place the relevant information at the beginning |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/state-tracking-and-updating/babi-3fcbd247734a3ec79559.md).

@@ -1,0 +1,77 @@
+# Evidence position · Place the relevant information at the end variant
+
+[Original question](../../../questions/numerical-cognition/bbh-40eceedeab129fcf9d44.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Question
+
+> The notebook has a linen cover.
+> The binding is stitched.
+> The page edges are straight.
+> The clasp is brass.
+> ((3 + 3 - -4 - 2) + (-2 - -7 \* -2 \* 1)) =
+
+## Answer choices
+
+- **A.** 8
+- **B.** 14
+- **C.** -1
+- **D.** -8
+
+**Reference answer:** `D`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "",
+  "question": "The notebook has a linen cover.\nThe binding is stitched.\nThe page edges are straight.\nThe clasp is brass.\n((3 + 3 - -4 - 2) + (-2 - -7 * -2 * 1)) =",
+  "choices": {
+    "A": "8",
+    "B": "14",
+    "C": "-1",
+    "D": "-8"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `D` — -8 | `D` — -8 | Same answer |
+| Decider v1.1 | `D` — -8 | `D` — -8 | Same answer |
+| Jev | `D` — -8 | `D` — -8 | Same answer |
+| Microsoft Decision-1 | `D` — -8 | `C` — -1 | Different answer |
+| Clef | `C` — -1 | `C` — -1 | Same answer |
+| Luna Decisions | `C` — -1 | `C` — -1 | Same answer |
+| Clef Flash | `C` — -1 | `A` — 8 | Different answer |
+| Strands Decider | `A` — 8 | `A` — 8 | Same answer |
+| GLiNER2.5 Decide | `A` — 8 | `A` — 8 | Same answer |
+| Laya | `D` — -8 | `D` — -8 | Same answer |
+| CalDec v1 | `C` — -1 | `A` — 8 | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/40eceedeab129fcf9d44/evidence_position/end/clean-bare_arithmetic_whole_problem_position_full_0068`
+
+**Input fingerprint:** `cc72665080dc9810afb248f64c3b37b0b83a600aa91b991c8a902d985b9e202d`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence position | Place the relevant information at the end |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/numerical-cognition/bbh-40eceedeab129fcf9d44.md).

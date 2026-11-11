@@ -1,0 +1,50 @@
+# Option order · Reverse the answer choices variant
+
+[Original question](../../../questions/learning-and-induction/miniscan-3ccbac4b6dd01753ac46.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** answer choices or their order.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Recover the question text
+
+The original dataset’s terms do not clearly support republishing its text here, or require additional conditions. This variant’s full text is therefore reconstructed locally. [Follow the recovery instructions](../../../docs/variant-reproduction.md#recover-the-remaining-variant-texts).
+
+**Reference answer key:** `A`.
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` | `A` | Same answer |
+| Decider v1.1 | `A` | `A` | Same answer |
+| Jev | `A` | `B` | Different answer |
+| Microsoft Decision-1 | `A` | `A` | Same answer |
+| Clef | `D` | `D` | Same answer |
+| Luna Decisions | `D` | `A` | Different answer |
+| Clef Flash | `A` | `A` | Same answer |
+| Strands Decider | `A` | `A` | Same answer |
+| GLiNER2.5 Decide | `A` | `D` | Different answer |
+| Laya | `C` | `C` | Same answer |
+| CalDec v1 | `C` | `A` | Different answer |
+
+Clef and Clef Flash sort answer choices in their published input-processing code. Their choice-order results describe that preprocessing.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `miniscan/3ccbac4b6dd01753ac46/option_order/reverse`
+
+**Input fingerprint:** `86e56d05a4331e1f2b92307fc7faaa6ec3c10b9f1fcef692a97279c510a3f194`
+
+| Change | Recorded version |
+| --- | --- |
+| Option order | Reverse the answer choices |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/learning-and-induction/miniscan-3ccbac4b6dd01753ac46.md).

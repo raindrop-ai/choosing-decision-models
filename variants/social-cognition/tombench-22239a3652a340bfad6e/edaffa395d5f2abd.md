@@ -1,0 +1,79 @@
+# Repetition · Present the same evidence twice variant
+
+[Original question](../../../questions/social-cognition/tombench-22239a3652a340bfad6e.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Xiao Bei and Xiao Li are wandering in the parking lot, they see boxes and baskets, they find bananas in the box, Xiao Li leaves the parking lot, Xiao Bei moves the bananas to the basket.
+
+## Question
+
+> «Xiao Bei and Xiao Li are wandering in the parking lot, they see boxes and baskets, they find bananas in the box, Xiao Li leaves the parking lot, Xiao Bei moves the bananas to the basket.»
+>
+> After Xiao Li returns to the parking lot, where does Xiao Bei think Xiao Li looks for the bananas?
+
+## Answer choices
+
+- **A.** Briefcase
+- **B.** Box
+- **C.** Basket
+- **D.** Cabinet
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Xiao Bei and Xiao Li are wandering in the parking lot, they see boxes and baskets, they find bananas in the box, Xiao Li leaves the parking lot, Xiao Bei moves the bananas to the basket.",
+  "question": "«Xiao Bei and Xiao Li are wandering in the parking lot, they see boxes and baskets, they find bananas in the box, Xiao Li leaves the parking lot, Xiao Bei moves the bananas to the basket.»\n\nAfter Xiao Li returns to the parking lot, where does Xiao Bei think Xiao Li looks for the bananas?",
+  "choices": {
+    "A": "Briefcase",
+    "B": "Box",
+    "C": "Basket",
+    "D": "Cabinet"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — Box | `B` — Box | Same answer |
+| Decider v1.1 | `B` — Box | `B` — Box | Same answer |
+| Jev | `B` — Box | `B` — Box | Same answer |
+| Microsoft Decision-1 | `B` — Box | `B` — Box | Same answer |
+| Clef | `B` — Box | `B` — Box | Same answer |
+| Luna Decisions | `B` — Box | `C` — Basket | Different answer |
+| Clef Flash | `B` — Box | `C` — Basket | Different answer |
+| Strands Decider | `B` — Box | `B` — Box | Same answer |
+| GLiNER2.5 Decide | `C` — Basket | `C` — Basket | Same answer |
+| Laya | `B` — Box | `B` — Box | Same answer |
+| CalDec v1 | `B` — Box | `B` — Box | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `tombench/22239a3652a340bfad6e/evidence_repetition/2/clean-source_first_quoted_belief_repetition_full_0209_v2`
+
+**Input fingerprint:** `9d8ae03a294ac3b11db1c8b79623c7b3dbeb861f1bab91e94b48f0b8e6311182`
+
+| Change | Recorded version |
+| --- | --- |
+| Repetition | Present the same evidence twice |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/social-cognition/tombench-22239a3652a340bfad6e.md).

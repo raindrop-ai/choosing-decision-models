@@ -1,0 +1,77 @@
+# Evidence order · Present the evidence in a shuffled order variant
+
+[Original question](../../../questions/relations/bbh-88888dabc8a5e175e187.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Question
+
+> The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. A fruit stand sells five fruits: watermelons, plums, apples, peaches, and kiwis. The plums are the cheapest. The watermelons are more expensive than the peaches. The apples are less expensive than the peaches. The kiwis are the second-cheapest.
+
+## Answer choices
+
+- **A.** The watermelons are the second-most expensive
+- **B.** The plums are the second-most expensive
+- **C.** The apples are the second-most expensive
+- **D.** The peaches are the second-most expensive
+- **E.** The kiwis are the second-most expensive
+
+**Reference answer:** `D`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "",
+  "question": "The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. A fruit stand sells five fruits: watermelons, plums, apples, peaches, and kiwis. The plums are the cheapest. The watermelons are more expensive than the peaches. The apples are less expensive than the peaches. The kiwis are the second-cheapest.",
+  "choices": {
+    "A": "The watermelons are the second-most expensive",
+    "B": "The plums are the second-most expensive",
+    "C": "The apples are the second-most expensive",
+    "D": "The peaches are the second-most expensive",
+    "E": "The kiwis are the second-most expensive"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `D` — The peaches are the second-most expensive | `D` — The peaches are the second-most expensive | Same answer |
+| Decider v1.1 | `D` — The peaches are the second-most expensive | `D` — The peaches are the second-most expensive | Same answer |
+| Jev | `D` — The peaches are the second-most expensive | `D` — The peaches are the second-most expensive | Same answer |
+| Microsoft Decision-1 | `D` — The peaches are the second-most expensive | `D` — The peaches are the second-most expensive | Same answer |
+| Clef | `D` — The peaches are the second-most expensive | `D` — The peaches are the second-most expensive | Same answer |
+| Luna Decisions | `A` — The watermelons are the second-most expensive | `A` — The watermelons are the second-most expensive | Same answer |
+| Clef Flash | `D` — The peaches are the second-most expensive | `D` — The peaches are the second-most expensive | Same answer |
+| Strands Decider | `E` — The kiwis are the second-most expensive | `E` — The kiwis are the second-most expensive | Same answer |
+| GLiNER2.5 Decide | `E` — The kiwis are the second-most expensive | `B` — The plums are the second-most expensive | Different answer |
+| Laya | `A` — The watermelons are the second-most expensive | `A` — The watermelons are the second-most expensive | Same answer |
+| CalDec v1 | `A` — The watermelons are the second-most expensive | `A` — The watermelons are the second-most expensive | Same answer |
+
+**Ordering comparison:** literal requested source unit permutation. Only the exact matched comparison sets contribute to the reported ordering contrasts.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/88888dabc8a5e175e187/presentation_order/shuffled_presentation/clean-bare_ordinal_fact_order_full_0050`
+
+**Input fingerprint:** `c24b514f39caf7a6b38585c282c1f1a8cc92b1869dfc75552fe95e67cff46ce9`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence order | Present the evidence in a shuffled order |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/bbh-88888dabc8a5e175e187.md).

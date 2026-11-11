@@ -1,0 +1,80 @@
+# Paraphrasing · Change the sentence structure variant
+
+[Original question](../../../questions/state-tracking-and-updating/bbh-98c1222d144a429e0fc0.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Question
+
+> Alice, Bob, Claire, Dave, Eve, Fred, and Gertrude are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets The Odyssey, Bob gets The Great Gatsby, Claire gets Lolita, Dave gets The Pearl, Eve gets The Fellowship of the Ring, Fred gets Frankenstein, and Gertrude gets Hound of the Baskervilles.
+> As the semester proceeds, they start trading around the new books. First, Claire and Bob swap books. Then, Alice and Dave swap books. Then, Gertrude and Fred swap books. Then, Bob and Alice swap books. Then, Alice and Eve swap books. Then, Dave and Gertrude swap books. Finally, Dave and Eve swap books. Which book is in Gertrude’s possession when the semester ends?
+
+## Answer choices
+
+- **A.** The Odyssey
+- **B.** The Great Gatsby
+- **C.** Lolita
+- **D.** The Pearl
+- **E.** The Fellowship of the Ring
+- **F.** Frankenstein
+- **G.** Hound of the Baskervilles
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "",
+  "question": "Alice, Bob, Claire, Dave, Eve, Fred, and Gertrude are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets The Odyssey, Bob gets The Great Gatsby, Claire gets Lolita, Dave gets The Pearl, Eve gets The Fellowship of the Ring, Fred gets Frankenstein, and Gertrude gets Hound of the Baskervilles.\nAs the semester proceeds, they start trading around the new books. First, Claire and Bob swap books. Then, Alice and Dave swap books. Then, Gertrude and Fred swap books. Then, Bob and Alice swap books. Then, Alice and Eve swap books. Then, Dave and Gertrude swap books. Finally, Dave and Eve swap books. Which book is in Gertrude’s possession when the semester ends?",
+  "choices": {
+    "A": "The Odyssey",
+    "B": "The Great Gatsby",
+    "C": "Lolita",
+    "D": "The Pearl",
+    "E": "The Fellowship of the Ring",
+    "F": "Frankenstein",
+    "G": "Hound of the Baskervilles"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — The Odyssey | `A` — The Odyssey | Same answer |
+| Decider v1.1 | `D` — The Pearl | `D` — The Pearl | Same answer |
+| Jev | `A` — The Odyssey | `A` — The Odyssey | Same answer |
+| Microsoft Decision-1 | `A` — The Odyssey | `A` — The Odyssey | Same answer |
+| Clef | `F` — Frankenstein | `F` — Frankenstein | Same answer |
+| Luna Decisions | `F` — Frankenstein | `F` — Frankenstein | Same answer |
+| Clef Flash | `D` — The Pearl | `D` — The Pearl | Same answer |
+| Strands Decider | `F` — Frankenstein | `F` — Frankenstein | Same answer |
+| GLiNER2.5 Decide | `A` — The Odyssey | `A` — The Odyssey | Same answer |
+| Laya | `G` — Hound of the Baskervilles | `G` — Hound of the Baskervilles | Same answer |
+| CalDec v1 | `G` — Hound of the Baskervilles | `G` — Hound of the Baskervilles | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/98c1222d144a429e0fc0/paraphrasing/structural`
+
+**Input fingerprint:** `334c1387dac6712a402b5464725c70e930ce685b6c5e980a4118b9e1e33a62a7`
+
+| Change | Recorded version |
+| --- | --- |
+| Paraphrasing | Change the sentence structure |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/state-tracking-and-updating/bbh-98c1222d144a429e0fc0.md).

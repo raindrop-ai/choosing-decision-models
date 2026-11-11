@@ -1,0 +1,76 @@
+# Misleading details · Add an unverified claim that conflicts with the evidence variant
+
+[Original question](../../../questions/causal-reasoning/cladder-f4cfa4020dfb290029e1.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> A reader thinks the answer to «For captains who execute prisoners, would it be less likely to see the prisoner's death if the captain had ordered the release of the prisoner?» is «No».
+>
+> Imagine a self-contained, hypothetical world with only the following conditions, and without any unmentioned factors or causal relationships: The captain has a direct effect on the private and the corporal. The corporal has a direct effect on prisoner. The private has a direct effect on prisoner.
+> For captains who release prisoners, the probability of the prisoner's death is 33%. For captains who execute prisoners, the probability of the prisoner's death is 81%.
+
+## Question
+
+> For captains who execute prisoners, would it be less likely to see the prisoner's death if the captain had ordered the release of the prisoner?
+
+## Answer choices
+
+- **yes.** Yes
+- **no.** No
+
+**Reference answer:** `yes`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "A reader thinks the answer to «For captains who execute prisoners, would it be less likely to see the prisoner's death if the captain had ordered the release of the prisoner?» is «No».\n\nImagine a self-contained, hypothetical world with only the following conditions, and without any unmentioned factors or causal relationships: The captain has a direct effect on the private and the corporal. The corporal has a direct effect on prisoner. The private has a direct effect on prisoner.\nFor captains who release prisoners, the probability of the prisoner's death is 33%. For captains who execute prisoners, the probability of the prisoner's death is 81%.",
+  "question": "For captains who execute prisoners, would it be less likely to see the prisoner's death if the captain had ordered the release of the prisoner?",
+  "choices": {
+    "yes": "Yes",
+    "no": "No"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `yes` — Yes | `yes` — Yes | Same answer |
+| Decider v1.1 | `yes` — Yes | `yes` — Yes | Same answer |
+| Jev | `yes` — Yes | `yes` — Yes | Same answer |
+| Microsoft Decision-1 | `yes` — Yes | `yes` — Yes | Same answer |
+| Clef | `yes` — Yes | `yes` — Yes | Same answer |
+| Luna Decisions | `yes` — Yes | `yes` — Yes | Same answer |
+| Clef Flash | `yes` — Yes | `yes` — Yes | Same answer |
+| Strands Decider | `no` — No | `no` — No | Same answer |
+| GLiNER2.5 Decide | `yes` — Yes | `no` — No | Different answer |
+| Laya | `no` — No | `no` — No | Same answer |
+| CalDec v1 | `no` — No | `no` — No | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `cladder/f4cfa4020dfb290029e1/misleading_summary/misleading/clean-source_first_causal_new_reader_assessments_full_0181`
+
+**Input fingerprint:** `f2a7ca8e10f75f4640ecd392c150fae5015aa00cb953b8b87927e120216935ac`
+
+| Change | Recorded version |
+| --- | --- |
+| Misleading details | Add an unverified claim that conflicts with the evidence |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/causal-reasoning/cladder-f4cfa4020dfb290029e1.md).

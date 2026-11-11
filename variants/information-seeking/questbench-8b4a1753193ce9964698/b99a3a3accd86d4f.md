@@ -1,0 +1,76 @@
+# Extra events · Add 2 unrelated events variant
+
+[Original question](../../../questions/information-seeking/questbench-8b4a1753193ce9964698.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Nolan is the editor of a poetry catalog. Its entries are Virel, Zorven, Kesil, Nereth, Pavrel, and Sovrin.
+> Nolan classifies Virel as a dialogue. Nolan classifies Zorven as a monologue.
+>
+> Given a 7-day week, Alex tutors for hours each day. She charges $12 per day regardless of the number of hours she tutors. How much does Alex charge for weeks of tutoring?
+
+## Question
+
+> Which missing variable should be asked about to solve this problem?
+
+## Answer choices
+
+- **B.** Number of weeks
+- **C.** Hours Alex tutors each day
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Nolan is the editor of a poetry catalog. Its entries are Virel, Zorven, Kesil, Nereth, Pavrel, and Sovrin.\nNolan classifies Virel as a dialogue. Nolan classifies Zorven as a monologue.\n\nGiven a 7-day week, Alex tutors for hours each day. She charges $12 per day regardless of the number of hours she tutors. How much does Alex charge for weeks of tutoring?",
+  "question": "Which missing variable should be asked about to solve this problem?",
+  "choices": {
+    "B": "Number of weeks",
+    "C": "Hours Alex tutors each day"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — Number of weeks | `B` — Number of weeks | Same answer |
+| Decider v1.1 | `B` — Number of weeks | `B` — Number of weeks | Same answer |
+| Jev | `B` — Number of weeks | `B` — Number of weeks | Same answer |
+| Microsoft Decision-1 | `B` — Number of weeks | `B` — Number of weeks | Same answer |
+| Clef | `B` — Number of weeks | `B` — Number of weeks | Same answer |
+| Luna Decisions | `B` — Number of weeks | `B` — Number of weeks | Same answer |
+| Clef Flash | `B` — Number of weeks | `B` — Number of weeks | Same answer |
+| Strands Decider | `B` — Number of weeks | `B` — Number of weeks | Same answer |
+| GLiNER2.5 Decide | `C` — Hours Alex tutors each day | `C` — Hours Alex tutors each day | Same answer |
+| Laya | `B` — Number of weeks | `C` — Hours Alex tutors each day | Different answer |
+| CalDec v1 | `B` — Number of weeks | `C` — Hours Alex tutors each day | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `questbench/8b4a1753193ce9964698/event_count/2/clean-source_first_quest_literary_contexts_full_0079`
+
+**Input fingerprint:** `bf194ee5cfd76dc7cc7340c8c49f5dd7eaa1c6ee6bb99569dd21d5c6757694dd`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 2 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/information-seeking/questbench-8b4a1753193ce9964698.md).

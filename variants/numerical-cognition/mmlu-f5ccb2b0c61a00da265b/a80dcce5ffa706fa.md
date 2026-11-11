@@ -1,0 +1,77 @@
+# Similar distractors · Add fewer similar but irrelevant items variant
+
+[Original question](../../../questions/numerical-cognition/mmlu-f5ccb2b0c61a00da265b.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> «A separate function specification gives g(0) = 1 and g(n + 1) = g(n) + 3 for nonnegative integers n.»
+
+## Question
+
+> Of the following, which gives the best upper bound for the value of f(N) where f is a solution to the recurrence f(2N + 1) = f(2N) = f(N) + log N for N &gt;= 1, with f(1) = 0?
+
+## Answer choices
+
+- **A.** O(log N)
+- **B.** O(N log N)
+- **C.** O(log N) + 0(1)
+- **D.** O((log N)^2)
+
+**Reference answer:** `D`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "«A separate function specification gives g(0) = 1 and g(n + 1) = g(n) + 3 for nonnegative integers n.»",
+  "question": "Of the following, which gives the best upper bound for the value of f(N) where f is a solution to the recurrence f(2N + 1) = f(2N) = f(N) + log N for N >= 1, with f(1) = 0?",
+  "choices": {
+    "A": "O(log N)",
+    "B": "O(N log N)",
+    "C": "O(log N) + 0(1)",
+    "D": "O((log N)^2)"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `D` — O((log N)^2) | `D` — O((log N)^2) | Same answer |
+| Decider v1.1 | `D` — O((log N)^2) | `D` — O((log N)^2) | Same answer |
+| Jev | `D` — O((log N)^2) | `D` — O((log N)^2) | Same answer |
+| Microsoft Decision-1 | `D` — O((log N)^2) | `D` — O((log N)^2) | Same answer |
+| Clef | `D` — O((log N)^2) | `D` — O((log N)^2) | Same answer |
+| Luna Decisions | `D` — O((log N)^2) | `D` — O((log N)^2) | Same answer |
+| Clef Flash | `D` — O((log N)^2) | `D` — O((log N)^2) | Same answer |
+| Strands Decider | `D` — O((log N)^2) | `B` — O(N log N) | Different answer |
+| GLiNER2.5 Decide | `B` — O(N log N) | `C` — O(log N) + 0(1) | Different answer |
+| Laya | `C` — O(log N) + 0(1) | `A` — O(log N) | Different answer |
+| CalDec v1 | `A` — O(log N) | `C` — O(log N) + 0(1) | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `mmlu/f5ccb2b0c61a00da265b/similar_distractors/low/clean-source_first_parallel_b_operations_0302`
+
+**Input fingerprint:** `f9fd9d6b6610bef36bd38742059a73c45135881c22d71a0f7fb55853494f05fd`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add fewer similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/numerical-cognition/mmlu-f5ccb2b0c61a00da265b.md).

@@ -1,0 +1,77 @@
+# Evidence order · Present the evidence in a shuffled order variant
+
+[Original question](../../../questions/relations/bbh-e4b096e1b614d6b1258a.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Question
+
+> The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were five golfers: Joe, Eve, Mya, Rob, and Dan. Mya finished first. Eve finished above Rob. Joe finished below Dan. Dan finished below Rob.
+
+## Answer choices
+
+- **A.** Joe finished second-to-last
+- **B.** Eve finished second-to-last
+- **C.** Mya finished second-to-last
+- **D.** Rob finished second-to-last
+- **E.** Dan finished second-to-last
+
+**Reference answer:** `E`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "",
+  "question": "The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were five golfers: Joe, Eve, Mya, Rob, and Dan. Mya finished first. Eve finished above Rob. Joe finished below Dan. Dan finished below Rob.",
+  "choices": {
+    "A": "Joe finished second-to-last",
+    "B": "Eve finished second-to-last",
+    "C": "Mya finished second-to-last",
+    "D": "Rob finished second-to-last",
+    "E": "Dan finished second-to-last"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `E` — Dan finished second-to-last | `E` — Dan finished second-to-last | Same answer |
+| Decider v1.1 | `E` — Dan finished second-to-last | `E` — Dan finished second-to-last | Same answer |
+| Jev | `E` — Dan finished second-to-last | `E` — Dan finished second-to-last | Same answer |
+| Microsoft Decision-1 | `A` — Joe finished second-to-last | `A` — Joe finished second-to-last | Same answer |
+| Clef | `A` — Joe finished second-to-last | `A` — Joe finished second-to-last | Same answer |
+| Luna Decisions | `A` — Joe finished second-to-last | `A` — Joe finished second-to-last | Same answer |
+| Clef Flash | `E` — Dan finished second-to-last | `E` — Dan finished second-to-last | Same answer |
+| Strands Decider | `A` — Joe finished second-to-last | `D` — Rob finished second-to-last | Different answer |
+| GLiNER2.5 Decide | `A` — Joe finished second-to-last | `E` — Dan finished second-to-last | Different answer |
+| Laya | `A` — Joe finished second-to-last | `C` — Mya finished second-to-last | Different answer |
+| CalDec v1 | `B` — Eve finished second-to-last | `B` — Eve finished second-to-last | Same answer |
+
+**Ordering comparison:** literal requested source unit permutation. Only the exact matched comparison sets contribute to the reported ordering contrasts.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/e4b096e1b614d6b1258a/presentation_order/shuffled_presentation/clean-bare_ordinal_fact_order_full_0050`
+
+**Input fingerprint:** `c291e767e051e889a19b4045717a7d794ee9c67a0ee211b7ad5e4f345979d855`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence order | Present the evidence in a shuffled order |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/bbh-e4b096e1b614d6b1258a.md).

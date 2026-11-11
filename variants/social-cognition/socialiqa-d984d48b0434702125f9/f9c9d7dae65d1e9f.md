@@ -1,0 +1,77 @@
+# Extra events · Add 6 unrelated events variant
+
+[Original question](../../../questions/social-cognition/socialiqa-d984d48b0434702125f9.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Merovan is a fictional musical suite with a refrain. The refrain begins on the tonic. The refrain pauses. The refrain resumes on a dominant tone. The refrain changes to detached articulation. The refrain returns to the tonic. The refrain repeats its final interval.
+>
+> Carson sees Cameron crying over what someone said. Carson tells Cameron not to worry that they are very pretty and beautiful.
+
+## Question
+
+> Why did Carson do this?
+
+## Answer choices
+
+- **A.** help Cameron&#x27;s self esteem
+- **B.** bad
+- **C.** hurt Cameron&#x27;s feelings
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Merovan is a fictional musical suite with a refrain. The refrain begins on the tonic. The refrain pauses. The refrain resumes on a dominant tone. The refrain changes to detached articulation. The refrain returns to the tonic. The refrain repeats its final interval.\n\nCarson sees Cameron crying over what someone said. Carson tells Cameron not to worry that they are very pretty and beautiful.",
+  "question": "Why did Carson do this?",
+  "choices": {
+    "A": "help Cameron's self esteem",
+    "B": "bad",
+    "C": "hurt Cameron's feelings"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — help Cameron&#x27;s self esteem | `A` — help Cameron&#x27;s self esteem | Same answer |
+| Decider v1.1 | `A` — help Cameron&#x27;s self esteem | `A` — help Cameron&#x27;s self esteem | Same answer |
+| Jev | `A` — help Cameron&#x27;s self esteem | `A` — help Cameron&#x27;s self esteem | Same answer |
+| Microsoft Decision-1 | `A` — help Cameron&#x27;s self esteem | `A` — help Cameron&#x27;s self esteem | Same answer |
+| Clef | `A` — help Cameron&#x27;s self esteem | `A` — help Cameron&#x27;s self esteem | Same answer |
+| Luna Decisions | `A` — help Cameron&#x27;s self esteem | `A` — help Cameron&#x27;s self esteem | Same answer |
+| Clef Flash | `A` — help Cameron&#x27;s self esteem | `A` — help Cameron&#x27;s self esteem | Same answer |
+| Strands Decider | `A` — help Cameron&#x27;s self esteem | `A` — help Cameron&#x27;s self esteem | Same answer |
+| GLiNER2.5 Decide | `A` — help Cameron&#x27;s self esteem | `A` — help Cameron&#x27;s self esteem | Same answer |
+| Laya | `A` — help Cameron&#x27;s self esteem | `A` — help Cameron&#x27;s self esteem | Same answer |
+| CalDec v1 | `A` — help Cameron&#x27;s self esteem | `A` — help Cameron&#x27;s self esteem | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `socialiqa/d984d48b0434702125f9/event_count/6/clean-source_first_socialiqa_music_contexts_full_0158`
+
+**Input fingerprint:** `5819fb0ef311a001495cc71d4f92b0031f1da091bc18accb186da73c5a638a68`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 6 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/social-cognition/socialiqa-d984d48b0434702125f9.md).

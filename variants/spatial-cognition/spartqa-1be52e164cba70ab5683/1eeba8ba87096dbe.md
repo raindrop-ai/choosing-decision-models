@@ -1,0 +1,77 @@
+# Invented names · Use familiar names variant
+
+[Original question](../../../questions/spatial-cognition/spartqa-1be52e164cba70ab5683.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> We have two blocks, Apple and Bridge. Block Apple contains one medium yellow square. There is also a medium black square in this block. Below the medium yellow square is the medium black square. Block Bridge is to the left of block Apple. It contains two medium yellow squares. Below medium yellow square number two is medium yellow square number one. A medium black square is touching the bottom edge of this block. It is below medium yellow square number one and medium yellow square number two.
+
+## Question
+
+> Which object is to the left of a medium black square? medium yellow square number two or medium yellow square number one?
+
+## Answer choices
+
+- **0.** medium yellow square  number two
+- **1.** medium yellow square  number one
+- **2.** both of them
+- **3.** none of them
+
+**Reference answer:** `2`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "We have two blocks, Apple and Bridge. Block Apple contains one medium yellow square. There is also a medium black square in this block. Below the medium yellow square is the medium black square. Block Bridge is to the left of block Apple. It contains two medium yellow squares. Below medium yellow square number two is medium yellow square number one. A medium black square is touching the bottom edge of this block. It is below medium yellow square number one and medium yellow square number two.",
+  "question": "Which object is to the left of a medium black square? medium yellow square number two or medium yellow square number one?",
+  "choices": {
+    "0": "medium yellow square  number two",
+    "1": "medium yellow square  number one",
+    "2": "both of them",
+    "3": "none of them"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `2` — both of them | `2` — both of them | Same answer |
+| Decider v1.1 | `2` — both of them | `2` — both of them | Same answer |
+| Jev | `2` — both of them | `2` — both of them | Same answer |
+| Microsoft Decision-1 | `2` — both of them | `2` — both of them | Same answer |
+| Clef | `2` — both of them | `3` — none of them | Different answer |
+| Luna Decisions | `2` — both of them | `2` — both of them | Same answer |
+| Clef Flash | `2` — both of them | `2` — both of them | Same answer |
+| Strands Decider | `2` — both of them | `2` — both of them | Same answer |
+| GLiNER2.5 Decide | `1` — medium yellow square  number one | `1` — medium yellow square  number one | Same answer |
+| Laya | `2` — both of them | `2` — both of them | Same answer |
+| CalDec v1 | `2` — both of them | `2` — both of them | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `spartqa/1be52e164cba70ab5683/unfamiliar_names/familiar`
+
+**Input fingerprint:** `8280218a9624764e90e2e4f7cd187b1ff17c375476b8380f9c39e19413f59cf6`
+
+| Change | Recorded version |
+| --- | --- |
+| Invented names | Use familiar names |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/spatial-cognition/spartqa-1be52e164cba70ab5683.md).

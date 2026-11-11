@@ -1,0 +1,76 @@
+# Evidence order · Present the evidence in reverse order variant
+
+[Original question](../../../questions/numerical-cognition/cladder-0ff726fd901938516ef1.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Imagine a self-contained, hypothetical world with only the following conditions, and without any unmentioned factors or causal relationships: For vaccinated individuals, the probability of smallpox survival is 56%. For unvaccinated individuals, the probability of smallpox survival is 36%. The overall probability of vaccination is 96%.
+> Vaccination reaction has a direct effect on smallpox survival. Getting smallpox has a direct effect on smallpox survival. Vaccination status has a direct effect on vaccination reaction and getting smallpox.
+
+## Question
+
+> Is smallpox survival less likely than smallpox death overall?
+
+## Answer choices
+
+- **yes.** Yes
+- **no.** No
+
+**Reference answer:** `no`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Imagine a self-contained, hypothetical world with only the following conditions, and without any unmentioned factors or causal relationships: For vaccinated individuals, the probability of smallpox survival is 56%. For unvaccinated individuals, the probability of smallpox survival is 36%. The overall probability of vaccination is 96%.\nVaccination reaction has a direct effect on smallpox survival. Getting smallpox has a direct effect on smallpox survival. Vaccination status has a direct effect on vaccination reaction and getting smallpox.",
+  "question": "Is smallpox survival less likely than smallpox death overall?",
+  "choices": {
+    "yes": "Yes",
+    "no": "No"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `no` — No | `no` — No | Same answer |
+| Decider v1.1 | `no` — No | `no` — No | Same answer |
+| Jev | `no` — No | `no` — No | Same answer |
+| Microsoft Decision-1 | `no` — No | `no` — No | Same answer |
+| Clef | `yes` — Yes | `no` — No | Different answer |
+| Luna Decisions | `yes` — Yes | `yes` — Yes | Same answer |
+| Clef Flash | `yes` — Yes | `yes` — Yes | Same answer |
+| Strands Decider | `no` — No | `no` — No | Same answer |
+| GLiNER2.5 Decide | `no` — No | `no` — No | Same answer |
+| Laya | `yes` — Yes | `yes` — Yes | Same answer |
+| CalDec v1 | `yes` — Yes | `no` — No | Different answer |
+
+**Ordering comparison:** literal requested source unit permutation. Only the exact matched comparison sets contribute to the reported ordering contrasts.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `cladder/0ff726fd901938516ef1/presentation_order/reverse_presentation/clean-bare_causal_premise_order_full_0034`
+
+**Input fingerprint:** `608b084d25315ddf71acdba15c69f667a2f41712767e08227ad2f1705c919373`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence order | Present the evidence in reverse order |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/numerical-cognition/cladder-0ff726fd901938516ef1.md).

@@ -1,0 +1,78 @@
+# Extra events · Add 6 unrelated events variant
+
+[Original question](../../../questions/concepts-and-categorization/mmlu-8ccc30df4a8c7233ef17.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Nolan is the editor of a poetry catalog. Its entries are Virel, Zorven, Kesil, Nereth, Pavrel, and Sovrin.
+> Nolan classifies Virel as a dialogue. Nolan classifies Zorven as a monologue. Nolan classifies Kesil as an elegy. Nolan classifies Nereth as a satire. Nolan classifies Pavrel as a fable. Nolan classifies Sovrin as a ballad.
+
+## Question
+
+> The idea that you identify with, and give allegiance, to a nation-state is
+
+## Answer choices
+
+- **A.** regionalism.
+- **B.** diffusion.
+- **C.** iconography.
+- **D.** nationalism.
+
+**Reference answer:** `D`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Nolan is the editor of a poetry catalog. Its entries are Virel, Zorven, Kesil, Nereth, Pavrel, and Sovrin.\nNolan classifies Virel as a dialogue. Nolan classifies Zorven as a monologue. Nolan classifies Kesil as an elegy. Nolan classifies Nereth as a satire. Nolan classifies Pavrel as a fable. Nolan classifies Sovrin as a ballad.",
+  "question": "The idea that you identify with, and give allegiance, to a nation-state is",
+  "choices": {
+    "A": "regionalism.",
+    "B": "diffusion.",
+    "C": "iconography.",
+    "D": "nationalism."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `D` — nationalism. | `D` — nationalism. | Same answer |
+| Decider v1.1 | `D` — nationalism. | `D` — nationalism. | Same answer |
+| Jev | `D` — nationalism. | `D` — nationalism. | Same answer |
+| Microsoft Decision-1 | `D` — nationalism. | `D` — nationalism. | Same answer |
+| Clef | `D` — nationalism. | `D` — nationalism. | Same answer |
+| Luna Decisions | `D` — nationalism. | `D` — nationalism. | Same answer |
+| Clef Flash | `D` — nationalism. | `D` — nationalism. | Same answer |
+| Strands Decider | `D` — nationalism. | `D` — nationalism. | Same answer |
+| GLiNER2.5 Decide | `D` — nationalism. | `B` — diffusion. | Different answer |
+| Laya | `D` — nationalism. | `C` — iconography. | Different answer |
+| CalDec v1 | `D` — nationalism. | `B` — diffusion. | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `mmlu/8ccc30df4a8c7233ef17/event_count/6/clean-source_first_mmlu_other_short_contexts_full_0100`
+
+**Input fingerprint:** `07747755d3dc550f8f7d60a583676a47f86cd7acd3e25f152cced2c90d3d3cca`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 6 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/concepts-and-categorization/mmlu-8ccc30df4a8c7233ef17.md).

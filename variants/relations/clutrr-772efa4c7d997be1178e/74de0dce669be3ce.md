@@ -1,0 +1,107 @@
+# Similar distractors · Add fewer similar but irrelevant items variant
+
+[Original question](../../../questions/relations/clutrr-772efa4c7d997be1178e.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> \[David\] asked his sister \[Michele\] for some money. He was going to use the money to buy his grandfather, \[Jason\], a present.
+>
+> Velora is the mother of Tisven. Tisven is the brother of Merali.
+
+## Question
+
+> What is Michele’s relationship to Jason?
+
+## Answer choices
+
+- **aunt.** aunt
+- **brother.** brother
+- **daughter.** daughter
+- **daughter-in-law.** daughter-in-law
+- **father.** father
+- **father-in-law.** father-in-law
+- **granddaughter.** granddaughter
+- **grandfather.** grandfather
+- **grandmother.** grandmother
+- **grandson.** grandson
+- **mother.** mother
+- **mother-in-law.** mother-in-law
+- **nephew.** nephew
+- **niece.** niece
+- **sister.** sister
+- **son.** son
+- **son-in-law.** son-in-law
+- **uncle.** uncle
+
+**Reference answer:** `granddaughter`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "[David] asked his sister [Michele] for some money. He was going to use the money to buy his grandfather, [Jason], a present.\n\nVelora is the mother of Tisven. Tisven is the brother of Merali.",
+  "question": "What is Michele’s relationship to Jason?",
+  "choices": {
+    "aunt": "aunt",
+    "brother": "brother",
+    "daughter": "daughter",
+    "daughter-in-law": "daughter-in-law",
+    "father": "father",
+    "father-in-law": "father-in-law",
+    "granddaughter": "granddaughter",
+    "grandfather": "grandfather",
+    "grandmother": "grandmother",
+    "grandson": "grandson",
+    "mother": "mother",
+    "mother-in-law": "mother-in-law",
+    "nephew": "nephew",
+    "niece": "niece",
+    "sister": "sister",
+    "son": "son",
+    "son-in-law": "son-in-law",
+    "uncle": "uncle"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `granddaughter` — granddaughter | `granddaughter` — granddaughter | Same answer |
+| Decider v1.1 | `granddaughter` — granddaughter | `granddaughter` — granddaughter | Same answer |
+| Jev | `granddaughter` — granddaughter | `granddaughter` — granddaughter | Same answer |
+| Microsoft Decision-1 | `aunt` — aunt | `aunt` — aunt | Same answer |
+| Clef | `granddaughter` — granddaughter | `aunt` — aunt | Different answer |
+| Luna Decisions | `granddaughter` — granddaughter | `daughter` — daughter | Different answer |
+| Clef Flash | `aunt` — aunt | `niece` — niece | Different answer |
+| Strands Decider | `sister` — sister | `sister` — sister | Same answer |
+| GLiNER2.5 Decide | `sister` — sister | `sister` — sister | Same answer |
+| Laya | `grandfather` — grandfather | `grandfather` — grandfather | Same answer |
+| CalDec v1 | `grandfather` — grandfather | `grandfather` — grandfather | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `clutrr/772efa4c7d997be1178e/similar_distractors/low/clean-source_first_kinship_distractors_full_0142`
+
+**Input fingerprint:** `b75885ece7a5d87230c70d0d438b9511ba247340cd633a2eb13762ebac7d062a`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add fewer similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/clutrr-772efa4c7d997be1178e.md).

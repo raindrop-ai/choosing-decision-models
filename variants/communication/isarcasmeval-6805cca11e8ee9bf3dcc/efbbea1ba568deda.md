@@ -1,0 +1,75 @@
+# Unrelated examples · No worked example (natural-prose recipe) variant
+
+[Original question](../../../questions/communication/isarcasmeval-6805cca11e8ee9bf3dcc.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> using loops, building an idea on that loop, and then deleting the loop has been a fun little exercise recently
+
+## Question
+
+> Is this message intended to be sarcastic?
+>
+> The notebook has a linen cover and stitched binding.
+
+## Answer choices
+
+- **no.** Not sarcastic
+- **yes.** Sarcastic
+
+**Reference answer:** `no`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "using loops, building an idea on that loop, and then deleting the loop has been a fun little exercise recently",
+  "question": "Is this message intended to be sarcastic?\n\nThe notebook has a linen cover and stitched binding.",
+  "choices": {
+    "no": "Not sarcastic",
+    "yes": "Sarcastic"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Decider v1.1 | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Jev | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Microsoft Decision-1 | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Clef | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Luna Decisions | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Clef Flash | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Strands Decider | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| GLiNER2.5 Decide | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Laya | `no` — Not sarcastic | `yes` — Sarcastic | Different answer |
+| CalDec v1 | `yes` — Sarcastic | `no` — Not sarcastic | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `isarcasmeval/6805cca11e8ee9bf3dcc/examples/natural_prose/clean-source_first_sarcasm_residual_completion_full_0245`
+
+**Input fingerprint:** `83006ecd453337b26a06baa3a3130160b551d9d30860d212c31696f8ead70106`
+
+| Change | Recorded version |
+| --- | --- |
+| Unrelated examples | No worked example (natural-prose recipe) |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/communication/isarcasmeval-6805cca11e8ee9bf3dcc.md).

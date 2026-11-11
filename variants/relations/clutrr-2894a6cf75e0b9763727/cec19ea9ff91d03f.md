@@ -1,0 +1,107 @@
+# Repetition · Present the same evidence twice variant
+
+[Original question](../../../questions/relations/clutrr-2894a6cf75e0b9763727.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> \[Ruth\] wanted to meet with her brother, \[Christian\], but she had to cancel when her sister, \[Cristina\], had an emergency that she needed to attend to. \[Nichole\] and her brother \[Sean\] enlisted in the army \[Nichole\] took her father, \[Christian\], out to dinner. \[Pennie\] went to her brother \[Sean\]'s birthday party
+>
+> \[Ruth\] wanted to meet with her brother, \[Christian\], but she had to cancel when her sister, \[Cristina\], had an emergency that she needed to attend to. \[Nichole\] and her brother \[Sean\] enlisted in the army \[Nichole\] took her father, \[Christian\], out to dinner. \[Pennie\] went to her brother \[Sean\]'s birthday party
+
+## Question
+
+> What is Cristina’s relationship to Pennie?
+
+## Answer choices
+
+- **aunt.** aunt
+- **brother.** brother
+- **daughter.** daughter
+- **daughter-in-law.** daughter-in-law
+- **father.** father
+- **father-in-law.** father-in-law
+- **granddaughter.** granddaughter
+- **grandfather.** grandfather
+- **grandmother.** grandmother
+- **grandson.** grandson
+- **mother.** mother
+- **mother-in-law.** mother-in-law
+- **nephew.** nephew
+- **niece.** niece
+- **sister.** sister
+- **son.** son
+- **son-in-law.** son-in-law
+- **uncle.** uncle
+
+**Reference answer:** `aunt`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "[Ruth] wanted to meet with her brother, [Christian], but she had to cancel when her sister, [Cristina], had an emergency that she needed to attend to. [Nichole] and her brother [Sean] enlisted in the army [Nichole] took her father, [Christian], out to dinner. [Pennie] went to her brother [Sean]'s birthday party\n\n[Ruth] wanted to meet with her brother, [Christian], but she had to cancel when her sister, [Cristina], had an emergency that she needed to attend to. [Nichole] and her brother [Sean] enlisted in the army [Nichole] took her father, [Christian], out to dinner. [Pennie] went to her brother [Sean]'s birthday party",
+  "question": "What is Cristina’s relationship to Pennie?",
+  "choices": {
+    "aunt": "aunt",
+    "brother": "brother",
+    "daughter": "daughter",
+    "daughter-in-law": "daughter-in-law",
+    "father": "father",
+    "father-in-law": "father-in-law",
+    "granddaughter": "granddaughter",
+    "grandfather": "grandfather",
+    "grandmother": "grandmother",
+    "grandson": "grandson",
+    "mother": "mother",
+    "mother-in-law": "mother-in-law",
+    "nephew": "nephew",
+    "niece": "niece",
+    "sister": "sister",
+    "son": "son",
+    "son-in-law": "son-in-law",
+    "uncle": "uncle"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `aunt` — aunt | `aunt` — aunt | Same answer |
+| Decider v1.1 | `aunt` — aunt | `aunt` — aunt | Same answer |
+| Jev | `sister` — sister | `sister` — sister | Same answer |
+| Microsoft Decision-1 | `aunt` — aunt | `aunt` — aunt | Same answer |
+| Clef | `niece` — niece | `niece` — niece | Same answer |
+| Luna Decisions | `sister` — sister | Refused | — |
+| Clef Flash | `aunt` — aunt | `aunt` — aunt | Same answer |
+| Strands Decider | `sister` — sister | `sister` — sister | Same answer |
+| GLiNER2.5 Decide | `sister` — sister | `sister` — sister | Same answer |
+| Laya | `brother` — brother | `brother` — brother | Same answer |
+| CalDec v1 | `sister` — sister | `brother` — brother | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `clutrr/2894a6cf75e0b9763727/evidence_repetition/2/clean-source_first_kinship_repetition_remainder_full_0170`
+
+**Input fingerprint:** `041b0707b9220f01511efdab3b4f9a8ae4cb3ece7449074f6f019fdb7960ae19`
+
+| Change | Recorded version |
+| --- | --- |
+| Repetition | Present the same evidence twice |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/clutrr-2894a6cf75e0b9763727.md).

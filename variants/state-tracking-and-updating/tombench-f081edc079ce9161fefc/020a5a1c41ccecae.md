@@ -1,0 +1,79 @@
+# Unrelated examples · No worked example (prose-control recipe) variant
+
+[Original question](../../../questions/state-tracking-and-updating/tombench-f081edc079ce9161fefc.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Xiao Ming and Zhang Wei are wandering in the hall, they see a handbag and a box, they find a sponge in the handbag, Zhang Wei leaves the hall, Xiao Ming moves the sponge to the box.
+>
+> Merovan has a melodic refrain.
+
+## Question
+
+> Where is the sponge now?
+
+## Answer choices
+
+- **A.** Box
+- **B.** Handbag
+- **C.** Storage locker
+- **D.** Briefcase
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Xiao Ming and Zhang Wei are wandering in the hall, they see a handbag and a box, they find a sponge in the handbag, Zhang Wei leaves the hall, Xiao Ming moves the sponge to the box.\n\nMerovan has a melodic refrain.",
+  "question": "Where is the sponge now?",
+  "choices": {
+    "A": "Box",
+    "B": "Handbag",
+    "C": "Storage locker",
+    "D": "Briefcase"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — Box | `A` — Box | Same answer |
+| Decider v1.1 | `A` — Box | `A` — Box | Same answer |
+| Jev | `A` — Box | `A` — Box | Same answer |
+| Microsoft Decision-1 | `A` — Box | `A` — Box | Same answer |
+| Clef | `A` — Box | `A` — Box | Same answer |
+| Luna Decisions | `A` — Box | `A` — Box | Same answer |
+| Clef Flash | `A` — Box | `A` — Box | Same answer |
+| Strands Decider | `A` — Box | `A` — Box | Same answer |
+| GLiNER2.5 Decide | `A` — Box | `B` — Handbag | Different answer |
+| Laya | `A` — Box | `A` — Box | Same answer |
+| CalDec v1 | `A` — Box | `A` — Box | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `tombench/f081edc079ce9161fefc/examples/prose_control/clean-source_first_tombench_music_contexts_full_0155`
+
+**Input fingerprint:** `58587ff383c17a7e8ef4ec3aec899c25284c8931c7355b4fa379d6314df39924`
+
+| Change | Recorded version |
+| --- | --- |
+| Unrelated examples | No worked example (prose-control recipe) |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/state-tracking-and-updating/tombench-f081edc079ce9161fefc.md).

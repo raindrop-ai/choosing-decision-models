@@ -1,0 +1,117 @@
+# Evidence position · Place the relevant information in the middle variant
+
+[Original question](../../../questions/rule-application/rewardbench-a2bcd00b43dc71877831.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+<details>
+<summary>Read the full context</summary>
+
+> The fictional suite Merovan is organized around a refrain that returns with a different harmonic accompaniment each time. Its opening melody begins on the tonic, pauses on the second degree, and resolves through a repeated third. The accompaniment alternates between a sustained chord and a sequence of detached notes. Neither accompaniment replaces the melodic refrain; both provide contrasting rhythmic settings for it. The final cadence retains the opening melody's last interval while changing the chord that supports it. This gives the suite a recognizable connection between its introduction and its conclusion without making their harmonies identical.
+>
+> In Merovan's opening episode, the pulse continues through the rests in the melody. A recurring pattern of two sounded beats and one silent beat creates an expectation that the next phrase sometimes postpones. The melody answers that expectation with a note held across the accompaniment's next attack. On a later return, the accompaniment keeps the same pattern while the melody articulates every beat. The contrast comes from the placement of attacks and rests, rather than a change in the pulse. Both versions conclude with the same rhythmic cadence, giving their different patterns a shared point of arrival.
+>
+> «Write a Rust function \`pluck(arr:Vec&lt;i32&gt;) -&gt; Vec&lt;i32&gt;\` to solve the following problem:
+> "Given an array representing a branch of a tree that has non-negative integer nodes
+> your task is to pluck one of the nodes and return it.
+> The plucked node should be the node with the smallest even value.
+> If multiple nodes with the same smallest even value are found return the node that has smallest index.
+> The plucked node should be returned in a list, \[ smalest\_value, its index \],
+> If there are no even values or the given array is empty, return \[\].
+> Constraints:
+> \* 1 &lt;= nodes.length &lt;= 10000
+> \* 0 &lt;= node.value»
+>
+> A subsequent episode uses a melody whose accented notes imply a different grouping from the accompaniment. The accompaniment continues its regular alternation of consonant chords, while the melody places emphasis on notes that occur between those chord changes. The resulting tension is rhythmic even when the harmonies are stable. When both parts finally articulate the cadence together, their agreement is audible without any change in instrumentation. A later recurrence reverses which part maintains the regular pattern. The melody then provides continuity while the accompaniment introduces the displaced accents, preserving the episode's rhythmic identity through a different distribution of roles.
+>
+> The refrain's harmonic variants have distinct functions within the fictional suite. A tonic accompaniment gives the melody a sense of repose; a dominant accompaniment makes the same melodic notes seem directed toward a resolution. A variant built on the relative minor gives emphasis to a different member of the same pitch collection. The refrain remains recognizable because its sequence of intervals and its rhythm are retained. Its emotional coloring changes through the supporting harmony. Merovan therefore presents recognizability and variation together: the recurring musical idea is neither a literal repetition of an entire episode nor an entirely new melodic subject.
+
+</details>
+
+## Question
+
+> Which response better satisfies the request?
+
+## Answer choices
+
+- **A.** 
+    let mut out:Vec&lt;i32&gt; = vec![];
+
+    for i in 0.. arr.len(){
+        if arr[i]%2 == 0 &amp;&amp; (out.len() == 0 || arr[i]&lt;out[0]){
+        out = vec![arr[i], i as i32];
+        }
+       
+    }
+    return out;
+}
+
+- **B.** 
+    let mut out:Vec&lt;i32&gt; = vec![];
+
+    for i in 0.. arr.len(){
+        if arr[i]%2 == 0 &amp;&amp; (out.len() == 0 || arr[i]&lt;out[0]){
+        out = vec![i as i32, arr[i]];
+        }
+       
+    }
+    return out;
+}
+
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The fictional suite Merovan is organized around a refrain that returns with a different harmonic accompaniment each time. Its opening melody begins on the tonic, pauses on the second degree, and resolves through a repeated third. The accompaniment alternates between a sustained chord and a sequence of detached notes. Neither accompaniment replaces the melodic refrain; both provide contrasting rhythmic settings for it. The final cadence retains the opening melody's last interval while changing the chord that supports it. This gives the suite a recognizable connection between its introduction and its conclusion without making their harmonies identical.\n\nIn Merovan's opening episode, the pulse continues through the rests in the melody. A recurring pattern of two sounded beats and one silent beat creates an expectation that the next phrase sometimes postpones. The melody answers that expectation with a note held across the accompaniment's next attack. On a later return, the accompaniment keeps the same pattern while the melody articulates every beat. The contrast comes from the placement of attacks and rests, rather than a change in the pulse. Both versions conclude with the same rhythmic cadence, giving their different patterns a shared point of arrival.\n\n«Write a Rust function `pluck(arr:Vec<i32>) -> Vec<i32>` to solve the following problem:\n\"Given an array representing a branch of a tree that has non-negative integer nodes\nyour task is to pluck one of the nodes and return it.\nThe plucked node should be the node with the smallest even value.\nIf multiple nodes with the same smallest even value are found return the node that has smallest index.\nThe plucked node should be returned in a list, [ smalest_value, its index ],\nIf there are no even values or the given array is empty, return [].\nConstraints:\n* 1 <= nodes.length <= 10000\n* 0 <= node.value»\n\nA subsequent episode uses a melody whose accented notes imply a different grouping from the accompaniment. The accompaniment continues its regular alternation of consonant chords, while the melody places emphasis on notes that occur between those chord changes. The resulting tension is rhythmic even when the harmonies are stable. When both parts finally articulate the cadence together, their agreement is audible without any change in instrumentation. A later recurrence reverses which part maintains the regular pattern. The melody then provides continuity while the accompaniment introduces the displaced accents, preserving the episode's rhythmic identity through a different distribution of roles.\n\nThe refrain's harmonic variants have distinct functions within the fictional suite. A tonic accompaniment gives the melody a sense of repose; a dominant accompaniment makes the same melodic notes seem directed toward a resolution. A variant built on the relative minor gives emphasis to a different member of the same pitch collection. The refrain remains recognizable because its sequence of intervals and its rhythm are retained. Its emotional coloring changes through the supporting harmony. Merovan therefore presents recognizability and variation together: the recurring musical idea is neither a literal repetition of an entire episode nor an entirely new melodic subject.",
+  "question": "Which response better satisfies the request?",
+  "choices": {
+    "A": "\n    let mut out:Vec<i32> = vec![];\n\n    for i in 0.. arr.len(){\n        if arr[i]%2 == 0 && (out.len() == 0 || arr[i]<out[0]){\n        out = vec![arr[i], i as i32];\n        }\n       \n    }\n    return out;\n}\n",
+    "B": "\n    let mut out:Vec<i32> = vec![];\n\n    for i in 0.. arr.len(){\n        if arr[i]%2 == 0 && (out.len() == 0 || arr[i]<out[0]){\n        out = vec![i as i32, arr[i]];\n        }\n       \n    }\n    return out;\n}\n"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | Same answer |
+| Decider v1.1 | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | Same answer |
+| Jev | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | Same answer |
+| Microsoft Decision-1 | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | Same answer |
+| Clef | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | Same answer |
+| Luna Decisions | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | Same answer |
+| Clef Flash | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | Same answer |
+| Strands Decider | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | Same answer |
+| GLiNER2.5 Decide | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | Same answer |
+| Laya | `B` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[i as i32, arr\[i\]\];         }             }     return out; }  | `B` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[i as i32, arr\[i\]\];         }             }     return out; }  | Same answer |
+| CalDec v1 | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | `A` —      let mut out:Vec&lt;i32&gt; = vec!\[\];      for i in 0.. arr.len(){         if arr\[i\]%2 == 0 &amp;&amp; (out.len() == 0 \|\| arr\[i\]&lt;out\[0\]){         out = vec!\[arr\[i\], i as i32\];         }             }     return out; }  | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `rewardbench/a2bcd00b43dc71877831/evidence_position/middle/clean-source_first_reward_residual_completion_contexts_full_0229`
+
+**Input fingerprint:** `fdac2b209593ac7fcd7d534cdb0e76062cd032c6f4d138288834c8575e166d7c`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence position | Place the relevant information in the middle |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/rule-application/rewardbench-a2bcd00b43dc71877831.md).

@@ -1,0 +1,75 @@
+# Unrelated examples · No worked example (prose-control recipe) variant
+
+[Original question](../../../questions/communication/pub-3918505c670c600f02b0.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Merovan returns to its melodic refrain with a resolving tonic cadence.
+>
+> Sentence : My mom always told me to tackle each difficult situation with confidence, grace, and a 'take no prisoners' attitude.
+
+## Question
+
+> Choose the interpretation or answer requested by the text.
+
+## Answer choices
+
+- **A.** My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude.
+- **B.** My mom always told me to tackle each difficult situation with no confidence, zero grace, and a &#x27;lenient&#x27; attitude.
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Merovan returns to its melodic refrain with a resolving tonic cadence.\n\nSentence : My mom always told me to tackle each difficult situation with confidence, grace, and a 'take no prisoners' attitude.",
+  "question": "Choose the interpretation or answer requested by the text.",
+  "choices": {
+    "A": "My mom always told me to tackle each difficult situation with confidence, grace, and a 'no nonsense' attitude.",
+    "B": "My mom always told me to tackle each difficult situation with no confidence, zero grace, and a 'lenient' attitude."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | Same answer |
+| Decider v1.1 | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | Same answer |
+| Jev | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | Same answer |
+| Microsoft Decision-1 | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | Same answer |
+| Clef | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | Same answer |
+| Luna Decisions | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | Same answer |
+| Clef Flash | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | Same answer |
+| Strands Decider | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | Same answer |
+| GLiNER2.5 Decide | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | Same answer |
+| Laya | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | Same answer |
+| CalDec v1 | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | `A` — My mom always told me to tackle each difficult situation with confidence, grace, and a &#x27;no nonsense&#x27; attitude. | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `pub/3918505c670c600f02b0/examples/prose_control/clean-source_first_pub_prose_controls_full_0168`
+
+**Input fingerprint:** `3d02cac1e53a434d044cd1719b06ad79d21b146ef5d4fc7a04d887445b540474`
+
+| Change | Recorded version |
+| --- | --- |
+| Unrelated examples | No worked example (prose-control recipe) |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/communication/pub-3918505c670c600f02b0.md).

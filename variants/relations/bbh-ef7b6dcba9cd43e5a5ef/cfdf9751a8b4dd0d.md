@@ -1,0 +1,83 @@
+# Misleading details · Add an unverified claim that conflicts with the evidence variant
+
+[Original question](../../../questions/relations/bbh-ef7b6dcba9cd43e5a5ef.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> A reader thinks about the antique car show: «The limousine is the fourth-newest.»
+
+## Question
+
+> The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. In an antique car show, there are seven vehicles: a limousine, a convertible, a station wagon, a minivan, a bus, a tractor, and a truck. The minivan is the oldest. The truck is older than the station wagon. The truck is newer than the limousine. The bus is newer than the convertible. The bus is older than the tractor. The limousine is newer than the tractor.
+
+## Answer choices
+
+- **A.** The limousine is the fourth-newest
+- **B.** The convertible is the fourth-newest
+- **C.** The station wagon is the fourth-newest
+- **D.** The minivan is the fourth-newest
+- **E.** The bus is the fourth-newest
+- **F.** The tractor is the fourth-newest
+- **G.** The truck is the fourth-newest
+
+**Reference answer:** `F`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "A reader thinks about the antique car show: «The limousine is the fourth-newest.»",
+  "question": "The following paragraphs each describe a set of seven objects arranged in a fixed order. The statements are logically consistent within each paragraph. In an antique car show, there are seven vehicles: a limousine, a convertible, a station wagon, a minivan, a bus, a tractor, and a truck. The minivan is the oldest. The truck is older than the station wagon. The truck is newer than the limousine. The bus is newer than the convertible. The bus is older than the tractor. The limousine is newer than the tractor.",
+  "choices": {
+    "A": "The limousine is the fourth-newest",
+    "B": "The convertible is the fourth-newest",
+    "C": "The station wagon is the fourth-newest",
+    "D": "The minivan is the fourth-newest",
+    "E": "The bus is the fourth-newest",
+    "F": "The tractor is the fourth-newest",
+    "G": "The truck is the fourth-newest"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — The limousine is the fourth-newest | `A` — The limousine is the fourth-newest | Same answer |
+| Decider v1.1 | `F` — The tractor is the fourth-newest | `A` — The limousine is the fourth-newest | Different answer |
+| Jev | `F` — The tractor is the fourth-newest | `A` — The limousine is the fourth-newest | Different answer |
+| Microsoft Decision-1 | `A` — The limousine is the fourth-newest | `A` — The limousine is the fourth-newest | Same answer |
+| Clef | `F` — The tractor is the fourth-newest | `F` — The tractor is the fourth-newest | Same answer |
+| Luna Decisions | `A` — The limousine is the fourth-newest | `A` — The limousine is the fourth-newest | Same answer |
+| Clef Flash | `C` — The station wagon is the fourth-newest | `B` — The convertible is the fourth-newest | Different answer |
+| Strands Decider | `C` — The station wagon is the fourth-newest | `A` — The limousine is the fourth-newest | Different answer |
+| GLiNER2.5 Decide | `D` — The minivan is the fourth-newest | `A` — The limousine is the fourth-newest | Different answer |
+| Laya | `G` — The truck is the fourth-newest | `A` — The limousine is the fourth-newest | Different answer |
+| CalDec v1 | `E` — The bus is the fourth-newest | `A` — The limousine is the fourth-newest | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/ef7b6dcba9cd43e5a5ef/misleading_summary/misleading/clean-source_first_ordinal_combined_contexts_full_0139`
+
+**Input fingerprint:** `2eab5c85fa953fef8ee8424439dc2c9ade38b95acb65527d7a8e761aa8fe0edf`
+
+| Change | Recorded version |
+| --- | --- |
+| Misleading details | Add an unverified claim that conflicts with the evidence |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/bbh-ef7b6dcba9cd43e5a5ef.md).

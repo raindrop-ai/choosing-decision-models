@@ -1,0 +1,78 @@
+# Option order · Reverse the answer choices variant
+
+[Original question](../../../questions/state-tracking-and-updating/bbh-42e71a1cafc624473479.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** answer choices or their order.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Question
+
+> Alice, Bob, Claire, Dave, and Eve are on the same team in a soccer match. At the start of the match, they are each assigned to a position: Alice is playing right winger, Bob is playing striker, Claire is playing cheerleader, Dave is playing right midfielder, and Eve is playing left midfielder.
+> As the game progresses, pairs of players occasionally swap positions. First, Eve and Bob trade positions. Then, Eve and Dave trade positions. Then, Alice and Eve trade positions. Then, Bob and Claire trade positions. Finally, Eve and Claire trade positions. At the end of the match, Dave is playing
+
+## Answer choices
+
+- **E.** left midfielder
+- **D.** right midfielder
+- **C.** cheerleader
+- **B.** striker
+- **A.** right winger
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "",
+  "question": "Alice, Bob, Claire, Dave, and Eve are on the same team in a soccer match. At the start of the match, they are each assigned to a position: Alice is playing right winger, Bob is playing striker, Claire is playing cheerleader, Dave is playing right midfielder, and Eve is playing left midfielder.\nAs the game progresses, pairs of players occasionally swap positions. First, Eve and Bob trade positions. Then, Eve and Dave trade positions. Then, Alice and Eve trade positions. Then, Bob and Claire trade positions. Finally, Eve and Claire trade positions. At the end of the match, Dave is playing",
+  "choices": {
+    "E": "left midfielder",
+    "D": "right midfielder",
+    "C": "cheerleader",
+    "B": "striker",
+    "A": "right winger"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — striker | `B` — striker | Same answer |
+| Decider v1.1 | `B` — striker | `B` — striker | Same answer |
+| Jev | `B` — striker | `B` — striker | Same answer |
+| Microsoft Decision-1 | `A` — right winger | `A` — right winger | Same answer |
+| Clef | `D` — right midfielder | `D` — right midfielder | Same answer |
+| Luna Decisions | `E` — left midfielder | `E` — left midfielder | Same answer |
+| Clef Flash | `D` — right midfielder | `D` — right midfielder | Same answer |
+| Strands Decider | `E` — left midfielder | `E` — left midfielder | Same answer |
+| GLiNER2.5 Decide | `A` — right winger | `A` — right winger | Same answer |
+| Laya | `D` — right midfielder | `D` — right midfielder | Same answer |
+| CalDec v1 | `D` — right midfielder | `E` — left midfielder | Different answer |
+
+Clef and Clef Flash sort answer choices in their published input-processing code. Their choice-order results describe that preprocessing.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/42e71a1cafc624473479/option_order/reverse`
+
+**Input fingerprint:** `9099c2d949d053cc7c0f0c7af3b6e43cea8be2e9fecd4d75fcf8d9567d502481`
+
+| Change | Recorded version |
+| --- | --- |
+| Option order | Reverse the answer choices |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/state-tracking-and-updating/bbh-42e71a1cafc624473479.md).

@@ -1,0 +1,9 @@
+{
+  "format": "openai-chat",
+  "endpoint": "https://your-provider.example/v1/chat/completions",
+  "model_id": "your-provider-model-id",
+  "auth": "bearer",
+  "api_key_env": "MODEL_API_KEY",
+  "structured_output": "json_schema",
+  "request_parameters": {"max_tokens": 1024, "temperature": 0}
+}

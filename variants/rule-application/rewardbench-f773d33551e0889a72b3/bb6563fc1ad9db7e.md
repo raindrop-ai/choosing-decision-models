@@ -1,0 +1,156 @@
+# Repetition · Present the same evidence three times variant
+
+[Original question](../../../questions/rule-application/rewardbench-f773d33551e0889a72b3.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+<details>
+<summary>Read the full context</summary>
+
+> Write a Python function \`eat(number, need, remaining)\` to solve the following problem:
+> You're a hungry rabbit, and you already have eaten a certain number of carrots,
+> but now you need to eat more carrots to complete the day's meals.
+> you should return an array of \[ total number of eaten carrots after your meals,
+> the number of carrots left after your meals \]
+> if there are not enough remaining carrots, you will eat all remaining carrots, but will still be hungry.
+> Example:
+> \* eat(5, 6, 10) -&gt; \[11, 4\]
+> \* eat(4, 8, 9) -&gt; \[12, 1\]
+> \* eat(1, 10, 10) -&gt; \[11, 0\]
+> \* eat(2, 11, 5) -&gt; \[7, 0\]
+> Variables:
+> @number : integer
+> the number of carrots that you have eaten.
+> @need : integer
+> the number of carrots that you need to eat.
+> @remaining : integer
+> the number of remaining carrots thet exist in stock
+> Constrain:
+> \* 0 &lt;= number &lt;= 1000
+> \* 0 &lt;= need &lt;= 1000
+> \* 0 &lt;= remaining &lt;= 1000
+> Have fun :)
+>
+> Write a Python function \`eat(number, need, remaining)\` to solve the following problem:
+> You're a hungry rabbit, and you already have eaten a certain number of carrots,
+> but now you need to eat more carrots to complete the day's meals.
+> you should return an array of \[ total number of eaten carrots after your meals,
+> the number of carrots left after your meals \]
+> if there are not enough remaining carrots, you will eat all remaining carrots, but will still be hungry.
+> Example:
+> \* eat(5, 6, 10) -&gt; \[11, 4\]
+> \* eat(4, 8, 9) -&gt; \[12, 1\]
+> \* eat(1, 10, 10) -&gt; \[11, 0\]
+> \* eat(2, 11, 5) -&gt; \[7, 0\]
+> Variables:
+> @number : integer
+> the number of carrots that you have eaten.
+> @need : integer
+> the number of carrots that you need to eat.
+> @remaining : integer
+> the number of remaining carrots thet exist in stock
+> Constrain:
+> \* 0 &lt;= number &lt;= 1000
+> \* 0 &lt;= need &lt;= 1000
+> \* 0 &lt;= remaining &lt;= 1000
+> Have fun :)
+>
+> Write a Python function \`eat(number, need, remaining)\` to solve the following problem:
+> You're a hungry rabbit, and you already have eaten a certain number of carrots,
+> but now you need to eat more carrots to complete the day's meals.
+> you should return an array of \[ total number of eaten carrots after your meals,
+> the number of carrots left after your meals \]
+> if there are not enough remaining carrots, you will eat all remaining carrots, but will still be hungry.
+> Example:
+> \* eat(5, 6, 10) -&gt; \[11, 4\]
+> \* eat(4, 8, 9) -&gt; \[12, 1\]
+> \* eat(1, 10, 10) -&gt; \[11, 0\]
+> \* eat(2, 11, 5) -&gt; \[7, 0\]
+> Variables:
+> @number : integer
+> the number of carrots that you have eaten.
+> @need : integer
+> the number of carrots that you need to eat.
+> @remaining : integer
+> the number of remaining carrots thet exist in stock
+> Constrain:
+> \* 0 &lt;= number &lt;= 1000
+> \* 0 &lt;= need &lt;= 1000
+> \* 0 &lt;= remaining &lt;= 1000
+> Have fun :)
+
+</details>
+
+## Question
+
+> Which response better satisfies the request?
+
+## Answer choices
+
+- **A.**     if(need &lt;= remaining):
+        return [ number + need , number + remaining-need ]
+    else:
+        return [ number + need + remaining , 0]
+
+- **B.**     if(need &lt;= remaining):
+        return [ number + need , remaining-need ]
+    else:
+        return [ number + remaining , 0]
+
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Write a Python function `eat(number, need, remaining)` to solve the following problem:\nYou're a hungry rabbit, and you already have eaten a certain number of carrots,\nbut now you need to eat more carrots to complete the day's meals.\nyou should return an array of [ total number of eaten carrots after your meals,\nthe number of carrots left after your meals ]\nif there are not enough remaining carrots, you will eat all remaining carrots, but will still be hungry.\nExample:\n* eat(5, 6, 10) -> [11, 4]\n* eat(4, 8, 9) -> [12, 1]\n* eat(1, 10, 10) -> [11, 0]\n* eat(2, 11, 5) -> [7, 0]\nVariables:\n@number : integer\nthe number of carrots that you have eaten.\n@need : integer\nthe number of carrots that you need to eat.\n@remaining : integer\nthe number of remaining carrots thet exist in stock\nConstrain:\n* 0 <= number <= 1000\n* 0 <= need <= 1000\n* 0 <= remaining <= 1000\nHave fun :)\n\nWrite a Python function `eat(number, need, remaining)` to solve the following problem:\nYou're a hungry rabbit, and you already have eaten a certain number of carrots,\nbut now you need to eat more carrots to complete the day's meals.\nyou should return an array of [ total number of eaten carrots after your meals,\nthe number of carrots left after your meals ]\nif there are not enough remaining carrots, you will eat all remaining carrots, but will still be hungry.\nExample:\n* eat(5, 6, 10) -> [11, 4]\n* eat(4, 8, 9) -> [12, 1]\n* eat(1, 10, 10) -> [11, 0]\n* eat(2, 11, 5) -> [7, 0]\nVariables:\n@number : integer\nthe number of carrots that you have eaten.\n@need : integer\nthe number of carrots that you need to eat.\n@remaining : integer\nthe number of remaining carrots thet exist in stock\nConstrain:\n* 0 <= number <= 1000\n* 0 <= need <= 1000\n* 0 <= remaining <= 1000\nHave fun :)\n\nWrite a Python function `eat(number, need, remaining)` to solve the following problem:\nYou're a hungry rabbit, and you already have eaten a certain number of carrots,\nbut now you need to eat more carrots to complete the day's meals.\nyou should return an array of [ total number of eaten carrots after your meals,\nthe number of carrots left after your meals ]\nif there are not enough remaining carrots, you will eat all remaining carrots, but will still be hungry.\nExample:\n* eat(5, 6, 10) -> [11, 4]\n* eat(4, 8, 9) -> [12, 1]\n* eat(1, 10, 10) -> [11, 0]\n* eat(2, 11, 5) -> [7, 0]\nVariables:\n@number : integer\nthe number of carrots that you have eaten.\n@need : integer\nthe number of carrots that you need to eat.\n@remaining : integer\nthe number of remaining carrots thet exist in stock\nConstrain:\n* 0 <= number <= 1000\n* 0 <= need <= 1000\n* 0 <= remaining <= 1000\nHave fun :)",
+  "question": "Which response better satisfies the request?",
+  "choices": {
+    "A": "    if(need <= remaining):\n        return [ number + need , number + remaining-need ]\n    else:\n        return [ number + need + remaining , 0]\n",
+    "B": "    if(need <= remaining):\n        return [ number + need , remaining-need ]\n    else:\n        return [ number + remaining , 0]\n"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | Same answer |
+| Decider v1.1 | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | Same answer |
+| Jev | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | Same answer |
+| Microsoft Decision-1 | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | Same answer |
+| Clef | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | Same answer |
+| Luna Decisions | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | Same answer |
+| Clef Flash | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | Same answer |
+| Strands Decider | `A` —     if(need &lt;= remaining):         return \[ number + need , number + remaining-need \]     else:         return \[ number + need + remaining , 0\]  | `A` —     if(need &lt;= remaining):         return \[ number + need , number + remaining-need \]     else:         return \[ number + need + remaining , 0\]  | Same answer |
+| GLiNER2.5 Decide | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | `B` —     if(need &lt;= remaining):         return \[ number + need , remaining-need \]     else:         return \[ number + remaining , 0\]  | Same answer |
+| Laya | `A` —     if(need &lt;= remaining):         return \[ number + need , number + remaining-need \]     else:         return \[ number + need + remaining , 0\]  | `A` —     if(need &lt;= remaining):         return \[ number + need , number + remaining-need \]     else:         return \[ number + need + remaining , 0\]  | Same answer |
+| CalDec v1 | `A` —     if(need &lt;= remaining):         return \[ number + need , number + remaining-need \]     else:         return \[ number + need + remaining , 0\]  | `A` —     if(need &lt;= remaining):         return \[ number + need , number + remaining-need \]     else:         return \[ number + need + remaining , 0\]  | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `rewardbench/f773d33551e0889a72b3/evidence_repetition/3/clean-source_first_reward_pub_companions_full_0204`
+
+**Input fingerprint:** `3ef21b44e22df97b2964ddea80f4df3a4b49e4556dcdf38aea1fa70c34105f3b`
+
+| Change | Recorded version |
+| --- | --- |
+| Repetition | Present the same evidence three times |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/rule-application/rewardbench-f773d33551e0889a72b3.md).

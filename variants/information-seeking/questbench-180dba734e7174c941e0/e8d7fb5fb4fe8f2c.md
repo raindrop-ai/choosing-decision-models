@@ -1,0 +1,78 @@
+# Extra events · Add 12 unrelated events variant
+
+[Original question](../../../questions/information-seeking/questbench-180dba734e7174c941e0.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Nolan is the editor of a poetry catalog. Its entries are Virel, Zorven, Kesil, Nereth, Pavrel, and Sovrin.
+> Nolan classifies Virel as a dialogue. Nolan classifies Zorven as a monologue. Nolan classifies Kesil as an elegy. Nolan classifies Nereth as a satire. Nolan classifies Pavrel as a fable. Nolan classifies Sovrin as a ballad. Nolan reclassifies Virel as a monologue. Nolan reclassifies Zorven as a dialogue. Nolan reclassifies Kesil as a ballad. Nolan reclassifies Nereth as a fable. Nolan reclassifies Pavrel as a satire. Nolan reclassifies Sovrin as an elegy.
+>
+> Johnny, on the other hand, bought 2 more face masks than thrice the number of face masks Mike bought. How many face masks did Johnny buy?
+
+## Question
+
+> Which missing variable should be asked about to solve this problem?
+
+## Answer choices
+
+- **M.** Number of face masks Mike bought
+- **X1.** Number of gloves Johnny bought
+- **X2.** Number of hand sanitizers Mike bought
+
+**Reference answer:** `M`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Nolan is the editor of a poetry catalog. Its entries are Virel, Zorven, Kesil, Nereth, Pavrel, and Sovrin.\nNolan classifies Virel as a dialogue. Nolan classifies Zorven as a monologue. Nolan classifies Kesil as an elegy. Nolan classifies Nereth as a satire. Nolan classifies Pavrel as a fable. Nolan classifies Sovrin as a ballad. Nolan reclassifies Virel as a monologue. Nolan reclassifies Zorven as a dialogue. Nolan reclassifies Kesil as a ballad. Nolan reclassifies Nereth as a fable. Nolan reclassifies Pavrel as a satire. Nolan reclassifies Sovrin as an elegy.\n\nJohnny, on the other hand, bought 2 more face masks than thrice the number of face masks Mike bought. How many face masks did Johnny buy?",
+  "question": "Which missing variable should be asked about to solve this problem?",
+  "choices": {
+    "M": "Number of face masks Mike bought",
+    "X1": "Number of gloves Johnny bought",
+    "X2": "Number of hand sanitizers Mike bought"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `M` — Number of face masks Mike bought | `M` — Number of face masks Mike bought | Same answer |
+| Decider v1.1 | `M` — Number of face masks Mike bought | `M` — Number of face masks Mike bought | Same answer |
+| Jev | `M` — Number of face masks Mike bought | `M` — Number of face masks Mike bought | Same answer |
+| Microsoft Decision-1 | `M` — Number of face masks Mike bought | `M` — Number of face masks Mike bought | Same answer |
+| Clef | `M` — Number of face masks Mike bought | `M` — Number of face masks Mike bought | Same answer |
+| Luna Decisions | `M` — Number of face masks Mike bought | `M` — Number of face masks Mike bought | Same answer |
+| Clef Flash | `M` — Number of face masks Mike bought | `M` — Number of face masks Mike bought | Same answer |
+| Strands Decider | `M` — Number of face masks Mike bought | `M` — Number of face masks Mike bought | Same answer |
+| GLiNER2.5 Decide | `M` — Number of face masks Mike bought | `M` — Number of face masks Mike bought | Same answer |
+| Laya | `M` — Number of face masks Mike bought | `M` — Number of face masks Mike bought | Same answer |
+| CalDec v1 | `M` — Number of face masks Mike bought | `M` — Number of face masks Mike bought | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `questbench/180dba734e7174c941e0/event_count/12/clean-source_first_quest_literary_contexts_full_0077`
+
+**Input fingerprint:** `2b2c4cb0fbcd98847fc7f93661dacedf3c37bf14183f132c34698a83d9b320b6`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 12 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/information-seeking/questbench-180dba734e7174c941e0.md).

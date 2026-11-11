@@ -1,0 +1,196 @@
+model,ability,selected,answered,correct,accuracy,coverage
+astra,Perception and attention (retrieval),67,67,67,1.0,1.0
+astra,State tracking and updating,67,67,67,1.0,1.0
+astra,Concepts and categorization,67,67,67,1.0,1.0
+astra,Relations,67,67,67,1.0,1.0
+astra,Analogy,67,67,66,0.9850746268656716,1.0
+astra,Learning and induction,67,67,67,1.0,1.0
+astra,Physical cognition,67,67,66,0.9850746268656716,1.0
+astra,Spatial cognition,67,67,66,0.9850746268656716,1.0
+astra,Numerical cognition,67,67,67,1.0,1.0
+astra,Causal reasoning,67,67,67,1.0,1.0
+astra,Metacognition/Uncertainty monitoring (risk),67,67,66,0.9850746268656716,1.0
+astra,Information seeking (information gain),67,67,67,1.0,1.0
+astra,Social cognition,67,67,67,1.0,1.0
+astra,Communication,67,67,65,0.9701492537313433,1.0
+astra,Rule application,67,67,67,1.0,1.0
+opus55,Perception and attention (retrieval),67,67,67,1.0,1.0
+opus55,State tracking and updating,67,67,67,1.0,1.0
+opus55,Concepts and categorization,67,67,65,0.9701492537313433,1.0
+opus55,Relations,67,67,67,1.0,1.0
+opus55,Analogy,67,67,65,0.9701492537313433,1.0
+opus55,Learning and induction,67,67,67,1.0,1.0
+opus55,Physical cognition,67,67,66,0.9850746268656716,1.0
+opus55,Spatial cognition,67,67,67,1.0,1.0
+opus55,Numerical cognition,67,67,67,1.0,1.0
+opus55,Causal reasoning,67,66,66,1.0,0.9850746268656716
+opus55,Metacognition/Uncertainty monitoring (risk),67,67,67,1.0,1.0
+opus55,Information seeking (information gain),67,67,67,1.0,1.0
+opus55,Social cognition,67,67,67,1.0,1.0
+opus55,Communication,67,67,66,0.9850746268656716,1.0
+opus55,Rule application,67,66,66,1.0,0.9850746268656716
+glide,Perception and attention (retrieval),67,67,67,1.0,1.0
+glide,State tracking and updating,67,67,65,0.9701492537313433,1.0
+glide,Concepts and categorization,67,67,65,0.9701492537313433,1.0
+glide,Relations,67,67,59,0.8805970149253731,1.0
+glide,Analogy,67,67,58,0.8656716417910447,1.0
+glide,Learning and induction,67,67,65,0.9701492537313433,1.0
+glide,Physical cognition,67,67,63,0.9402985074626866,1.0
+glide,Spatial cognition,67,67,66,0.9850746268656716,1.0
+glide,Numerical cognition,67,67,59,0.8805970149253731,1.0
+glide,Causal reasoning,67,67,66,0.9850746268656716,1.0
+glide,Metacognition/Uncertainty monitoring (risk),67,67,61,0.9104477611940298,1.0
+glide,Information seeking (information gain),67,67,67,1.0,1.0
+glide,Social cognition,67,67,61,0.9104477611940298,1.0
+glide,Communication,67,67,66,0.9850746268656716,1.0
+glide,Rule application,67,67,66,0.9850746268656716,1.0
+decider11,Perception and attention (retrieval),67,67,67,1.0,1.0
+decider11,State tracking and updating,67,67,54,0.8059701492537313,1.0
+decider11,Concepts and categorization,67,67,64,0.9552238805970149,1.0
+decider11,Relations,67,67,55,0.8208955223880597,1.0
+decider11,Analogy,67,67,53,0.7910447761194029,1.0
+decider11,Learning and induction,67,67,65,0.9701492537313433,1.0
+decider11,Physical cognition,67,67,64,0.9552238805970149,1.0
+decider11,Spatial cognition,67,67,65,0.9701492537313433,1.0
+decider11,Numerical cognition,67,67,57,0.8507462686567164,1.0
+decider11,Causal reasoning,67,67,61,0.9104477611940298,1.0
+decider11,Metacognition/Uncertainty monitoring (risk),67,67,56,0.835820895522388,1.0
+decider11,Information seeking (information gain),67,67,65,0.9701492537313433,1.0
+decider11,Social cognition,67,67,64,0.9552238805970149,1.0
+decider11,Communication,67,67,66,0.9850746268656716,1.0
+decider11,Rule application,67,67,63,0.9402985074626866,1.0
+jev,Perception and attention (retrieval),67,67,64,0.9552238805970149,1.0
+jev,State tracking and updating,67,67,60,0.8955223880597015,1.0
+jev,Concepts and categorization,67,67,65,0.9701492537313433,1.0
+jev,Relations,67,67,55,0.8208955223880597,1.0
+jev,Analogy,67,67,43,0.6417910447761194,1.0
+jev,Learning and induction,67,67,54,0.8059701492537313,1.0
+jev,Physical cognition,67,67,63,0.9402985074626866,1.0
+jev,Spatial cognition,67,67,52,0.7761194029850746,1.0
+jev,Numerical cognition,67,67,65,0.9701492537313433,1.0
+jev,Causal reasoning,67,67,62,0.9253731343283582,1.0
+jev,Metacognition/Uncertainty monitoring (risk),67,67,64,0.9552238805970149,1.0
+jev,Information seeking (information gain),67,67,66,0.9850746268656716,1.0
+jev,Social cognition,67,67,59,0.8805970149253731,1.0
+jev,Communication,67,67,64,0.9552238805970149,1.0
+jev,Rule application,67,67,56,0.835820895522388,1.0
+microsoft-decision-1,Perception and attention (retrieval),67,66,66,1.0,0.9850746268656716
+microsoft-decision-1,State tracking and updating,67,67,44,0.6567164179104478,1.0
+microsoft-decision-1,Concepts and categorization,67,67,63,0.9402985074626866,1.0
+microsoft-decision-1,Relations,67,67,45,0.6716417910447762,1.0
+microsoft-decision-1,Analogy,67,67,35,0.5223880597014925,1.0
+microsoft-decision-1,Learning and induction,67,67,49,0.7313432835820896,1.0
+microsoft-decision-1,Physical cognition,67,67,60,0.8955223880597015,1.0
+microsoft-decision-1,Spatial cognition,67,67,62,0.9253731343283582,1.0
+microsoft-decision-1,Numerical cognition,67,67,51,0.7611940298507462,1.0
+microsoft-decision-1,Causal reasoning,67,67,58,0.8656716417910447,1.0
+microsoft-decision-1,Metacognition/Uncertainty monitoring (risk),67,67,65,0.9701492537313433,1.0
+microsoft-decision-1,Information seeking (information gain),67,67,66,0.9850746268656716,1.0
+microsoft-decision-1,Social cognition,67,67,56,0.835820895522388,1.0
+microsoft-decision-1,Communication,67,67,64,0.9552238805970149,1.0
+microsoft-decision-1,Rule application,67,67,62,0.9253731343283582,1.0
+clef,Perception and attention (retrieval),67,67,67,1.0,1.0
+clef,State tracking and updating,67,67,45,0.6716417910447762,1.0
+clef,Concepts and categorization,67,67,64,0.9552238805970149,1.0
+clef,Relations,67,67,42,0.6268656716417911,1.0
+clef,Analogy,67,67,58,0.8656716417910447,1.0
+clef,Learning and induction,67,67,46,0.6865671641791045,1.0
+clef,Physical cognition,67,67,59,0.8805970149253731,1.0
+clef,Spatial cognition,67,67,46,0.6865671641791045,1.0
+clef,Numerical cognition,67,67,46,0.6865671641791045,1.0
+clef,Causal reasoning,67,67,62,0.9253731343283582,1.0
+clef,Metacognition/Uncertainty monitoring (risk),67,67,62,0.9253731343283582,1.0
+clef,Information seeking (information gain),67,67,67,1.0,1.0
+clef,Social cognition,67,67,59,0.8805970149253731,1.0
+clef,Communication,67,67,60,0.8955223880597015,1.0
+clef,Rule application,67,67,52,0.7761194029850746,1.0
+openai-decisions,Perception and attention (retrieval),67,67,65,0.9701492537313433,1.0
+openai-decisions,State tracking and updating,67,67,38,0.5671641791044776,1.0
+openai-decisions,Concepts and categorization,67,67,63,0.9402985074626866,1.0
+openai-decisions,Relations,67,62,33,0.532258064516129,0.9253731343283582
+openai-decisions,Analogy,67,67,46,0.6865671641791045,1.0
+openai-decisions,Learning and induction,67,67,53,0.7910447761194029,1.0
+openai-decisions,Physical cognition,67,65,60,0.9230769230769231,0.9701492537313433
+openai-decisions,Spatial cognition,67,67,40,0.5970149253731343,1.0
+openai-decisions,Numerical cognition,67,66,46,0.696969696969697,0.9850746268656716
+openai-decisions,Causal reasoning,67,67,53,0.7910447761194029,1.0
+openai-decisions,Metacognition/Uncertainty monitoring (risk),67,67,51,0.7611940298507462,1.0
+openai-decisions,Information seeking (information gain),67,67,65,0.9701492537313433,1.0
+openai-decisions,Social cognition,67,67,58,0.8656716417910447,1.0
+openai-decisions,Communication,67,67,57,0.8507462686567164,1.0
+openai-decisions,Rule application,67,67,49,0.7313432835820896,1.0
+clef-flash,Perception and attention (retrieval),67,67,66,0.9850746268656716,1.0
+clef-flash,State tracking and updating,67,67,37,0.5522388059701493,1.0
+clef-flash,Concepts and categorization,67,67,65,0.9701492537313433,1.0
+clef-flash,Relations,67,67,37,0.5522388059701493,1.0
+clef-flash,Analogy,67,67,34,0.5074626865671642,1.0
+clef-flash,Learning and induction,67,67,46,0.6865671641791045,1.0
+clef-flash,Physical cognition,67,67,58,0.8656716417910447,1.0
+clef-flash,Spatial cognition,67,67,44,0.6567164179104478,1.0
+clef-flash,Numerical cognition,67,67,36,0.5373134328358209,1.0
+clef-flash,Causal reasoning,67,67,66,0.9850746268656716,1.0
+clef-flash,Metacognition/Uncertainty monitoring (risk),67,67,61,0.9104477611940298,1.0
+clef-flash,Information seeking (information gain),67,67,62,0.9253731343283582,1.0
+clef-flash,Social cognition,67,67,52,0.7761194029850746,1.0
+clef-flash,Communication,67,67,56,0.835820895522388,1.0
+clef-flash,Rule application,67,67,48,0.7164179104477612,1.0
+strands,Perception and attention (retrieval),67,67,67,1.0,1.0
+strands,State tracking and updating,67,67,30,0.44776119402985076,1.0
+strands,Concepts and categorization,67,67,59,0.8805970149253731,1.0
+strands,Relations,67,67,26,0.3880597014925373,1.0
+strands,Analogy,67,67,27,0.40298507462686567,1.0
+strands,Learning and induction,67,67,48,0.7164179104477612,1.0
+strands,Physical cognition,67,67,52,0.7761194029850746,1.0
+strands,Spatial cognition,67,67,46,0.6865671641791045,1.0
+strands,Numerical cognition,67,67,39,0.582089552238806,1.0
+strands,Causal reasoning,67,67,40,0.5970149253731343,1.0
+strands,Metacognition/Uncertainty monitoring (risk),67,67,50,0.746268656716418,1.0
+strands,Information seeking (information gain),67,67,60,0.8955223880597015,1.0
+strands,Social cognition,67,67,47,0.7014925373134329,1.0
+strands,Communication,67,67,46,0.6865671641791045,1.0
+strands,Rule application,67,67,41,0.6119402985074627,1.0
+gliner,Perception and attention (retrieval),67,67,47,0.7014925373134329,1.0
+gliner,State tracking and updating,67,67,24,0.3582089552238806,1.0
+gliner,Concepts and categorization,67,67,44,0.6567164179104478,1.0
+gliner,Relations,67,67,11,0.16417910447761194,1.0
+gliner,Analogy,67,67,17,0.2537313432835821,1.0
+gliner,Learning and induction,67,67,22,0.3283582089552239,1.0
+gliner,Physical cognition,67,67,21,0.31343283582089554,1.0
+gliner,Spatial cognition,67,67,22,0.3283582089552239,1.0
+gliner,Numerical cognition,67,67,24,0.3582089552238806,1.0
+gliner,Causal reasoning,67,67,35,0.5223880597014925,1.0
+gliner,Metacognition/Uncertainty monitoring (risk),67,67,38,0.5671641791044776,1.0
+gliner,Information seeking (information gain),67,67,22,0.3283582089552239,1.0
+gliner,Social cognition,67,67,41,0.6119402985074627,1.0
+gliner,Communication,67,67,38,0.5671641791044776,1.0
+gliner,Rule application,67,67,23,0.34328358208955223,1.0
+laya,Perception and attention (retrieval),67,67,55,0.8208955223880597,1.0
+laya,State tracking and updating,67,67,21,0.31343283582089554,1.0
+laya,Concepts and categorization,67,67,48,0.7164179104477612,1.0
+laya,Relations,67,67,13,0.19402985074626866,1.0
+laya,Analogy,67,67,5,0.07462686567164178,1.0
+laya,Learning and induction,67,67,13,0.19402985074626866,1.0
+laya,Physical cognition,67,67,23,0.34328358208955223,1.0
+laya,Spatial cognition,67,67,22,0.3283582089552239,1.0
+laya,Numerical cognition,67,67,19,0.2835820895522388,1.0
+laya,Causal reasoning,67,67,37,0.5522388059701493,1.0
+laya,Metacognition/Uncertainty monitoring (risk),67,67,25,0.373134328358209,1.0
+laya,Information seeking (information gain),67,67,41,0.6119402985074627,1.0
+laya,Social cognition,67,67,34,0.5074626865671642,1.0
+laya,Communication,67,67,36,0.5373134328358209,1.0
+laya,Rule application,67,67,24,0.3582089552238806,1.0
+caldec,Perception and attention (retrieval),67,67,54,0.8059701492537313,1.0
+caldec,State tracking and updating,67,67,22,0.3283582089552239,1.0
+caldec,Concepts and categorization,67,67,48,0.7164179104477612,1.0
+caldec,Relations,67,67,11,0.16417910447761194,1.0
+caldec,Analogy,67,67,13,0.19402985074626866,1.0
+caldec,Learning and induction,67,67,14,0.208955223880597,1.0
+caldec,Physical cognition,67,67,18,0.26865671641791045,1.0
+caldec,Spatial cognition,67,67,24,0.3582089552238806,1.0
+caldec,Numerical cognition,67,67,13,0.19402985074626866,1.0
+caldec,Causal reasoning,67,67,34,0.5074626865671642,1.0
+caldec,Metacognition/Uncertainty monitoring (risk),67,67,21,0.31343283582089554,1.0
+caldec,Information seeking (information gain),67,67,38,0.5671641791044776,1.0
+caldec,Social cognition,67,67,34,0.5074626865671642,1.0
+caldec,Communication,67,67,38,0.5671641791044776,1.0
+caldec,Rule application,67,67,26,0.3880597014925373,1.0

@@ -1,0 +1,75 @@
+# Misleading details · Add an unverified claim that conflicts with the evidence variant
+
+[Original question](../../../questions/social-cognition/bigtom-05e6dff38285aada67db.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Rohit is a renowned painter from India who has been commissioned to create a mural on a city building. Rohit wants to paint an intricate scene depicting the vibrant culture and history of India. Rohit selects a set of high-quality, long-lasting paint colors for the mural. Rohit believes that the paint colors he has chosen are of the highest quality and will last for years. While Rohit is out for lunch, a leak in the ceiling drips water onto the paint colors, diluting them and making them less durable. Rohit does not notice the water-damaged paint colors.
+>
+> A reader thinks: «Rohit believes the paint colors are water-damaged and less durable.»
+
+## Question
+
+> Does Rohit believe the paint colors are of high quality and long-lasting or water-damaged and less durable?
+
+## Answer choices
+
+- **A.** Rohit believes the paint colors are water-damaged and less durable.
+- **B.** Rohit believes the paint colors are of high quality and long-lasting.
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Rohit is a renowned painter from India who has been commissioned to create a mural on a city building. Rohit wants to paint an intricate scene depicting the vibrant culture and history of India. Rohit selects a set of high-quality, long-lasting paint colors for the mural. Rohit believes that the paint colors he has chosen are of the highest quality and will last for years. While Rohit is out for lunch, a leak in the ceiling drips water onto the paint colors, diluting them and making them less durable. Rohit does not notice the water-damaged paint colors.\n\nA reader thinks: «Rohit believes the paint colors are water-damaged and less durable.»",
+  "question": "Does Rohit believe the paint colors are of high quality and long-lasting or water-damaged and less durable?",
+  "choices": {
+    "A": "Rohit believes the paint colors are water-damaged and less durable.",
+    "B": "Rohit believes the paint colors are of high quality and long-lasting."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — Rohit believes the paint colors are of high quality and long-lasting. | `B` — Rohit believes the paint colors are of high quality and long-lasting. | Same answer |
+| Decider v1.1 | `B` — Rohit believes the paint colors are of high quality and long-lasting. | `B` — Rohit believes the paint colors are of high quality and long-lasting. | Same answer |
+| Jev | `B` — Rohit believes the paint colors are of high quality and long-lasting. | `B` — Rohit believes the paint colors are of high quality and long-lasting. | Same answer |
+| Microsoft Decision-1 | `B` — Rohit believes the paint colors are of high quality and long-lasting. | `B` — Rohit believes the paint colors are of high quality and long-lasting. | Same answer |
+| Clef | `B` — Rohit believes the paint colors are of high quality and long-lasting. | `B` — Rohit believes the paint colors are of high quality and long-lasting. | Same answer |
+| Luna Decisions | `B` — Rohit believes the paint colors are of high quality and long-lasting. | `B` — Rohit believes the paint colors are of high quality and long-lasting. | Same answer |
+| Clef Flash | `B` — Rohit believes the paint colors are of high quality and long-lasting. | `B` — Rohit believes the paint colors are of high quality and long-lasting. | Same answer |
+| Strands Decider | `B` — Rohit believes the paint colors are of high quality and long-lasting. | `B` — Rohit believes the paint colors are of high quality and long-lasting. | Same answer |
+| GLiNER2.5 Decide | `B` — Rohit believes the paint colors are of high quality and long-lasting. | `A` — Rohit believes the paint colors are water-damaged and less durable. | Different answer |
+| Laya | `A` — Rohit believes the paint colors are water-damaged and less durable. | `A` — Rohit believes the paint colors are water-damaged and less durable. | Same answer |
+| CalDec v1 | `A` — Rohit believes the paint colors are water-damaged and less durable. | `A` — Rohit believes the paint colors are water-damaged and less durable. | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bigtom/05e6dff38285aada67db/misleading_summary/misleading/clean-source_first_belief_toxicity_contexts_full_0150`
+
+**Input fingerprint:** `f5d0f66b3a7123e44a45fc0610bd2b02db8a951f2284c6d8dbc2a25cec3df187`
+
+| Change | Recorded version |
+| --- | --- |
+| Misleading details | Add an unverified claim that conflicts with the evidence |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/social-cognition/bigtom-05e6dff38285aada67db.md).

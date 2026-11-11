@@ -1,0 +1,57 @@
+{
+  "scope": "Current 1,005 original-question baseline; eight shared-physical-A100 model runs plus five saved hosted-model runs",
+  "sources": {
+    "cases.jsonl": "e2352713347ffafa33a11d1794cd85bf17fda81c689844438e9c8e7a49acfa19",
+    "preflight.json": "44b44c2e23c930cb9a41d2454730aa378dd2976b81b67d70d8990ef9d48aabaa"
+  },
+  "input_hash_definition": "SHA256 of UTF-8 json.dumps({state,question,choices:list(choices.items())}, sort_keys=True, ensure_ascii=False)",
+  "format_counts": {
+    "native_choices": 802,
+    "adapted_choices": 203
+  },
+  "primary_llm_baselines": [
+    "astra",
+    "opus55"
+  ],
+  "opus_screening_overlap": 238,
+  "astra_screening_overlap": 0,
+  "exclusions": "Reviewer outputs, budgets, ledgers, provider raw responses, credentials, model weights and site figure components.",
+  "current_results": {
+    "replacement_source_sha256": {
+      "predictions": "5af458f65fab0e080c949c45a773750d1919f53f74a3001e071e8b1f9299cf17",
+      "configurations": "abd3657baa378a68700b4e18834e400dd21c93078faa2e1f5fc9ce0e940b3ae6"
+    },
+    "replaced_models": [
+      "caldec",
+      "clef",
+      "clef-flash",
+      "decider11",
+      "glide",
+      "gliner",
+      "laya",
+      "strands"
+    ],
+    "retained_models": [
+      "astra",
+      "opus55",
+      "jev",
+      "microsoft-decision-1",
+      "openai-decisions"
+    ],
+    "reference_kind": "Tables regenerated from validated current per-question records; not an independent replication.",
+    "run_date": "2026-11-09",
+    "measurement_conditions": "configs/measurement_conditions.json",
+    "source_plan_sha256": "664a352ca0ed368f3eb18a1ba003ba722c412e607b9e716a491a16ae3de48e44",
+    "source_receipts_sha256": {
+      "decider11": "9d605a83db45c348f8eceee225ac0d44a86122042d6dfa497475712cd408320d",
+      "glide": "974bb0abbc1f707f5faf8c530fe080fe296e93aba007168b2d09c142b83d4420",
+      "clef": "4b16655a6c72837d75679affc8144acb34c31b86b482de41780af5589665ebca",
+      "strands": "dc1538befc85ab664c5c91f06e49166a2e53ed0497fbf4b3e7901d332018d8fd",
+      "laya": "840034f6823b402b700d2f3a52f8ddddad21ec112a6f28add3ab31994e741466",
+      "gliner": "18224bac48f1c54e05fa07a9df5578388f8817a0f711647f515b83d508395e7e",
+      "caldec": "7db785317f9d39b940d4d4fdb8016b60a229c5b828b828e2a32848a3bff838b9",
+      "clef-flash": "21df6df590c128af7f13d0198c005e76efc03d86e1398967dc8ce7e25974c1e2"
+    },
+    "all_original_inputs_ordered_choices_and_reference_answers_unchanged": true
+  }
+}

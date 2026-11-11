@@ -1,0 +1,12 @@
+# Native Decider v1.1 and GLiDE v1.2 runtime, isolated Linux GPU only.
+torch==2.14.0
+torchvision==0.29.0
+transformers==5.17.0
+tokenizers==0.23.2
+huggingface-hub==1.33.0
+accelerate==1.15.0
+safetensors==0.8.0
+pillow==12.3.0
+numpy==2.5.3
+jinja2==3.1.6
+flash-linear-attention==0.5.2

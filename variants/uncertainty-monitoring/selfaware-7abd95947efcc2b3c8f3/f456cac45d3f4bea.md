@@ -1,0 +1,73 @@
+# Paraphrasing · Change individual words and phrases variant
+
+[Original question](../../../questions/uncertainty-monitoring/selfaware-7abd95947efcc2b3c8f3.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> What is the total amount of money in the world?
+
+## Question
+
+> Does this question have a determinate answer?
+
+## Answer choices
+
+- **yes.** Answerable
+- **no.** Unanswerable
+
+**Reference answer:** `no`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "What is the total amount of money in the world?",
+  "question": "Does this question have a determinate answer?",
+  "choices": {
+    "yes": "Answerable",
+    "no": "Unanswerable"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Decider v1.1 | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Jev | `no` — Unanswerable | `no` — Unanswerable | Same answer |
+| Microsoft Decision-1 | `yes` — Answerable | `no` — Unanswerable | Different answer |
+| Clef | `yes` — Answerable | `no` — Unanswerable | Different answer |
+| Luna Decisions | `no` — Unanswerable | `no` — Unanswerable | Same answer |
+| Clef Flash | `no` — Unanswerable | `no` — Unanswerable | Same answer |
+| Strands Decider | `no` — Unanswerable | `no` — Unanswerable | Same answer |
+| GLiNER2.5 Decide | `no` — Unanswerable | `yes` — Answerable | Different answer |
+| Laya | `yes` — Answerable | `no` — Unanswerable | Different answer |
+| CalDec v1 | `no` — Unanswerable | `no` — Unanswerable | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `selfaware/7abd95947efcc2b3c8f3/paraphrasing/surface`
+
+**Input fingerprint:** `fa10d48083bc4bae00811b96d1df16e9cea2c56c19bc0cef7c0d2d4f6fa26243`
+
+| Change | Recorded version |
+| --- | --- |
+| Paraphrasing | Change individual words and phrases |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/uncertainty-monitoring/selfaware-7abd95947efcc2b3c8f3.md).

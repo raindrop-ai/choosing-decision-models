@@ -1,0 +1,103 @@
+# Option order · Reverse the answer choices variant
+
+[Original question](../../../questions/retrieval/contractnli-76b340a63bff54e832b0.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** answer choices or their order.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+<details>
+<summary>Read the full context</summary>
+
+> Non-Disclosure Agreement
+> Date:
+> Parties: \[NAME OF INDIVIDUAL RECEIVING INFORMATION\] of \[address of individual\] and FRODSHAM TOWN COUNCIL whose registered office is at CASTLE PARK HOUSE, CASTLE PARK, FRODSHAM, WA6 6SB (the Discloser)
+> 1. The Discloser intends to disclose information (the Confidential Information) to the Recipient for the purpose of recommendation of future land use of the decommissioned play area on Ship Street (the Purpose).
+> 2. The Recipient undertakes not to use the Confidential Information for any purpose except the Purpose, without first obtaining the written agreement of the Discloser.
+> 3. The Recipient undertakes to keep the Confidential Information secure and not to disclose it to any third party.
+> 4. The undertakings in clauses 2 and 3 above apply to all of the information disclosed by the Discloser to the Recipient, regardless of the way or form in which it is disclosed or recorded but they do not apply to:
+> a) any information which is or in future comes into the public domain (unless as a result of the breach of this Agreement); or
+> b) any information which is already known to the Recipient and which was not subject to any obligation of confidence before it was disclosed to the Recipient by the Discloser.
+> 5. Nothing in this Agreement will prevent the Recipient from making any disclosure of the Confidential Information required by law or by any competent authority.
+> 6. The Recipient will, on request from the Discloser, return all copies and records of the Confidential Information to the Discloser and will not retain any copies or records of the Confidential Information.
+> 7. Neither this Agreement nor the supply of any information grants the Recipient any licence, interest or right in respect of any intellectual property rights of the Discloser except the right to copy the Confidential Information solely for the Purpose.
+> 8. The undertakings in clauses 2 and 3 will continue in force indefinitely.
+> 9. This Agreement is governed by, and is to be construed in accordance with, English law. The English Courts will have non-exclusive jurisdiction to deal with any dispute which has arisen or may arise out of, or in connection with, this Agreement.
+> Signed and Delivered as a Deed by:
+> \[name of Recipient\] in the presence of:
+> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> Signature
+> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> Signature of witness
+> \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+> Name of witness
+
+</details>
+
+## Question
+
+> Classify the following statement using only the supplied contract: Receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information.
+
+## Answer choices
+
+- **NotMentioned.** The contract does not establish whether it is true.
+- **Contradiction.** The contract contradicts the statement.
+- **Entailment.** The contract supports the statement.
+
+**Reference answer:** `NotMentioned`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Non-Disclosure Agreement\nDate:\nParties: [NAME OF INDIVIDUAL RECEIVING INFORMATION] of [address of individual] and FRODSHAM TOWN COUNCIL whose registered office is at CASTLE PARK HOUSE, CASTLE PARK, FRODSHAM, WA6 6SB (the Discloser)\n1. The Discloser intends to disclose information (the Confidential Information) to the Recipient for the purpose of recommendation of future land use of the decommissioned play area on Ship Street (the Purpose).\n2. The Recipient undertakes not to use the Confidential Information for any purpose except the Purpose, without first obtaining the written agreement of the Discloser.\n3. The Recipient undertakes to keep the Confidential Information secure and not to disclose it to any third party.\n4. The undertakings in clauses 2 and 3 above apply to all of the information disclosed by the Discloser to the Recipient, regardless of the way or form in which it is disclosed or recorded but they do not apply to:\na) any information which is or in future comes into the public domain (unless as a result of the breach of this Agreement); or\nb) any information which is already known to the Recipient and which was not subject to any obligation of confidence before it was disclosed to the Recipient by the Discloser.\n5. Nothing in this Agreement will prevent the Recipient from making any disclosure of the Confidential Information required by law or by any competent authority.\n6. The Recipient will, on request from the Discloser, return all copies and records of the Confidential Information to the Discloser and will not retain any copies or records of the Confidential Information.\n7. Neither this Agreement nor the supply of any information grants the Recipient any licence, interest or right in respect of any intellectual property rights of the Discloser except the right to copy the Confidential Information solely for the Purpose.\n8. The undertakings in clauses 2 and 3 will continue in force indefinitely.\n9. This Agreement is governed by, and is to be construed in accordance with, English law. The English Courts will have non-exclusive jurisdiction to deal with any dispute which has arisen or may arise out of, or in connection with, this Agreement.\nSigned and Delivered as a Deed by:\n[name of Recipient] in the presence of:\n_____________________________\nSignature\n_____________________________\nSignature of witness\n_____________________________\nName of witness\n",
+  "question": "Classify the following statement using only the supplied contract: Receiving Party shall notify Disclosing Party in case Receiving Party is required by law, regulation or judicial process to disclose any Confidential Information.",
+  "choices": {
+    "NotMentioned": "The contract does not establish whether it is true.",
+    "Contradiction": "The contract contradicts the statement.",
+    "Entailment": "The contract supports the statement."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `NotMentioned` — The contract does not establish whether it is true. | `NotMentioned` — The contract does not establish whether it is true. | Same answer |
+| Decider v1.1 | `NotMentioned` — The contract does not establish whether it is true. | `NotMentioned` — The contract does not establish whether it is true. | Same answer |
+| Jev | `NotMentioned` — The contract does not establish whether it is true. | `NotMentioned` — The contract does not establish whether it is true. | Same answer |
+| Microsoft Decision-1 | `NotMentioned` — The contract does not establish whether it is true. | `NotMentioned` — The contract does not establish whether it is true. | Same answer |
+| Clef | `NotMentioned` — The contract does not establish whether it is true. | `NotMentioned` — The contract does not establish whether it is true. | Same answer |
+| Luna Decisions | `NotMentioned` — The contract does not establish whether it is true. | `NotMentioned` — The contract does not establish whether it is true. | Same answer |
+| Clef Flash | `NotMentioned` — The contract does not establish whether it is true. | `NotMentioned` — The contract does not establish whether it is true. | Same answer |
+| Strands Decider | `NotMentioned` — The contract does not establish whether it is true. | `NotMentioned` — The contract does not establish whether it is true. | Same answer |
+| GLiNER2.5 Decide | `Entailment` — The contract supports the statement. | `NotMentioned` — The contract does not establish whether it is true. | Different answer |
+| Laya | `Entailment` — The contract supports the statement. | `Entailment` — The contract supports the statement. | Same answer |
+| CalDec v1 | `Entailment` — The contract supports the statement. | `Entailment` — The contract supports the statement. | Same answer |
+
+Clef and Clef Flash sort answer choices in their published input-processing code. Their choice-order results describe that preprocessing.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `contractnli/76b340a63bff54e832b0/option_order/reverse`
+
+**Input fingerprint:** `686b6289763c6a2c07cc2172da8dcd02c22598bb8f25b24f8fc209798c94ae19`
+
+| Change | Recorded version |
+| --- | --- |
+| Option order | Reverse the answer choices |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/retrieval/contractnli-76b340a63bff54e832b0.md).

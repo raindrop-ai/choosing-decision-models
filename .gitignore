@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+!.env.example
+.local/
+models/
+weights/
+fresh-runs/
+*.sqlite
+*.sqlite-*
+.DS_Store

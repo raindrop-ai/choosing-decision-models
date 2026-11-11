@@ -1,0 +1,75 @@
+# Similar distractors · Add fewer similar but irrelevant items variant
+
+[Original question](../../../questions/relations/bbh-7a4ef7acc0410ad0381a.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> At Alder Club's practice event, Hugo finished ahead of Inez. Kira finished behind Inez.
+
+## Question
+
+> The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were three golfers: Mel, Ada, and Ana. Mel finished last. Ana finished second.
+
+## Answer choices
+
+- **A.** Mel finished first
+- **B.** Ada finished first
+- **C.** Ana finished first
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "At Alder Club's practice event, Hugo finished ahead of Inez. Kira finished behind Inez.",
+  "question": "The following paragraphs each describe a set of three objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were three golfers: Mel, Ada, and Ana. Mel finished last. Ana finished second.",
+  "choices": {
+    "A": "Mel finished first",
+    "B": "Ada finished first",
+    "C": "Ana finished first"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — Ada finished first | `B` — Ada finished first | Same answer |
+| Decider v1.1 | `B` — Ada finished first | `B` — Ada finished first | Same answer |
+| Jev | `B` — Ada finished first | `B` — Ada finished first | Same answer |
+| Microsoft Decision-1 | `B` — Ada finished first | `B` — Ada finished first | Same answer |
+| Clef | `B` — Ada finished first | `B` — Ada finished first | Same answer |
+| Luna Decisions | `B` — Ada finished first | `B` — Ada finished first | Same answer |
+| Clef Flash | `B` — Ada finished first | `B` — Ada finished first | Same answer |
+| Strands Decider | `B` — Ada finished first | `B` — Ada finished first | Same answer |
+| GLiNER2.5 Decide | `C` — Ana finished first | `A` — Mel finished first | Different answer |
+| Laya | `C` — Ana finished first | `B` — Ada finished first | Different answer |
+| CalDec v1 | `A` — Mel finished first | `B` — Ada finished first | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/7a4ef7acc0410ad0381a/similar_distractors/low/clean-source_first_ordinal_distractors_full_0140`
+
+**Input fingerprint:** `e66017de181265252ffd87cdad351155b4ec36807a98012e6863a06072e54abe`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add fewer similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/bbh-7a4ef7acc0410ad0381a.md).

@@ -1,0 +1,80 @@
+# Extra events · Add 2 unrelated events variant
+
+[Original question](../../../questions/rule-application/mmlu-64cb8906db23bf427746.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Nolan is the editor of a poetry catalog. Its entries are Virel, Zorven, Kesil, Nereth, Pavrel, and Sovrin.
+> Nolan classifies Virel as a dialogue. Nolan classifies Zorven as a monologue.
+
+## Question
+
+>  Construct a complete truth table for the following argument. Then, using the truth table, determine whether the argument is valid or invalid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)
+> T ∨ U
+> W · T / U
+
+## Answer choices
+
+- **A.** Valid
+- **B.** Invalid. Counterexample when T and W are true and U is false
+- **C.** Invalid. Counterexample when T is true and W and U are false
+- **D.** Invalid. Counterexample when W is true and T and U are false
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Nolan is the editor of a poetry catalog. Its entries are Virel, Zorven, Kesil, Nereth, Pavrel, and Sovrin.\nNolan classifies Virel as a dialogue. Nolan classifies Zorven as a monologue.",
+  "question": " Construct a complete truth table for the following argument. Then, using the truth table, determine whether the argument is valid or invalid. If the argument is invalid, choose an option which presents a counterexample. (There may be other counterexamples as well.)\nT ∨ U\nW · T / U",
+  "choices": {
+    "A": "Valid",
+    "B": "Invalid. Counterexample when T and W are true and U is false",
+    "C": "Invalid. Counterexample when T is true and W and U are false",
+    "D": "Invalid. Counterexample when W is true and T and U are false"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — Invalid. Counterexample when T and W are true and U is false | `C` — Invalid. Counterexample when T is true and W and U are false | Different answer |
+| Decider v1.1 | `B` — Invalid. Counterexample when T and W are true and U is false | `B` — Invalid. Counterexample when T and W are true and U is false | Same answer |
+| Jev | `B` — Invalid. Counterexample when T and W are true and U is false | `B` — Invalid. Counterexample when T and W are true and U is false | Same answer |
+| Microsoft Decision-1 | `B` — Invalid. Counterexample when T and W are true and U is false | `B` — Invalid. Counterexample when T and W are true and U is false | Same answer |
+| Clef | `D` — Invalid. Counterexample when W is true and T and U are false | `B` — Invalid. Counterexample when T and W are true and U is false | Different answer |
+| Luna Decisions | `A` — Valid | `B` — Invalid. Counterexample when T and W are true and U is false | Different answer |
+| Clef Flash | `A` — Valid | `A` — Valid | Same answer |
+| Strands Decider | `B` — Invalid. Counterexample when T and W are true and U is false | `C` — Invalid. Counterexample when T is true and W and U are false | Different answer |
+| GLiNER2.5 Decide | `A` — Valid | `D` — Invalid. Counterexample when W is true and T and U are false | Different answer |
+| Laya | `A` — Valid | `A` — Valid | Same answer |
+| CalDec v1 | `A` — Valid | `A` — Valid | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `mmlu/64cb8906db23bf427746/event_count/2/clean-source_first_mmlu_other_short_contexts_full_0100`
+
+**Input fingerprint:** `e46b2cb2ed07e94745ba321688f91bcbb2c40becad2b110b9e49c04a8052cf4c`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 2 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/rule-application/mmlu-64cb8906db23bf427746.md).

@@ -1,0 +1,85 @@
+# Irrelevant details · Add a larger amount of irrelevant detail variant
+
+[Original question](../../../questions/state-tracking-and-updating/bbh-663e1c7714920e03d8cd.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The notebook has a linen cover.
+> The cover has an embossed title.
+> The page edges are uneven.
+> The binding is stitched.
+> A ribbon marks a page.
+> The back cover has a pocket.
+
+## Question
+
+> Alice, Bob, Claire, Dave, and Eve are dancers at a square dance. At the start of a song, they each have a partner: Alice is dancing with Sam, Bob is dancing with Izzi, Claire is dancing with Karl, Dave is dancing with Helga, and Eve is dancing with Ophelia.
+> Throughout the song, the dancers often trade partners. First, Bob and Alice switch partners. Then, Alice and Claire switch partners. Then, Alice and Dave switch partners. Then, Alice and Eve switch partners. Finally, Dave and Claire switch partners. At the end of the dance, Claire is dancing with
+
+## Answer choices
+
+- **A.** Sam
+- **B.** Izzi
+- **C.** Karl
+- **D.** Helga
+- **E.** Ophelia
+
+**Reference answer:** `C`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The notebook has a linen cover.\nThe cover has an embossed title.\nThe page edges are uneven.\nThe binding is stitched.\nA ribbon marks a page.\nThe back cover has a pocket.",
+  "question": "Alice, Bob, Claire, Dave, and Eve are dancers at a square dance. At the start of a song, they each have a partner: Alice is dancing with Sam, Bob is dancing with Izzi, Claire is dancing with Karl, Dave is dancing with Helga, and Eve is dancing with Ophelia.\nThroughout the song, the dancers often trade partners. First, Bob and Alice switch partners. Then, Alice and Claire switch partners. Then, Alice and Dave switch partners. Then, Alice and Eve switch partners. Finally, Dave and Claire switch partners. At the end of the dance, Claire is dancing with",
+  "choices": {
+    "A": "Sam",
+    "B": "Izzi",
+    "C": "Karl",
+    "D": "Helga",
+    "E": "Ophelia"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `D` — Helga | `D` — Helga | Same answer |
+| Decider v1.1 | `E` — Ophelia | `E` — Ophelia | Same answer |
+| Jev | `C` — Karl | `C` — Karl | Same answer |
+| Microsoft Decision-1 | `D` — Helga | `D` — Helga | Same answer |
+| Clef | `A` — Sam | `E` — Ophelia | Different answer |
+| Luna Decisions | `D` — Helga | `A` — Sam | Different answer |
+| Clef Flash | `D` — Helga | `D` — Helga | Same answer |
+| Strands Decider | `D` — Helga | `C` — Karl | Different answer |
+| GLiNER2.5 Decide | `E` — Ophelia | `E` — Ophelia | Same answer |
+| Laya | `A` — Sam | `A` — Sam | Same answer |
+| CalDec v1 | `A` — Sam | `A` — Sam | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/663e1c7714920e03d8cd/irrelevant_details/high/clean-source_first_tracking_short_contexts_full_0120`
+
+**Input fingerprint:** `e196b04652a83d720daa621b69c8ad9323faedc39b292e2d2ff106dd097d1693`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a larger amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/state-tracking-and-updating/bbh-663e1c7714920e03d8cd.md).

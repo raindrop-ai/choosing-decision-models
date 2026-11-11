@@ -1,0 +1,48 @@
+# Evidence position · Place the relevant information in the middle variant
+
+[Original question](../../../questions/concepts-and-categorization/trec-ec83011abfd651cd2037.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Recover the question text
+
+The original dataset’s terms do not clearly support republishing its text here, or require additional conditions. This variant’s full text is therefore reconstructed locally. [Follow the recovery instructions](../../../docs/variant-reproduction.md#recover-the-remaining-variant-texts).
+
+**Reference answer key:** `ENTY`.
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `ENTY` | `ENTY` | Same answer |
+| Decider v1.1 | `ENTY` | `ENTY` | Same answer |
+| Jev | `ENTY` | `ENTY` | Same answer |
+| Microsoft Decision-1 | `ENTY` | `ENTY` | Same answer |
+| Clef | `ENTY` | `ENTY` | Same answer |
+| Luna Decisions | `ENTY` | `ENTY` | Same answer |
+| Clef Flash | `ENTY` | `ENTY` | Same answer |
+| Strands Decider | `ENTY` | `ENTY` | Same answer |
+| GLiNER2.5 Decide | `HUM` | `ENTY` | Different answer |
+| Laya | `ENTY` | `DESC` | Different answer |
+| CalDec v1 | `ENTY` | `DESC` | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `trec/ec83011abfd651cd2037/evidence_position/middle/clean-source_first_classification_contexts_full_0148`
+
+**Input fingerprint:** `e359b36757400ddb47149afa2fbfa991dafe760c66b48bb2e8fd91fff9f3304d`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence position | Place the relevant information in the middle |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/concepts-and-categorization/trec-ec83011abfd651cd2037.md).

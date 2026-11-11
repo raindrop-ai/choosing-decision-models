@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use these questions, recorded outcomes or scoring code, please cite the accompanying Raindrop post."
+type: dataset
+title: "The subtle art of making judgment calls: questions, results and scoring code"
+authors:
+  - family-names: Nyati
+    given-names: Afika
+    affiliation: Raindrop
+url: "https://dawn-landing-git-codex-judgment-calls-blog.previews.raindrop.ai/blog/judgment-calls/"
+keywords:
+  - decision models
+  - model evaluation
+  - comparative cognition
+  - accuracy

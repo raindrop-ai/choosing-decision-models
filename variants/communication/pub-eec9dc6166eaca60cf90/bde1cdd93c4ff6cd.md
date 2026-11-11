@@ -1,0 +1,76 @@
+# Misleading details · Add an unverified claim that conflicts with the evidence variant
+
+[Original question](../../../questions/communication/pub-eec9dc6166eaca60cf90.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> A reader thinks: «Calling the bed cushy as clouds and calling it very uncomfortable express agreement.»
+>
+> Speaker\_1: this bed is cushy as clouds
+> Speaker\_2: The bed is very uncomfortable
+
+## Question
+
+> Choose the interpretation or answer requested by the text.
+
+## Answer choices
+
+- **A.** Agrees
+- **B.** Disagrees
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "A reader thinks: «Calling the bed cushy as clouds and calling it very uncomfortable express agreement.»\n\nSpeaker_1: this bed is cushy as clouds\nSpeaker_2: The bed is very uncomfortable",
+  "question": "Choose the interpretation or answer requested by the text.",
+  "choices": {
+    "A": "Agrees",
+    "B": "Disagrees"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — Disagrees | `B` — Disagrees | Same answer |
+| Decider v1.1 | `B` — Disagrees | `A` — Agrees | Different answer |
+| Jev | `B` — Disagrees | `B` — Disagrees | Same answer |
+| Microsoft Decision-1 | `B` — Disagrees | `B` — Disagrees | Same answer |
+| Clef | `B` — Disagrees | `B` — Disagrees | Same answer |
+| Luna Decisions | `B` — Disagrees | `B` — Disagrees | Same answer |
+| Clef Flash | `B` — Disagrees | `B` — Disagrees | Same answer |
+| Strands Decider | `B` — Disagrees | `B` — Disagrees | Same answer |
+| GLiNER2.5 Decide | `B` — Disagrees | `A` — Agrees | Different answer |
+| Laya | `B` — Disagrees | `B` — Disagrees | Same answer |
+| CalDec v1 | `B` — Disagrees | `A` — Agrees | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `pub/eec9dc6166eaca60cf90/misleading_summary/misleading/clean-source_first_pub_music_contexts_full_0166`
+
+**Input fingerprint:** `74ce41868bc4ed317f459511c6dadee6f9ba2ad226e603ed0bc25df6e9a17ca9`
+
+| Change | Recorded version |
+| --- | --- |
+| Misleading details | Add an unverified claim that conflicts with the evidence |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/communication/pub-eec9dc6166eaca60cf90.md).

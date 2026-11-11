@@ -1,0 +1,87 @@
+# Evidence position · Place the relevant information at the beginning variant
+
+[Original question](../../../questions/rule-application/cruxeval-c84ac060fadf2aac6420.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+```text
+def f(text, tabstop):
+    text = text.replace('\n', '_____')
+    text = text.replace('\t', tabstop * ' ')
+    text = text.replace('_____', '\n')
+    return text
+# The poem is untitled.
+# Its author is anonymous.
+# Its narrator speaks in the first person.
+# It contains a refrain.
+```
+
+## Question
+
+> What does f("odes\\tcode\\twell", 2) return?
+
+## Answer choices
+
+- **A.** &#x27;odes  code owell&#x27;
+- **B.** &#x27;odes  c de  well&#x27;
+- **C.** &#x27;odes wcode  well&#x27;
+- **D.** &#x27;odes  code  well&#x27;
+
+**Reference answer:** `D`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "def f(text, tabstop):\n    text = text.replace('\\n', '_____')\n    text = text.replace('\\t', tabstop * ' ')\n    text = text.replace('_____', '\\n')\n    return text\n# The poem is untitled.\n# Its author is anonymous.\n# Its narrator speaks in the first person.\n# It contains a refrain.",
+  "question": "What does f(\"odes\\tcode\\twell\", 2) return?",
+  "choices": {
+    "A": "'odes  code owell'",
+    "B": "'odes  c de  well'",
+    "C": "'odes wcode  well'",
+    "D": "'odes  code  well'"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `D` — &#x27;odes  code  well&#x27; | `D` — &#x27;odes  code  well&#x27; | Same answer |
+| Decider v1.1 | `D` — &#x27;odes  code  well&#x27; | `D` — &#x27;odes  code  well&#x27; | Same answer |
+| Jev | `D` — &#x27;odes  code  well&#x27; | `D` — &#x27;odes  code  well&#x27; | Same answer |
+| Microsoft Decision-1 | `D` — &#x27;odes  code  well&#x27; | `D` — &#x27;odes  code  well&#x27; | Same answer |
+| Clef | `D` — &#x27;odes  code  well&#x27; | `D` — &#x27;odes  code  well&#x27; | Same answer |
+| Luna Decisions | `D` — &#x27;odes  code  well&#x27; | `D` — &#x27;odes  code  well&#x27; | Same answer |
+| Clef Flash | `D` — &#x27;odes  code  well&#x27; | `B` — &#x27;odes  c de  well&#x27; | Different answer |
+| Strands Decider | `D` — &#x27;odes  code  well&#x27; | `D` — &#x27;odes  code  well&#x27; | Same answer |
+| GLiNER2.5 Decide | `A` — &#x27;odes  code owell&#x27; | `D` — &#x27;odes  code  well&#x27; | Different answer |
+| Laya | `A` — &#x27;odes  code owell&#x27; | `A` — &#x27;odes  code owell&#x27; | Same answer |
+| CalDec v1 | `A` — &#x27;odes  code owell&#x27; | `A` — &#x27;odes  code owell&#x27; | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `cruxeval/c84ac060fadf2aac6420/evidence_position/start/clean-source_first_crux_comment_contexts_full_0081`
+
+**Input fingerprint:** `5209c995ce8fc1a2663f3bda651f56454d6a49c13ff80c11c4781d85435da5eb`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence position | Place the relevant information at the beginning |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/rule-application/cruxeval-c84ac060fadf2aac6420.md).

@@ -1,0 +1,99 @@
+# Invented names · Use invented names variant
+
+[Original question](../../../questions/rule-application/rewardbench-64e858cef2f9dc6b8f2a.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Write a Python function \`nervalor(lst)\` to solve the following problem:
+> "
+> This function will take a list of integers. For all entries in the list, the function shall square the integer entry if its index is a
+> multiple of 3 and will cube the integer entry if its index is a multiple of 4 and not a multiple of 3. The function will not
+> change the entries in the list whose indexes are not a multiple of 3 or 4. The function shall then return the sum of all entries.
+> Examples:
+> For lst = \[1,2,3\] the output should be 6
+> For lst = \[\]  the output should be 0
+> For lst = \[-1,-5,2,-1,-5\]  the output should be -126
+
+## Question
+
+> Which response better satisfies the request?
+
+## Answer choices
+
+- **A.**     result =[]
+    for i in range(len(lst)):
+        if i %3 == 0:
+            result.append(lst[i]**2)
+        elif i%3 != 0:
+            result.append(lst[i]**3)
+        else:
+            result.append(lst[i])
+    return sum(result)
+
+- **B.**     result =[]
+    for i in range(len(lst)):
+        if i %3 == 0:
+            result.append(lst[i]**2)
+        elif i % 4 == 0 and i%3 != 0:
+            result.append(lst[i]**3)
+        else:
+            result.append(lst[i])
+    return sum(result)
+
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Write a Python function `nervalor(lst)` to solve the following problem:\n\"\nThis function will take a list of integers. For all entries in the list, the function shall square the integer entry if its index is a\nmultiple of 3 and will cube the integer entry if its index is a multiple of 4 and not a multiple of 3. The function will not\nchange the entries in the list whose indexes are not a multiple of 3 or 4. The function shall then return the sum of all entries.\nExamples:\nFor lst = [1,2,3] the output should be 6\nFor lst = []  the output should be 0\nFor lst = [-1,-5,2,-1,-5]  the output should be -126",
+  "question": "Which response better satisfies the request?",
+  "choices": {
+    "A": "    result =[]\n    for i in range(len(lst)):\n        if i %3 == 0:\n            result.append(lst[i]**2)\n        elif i%3 != 0:\n            result.append(lst[i]**3)\n        else:\n            result.append(lst[i])\n    return sum(result)\n",
+    "B": "    result =[]\n    for i in range(len(lst)):\n        if i %3 == 0:\n            result.append(lst[i]**2)\n        elif i % 4 == 0 and i%3 != 0:\n            result.append(lst[i]**3)\n        else:\n            result.append(lst[i])\n    return sum(result)\n"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | Same answer |
+| Decider v1.1 | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | Same answer |
+| Jev | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | Same answer |
+| Microsoft Decision-1 | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | Same answer |
+| Clef | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | Same answer |
+| Luna Decisions | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | Same answer |
+| Clef Flash | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | Same answer |
+| Strands Decider | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | Same answer |
+| GLiNER2.5 Decide | `A` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | `B` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i % 4 == 0 and i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | Different answer |
+| Laya | `A` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | `A` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | Same answer |
+| CalDec v1 | `A` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | `A` —     result =\[\]     for i in range(len(lst)):         if i %3 == 0:             result.append(lst\[i\]\*\*2)         elif i%3 != 0:             result.append(lst\[i\]\*\*3)         else:             result.append(lst\[i\])     return sum(result)  | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `rewardbench/64e858cef2f9dc6b8f2a/unfamiliar_names/invented`
+
+**Input fingerprint:** `aff343928aab0bb48e7985bca29ca75d88ce86a6dacb819665df01e8d2d180ee`
+
+| Change | Recorded version |
+| --- | --- |
+| Invented names | Use invented names |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/rule-application/rewardbench-64e858cef2f9dc6b8f2a.md).

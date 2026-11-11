@@ -1,0 +1,225 @@
+# Option order · Reverse the answer choices variant
+
+[Original question](../../../questions/concepts-and-categorization/banking77-226c78d247be1022c05c.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** answer choices or their order.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Why does it cost more to pay with my card?
+
+## Question
+
+> Which banking intent does this request express?
+
+## Answer choices
+
+- **76.** wrong_exchange_rate_for_cash_withdrawal
+- **75.** wrong_amount_of_cash_received
+- **74.** why_verify_identity
+- **73.** visa_or_mastercard
+- **72.** virtual_card_not_working
+- **71.** verify_top_up
+- **70.** verify_source_of_funds
+- **69.** verify_my_identity
+- **68.** unable_to_verify_identity
+- **67.** transfer_timing
+- **66.** transfer_not_received_by_recipient
+- **65.** transfer_into_account
+- **64.** transfer_fee_charged
+- **63.** transaction_charged_twice
+- **62.** topping_up_by_card
+- **61.** top_up_reverted
+- **60.** top_up_limits
+- **59.** top_up_failed
+- **58.** top_up_by_cash_or_cheque
+- **57.** top_up_by_card_charge
+- **56.** top_up_by_bank_transfer_charge
+- **55.** terminate_account
+- **54.** supported_cards_and_currencies
+- **53.** reverted_card_payment?
+- **52.** request_refund
+- **51.** Refund_not_showing_up
+- **50.** receiving_money
+- **49.** pin_blocked
+- **48.** pending_transfer
+- **47.** pending_top_up
+- **46.** pending_cash_withdrawal
+- **45.** pending_card_payment
+- **44.** passcode_forgotten
+- **43.** order_physical_card
+- **42.** lost_or_stolen_phone
+- **41.** lost_or_stolen_card
+- **40.** getting_virtual_card
+- **39.** getting_spare_card
+- **38.** get_physical_card
+- **37.** get_disposable_virtual_card
+- **36.** fiat_currency_support
+- **35.** failed_transfer
+- **34.** extra_charge_on_statement
+- **33.** exchange_via_app
+- **32.** exchange_rate
+- **31.** exchange_charge
+- **30.** edit_personal_details
+- **29.** disposable_card_limits
+- **28.** direct_debit_payment_not_recognised
+- **27.** declined_transfer
+- **26.** declined_cash_withdrawal
+- **25.** declined_card_payment
+- **24.** country_support
+- **23.** contactless_not_working
+- **22.** compromised_card
+- **21.** change_pin
+- **20.** cash_withdrawal_not_recognised
+- **19.** cash_withdrawal_charge
+- **18.** card_swallowed
+- **17.** card_payment_wrong_exchange_rate
+- **16.** card_payment_not_recognised
+- **15.** card_payment_fee_charged
+- **14.** card_not_working
+- **13.** card_linking
+- **12.** card_delivery_estimate
+- **11.** card_arrival
+- **10.** card_acceptance
+- **9.** card_about_to_expire
+- **8.** cancel_transfer
+- **7.** beneficiary_not_allowed
+- **6.** balance_not_updated_after_cheque_or_cash_deposit
+- **5.** balance_not_updated_after_bank_transfer
+- **4.** automatic_top_up
+- **3.** atm_support
+- **2.** apple_pay_or_google_pay
+- **1.** age_limit
+- **0.** activate_my_card
+
+**Reference answer:** `15`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Why does it cost more to pay with my card?",
+  "question": "Which banking intent does this request express?",
+  "choices": {
+    "76": "wrong_exchange_rate_for_cash_withdrawal",
+    "75": "wrong_amount_of_cash_received",
+    "74": "why_verify_identity",
+    "73": "visa_or_mastercard",
+    "72": "virtual_card_not_working",
+    "71": "verify_top_up",
+    "70": "verify_source_of_funds",
+    "69": "verify_my_identity",
+    "68": "unable_to_verify_identity",
+    "67": "transfer_timing",
+    "66": "transfer_not_received_by_recipient",
+    "65": "transfer_into_account",
+    "64": "transfer_fee_charged",
+    "63": "transaction_charged_twice",
+    "62": "topping_up_by_card",
+    "61": "top_up_reverted",
+    "60": "top_up_limits",
+    "59": "top_up_failed",
+    "58": "top_up_by_cash_or_cheque",
+    "57": "top_up_by_card_charge",
+    "56": "top_up_by_bank_transfer_charge",
+    "55": "terminate_account",
+    "54": "supported_cards_and_currencies",
+    "53": "reverted_card_payment?",
+    "52": "request_refund",
+    "51": "Refund_not_showing_up",
+    "50": "receiving_money",
+    "49": "pin_blocked",
+    "48": "pending_transfer",
+    "47": "pending_top_up",
+    "46": "pending_cash_withdrawal",
+    "45": "pending_card_payment",
+    "44": "passcode_forgotten",
+    "43": "order_physical_card",
+    "42": "lost_or_stolen_phone",
+    "41": "lost_or_stolen_card",
+    "40": "getting_virtual_card",
+    "39": "getting_spare_card",
+    "38": "get_physical_card",
+    "37": "get_disposable_virtual_card",
+    "36": "fiat_currency_support",
+    "35": "failed_transfer",
+    "34": "extra_charge_on_statement",
+    "33": "exchange_via_app",
+    "32": "exchange_rate",
+    "31": "exchange_charge",
+    "30": "edit_personal_details",
+    "29": "disposable_card_limits",
+    "28": "direct_debit_payment_not_recognised",
+    "27": "declined_transfer",
+    "26": "declined_cash_withdrawal",
+    "25": "declined_card_payment",
+    "24": "country_support",
+    "23": "contactless_not_working",
+    "22": "compromised_card",
+    "21": "change_pin",
+    "20": "cash_withdrawal_not_recognised",
+    "19": "cash_withdrawal_charge",
+    "18": "card_swallowed",
+    "17": "card_payment_wrong_exchange_rate",
+    "16": "card_payment_not_recognised",
+    "15": "card_payment_fee_charged",
+    "14": "card_not_working",
+    "13": "card_linking",
+    "12": "card_delivery_estimate",
+    "11": "card_arrival",
+    "10": "card_acceptance",
+    "9": "card_about_to_expire",
+    "8": "cancel_transfer",
+    "7": "beneficiary_not_allowed",
+    "6": "balance_not_updated_after_cheque_or_cash_deposit",
+    "5": "balance_not_updated_after_bank_transfer",
+    "4": "automatic_top_up",
+    "3": "atm_support",
+    "2": "apple_pay_or_google_pay",
+    "1": "age_limit",
+    "0": "activate_my_card"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `15` — card\_payment\_fee\_charged | `15` — card\_payment\_fee\_charged | Same answer |
+| Decider v1.1 | `15` — card\_payment\_fee\_charged | `15` — card\_payment\_fee\_charged | Same answer |
+| Jev | `15` — card\_payment\_fee\_charged | `15` — card\_payment\_fee\_charged | Same answer |
+| Microsoft Decision-1 | `15` — card\_payment\_fee\_charged | `15` — card\_payment\_fee\_charged | Same answer |
+| Clef | `15` — card\_payment\_fee\_charged | `15` — card\_payment\_fee\_charged | Same answer |
+| Luna Decisions | `15` — card\_payment\_fee\_charged | `15` — card\_payment\_fee\_charged | Same answer |
+| Clef Flash | `15` — card\_payment\_fee\_charged | `15` — card\_payment\_fee\_charged | Same answer |
+| Strands Decider | `15` — card\_payment\_fee\_charged | `15` — card\_payment\_fee\_charged | Same answer |
+| GLiNER2.5 Decide | `15` — card\_payment\_fee\_charged | `15` — card\_payment\_fee\_charged | Same answer |
+| Laya | `63` — transaction\_charged\_twice | `15` — card\_payment\_fee\_charged | Different answer |
+| CalDec v1 | `64` — transfer\_fee\_charged | `15` — card\_payment\_fee\_charged | Different answer |
+
+Clef and Clef Flash sort answer choices in their published input-processing code. Their choice-order results describe that preprocessing.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `banking77/226c78d247be1022c05c/option_order/reverse`
+
+**Input fingerprint:** `2fc8b489590592dae24c08abecd57153da59713e11db4115a5f02514231c7310`
+
+| Change | Recorded version |
+| --- | --- |
+| Option order | Reverse the answer choices |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/concepts-and-categorization/banking77-226c78d247be1022c05c.md).

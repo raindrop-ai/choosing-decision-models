@@ -1,0 +1,75 @@
+# Similar distractors · Add fewer similar but irrelevant items variant
+
+[Original question](../../../questions/social-cognition/bigtom-8a1eb59f5a9db383284a.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> «At another bakery, a worker inspects fresh yeast for dough.»
+>
+> Alejandro is a professional baker in a small Mexican town. He plans to make a large batch of bread for the local market today. He observes that the yeast he has appears to be fresh and active. Alejandro believes that the yeast is in perfect condition for baking. However, a sudden rise in temperature causes the yeast to become too active and over-ferment. Alejandro notices the change in the yeast's condition.
+
+## Question
+
+> Does Alejandro believe the yeast is in perfect condition or over-fermented?
+
+## Answer choices
+
+- **A.** Alejandro believes the yeast is over-fermented.
+- **B.** Alejandro believes the yeast is in perfect condition for baking.
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "«At another bakery, a worker inspects fresh yeast for dough.»\n\nAlejandro is a professional baker in a small Mexican town. He plans to make a large batch of bread for the local market today. He observes that the yeast he has appears to be fresh and active. Alejandro believes that the yeast is in perfect condition for baking. However, a sudden rise in temperature causes the yeast to become too active and over-ferment. Alejandro notices the change in the yeast's condition.",
+  "question": "Does Alejandro believe the yeast is in perfect condition or over-fermented?",
+  "choices": {
+    "A": "Alejandro believes the yeast is over-fermented.",
+    "B": "Alejandro believes the yeast is in perfect condition for baking."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — Alejandro believes the yeast is over-fermented. | `A` — Alejandro believes the yeast is over-fermented. | Same answer |
+| Decider v1.1 | `A` — Alejandro believes the yeast is over-fermented. | `A` — Alejandro believes the yeast is over-fermented. | Same answer |
+| Jev | `B` — Alejandro believes the yeast is in perfect condition for baking. | `B` — Alejandro believes the yeast is in perfect condition for baking. | Same answer |
+| Microsoft Decision-1 | `B` — Alejandro believes the yeast is in perfect condition for baking. | `B` — Alejandro believes the yeast is in perfect condition for baking. | Same answer |
+| Clef | `B` — Alejandro believes the yeast is in perfect condition for baking. | `B` — Alejandro believes the yeast is in perfect condition for baking. | Same answer |
+| Luna Decisions | `B` — Alejandro believes the yeast is in perfect condition for baking. | `B` — Alejandro believes the yeast is in perfect condition for baking. | Same answer |
+| Clef Flash | `A` — Alejandro believes the yeast is over-fermented. | `B` — Alejandro believes the yeast is in perfect condition for baking. | Different answer |
+| Strands Decider | `A` — Alejandro believes the yeast is over-fermented. | `A` — Alejandro believes the yeast is over-fermented. | Same answer |
+| GLiNER2.5 Decide | `B` — Alejandro believes the yeast is in perfect condition for baking. | `B` — Alejandro believes the yeast is in perfect condition for baking. | Same answer |
+| Laya | `B` — Alejandro believes the yeast is in perfect condition for baking. | `B` — Alejandro believes the yeast is in perfect condition for baking. | Same answer |
+| CalDec v1 | `A` — Alejandro believes the yeast is over-fermented. | `A` — Alejandro believes the yeast is over-fermented. | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bigtom/8a1eb59f5a9db383284a/similar_distractors/low/clean-source_first_bigtom_near_scenes_full_0210`
+
+**Input fingerprint:** `23fee497ff994e43b61a61bd284f84e5717e811858d46473548d5b53931129eb`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add fewer similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/social-cognition/bigtom-8a1eb59f5a9db383284a.md).

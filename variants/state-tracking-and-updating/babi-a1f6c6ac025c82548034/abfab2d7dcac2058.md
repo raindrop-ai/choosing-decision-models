@@ -1,0 +1,266 @@
+# Repetition · Present the same evidence twice variant
+
+[Original question](../../../questions/state-tracking-and-updating/babi-a1f6c6ac025c82548034.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+<details>
+<summary>Read the full context</summary>
+
+> Daniel moved to the office.
+> Sandra moved to the garden.
+> Mary travelled to the office.
+> Mary went back to the hallway.
+> Mary moved to the garden.
+> John travelled to the bedroom.
+> Daniel took the milk there.
+> Daniel left the milk.
+> Daniel picked up the milk.
+> John went to the hallway.
+> Sandra travelled to the kitchen.
+> Daniel discarded the milk.
+> Mary went back to the bathroom.
+> Daniel got the milk.
+> Mary picked up the football.
+> Daniel put down the milk.
+> Mary moved to the office.
+> Daniel travelled to the bathroom.
+> Mary grabbed the milk.
+> Mary moved to the garden.
+> John went back to the bedroom.
+> Mary journeyed to the bedroom.
+> John picked up the apple.
+> Mary went back to the kitchen.
+> Daniel journeyed to the bedroom.
+> Sandra travelled to the bedroom.
+> John left the apple there.
+> John got the apple.
+> John discarded the apple.
+> Sandra picked up the apple.
+> Mary went back to the office.
+> John went back to the kitchen.
+> Sandra discarded the apple.
+> Daniel grabbed the apple.
+> Daniel went to the hallway.
+> Sandra moved to the garden.
+> John went to the office.
+> Mary dropped the football.
+> Daniel went to the garden.
+> Sandra moved to the kitchen.
+> Sandra moved to the garden.
+> Daniel put down the apple there.
+> Sandra took the apple.
+> Mary journeyed to the garden.
+> John went to the garden.
+> Sandra went back to the bedroom.
+> Mary travelled to the bedroom.
+> John moved to the bedroom.
+> Sandra put down the apple.
+> Daniel went back to the office.
+> Sandra took the apple.
+> Daniel took the football.
+> Mary put down the milk there.
+> John picked up the milk there.
+> John put down the milk.
+> Mary grabbed the milk.
+> Mary dropped the milk there.
+> Daniel left the football.
+> Daniel went to the kitchen.
+> Sandra left the apple.
+> Sandra moved to the kitchen.
+> Mary took the milk.
+> John picked up the apple.
+> John discarded the apple.
+> John grabbed the apple.
+> Mary left the milk.
+> John picked up the milk there.
+> Daniel moved to the bedroom.
+> Mary went to the hallway.
+> John discarded the apple.
+> Sandra moved to the bathroom.
+> John took the apple there.
+> Sandra journeyed to the hallway.
+> Daniel moved to the hallway.
+> Daniel went to the bathroom.
+> Daniel went to the hallway.
+> John moved to the office.
+> Mary journeyed to the bedroom.
+> Sandra went to the office.
+> John picked up the football.
+> Mary moved to the office.
+> Mary moved to the hallway.
+> John went back to the hallway.
+> Mary went back to the bathroom.
+> Sandra moved to the bedroom.
+> John went back to the garden.
+> Sandra journeyed to the office.
+> Mary went back to the hallway.
+> John put down the milk.
+> Sandra went to the hallway.
+
+</details>
+
+## Question
+
+> «Daniel moved to the office.
+> Sandra moved to the garden.
+> Mary travelled to the office.
+> Mary went back to the hallway.
+> Mary moved to the garden.
+> John travelled to the bedroom.
+> Daniel took the milk there.
+> Daniel left the milk.
+> Daniel picked up the milk.
+> John went to the hallway.
+> Sandra travelled to the kitchen.
+> Daniel discarded the milk.
+> Mary went back to the bathroom.
+> Daniel got the milk.
+> Mary picked up the football.
+> Daniel put down the milk.
+> Mary moved to the office.
+> Daniel travelled to the bathroom.
+> Mary grabbed the milk.
+> Mary moved to the garden.
+> John went back to the bedroom.
+> Mary journeyed to the bedroom.
+> John picked up the apple.
+> Mary went back to the kitchen.
+> Daniel journeyed to the bedroom.
+> Sandra travelled to the bedroom.
+> John left the apple there.
+> John got the apple.
+> John discarded the apple.
+> Sandra picked up the apple.
+> Mary went back to the office.
+> John went back to the kitchen.
+> Sandra discarded the apple.
+> Daniel grabbed the apple.
+> Daniel went to the hallway.
+> Sandra moved to the garden.
+> John went to the office.
+> Mary dropped the football.
+> Daniel went to the garden.
+> Sandra moved to the kitchen.
+> Sandra moved to the garden.
+> Daniel put down the apple there.
+> Sandra took the apple.
+> Mary journeyed to the garden.
+> John went to the garden.
+> Sandra went back to the bedroom.
+> Mary travelled to the bedroom.
+> John moved to the bedroom.
+> Sandra put down the apple.
+> Daniel went back to the office.
+> Sandra took the apple.
+> Daniel took the football.
+> Mary put down the milk there.
+> John picked up the milk there.
+> John put down the milk.
+> Mary grabbed the milk.
+> Mary dropped the milk there.
+> Daniel left the football.
+> Daniel went to the kitchen.
+> Sandra left the apple.
+> Sandra moved to the kitchen.
+> Mary took the milk.
+> John picked up the apple.
+> John discarded the apple.
+> John grabbed the apple.
+> Mary left the milk.
+> John picked up the milk there.
+> Daniel moved to the bedroom.
+> Mary went to the hallway.
+> John discarded the apple.
+> Sandra moved to the bathroom.
+> John took the apple there.
+> Sandra journeyed to the hallway.
+> Daniel moved to the hallway.
+> Daniel went to the bathroom.
+> Daniel went to the hallway.
+> John moved to the office.
+> Mary journeyed to the bedroom.
+> Sandra went to the office.
+> John picked up the football.
+> Mary moved to the office.
+> Mary moved to the hallway.
+> John went back to the hallway.
+> Mary went back to the bathroom.
+> Sandra moved to the bedroom.
+> John went back to the garden.
+> Sandra journeyed to the office.
+> Mary went back to the hallway.
+> John put down the milk.
+> Sandra went to the hallway.»
+>
+> Where was the milk before the hallway? 
+
+## Answer choices
+
+- **A.** hallway
+- **B.** office
+- **C.** bedroom
+- **D.** bathroom
+- **E.** garden
+- **F.** kitchen
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Daniel moved to the office.\nSandra moved to the garden.\nMary travelled to the office.\nMary went back to the hallway.\nMary moved to the garden.\nJohn travelled to the bedroom.\nDaniel took the milk there.\nDaniel left the milk.\nDaniel picked up the milk.\nJohn went to the hallway.\nSandra travelled to the kitchen.\nDaniel discarded the milk.\nMary went back to the bathroom.\nDaniel got the milk.\nMary picked up the football.\nDaniel put down the milk.\nMary moved to the office.\nDaniel travelled to the bathroom.\nMary grabbed the milk.\nMary moved to the garden.\nJohn went back to the bedroom.\nMary journeyed to the bedroom.\nJohn picked up the apple.\nMary went back to the kitchen.\nDaniel journeyed to the bedroom.\nSandra travelled to the bedroom.\nJohn left the apple there.\nJohn got the apple.\nJohn discarded the apple.\nSandra picked up the apple.\nMary went back to the office.\nJohn went back to the kitchen.\nSandra discarded the apple.\nDaniel grabbed the apple.\nDaniel went to the hallway.\nSandra moved to the garden.\nJohn went to the office.\nMary dropped the football.\nDaniel went to the garden.\nSandra moved to the kitchen.\nSandra moved to the garden.\nDaniel put down the apple there.\nSandra took the apple.\nMary journeyed to the garden.\nJohn went to the garden.\nSandra went back to the bedroom.\nMary travelled to the bedroom.\nJohn moved to the bedroom.\nSandra put down the apple.\nDaniel went back to the office.\nSandra took the apple.\nDaniel took the football.\nMary put down the milk there.\nJohn picked up the milk there.\nJohn put down the milk.\nMary grabbed the milk.\nMary dropped the milk there.\nDaniel left the football.\nDaniel went to the kitchen.\nSandra left the apple.\nSandra moved to the kitchen.\nMary took the milk.\nJohn picked up the apple.\nJohn discarded the apple.\nJohn grabbed the apple.\nMary left the milk.\nJohn picked up the milk there.\nDaniel moved to the bedroom.\nMary went to the hallway.\nJohn discarded the apple.\nSandra moved to the bathroom.\nJohn took the apple there.\nSandra journeyed to the hallway.\nDaniel moved to the hallway.\nDaniel went to the bathroom.\nDaniel went to the hallway.\nJohn moved to the office.\nMary journeyed to the bedroom.\nSandra went to the office.\nJohn picked up the football.\nMary moved to the office.\nMary moved to the hallway.\nJohn went back to the hallway.\nMary went back to the bathroom.\nSandra moved to the bedroom.\nJohn went back to the garden.\nSandra journeyed to the office.\nMary went back to the hallway.\nJohn put down the milk.\nSandra went to the hallway.",
+  "question": "«Daniel moved to the office.\nSandra moved to the garden.\nMary travelled to the office.\nMary went back to the hallway.\nMary moved to the garden.\nJohn travelled to the bedroom.\nDaniel took the milk there.\nDaniel left the milk.\nDaniel picked up the milk.\nJohn went to the hallway.\nSandra travelled to the kitchen.\nDaniel discarded the milk.\nMary went back to the bathroom.\nDaniel got the milk.\nMary picked up the football.\nDaniel put down the milk.\nMary moved to the office.\nDaniel travelled to the bathroom.\nMary grabbed the milk.\nMary moved to the garden.\nJohn went back to the bedroom.\nMary journeyed to the bedroom.\nJohn picked up the apple.\nMary went back to the kitchen.\nDaniel journeyed to the bedroom.\nSandra travelled to the bedroom.\nJohn left the apple there.\nJohn got the apple.\nJohn discarded the apple.\nSandra picked up the apple.\nMary went back to the office.\nJohn went back to the kitchen.\nSandra discarded the apple.\nDaniel grabbed the apple.\nDaniel went to the hallway.\nSandra moved to the garden.\nJohn went to the office.\nMary dropped the football.\nDaniel went to the garden.\nSandra moved to the kitchen.\nSandra moved to the garden.\nDaniel put down the apple there.\nSandra took the apple.\nMary journeyed to the garden.\nJohn went to the garden.\nSandra went back to the bedroom.\nMary travelled to the bedroom.\nJohn moved to the bedroom.\nSandra put down the apple.\nDaniel went back to the office.\nSandra took the apple.\nDaniel took the football.\nMary put down the milk there.\nJohn picked up the milk there.\nJohn put down the milk.\nMary grabbed the milk.\nMary dropped the milk there.\nDaniel left the football.\nDaniel went to the kitchen.\nSandra left the apple.\nSandra moved to the kitchen.\nMary took the milk.\nJohn picked up the apple.\nJohn discarded the apple.\nJohn grabbed the apple.\nMary left the milk.\nJohn picked up the milk there.\nDaniel moved to the bedroom.\nMary went to the hallway.\nJohn discarded the apple.\nSandra moved to the bathroom.\nJohn took the apple there.\nSandra journeyed to the hallway.\nDaniel moved to the hallway.\nDaniel went to the bathroom.\nDaniel went to the hallway.\nJohn moved to the office.\nMary journeyed to the bedroom.\nSandra went to the office.\nJohn picked up the football.\nMary moved to the office.\nMary moved to the hallway.\nJohn went back to the hallway.\nMary went back to the bathroom.\nSandra moved to the bedroom.\nJohn went back to the garden.\nSandra journeyed to the office.\nMary went back to the hallway.\nJohn put down the milk.\nSandra went to the hallway.»\n\nWhere was the milk before the hallway? ",
+  "choices": {
+    "A": "hallway",
+    "B": "office",
+    "C": "bedroom",
+    "D": "bathroom",
+    "E": "garden",
+    "F": "kitchen"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `E` — garden | `E` — garden | Same answer |
+| Decider v1.1 | `E` — garden | `E` — garden | Same answer |
+| Jev | `C` — bedroom | `C` — bedroom | Same answer |
+| Microsoft Decision-1 | `C` — bedroom | `D` — bathroom | Different answer |
+| Clef | `D` — bathroom | `D` — bathroom | Same answer |
+| Luna Decisions | `D` — bathroom | `D` — bathroom | Same answer |
+| Clef Flash | `D` — bathroom | `D` — bathroom | Same answer |
+| Strands Decider | `F` — kitchen | `F` — kitchen | Same answer |
+| GLiNER2.5 Decide | `A` — hallway | `B` — office | Different answer |
+| Laya | `B` — office | `B` — office | Same answer |
+| CalDec v1 | `C` — bedroom | `C` — bedroom | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `babi/a1f6c6ac025c82548034/evidence_repetition/2/clean-source_first_quoted_belief_repetition_full_0209_v2`
+
+**Input fingerprint:** `bbda44bba678b222c083d32bdc9f5c06d4ab8e243011e83635ff5578b6d57f7f`
+
+| Change | Recorded version |
+| --- | --- |
+| Repetition | Present the same evidence twice |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/state-tracking-and-updating/babi-a1f6c6ac025c82548034.md).

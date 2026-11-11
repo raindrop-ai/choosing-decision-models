@@ -1,0 +1,79 @@
+# Irrelevant details · Add a small amount of irrelevant detail variant
+
+[Original question](../../../questions/relations/bbh-83549594424261773b25.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The exhibition hall has a stone floor.
+
+## Question
+
+> The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. In an antique car show, there are five vehicles: a convertible, a bus, a minivan, a truck, and a sedan. The convertible is newer than the truck. The minivan is the newest. The bus is the third-newest. The truck is newer than the sedan.
+
+## Answer choices
+
+- **A.** The convertible is the second-oldest
+- **B.** The bus is the second-oldest
+- **C.** The minivan is the second-oldest
+- **D.** The truck is the second-oldest
+- **E.** The sedan is the second-oldest
+
+**Reference answer:** `D`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The exhibition hall has a stone floor.",
+  "question": "The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. In an antique car show, there are five vehicles: a convertible, a bus, a minivan, a truck, and a sedan. The convertible is newer than the truck. The minivan is the newest. The bus is the third-newest. The truck is newer than the sedan.",
+  "choices": {
+    "A": "The convertible is the second-oldest",
+    "B": "The bus is the second-oldest",
+    "C": "The minivan is the second-oldest",
+    "D": "The truck is the second-oldest",
+    "E": "The sedan is the second-oldest"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `D` — The truck is the second-oldest | `D` — The truck is the second-oldest | Same answer |
+| Decider v1.1 | `D` — The truck is the second-oldest | `D` — The truck is the second-oldest | Same answer |
+| Jev | `D` — The truck is the second-oldest | `D` — The truck is the second-oldest | Same answer |
+| Microsoft Decision-1 | `D` — The truck is the second-oldest | `D` — The truck is the second-oldest | Same answer |
+| Clef | `E` — The sedan is the second-oldest | `E` — The sedan is the second-oldest | Same answer |
+| Luna Decisions | `A` — The convertible is the second-oldest | `D` — The truck is the second-oldest | Different answer |
+| Clef Flash | `D` — The truck is the second-oldest | `D` — The truck is the second-oldest | Same answer |
+| Strands Decider | `D` — The truck is the second-oldest | `D` — The truck is the second-oldest | Same answer |
+| GLiNER2.5 Decide | `A` — The convertible is the second-oldest | `A` — The convertible is the second-oldest | Same answer |
+| Laya | `C` — The minivan is the second-oldest | `C` — The minivan is the second-oldest | Same answer |
+| CalDec v1 | `C` — The minivan is the second-oldest | `C` — The minivan is the second-oldest | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/83549594424261773b25/irrelevant_details/low/clean-ordinal_scene_details_full_0028`
+
+**Input fingerprint:** `963aebdc229e452766494bab0955f906d73bd1159a93508605e54d839a158f58`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a small amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/bbh-83549594424261773b25.md).

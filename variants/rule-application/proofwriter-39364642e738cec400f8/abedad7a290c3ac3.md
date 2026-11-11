@@ -1,0 +1,48 @@
+# Text length · 8,192-token input target variant
+
+[Original question](../../../questions/rule-application/proofwriter-39364642e738cec400f8.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Recover the question text
+
+The original dataset’s terms do not clearly support republishing its text here, or require additional conditions. This variant’s full text is therefore reconstructed locally. [Follow the recovery instructions](../../../docs/variant-reproduction.md#recover-the-remaining-variant-texts).
+
+**Reference answer key:** `false`.
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `false` | `false` | Same answer |
+| Decider v1.1 | `false` | Outside input limit | — |
+| Jev | `false` | `false` | Same answer |
+| Microsoft Decision-1 | `false` | `false` | Same answer |
+| Clef | `false` | `false` | Same answer |
+| Luna Decisions | `false` | `false` | Same answer |
+| Clef Flash | `false` | `false` | Same answer |
+| Strands Decider | `false` | Outside input limit | — |
+| GLiNER2.5 Decide | `true` | `unknown` | Different answer |
+| Laya | `false` | Outside input limit | — |
+| CalDec v1 | `false` | Outside input limit | — |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `proofwriter/39364642e738cec400f8/text_length/8192/clean-source_first_proofwriter_natural_contexts_full_0113`
+
+**Input fingerprint:** `6c4b1cd4f5c8e49eee0324b634583988878ce355be0d55e6c1a72f05e266ecac`
+
+| Change | Recorded version |
+| --- | --- |
+| Text length | 8,192-token input target |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/rule-application/proofwriter-39364642e738cec400f8.md).

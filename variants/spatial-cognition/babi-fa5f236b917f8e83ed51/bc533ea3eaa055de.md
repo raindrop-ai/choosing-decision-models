@@ -1,0 +1,76 @@
+# Irrelevant details · Add a small amount of irrelevant detail variant
+
+[Original question](../../../questions/spatial-cognition/babi-fa5f236b917f8e83ed51.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The triangle is below the red sphere.
+> The yellow square is below the triangle.
+>
+> The poem is untitled.
+
+## Question
+
+> Is the red sphere above the yellow square?
+
+## Answer choices
+
+- **no.** no
+- **yes.** yes
+
+**Reference answer:** `yes`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The triangle is below the red sphere.\nThe yellow square is below the triangle.\n\nThe poem is untitled.",
+  "question": "Is the red sphere above the yellow square?",
+  "choices": {
+    "no": "no",
+    "yes": "yes"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `yes` — yes | `yes` — yes | Same answer |
+| Decider v1.1 | `yes` — yes | `yes` — yes | Same answer |
+| Jev | `yes` — yes | `yes` — yes | Same answer |
+| Microsoft Decision-1 | `yes` — yes | `yes` — yes | Same answer |
+| Clef | `yes` — yes | `yes` — yes | Same answer |
+| Luna Decisions | `yes` — yes | `yes` — yes | Same answer |
+| Clef Flash | `yes` — yes | `yes` — yes | Same answer |
+| Strands Decider | `yes` — yes | `yes` — yes | Same answer |
+| GLiNER2.5 Decide | `no` — no | `no` — no | Same answer |
+| Laya | `no` — no | `no` — no | Same answer |
+| CalDec v1 | `no` — no | `no` — no | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `babi/fa5f236b917f8e83ed51/irrelevant_details/low/clean-source_first_babi_static_worlds_full_0089`
+
+**Input fingerprint:** `64bb7dae2ae8272287be555c639a61a4b2703f0d6262b8485ff4ce4719ceca0f`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a small amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/spatial-cognition/babi-fa5f236b917f8e83ed51.md).

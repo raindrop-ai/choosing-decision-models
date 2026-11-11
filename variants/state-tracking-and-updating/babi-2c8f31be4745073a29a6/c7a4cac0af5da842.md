@@ -1,0 +1,97 @@
+# Extra events · Add 6 unrelated events variant
+
+[Original question](../../../questions/state-tracking-and-updating/babi-2c8f31be4745073a29a6.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Nolan is the editor of a poetry catalog. Its entries are Virel, Zorven, Kesil, Nereth, Pavrel, and Sovrin.
+> Nolan classifies Virel as a dialogue. Nolan classifies Zorven as a monologue. Nolan classifies Kesil as an elegy. Nolan classifies Nereth as a satire. Nolan classifies Pavrel as a fable. Nolan classifies Sovrin as a ballad.
+>
+> Daniel went to the office.
+> John travelled to the kitchen.
+> Mary journeyed to the bedroom.
+> John picked up the apple there.
+> John put down the apple.
+> Sandra travelled to the office.
+> Sandra went to the bathroom.
+> Daniel grabbed the milk there.
+> John journeyed to the office.
+> John travelled to the bedroom.
+> Daniel left the milk.
+> Daniel grabbed the milk there.
+> John moved to the garden.
+> Daniel moved to the kitchen.
+
+## Question
+
+> Where is the milk? 
+
+## Answer choices
+
+- **A.** hallway
+- **B.** bathroom
+- **C.** kitchen
+- **D.** office
+- **E.** garden
+- **F.** bedroom
+
+**Reference answer:** `C`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Nolan is the editor of a poetry catalog. Its entries are Virel, Zorven, Kesil, Nereth, Pavrel, and Sovrin.\nNolan classifies Virel as a dialogue. Nolan classifies Zorven as a monologue. Nolan classifies Kesil as an elegy. Nolan classifies Nereth as a satire. Nolan classifies Pavrel as a fable. Nolan classifies Sovrin as a ballad.\n\nDaniel went to the office.\nJohn travelled to the kitchen.\nMary journeyed to the bedroom.\nJohn picked up the apple there.\nJohn put down the apple.\nSandra travelled to the office.\nSandra went to the bathroom.\nDaniel grabbed the milk there.\nJohn journeyed to the office.\nJohn travelled to the bedroom.\nDaniel left the milk.\nDaniel grabbed the milk there.\nJohn moved to the garden.\nDaniel moved to the kitchen.",
+  "question": "Where is the milk? ",
+  "choices": {
+    "A": "hallway",
+    "B": "bathroom",
+    "C": "kitchen",
+    "D": "office",
+    "E": "garden",
+    "F": "bedroom"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `C` — kitchen | `C` — kitchen | Same answer |
+| Decider v1.1 | `C` — kitchen | `C` — kitchen | Same answer |
+| Jev | `C` — kitchen | `C` — kitchen | Same answer |
+| Microsoft Decision-1 | `C` — kitchen | `C` — kitchen | Same answer |
+| Clef | `C` — kitchen | `C` — kitchen | Same answer |
+| Luna Decisions | `C` — kitchen | `C` — kitchen | Same answer |
+| Clef Flash | `C` — kitchen | `C` — kitchen | Same answer |
+| Strands Decider | `C` — kitchen | `C` — kitchen | Same answer |
+| GLiNER2.5 Decide | `C` — kitchen | `C` — kitchen | Same answer |
+| Laya | `D` — office | `D` — office | Same answer |
+| CalDec v1 | `C` — kitchen | `B` — bathroom | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `babi/2c8f31be4745073a29a6/event_count/6/clean-source_first_babi_object_contexts_full_0088`
+
+**Input fingerprint:** `1a50b216c44a4c2dde57e80473b6098eaf80b3ebb9edfffbc8526bc345166efb`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 6 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/state-tracking-and-updating/babi-2c8f31be4745073a29a6.md).

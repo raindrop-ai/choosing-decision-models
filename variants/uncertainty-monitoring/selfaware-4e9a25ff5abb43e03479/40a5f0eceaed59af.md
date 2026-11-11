@@ -1,0 +1,75 @@
+# Irrelevant details · Add a larger amount of irrelevant detail variant
+
+[Original question](../../../questions/uncertainty-monitoring/selfaware-4e9a25ff5abb43e03479.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The notebook has a linen cover. The cover has an embossed title. The page edges are uneven. The binding is stitched. A ribbon marks a page. The back cover has a pocket.
+>
+> What is the nautical term for a staircase between two decks on a ship?
+
+## Question
+
+> Does this question have a determinate answer?
+
+## Answer choices
+
+- **yes.** Answerable
+- **no.** Unanswerable
+
+**Reference answer:** `yes`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The notebook has a linen cover. The cover has an embossed title. The page edges are uneven. The binding is stitched. A ribbon marks a page. The back cover has a pocket.\n\nWhat is the nautical term for a staircase between two decks on a ship?",
+  "question": "Does this question have a determinate answer?",
+  "choices": {
+    "yes": "Answerable",
+    "no": "Unanswerable"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Decider v1.1 | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Jev | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Microsoft Decision-1 | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Clef | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Luna Decisions | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Clef Flash | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Strands Decider | `yes` — Answerable | `no` — Unanswerable | Different answer |
+| GLiNER2.5 Decide | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Laya | `no` — Unanswerable | `no` — Unanswerable | Same answer |
+| CalDec v1 | `no` — Unanswerable | `no` — Unanswerable | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `selfaware/4e9a25ff5abb43e03479/irrelevant_details/high/clean-source_first_selfaware_short_contexts_full_0127`
+
+**Input fingerprint:** `02b3138f89d59369193d591eebaf43c57e862461e9ad6616bef6bb3fb6fe3d3a`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a larger amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/uncertainty-monitoring/selfaware-4e9a25ff5abb43e03479.md).

@@ -1,0 +1,84 @@
+# Repetition · Present the same evidence three times variant
+
+[Original question](../../../questions/state-tracking-and-updating/bbh-7e2477bff4b9f9a125b9.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> «Alice, Bob, Claire, Dave, and Eve are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets Frankenstein, Bob gets Ulysses, Claire gets Lolita, Dave gets The Odyssey, and Eve gets The Fellowship of the Ring.
+> As the semester proceeds, they start trading around the new books. First, Eve and Dave swap books. Then, Claire and Alice swap books. Then, Dave and Eve swap books. Then, Bob and Claire swap books. Finally, Alice and Claire swap books. »
+>
+> «Alice, Bob, Claire, Dave, and Eve are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets Frankenstein, Bob gets Ulysses, Claire gets Lolita, Dave gets The Odyssey, and Eve gets The Fellowship of the Ring.
+> As the semester proceeds, they start trading around the new books. First, Eve and Dave swap books. Then, Claire and Alice swap books. Then, Dave and Eve swap books. Then, Bob and Claire swap books. Finally, Alice and Claire swap books. »
+
+## Question
+
+> Alice, Bob, Claire, Dave, and Eve are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets Frankenstein, Bob gets Ulysses, Claire gets Lolita, Dave gets The Odyssey, and Eve gets The Fellowship of the Ring.
+> As the semester proceeds, they start trading around the new books. First, Eve and Dave swap books. Then, Claire and Alice swap books. Then, Dave and Eve swap books. Then, Bob and Claire swap books. Finally, Alice and Claire swap books. At the end of the semester, Alice has
+
+## Answer choices
+
+- **A.** Frankenstein
+- **B.** Ulysses
+- **C.** Lolita
+- **D.** The Odyssey
+- **E.** The Fellowship of the Ring
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "«Alice, Bob, Claire, Dave, and Eve are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets Frankenstein, Bob gets Ulysses, Claire gets Lolita, Dave gets The Odyssey, and Eve gets The Fellowship of the Ring.\nAs the semester proceeds, they start trading around the new books. First, Eve and Dave swap books. Then, Claire and Alice swap books. Then, Dave and Eve swap books. Then, Bob and Claire swap books. Finally, Alice and Claire swap books. »\n\n«Alice, Bob, Claire, Dave, and Eve are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets Frankenstein, Bob gets Ulysses, Claire gets Lolita, Dave gets The Odyssey, and Eve gets The Fellowship of the Ring.\nAs the semester proceeds, they start trading around the new books. First, Eve and Dave swap books. Then, Claire and Alice swap books. Then, Dave and Eve swap books. Then, Bob and Claire swap books. Finally, Alice and Claire swap books. »",
+  "question": "Alice, Bob, Claire, Dave, and Eve are friends and avid readers who occasionally trade books. At the start of the semester, they each buy one new book: Alice gets Frankenstein, Bob gets Ulysses, Claire gets Lolita, Dave gets The Odyssey, and Eve gets The Fellowship of the Ring.\nAs the semester proceeds, they start trading around the new books. First, Eve and Dave swap books. Then, Claire and Alice swap books. Then, Dave and Eve swap books. Then, Bob and Claire swap books. Finally, Alice and Claire swap books. At the end of the semester, Alice has",
+  "choices": {
+    "A": "Frankenstein",
+    "B": "Ulysses",
+    "C": "Lolita",
+    "D": "The Odyssey",
+    "E": "The Fellowship of the Ring"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — Ulysses | `B` — Ulysses | Same answer |
+| Decider v1.1 | `B` — Ulysses | `B` — Ulysses | Same answer |
+| Jev | `B` — Ulysses | `B` — Ulysses | Same answer |
+| Microsoft Decision-1 | `C` — Lolita | `C` — Lolita | Same answer |
+| Clef | `C` — Lolita | `C` — Lolita | Same answer |
+| Luna Decisions | `A` — Frankenstein | `A` — Frankenstein | Same answer |
+| Clef Flash | `C` — Lolita | `C` — Lolita | Same answer |
+| Strands Decider | `C` — Lolita | `C` — Lolita | Same answer |
+| GLiNER2.5 Decide | `A` — Frankenstein | `A` — Frankenstein | Same answer |
+| Laya | `A` — Frankenstein | `A` — Frankenstein | Same answer |
+| CalDec v1 | `A` — Frankenstein | `A` — Frankenstein | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/7e2477bff4b9f9a125b9/evidence_repetition/3/clean-source_first_tracking_history_quote_completion_contexts_full_0225`
+
+**Input fingerprint:** `3f64d8e7037fcfd7648336b2dbd8655613b73d97119bccb1e2a18e3f9224aa34`
+
+| Change | Recorded version |
+| --- | --- |
+| Repetition | Present the same evidence three times |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/state-tracking-and-updating/bbh-7e2477bff4b9f9a125b9.md).

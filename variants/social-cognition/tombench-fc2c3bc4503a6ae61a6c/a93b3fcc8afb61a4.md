@@ -1,0 +1,79 @@
+# Extra events · Add 6 unrelated events variant
+
+[Original question](../../../questions/social-cognition/tombench-fc2c3bc4503a6ae61a6c.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Merovan is a fictional musical suite with a refrain. The refrain begins on the tonic. The refrain pauses. The refrain resumes on a dominant tone. The refrain changes to detached articulation. The refrain returns to the tonic. The refrain repeats its final interval.
+>
+> Xiaoming, Liucui, and Donger are colleagues. Recently, they are discussing going to a nearby tourist spot together on the weekend. Xiaoming and Liucui plan in advance. When Donger walks into their office, Xiaoming deliberately tells Donger about the recent food poisoning incident at the tourist spot they want to go to. At the last moment, Liucui looks at Xiaoming and secretly shows a smile. Xiaoming also nods. Donger sees all this and does not ask further about other situations of the tourist spot.
+
+## Question
+
+> What do you think Donger thinks?
+
+## Answer choices
+
+- **A.** Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him.
+- **B.** Donger feels happy, he looks forward to this trip.
+- **C.** Donger feels comforted, he thinks Xiaoming cares about his safety.
+- **D.** Donger feels surprised, he does not expect food poisoning to occur at the attraction.
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Merovan is a fictional musical suite with a refrain. The refrain begins on the tonic. The refrain pauses. The refrain resumes on a dominant tone. The refrain changes to detached articulation. The refrain returns to the tonic. The refrain repeats its final interval.\n\nXiaoming, Liucui, and Donger are colleagues. Recently, they are discussing going to a nearby tourist spot together on the weekend. Xiaoming and Liucui plan in advance. When Donger walks into their office, Xiaoming deliberately tells Donger about the recent food poisoning incident at the tourist spot they want to go to. At the last moment, Liucui looks at Xiaoming and secretly shows a smile. Xiaoming also nods. Donger sees all this and does not ask further about other situations of the tourist spot.",
+  "question": "What do you think Donger thinks?",
+  "choices": {
+    "A": "Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him.",
+    "B": "Donger feels happy, he looks forward to this trip.",
+    "C": "Donger feels comforted, he thinks Xiaoming cares about his safety.",
+    "D": "Donger feels surprised, he does not expect food poisoning to occur at the attraction."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | Same answer |
+| Decider v1.1 | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | Same answer |
+| Jev | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | Same answer |
+| Microsoft Decision-1 | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | Same answer |
+| Clef | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | Same answer |
+| Luna Decisions | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | Same answer |
+| Clef Flash | `C` — Donger feels comforted, he thinks Xiaoming cares about his safety. | `C` — Donger feels comforted, he thinks Xiaoming cares about his safety. | Same answer |
+| Strands Decider | `C` — Donger feels comforted, he thinks Xiaoming cares about his safety. | `D` — Donger feels surprised, he does not expect food poisoning to occur at the attraction. | Different answer |
+| GLiNER2.5 Decide | `D` — Donger feels surprised, he does not expect food poisoning to occur at the attraction. | `D` — Donger feels surprised, he does not expect food poisoning to occur at the attraction. | Same answer |
+| Laya | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | `A` — Donger feels disappointed, he feels that Xiaoming and Liucui are a bit unwelcome to him. | Same answer |
+| CalDec v1 | `D` — Donger feels surprised, he does not expect food poisoning to occur at the attraction. | `D` — Donger feels surprised, he does not expect food poisoning to occur at the attraction. | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `tombench/fc2c3bc4503a6ae61a6c/event_count/6/clean-source_first_tombench_music_contexts_full_0155`
+
+**Input fingerprint:** `171336e231edb2626c8c2185295cc1e8a95a6d027da1a64e9f0805266a559d55`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 6 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/social-cognition/tombench-fc2c3bc4503a6ae61a6c.md).

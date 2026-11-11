@@ -1,0 +1,83 @@
+# Similar distractors · Add more similar but irrelevant items variant
+
+[Original question](../../../questions/retrieval/tombench-2cdd646690b4d21c29b8.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> «In another study, Rina opens a cabinet labeled 'coat' and finds a pencil.»
+>
+> «In a different office, Daro places tape inside a separate carrot-labeled cabinet.»
+>
+> «At another building, Mira closes a cabinet that contains carrots and no coat.»
+>
+> Xiao Li finds a storage cabinet in the study, the label on the storage cabinet is carrot, Xiao Li cannot see what is inside the storage cabinet, Xiao Li opens the storage cabinet and finds a coat, there are no carrots in the storage cabinet, Xiao Li closes the storage cabinet and puts it back in its place, Xiao Zhang enters the study and sees the storage cabinet.
+
+## Question
+
+> What is in the storage cabinet?
+
+## Answer choices
+
+- **A.** Coat
+- **B.** Pencil
+- **C.** Carrot
+- **D.** Tape
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "«In another study, Rina opens a cabinet labeled 'coat' and finds a pencil.»\n\n«In a different office, Daro places tape inside a separate carrot-labeled cabinet.»\n\n«At another building, Mira closes a cabinet that contains carrots and no coat.»\n\nXiao Li finds a storage cabinet in the study, the label on the storage cabinet is carrot, Xiao Li cannot see what is inside the storage cabinet, Xiao Li opens the storage cabinet and finds a coat, there are no carrots in the storage cabinet, Xiao Li closes the storage cabinet and puts it back in its place, Xiao Zhang enters the study and sees the storage cabinet.",
+  "question": "What is in the storage cabinet?",
+  "choices": {
+    "A": "Coat",
+    "B": "Pencil",
+    "C": "Carrot",
+    "D": "Tape"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — Coat | `A` — Coat | Same answer |
+| Decider v1.1 | `A` — Coat | `A` — Coat | Same answer |
+| Jev | `A` — Coat | `A` — Coat | Same answer |
+| Microsoft Decision-1 | `A` — Coat | `A` — Coat | Same answer |
+| Clef | `A` — Coat | `A` — Coat | Same answer |
+| Luna Decisions | `A` — Coat | `A` — Coat | Same answer |
+| Clef Flash | `A` — Coat | `A` — Coat | Same answer |
+| Strands Decider | `A` — Coat | `A` — Coat | Same answer |
+| GLiNER2.5 Decide | `A` — Coat | `A` — Coat | Same answer |
+| Laya | `A` — Coat | `A` — Coat | Same answer |
+| CalDec v1 | `A` — Coat | `A` — Coat | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `tombench/2cdd646690b4d21c29b8/similar_distractors/high/clean-source_first_tombench_near_scenes_full_0215`
+
+**Input fingerprint:** `2bc512f0d38642d1f71b340d806e1c9def56a4695a3f776bc36a92b461ab3e59`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add more similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/retrieval/tombench-2cdd646690b4d21c29b8.md).

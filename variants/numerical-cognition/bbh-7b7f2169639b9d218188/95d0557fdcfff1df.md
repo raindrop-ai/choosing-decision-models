@@ -1,0 +1,75 @@
+# Option order · Reverse the answer choices variant
+
+[Original question](../../../questions/numerical-cognition/bbh-7b7f2169639b9d218188.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** answer choices or their order.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Question
+
+> ((-2 \* -8 \* 9 + -5) + (7 - -1 - -4 - 1)) =
+
+## Answer choices
+
+- **D.** 150
+- **C.** 136
+- **B.** 16
+- **A.** 11
+
+**Reference answer:** `D`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "",
+  "question": "((-2 * -8 * 9 + -5) + (7 - -1 - -4 - 1)) =",
+  "choices": {
+    "D": "150",
+    "C": "136",
+    "B": "16",
+    "A": "11"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `C` — 136 | `D` — 150 | Different answer |
+| Decider v1.1 | `C` — 136 | `C` — 136 | Same answer |
+| Jev | `C` — 136 | `C` — 136 | Same answer |
+| Microsoft Decision-1 | `D` — 150 | `D` — 150 | Same answer |
+| Clef | `C` — 136 | `C` — 136 | Same answer |
+| Luna Decisions | `D` — 150 | `D` — 150 | Same answer |
+| Clef Flash | `B` — 16 | `B` — 16 | Same answer |
+| Strands Decider | `D` — 150 | `C` — 136 | Different answer |
+| GLiNER2.5 Decide | `A` — 11 | `D` — 150 | Different answer |
+| Laya | `A` — 11 | `D` — 150 | Different answer |
+| CalDec v1 | `A` — 11 | `A` — 11 | Same answer |
+
+Clef and Clef Flash sort answer choices in their published input-processing code. Their choice-order results describe that preprocessing.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/7b7f2169639b9d218188/option_order/reverse`
+
+**Input fingerprint:** `1ec831132b65eed3ea4fd41f9acfe39f7b4ac8494aac64aeea2fa74aec8135e7`
+
+| Change | Recorded version |
+| --- | --- |
+| Option order | Reverse the answer choices |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/numerical-cognition/bbh-7b7f2169639b9d218188.md).

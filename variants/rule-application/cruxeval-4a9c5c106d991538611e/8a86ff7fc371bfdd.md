@@ -1,0 +1,87 @@
+# Irrelevant details · Add a small amount of irrelevant detail variant
+
+[Original question](../../../questions/rule-application/cruxeval-4a9c5c106d991538611e.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+```text
+def f(text):
+    ans = []
+    for char in text:
+        if char.isdigit():
+            ans.append(char)
+        else:
+            ans.append(' ')
+    return ''.join(ans)
+# The poem is untitled.
+```
+
+## Question
+
+> What does f('m4n2o') return?
+
+## Answer choices
+
+- **A.** &#x27;24 2 &#x27;
+- **B.** &#x27; 442 &#x27;
+- **C.** &#x27; 4 2 &#x27;
+- **D.** &#x27;44 2 &#x27;
+
+**Reference answer:** `C`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "def f(text):\n    ans = []\n    for char in text:\n        if char.isdigit():\n            ans.append(char)\n        else:\n            ans.append(' ')\n    return ''.join(ans)\n# The poem is untitled.",
+  "question": "What does f('m4n2o') return?",
+  "choices": {
+    "A": "'24 2 '",
+    "B": "' 442 '",
+    "C": "' 4 2 '",
+    "D": "'44 2 '"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| Decider v1.1 | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| Jev | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| Microsoft Decision-1 | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| Clef | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| Luna Decisions | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| Clef Flash | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| Strands Decider | `C` — &#x27; 4 2 &#x27; | `C` — &#x27; 4 2 &#x27; | Same answer |
+| GLiNER2.5 Decide | `A` — &#x27;24 2 &#x27; | `A` — &#x27;24 2 &#x27; | Same answer |
+| Laya | `A` — &#x27;24 2 &#x27; | `A` — &#x27;24 2 &#x27; | Same answer |
+| CalDec v1 | `A` — &#x27;24 2 &#x27; | `A` — &#x27;24 2 &#x27; | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `cruxeval/4a9c5c106d991538611e/irrelevant_details/low/clean-source_first_crux_comment_contexts_full_0080`
+
+**Input fingerprint:** `dd6ac340280d1a629f06cf5b1f1eb2f690dc38df3218eb16bc5d87ffe514aee6`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a small amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/rule-application/cruxeval-4a9c5c106d991538611e.md).

@@ -1,0 +1,75 @@
+# Invented names · Use invented names variant
+
+[Original question](../../../questions/spatial-cognition/spartqa-c34db59ae1be0ed1dfa1.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context, question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> There are three blocks. Lets call them Varelin, Zorven and Kasel. A medium blue square is in block Varelin. A medium black square is under the medium blue square. Block Zorven is to the right of block Varelin. It has one medium blue square. A medium yellow square is touching the bottom edge of this block. This object is under the medium blue square. To the left side of block Zorven there is block Kasel with two medium blue squares in it. Below medium blue square number two is medium blue square number one. There is also a medium yellow square touching the bottom edge of this block. Below medium blue square number two and medium blue square number one is the medium yellow square.
+
+## Question
+
+> Is there a square that is under a medium square that is in block Zorven, to the right of a blue square that is on the top of a blue square?
+
+## Answer choices
+
+- **Yes.** Yes
+- **No.** No
+- **DK.** DK
+
+**Reference answer:** `Yes`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "There are three blocks. Lets call them Varelin, Zorven and Kasel. A medium blue square is in block Varelin. A medium black square is under the medium blue square. Block Zorven is to the right of block Varelin. It has one medium blue square. A medium yellow square is touching the bottom edge of this block. This object is under the medium blue square. To the left side of block Zorven there is block Kasel with two medium blue squares in it. Below medium blue square number two is medium blue square number one. There is also a medium yellow square touching the bottom edge of this block. Below medium blue square number two and medium blue square number one is the medium yellow square.",
+  "question": "Is there a square that is under a medium square that is in block Zorven, to the right of a blue square that is on the top of a blue square?",
+  "choices": {
+    "Yes": "Yes",
+    "No": "No",
+    "DK": "DK"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Decider v1.1 | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Jev | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Microsoft Decision-1 | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Clef | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Luna Decisions | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Clef Flash | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Strands Decider | `Yes` — Yes | `Yes` — Yes | Same answer |
+| GLiNER2.5 Decide | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Laya | `No` — No | `Yes` — Yes | Different answer |
+| CalDec v1 | `Yes` — Yes | `Yes` — Yes | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `spartqa/c34db59ae1be0ed1dfa1/unfamiliar_names/invented`
+
+**Input fingerprint:** `8cd81392054e17966629d6ee1740f75b3902096470b69986601dd17a1a2a49bb`
+
+| Change | Recorded version |
+| --- | --- |
+| Invented names | Use invented names |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/spatial-cognition/spartqa-c34db59ae1be0ed1dfa1.md).

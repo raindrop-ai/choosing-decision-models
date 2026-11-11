@@ -1,0 +1,76 @@
+# Unrelated examples · No worked example (absence-control recipe) variant
+
+[Original question](../../../questions/causal-reasoning/cladder-7c8838a7e2f0e1432851.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The notebook's cover has a stitched border and an embossed title.
+>
+> Imagine a self-contained, hypothetical world with only the following conditions, and without any unmentioned factors or causal relationships: Yupt has a direct effect on qwiu and jyka. Jyka has a direct effect on kwox. Qwiu has a direct effect on kwox.
+> Method 1: We look directly at how jyka correlates with kwox in general. Method 2: We look at this correlation case by case according to qwiu.
+
+## Question
+
+> To understand how jyka affects kwox, is it more correct to use the Method 1 than Method 2?
+
+## Answer choices
+
+- **yes.** Yes
+- **no.** No
+
+**Reference answer:** `no`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The notebook's cover has a stitched border and an embossed title.\n\nImagine a self-contained, hypothetical world with only the following conditions, and without any unmentioned factors or causal relationships: Yupt has a direct effect on qwiu and jyka. Jyka has a direct effect on kwox. Qwiu has a direct effect on kwox.\nMethod 1: We look directly at how jyka correlates with kwox in general. Method 2: We look at this correlation case by case according to qwiu.",
+  "question": "To understand how jyka affects kwox, is it more correct to use the Method 1 than Method 2?",
+  "choices": {
+    "yes": "Yes",
+    "no": "No"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `no` — No | `no` — No | Same answer |
+| Decider v1.1 | `no` — No | `no` — No | Same answer |
+| Jev | `no` — No | `no` — No | Same answer |
+| Microsoft Decision-1 | `yes` — Yes | `yes` — Yes | Same answer |
+| Clef | `no` — No | `yes` — Yes | Different answer |
+| Luna Decisions | `no` — No | `no` — No | Same answer |
+| Clef Flash | `no` — No | `no` — No | Same answer |
+| Strands Decider | `yes` — Yes | `no` — No | Different answer |
+| GLiNER2.5 Decide | `yes` — Yes | `yes` — Yes | Same answer |
+| Laya | `yes` — Yes | `yes` — Yes | Same answer |
+| CalDec v1 | `yes` — Yes | `yes` — Yes | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `cladder/7c8838a7e2f0e1432851/examples/absent/clean-source_first_cladder_short_contexts_full_0130`
+
+**Input fingerprint:** `ada40188f06d4559c90b92730ec855762431550f8516b360ec41306d5e45d1c6`
+
+| Change | Recorded version |
+| --- | --- |
+| Unrelated examples | No worked example (absence-control recipe) |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/causal-reasoning/cladder-7c8838a7e2f0e1432851.md).

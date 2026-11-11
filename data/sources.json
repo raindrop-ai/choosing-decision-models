@@ -1,0 +1,2135 @@
+[
+  {
+    "id": "ag_news",
+    "title": "AG News",
+    "url": "https://huggingface.co/datasets/fancyzhx/ag_news",
+    "revision": "eb185aade064a813bc0b7f42de02595523103ca4",
+    "questions": 6,
+    "sharing": "hold_unclear",
+    "license": null,
+    "license_url": null,
+    "reason": "No explicit redistribution grant for the original news excerpts was established. Obtain the selected text from the original source under its applicable terms.",
+    "attribution": "AG News original creators; see source",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "README.md",
+        "sha256": "0ae9549054c5eca6a2284b1a6e8505b1ec92a39613aca402336429762b544a62",
+        "url": "https://huggingface.co/datasets/fancyzhx/ag_news/resolve/eb185aade064a813bc0b7f42de02595523103ca4/README.md",
+        "license_excerpts": [
+          "license: - unknown multilinguality:",
+          "  - [Licensing Information](#licensing-information)   - [Citation Information](#citation-information)   - [Contributions](#contributions)",
+          "non-commercial activity. For more information, please refer to the link http://www.di.unipi.it/~gulli/AG_corpus_of_news_articles.html . ",
+          "### Licensing Information  [More Information Needed](https://github.com/huggingface/datasets/blob/master/CONTRIBUTING.md#how-to-contribute-to-the-dataset-cards)"
+        ]
+      }
+    ],
+    "downloads": [
+      {
+        "path": "README.md",
+        "url": "https://huggingface.co/datasets/fancyzhx/ag_news/resolve/eb185aade064a813bc0b7f42de02595523103ca4/README.md",
+        "sha256": "0ae9549054c5eca6a2284b1a6e8505b1ec92a39613aca402336429762b544a62",
+        "bytes": 8070
+      },
+      {
+        "path": "data/test-00000-of-00001.parquet",
+        "url": "https://huggingface.co/datasets/fancyzhx/ag_news/resolve/eb185aade064a813bc0b7f42de02595523103ca4/data/test-00000-of-00001.parquet",
+        "sha256": "71de87ec66bc5737752a2502204dfa6d7fe9856ade3ea444dc6317789a4f13fb",
+        "bytes": 1234829
+      },
+      {
+        "path": "data/train-00000-of-00001.parquet",
+        "url": "https://huggingface.co/datasets/fancyzhx/ag_news/resolve/eb185aade064a813bc0b7f42de02595523103ca4/data/train-00000-of-00001.parquet",
+        "sha256": "fc508d6d9868594e3da960a8cfeb63ab5a4746598b93428c224397080c1f52ee",
+        "bytes": 18585438
+      }
+    ],
+    "review_scope": "Bundling full question text in this repository; not a blanket finding about lawful local use.",
+    "local_recovery": "docs/recovering-inputs.md"
+  },
+  {
+    "id": "agentprocessbench",
+    "title": "AgentProcessBench",
+    "url": "https://github.com/RUCBM/AgentProcessBench",
+    "revision": "0a42606b178a8c69d40c5765dc05c342f921e578",
+    "questions": 4,
+    "sharing": "include",
+    "license": "MIT",
+    "license_url": "https://opensource.org/license/mit",
+    "reason": "The dataset page linked by the official repository declares MIT for the dataset. All four selected trajectories are from tau2, whose original repository also provides an MIT license. Retain both publisher attribution and the original Sierra Research notice.",
+    "attribution": "Shengda Fan, Xuyan Ye, Yupeng Huo, Zhi-Yuan Chen, Yiju Guo, Shenzhi Yang, Wenkai Yang, Shuqi Ye, Jingwen Chen, Haotian Chen, Xin Cong, Yankai Lin; RUCBM; Sierra Research (tau2-bench)",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "data/raw/agentprocessbench/README.md",
+        "sha256": "fc67f8cc566fa24b411eed603905cb911ec1b0372c66f47365544375915e1ed9",
+        "url": "https://github.com/RUCBM/AgentProcessBench/blob/0a42606b178a8c69d40c5765dc05c342f921e578/README.md",
+        "license_excerpts": []
+      },
+      {
+        "check": "agentprocessbench",
+        "outcome": "No license file returned by checked upstream path",
+        "checked": "2026-11-09"
+      },
+      {
+        "check": "source-sharing-follow-up",
+        "checked": "2026-11-09",
+        "per_question_mapping": "data/source_attributions.json",
+        "outcome": "The dataset page linked by the official repository declares MIT for the dataset. All four selected trajectories are from tau2, whose original repository also provides an MIT license. Retain both publisher attribution and the original Sierra Research notice."
+      },
+      {
+        "bundled_notice": "licenses/sources/agentprocessbench/tau2-MIT.txt",
+        "sha256": "e57427cef36f33163a5c7f68393a58a3a801f511a63cb736076ef098bb8a2800",
+        "checked": "2026-11-09"
+      },
+      {
+        "url": "https://github.com/sierra-research/tau2-bench/blob/main/LICENSE",
+        "git_blob_sha": "f0323a32227c1327820da33d2fb9d3338a27ac84",
+        "checked": "2026-11-09"
+      },
+      {
+        "url": "https://huggingface.co/datasets/LulaCola/AgentProcessBench/raw/main/README.md",
+        "sha256": "a1446d73d7e8b23d15c5fd6ff5bc9e9ea4014803926d80738dd6f5397731f252",
+        "checked": "2026-11-09",
+        "license_declaration": "MIT",
+        "publisher_link": "https://github.com/RUCBM/AgentProcessBench/blob/main/README.md"
+      }
+    ],
+    "downloads": []
+  },
+  {
+    "id": "analogical_similarity",
+    "title": "BIG-bench Analogical Similarity",
+    "url": "https://github.com/google/BIG-bench",
+    "revision": "092b196c1f8f14a54bbc62f24759d43bde46dd3b",
+    "questions": 67,
+    "sharing": "include",
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "reason": "The pinned BIG-bench repository provides Apache-2.0 terms. Retain the repository notice and task-specific provenance.",
+    "attribution": "BIG-bench analogical_similarity contributors",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "url": "https://raw.githubusercontent.com/google/BIG-bench/092b196c1f8f14a54bbc62f24759d43bde46dd3b/LICENSE",
+        "bundled_notice": "licenses/sources/analogical_similarity/LICENSE"
+      },
+      {
+        "file": "README.md",
+        "sha256": "be15e44863b6070a1dda2000d4ba16b89e8d82208cae92b07a3ab6531e885a12",
+        "url": "https://raw.githubusercontent.com/google/BIG-bench/092b196c1f8f14a54bbc62f24759d43bde46dd3b/README.md",
+        "license_excerpts": []
+      },
+      {
+        "file": "bigbench/benchmark_tasks/analogical_similarity/README.md",
+        "sha256": "221afbae1045d61b3df660cb58ab96809868412d87330f52ae6c4b36bbadd2e3",
+        "url": "https://raw.githubusercontent.com/google/BIG-bench/092b196c1f8f14a54bbc62f24759d43bde46dd3b/bigbench/benchmark_tasks/analogical_similarity/README.md",
+        "license_excerpts": []
+      }
+    ],
+    "downloads": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/google/BIG-bench/092b196c1f8f14a54bbc62f24759d43bde46dd3b/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "bytes": 11358
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/google/BIG-bench/092b196c1f8f14a54bbc62f24759d43bde46dd3b/README.md",
+        "sha256": "be15e44863b6070a1dda2000d4ba16b89e8d82208cae92b07a3ab6531e885a12",
+        "bytes": 18767
+      },
+      {
+        "path": "bigbench/benchmark_tasks/analogical_similarity/README.md",
+        "url": "https://raw.githubusercontent.com/google/BIG-bench/092b196c1f8f14a54bbc62f24759d43bde46dd3b/bigbench/benchmark_tasks/analogical_similarity/README.md",
+        "sha256": "221afbae1045d61b3df660cb58ab96809868412d87330f52ae6c4b36bbadd2e3",
+        "bytes": 16326
+      },
+      {
+        "path": "bigbench/benchmark_tasks/analogical_similarity/task.json",
+        "url": "https://raw.githubusercontent.com/google/BIG-bench/092b196c1f8f14a54bbc62f24759d43bde46dd3b/bigbench/benchmark_tasks/analogical_similarity/task.json",
+        "sha256": "c4b8db053ecd25cc842532f94a7480e153a34ddb1beb1c13308856a3cd85ebf1",
+        "bytes": 173743
+      }
+    ]
+  },
+  {
+    "id": "babi",
+    "title": "bAbI",
+    "url": "https://dl.fbaipublicfiles.com/babi/tasks_1-20_v1-2.tar.gz",
+    "revision": null,
+    "questions": 72,
+    "sharing": "include",
+    "license": "CC-BY-3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "reason": "The downloaded original archive contains LICENSE.txt naming Facebook and CC BY 3.0. Retain that notice and mark the multiple-choice adaptations.",
+    "attribution": "Facebook, Inc.; bAbI authors",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "archive_url": "https://s3.amazonaws.com/text-datasets/babi_tasks_1-20_v1-2.tar.gz",
+        "archive_sha256": "84f5296ab9a1ad0dc9464e08c491d65cd08830fca3acae9ab86f75e0fb81573c",
+        "archive_member": "tasks_1-20_v1-2/LICENSE.txt",
+        "sha256": "d12f09a636365a040fd581ebab6bf018d6fe61973c6d4862f841a6aca2f53efa",
+        "bundled_notice": "licenses/sources/babi/LICENSE.txt"
+      }
+    ],
+    "downloads": [
+      {
+        "path": "tasks.tar.gz",
+        "url": "https://s3.amazonaws.com/text-datasets/babi_tasks_1-20_v1-2.tar.gz",
+        "sha256": "84f5296ab9a1ad0dc9464e08c491d65cd08830fca3acae9ab86f75e0fb81573c",
+        "bytes": 11745123
+      }
+    ]
+  },
+  {
+    "id": "banking77",
+    "title": "Banking77",
+    "url": "https://huggingface.co/datasets/PolyAI/banking77",
+    "revision": "1846984189f2bc0ac51c6fc3a600fa9e1714e0c6",
+    "questions": 7,
+    "sharing": "include",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "reason": "The pinned publisher dataset card explicitly declares CC BY 4.0. Retain source attribution and normalization notes.",
+    "attribution": "PolyAI; Iñigo Casanueva et al.",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "README.md",
+        "sha256": "f3786a5327fd6533c7c0ff3ff654e20ee3d1261d2fa41667381f59a2e42364e1",
+        "url": "https://huggingface.co/datasets/PolyAI/banking77/resolve/1846984189f2bc0ac51c6fc3a600fa9e1714e0c6/README.md",
+        "license_excerpts": [
+          "license: - cc-by-4.0 multilinguality:",
+          "  - [Licensing Information](#licensing-information)   - [Citation Information](#citation-information)   - [Contributions](#contributions)",
+          "### Licensing Information  Creative Commons Attribution 4.0 International"
+        ]
+      }
+    ],
+    "downloads": [
+      {
+        "path": "README.md",
+        "url": "https://huggingface.co/datasets/PolyAI/banking77/resolve/1846984189f2bc0ac51c6fc3a600fa9e1714e0c6/README.md",
+        "sha256": "f3786a5327fd6533c7c0ff3ff654e20ee3d1261d2fa41667381f59a2e42364e1",
+        "bytes": 13049
+      },
+      {
+        "path": "data/test-00000-of-00001.parquet",
+        "url": "https://huggingface.co/datasets/PolyAI/banking77/resolve/1846984189f2bc0ac51c6fc3a600fa9e1714e0c6/data/test-00000-of-00001.parquet",
+        "sha256": "1f40f777c33f0edfa6c530ff84fe2878db6490838c12d22d036f626948905341",
+        "bytes": 92409
+      },
+      {
+        "path": "data/train-00000-of-00001.parquet",
+        "url": "https://huggingface.co/datasets/PolyAI/banking77/resolve/1846984189f2bc0ac51c6fc3a600fa9e1714e0c6/data/train-00000-of-00001.parquet",
+        "sha256": "8dc89b87a188509c42cce5a086e8f7c1ff4a225bdd9ae3f23e6cdfa5806e363a",
+        "bytes": 293553
+      }
+    ]
+  },
+  {
+    "id": "bbh",
+    "title": "BIG-Bench Hard selected tasks",
+    "url": "https://github.com/suzgunmirac/BIG-Bench-Hard",
+    "revision": "9ee07bd481feebf959a6b59d61ea57bdcf30964d",
+    "questions": 89,
+    "sharing": "include",
+    "license": "MIT AND Apache-2.0",
+    "license_url": "https://opensource.org/license/mit",
+    "reason": "The pinned BBH repository has an MIT license; it selects tasks from BIG-bench. Retain both the BBH MIT notice and the upstream BIG-bench Apache-2.0 notice, plus task identifiers.",
+    "attribution": "Mirac Suzgun and BIG-Bench Hard authors; BIG-bench contributors",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "LICENSE",
+        "sha256": "4ef2ff4295d26ab6211235039c132697408cec5391d2c091b41e983771978db8",
+        "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/LICENSE",
+        "bundled_notice": "licenses/sources/bbh/LICENSE"
+      },
+      {
+        "file": "README.md",
+        "sha256": "9c41105f4a349fcba7f87a422df0e744a9ed8e7a30c2db6676a9ecad372bc9db",
+        "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/README.md",
+        "license_excerpts": []
+      }
+    ],
+    "downloads": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/LICENSE",
+        "sha256": "4ef2ff4295d26ab6211235039c132697408cec5391d2c091b41e983771978db8",
+        "bytes": 1068
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/README.md",
+        "sha256": "9c41105f4a349fcba7f87a422df0e744a9ed8e7a30c2db6676a9ecad372bc9db",
+        "bytes": 3475
+      },
+      {
+        "path": "bbh/multistep_arithmetic_two.json",
+        "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/multistep_arithmetic_two.json",
+        "sha256": "c9d5a6433c9b78256422a15c78463949c8bec8d85607aa28b52d7234ad4a8595",
+        "bytes": 18325
+      },
+      {
+        "path": "bbh/tracking_shuffled_objects_five_objects.json",
+        "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/tracking_shuffled_objects_five_objects.json",
+        "sha256": "2063a46a4fb484236ed4310523606543a3e1dd4a4dc34eda65d407910ece25a5",
+        "bytes": 169722
+      },
+      {
+        "path": "bbh/tracking_shuffled_objects_seven_objects.json",
+        "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/tracking_shuffled_objects_seven_objects.json",
+        "sha256": "b59fd05b850c37cf57cb514ae1e6975c00b1638ade2291722056b2af3c54084d",
+        "bytes": 214906
+      },
+      {
+        "path": "bbh/tracking_shuffled_objects_three_objects.json",
+        "url": "https://raw.githubusercontent.com/suzgunmirac/BIG-Bench-Hard/9ee07bd481feebf959a6b59d61ea57bdcf30964d/bbh/tracking_shuffled_objects_three_objects.json",
+        "sha256": "546cc7bf10c6a01a6a4c17ae28a4966485f21f29fd5d111f37858ec78e354f6b",
+        "bytes": 128736
+      }
+    ]
+  },
+  {
+    "id": "bigtom",
+    "title": "BigToM",
+    "url": "https://github.com/cicl-stanford/procedural-evals-tom",
+    "revision": "fe647d680bddb69f738519313bed625f9e93b549",
+    "questions": 17,
+    "sharing": "include",
+    "license": "MIT",
+    "license_url": "https://opensource.org/license/mit",
+    "reason": "The original pinned repository includes an MIT license and author copyright notice. Retain it for the selected synthetic scenarios.",
+    "attribution": "Kanishk Gandhi, Jan-Philipp Fränken, Tobias Gerstenberg, Noah D. Goodman",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "LICENSE",
+        "sha256": "2121798cc1a3564a2ee14b119dd4d082a7b48431174bbb394d5d05c93c3b1a4f",
+        "url": "https://raw.githubusercontent.com/cicl-stanford/procedural-evals-tom/fe647d680bddb69f738519313bed625f9e93b549/LICENSE",
+        "bundled_notice": "licenses/sources/bigtom/LICENSE"
+      },
+      {
+        "file": "README.md",
+        "sha256": "e2d81a730c3b81d51075e3cb291ef889b8e7d2fdd4f356e76d3db4bab28ebf94",
+        "url": "https://raw.githubusercontent.com/cicl-stanford/procedural-evals-tom/fe647d680bddb69f738519313bed625f9e93b549/README.md",
+        "license_excerpts": []
+      }
+    ],
+    "downloads": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/cicl-stanford/procedural-evals-tom/fe647d680bddb69f738519313bed625f9e93b549/LICENSE",
+        "sha256": "2121798cc1a3564a2ee14b119dd4d082a7b48431174bbb394d5d05c93c3b1a4f",
+        "bytes": 1130
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/cicl-stanford/procedural-evals-tom/fe647d680bddb69f738519313bed625f9e93b549/README.md",
+        "sha256": "e2d81a730c3b81d51075e3cb291ef889b8e7d2fdd4f356e76d3db4bab28ebf94",
+        "bytes": 2136
+      },
+      {
+        "path": "data/bigtom/bigtom.csv",
+        "url": "https://raw.githubusercontent.com/cicl-stanford/procedural-evals-tom/fe647d680bddb69f738519313bed625f9e93b549/data/bigtom/bigtom.csv",
+        "sha256": "a14884fbff5b61d3fa194ab166764b553ab795fcb1359e69d1282eadf3011a46",
+        "bytes": 273557
+      }
+    ]
+  },
+  {
+    "id": "boolq",
+    "title": "BoolQ",
+    "url": "https://huggingface.co/datasets/google/boolq",
+    "revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+    "questions": 17,
+    "sharing": "include",
+    "license": "CC-BY-SA-3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "reason": "The 17 passage/question pairs include original Wikipedia article and contributor-history links, creator credit, normalization notices and CC BY-SA 3.0 terms. The source files match the original Google release checksums.",
+    "attribution": "Wikipedia contributors; Christopher Clark, Kenton Lee, Ming-Wei Chang, Tom Kwiatkowski, Michael Collins, Kristina Toutanova (BoolQ)",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "README.md",
+        "sha256": "07447668f46c7c1e62e24b650ea2a73f1ab34f2b3759b1587c7b7a81b4bf1cf4",
+        "url": "https://huggingface.co/datasets/google/boolq/resolve/35b264d03638db9f4ce671b711558bf7ff0f80d5/README.md",
+        "license_excerpts": [
+          "license: - cc-by-sa-3.0 multilinguality:",
+          "  - [Licensing Information](#licensing-information)   - [Citation Information](#citation-information)   - [Contributions](#contributions)",
+          "### Licensing Information  BoolQ is released under the [Creative Commons Share-Alike 3.0](https://creativecommons.org/licenses/by-sa/3.0/) license."
+        ]
+      },
+      {
+        "check": "source-sharing-follow-up",
+        "checked": "2026-11-09",
+        "per_question_mapping": "data/source_attributions.json",
+        "outcome": "Included after recovering the original Wikipedia title for all 17 exact passage/question pairs. Public mirror files match the original Google release checksums. Each question links the article and contribution history, credits the creators, discloses normalization and retains CC BY-SA 3.0."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/svinkapeppa/boolq/65cad7c96c62f80b37394434fc4bf5a6148ccafc/dev.jsonl",
+        "sha256": "ebc29ea3808c5c611672384b3de56e83349fe38fc1fe876fd29b674d81d0a80a",
+        "publisher_checksum_matched": true,
+        "checked": "2026-11-09"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/svinkapeppa/boolq/65cad7c96c62f80b37394434fc4bf5a6148ccafc/train.jsonl",
+        "sha256": "cc7a79d44479867e8323a7b0c5c1d82edf516ca34912201f9384c3a3d098d8db",
+        "publisher_checksum_matched": true,
+        "checked": "2026-11-09"
+      },
+      {
+        "url": "https://github.com/google-research-datasets/boolean-questions/blob/master/README.md",
+        "section": "License and dataset format",
+        "checked": "2026-11-09"
+      }
+    ],
+    "downloads": [
+      {
+        "path": "README.md",
+        "url": "https://huggingface.co/datasets/google/boolq/resolve/35b264d03638db9f4ce671b711558bf7ff0f80d5/README.md",
+        "sha256": "07447668f46c7c1e62e24b650ea2a73f1ab34f2b3759b1587c7b7a81b4bf1cf4",
+        "bytes": 6570
+      },
+      {
+        "path": "data/train-00000-of-00001.parquet",
+        "url": "https://huggingface.co/datasets/google/boolq/resolve/35b264d03638db9f4ce671b711558bf7ff0f80d5/data/train-00000-of-00001.parquet",
+        "sha256": "4f028e992c0bd4df30b9f056f4946b64f5c23028034ff0ed5ea467d8538cc623",
+        "bytes": 3685146
+      },
+      {
+        "path": "data/validation-00000-of-00001.parquet",
+        "url": "https://huggingface.co/datasets/google/boolq/resolve/35b264d03638db9f4ce671b711558bf7ff0f80d5/data/validation-00000-of-00001.parquet",
+        "sha256": "52355d11524b4b874a9b9dcc278feb10f672d52c4f4eff9872e695ede59820f8",
+        "bytes": 1257630
+      }
+    ]
+  },
+  {
+    "id": "cladder",
+    "title": "CLadder",
+    "url": "https://github.com/causalNLP/cladder",
+    "revision": "3d2d1169b4b939a09048a6a75956c8972a93cc38",
+    "questions": 72,
+    "sharing": "include",
+    "license": "MIT",
+    "license_url": "https://opensource.org/license/mit",
+    "reason": "The pinned original repository has an MIT license. Retain its notice and source IDs.",
+    "attribution": "CLadder original creators; see source",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "LICENSE",
+        "sha256": "5729188929e6873096ebe9623ae6ecb2164cb5d0acec10805cb4a463ff8fd05a",
+        "url": "https://raw.githubusercontent.com/causalNLP/cladder/3d2d1169b4b939a09048a6a75956c8972a93cc38/LICENSE",
+        "bundled_notice": "licenses/sources/cladder/LICENSE"
+      },
+      {
+        "file": "README.md",
+        "sha256": "ded750c842b056aecd45887551218e5af19a30d95f12ee02aff654f9c8e0843a",
+        "url": "https://raw.githubusercontent.com/causalNLP/cladder/3d2d1169b4b939a09048a6a75956c8972a93cc38/README.md",
+        "license_excerpts": []
+      }
+    ],
+    "downloads": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/causalNLP/cladder/3d2d1169b4b939a09048a6a75956c8972a93cc38/LICENSE",
+        "sha256": "5729188929e6873096ebe9623ae6ecb2164cb5d0acec10805cb4a463ff8fd05a",
+        "bytes": 1087
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/causalNLP/cladder/3d2d1169b4b939a09048a6a75956c8972a93cc38/README.md",
+        "sha256": "ded750c842b056aecd45887551218e5af19a30d95f12ee02aff654f9c8e0843a",
+        "bytes": 9285
+      },
+      {
+        "path": "data/cladder-v1-meta-models.json",
+        "url": "https://raw.githubusercontent.com/causalNLP/cladder/3d2d1169b4b939a09048a6a75956c8972a93cc38/data/cladder-v1-meta-models.json",
+        "sha256": "f288ed9046a1ef5e39c0dbf6b971b8a3a485887130b7831dc5da4fe2af5d64b5",
+        "bytes": 10186143
+      },
+      {
+        "path": "data/cladder-v1-questions.json",
+        "url": "https://raw.githubusercontent.com/causalNLP/cladder/3d2d1169b4b939a09048a6a75956c8972a93cc38/data/cladder-v1-questions.json",
+        "sha256": "59ecdc5ac2a6b4583b798b1aaf7bab3744316762769325adea69317ac1b4ae40",
+        "bytes": 11425468
+      }
+    ]
+  },
+  {
+    "id": "clinc150",
+    "title": "CLINC150",
+    "url": "https://github.com/clinc/oos-eval",
+    "revision": "828f8093932c8fe6ca7936c3d2e52903b1c523de",
+    "questions": 7,
+    "sharing": "include",
+    "license": "CC-BY-3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "reason": "The pinned source LICENSE is CC BY 3.0. Retain source credit and describe normalization.",
+    "attribution": "Stefan Larson et al.; CLINC",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "LICENSE",
+        "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+        "url": "https://raw.githubusercontent.com/clinc/oos-eval/828f8093932c8fe6ca7936c3d2e52903b1c523de/LICENSE",
+        "bundled_notice": "licenses/sources/clinc150/LICENSE"
+      },
+      {
+        "file": "README.md",
+        "sha256": "8a8df26c4de3d25b6c4cff385ca23602c30e4e56828b015206cbc202f6db363a",
+        "url": "https://raw.githubusercontent.com/clinc/oos-eval/828f8093932c8fe6ca7936c3d2e52903b1c523de/README.md",
+        "license_excerpts": []
+      }
+    ],
+    "downloads": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/clinc/oos-eval/828f8093932c8fe6ca7936c3d2e52903b1c523de/LICENSE",
+        "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+        "bytes": 19467
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/clinc/oos-eval/828f8093932c8fe6ca7936c3d2e52903b1c523de/README.md",
+        "sha256": "8a8df26c4de3d25b6c4cff385ca23602c30e4e56828b015206cbc202f6db363a",
+        "bytes": 2668
+      },
+      {
+        "path": "data/data_full.json",
+        "url": "https://raw.githubusercontent.com/clinc/oos-eval/828f8093932c8fe6ca7936c3d2e52903b1c523de/data/data_full.json",
+        "sha256": "36923c3705a59e08fe9c3883d8bc2dd966ef93e22cb78ac41171782a698d56e0",
+        "bytes": 2495390
+      },
+      {
+        "path": "data/domains.json",
+        "url": "https://raw.githubusercontent.com/clinc/oos-eval/828f8093932c8fe6ca7936c3d2e52903b1c523de/data/domains.json",
+        "sha256": "b947b579d3b8e74b06f93b01083d8efaff2888b43a3e362533bd88a6e1211b3a",
+        "bytes": 3818
+      }
+    ]
+  },
+  {
+    "id": "clutrr",
+    "title": "CLUTRR",
+    "url": "https://github.com/kliang5/CLUTRR_huggingface_dataset",
+    "revision": "e5b496941e91abb7c319d2618a3ce96752bc4ab7",
+    "questions": 33,
+    "sharing": "include",
+    "license": "CC-BY-NC-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "reason": "Included for the stated noncommercial research release under the original CLUTRR CC BY-NC 4.0 license. Retain creator credit, the license notice and normalization disclosures; the mirror card alone is not the licensing basis.",
+    "attribution": "Koustuv Sinha, Shagun Sodhani, Jin Dong, Joelle Pineau, William L. Hamilton",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "README.md",
+        "sha256": "5544760f31d5ac7f1e94a94828113d7f6956b0ece50bd294b0e3c18b2a84ce0a",
+        "url": "https://raw.githubusercontent.com/kliang5/CLUTRR_huggingface_dataset/e5b496941e91abb7c319d2618a3ce96752bc4ab7/README.md",
+        "license_excerpts": []
+      },
+      {
+        "url": "https://github.com/kliang5/clutrr/blob/main/LICENSE",
+        "git_blob_sha": "50f2e656c8e006d68fce3c9ddd02d9069072214a",
+        "checked": "2026-11-09",
+        "excerpt": "Attribution-NonCommercial 4.0 International",
+        "bundled_notice": "licenses/sources/clutrr/upstream-clutrr-LICENSE.txt",
+        "sha256": "4b531055125dcda36059651634bdb424ad2612f4759b3d2067a731d2823d1cdc"
+      }
+    ],
+    "downloads": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/kliang5/CLUTRR_huggingface_dataset/e5b496941e91abb7c319d2618a3ce96752bc4ab7/README.md",
+        "sha256": "5544760f31d5ac7f1e94a94828113d7f6956b0ece50bd294b0e3c18b2a84ce0a",
+        "bytes": 5660
+      },
+      {
+        "path": "gen_train23_test2to10/test.csv",
+        "url": "https://raw.githubusercontent.com/kliang5/CLUTRR_huggingface_dataset/e5b496941e91abb7c319d2618a3ce96752bc4ab7/gen_train23_test2to10/test.csv",
+        "sha256": "d49c7cbe4f575b48b279313e706ef43e127bfa85b0e860db94fdeb617aea07e9",
+        "bytes": 1935837
+      },
+      {
+        "path": "gen_train23_test2to10/train.csv",
+        "url": "https://raw.githubusercontent.com/kliang5/CLUTRR_huggingface_dataset/e5b496941e91abb7c319d2618a3ce96752bc4ab7/gen_train23_test2to10/train.csv",
+        "sha256": "38963d01a20789acdd38bc4a338f59070457928072f018657c9cb59e6d7447de",
+        "bytes": 6618113
+      },
+      {
+        "path": "gen_train23_test2to10/validation.csv",
+        "url": "https://raw.githubusercontent.com/kliang5/CLUTRR_huggingface_dataset/e5b496941e91abb7c319d2618a3ce96752bc4ab7/gen_train23_test2to10/validation.csv",
+        "sha256": "418d712579e6c9bb3f0e835cb0971372c06bc7816ea97c5e2ac5f24d9b896e51",
+        "bytes": 1445724
+      }
+    ]
+  },
+  {
+    "id": "contractnli",
+    "title": "ContractNLI",
+    "url": "https://github.com/stanfordnlp/contract-nli",
+    "revision": "eced6528dd3c1d14d73f9a87df8f7bdbc03126f9",
+    "questions": 16,
+    "sharing": "include",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "reason": "The original dataset LICENSE and extracted upstream README specify CC BY 4.0. Retain credit, the license, and the original document/question identifiers.",
+    "attribution": "Yuta Koreeda and Christopher D. Manning; Stanford NLP",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "data/raw/contractnli/LICENSE",
+        "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+        "url": "https://github.com/stanfordnlp/contract-nli/blob/eced6528dd3c1d14d73f9a87df8f7bdbc03126f9/LICENSE",
+        "bundled_notice": "licenses/sources/contractnli/LICENSE"
+      },
+      {
+        "file": "data/raw/contractnli/README.md",
+        "sha256": "375a1024337b82d2331bc9ab63cda3044dc10e5019033eb66332a0fc4e626b52",
+        "url": "https://github.com/stanfordnlp/contract-nli/blob/eced6528dd3c1d14d73f9a87df8f7bdbc03126f9/README.md",
+        "license_excerpts": []
+      }
+    ],
+    "downloads": []
+  },
+  {
+    "id": "crass",
+    "title": "CRASS",
+    "url": "https://github.com/google/BIG-bench",
+    "revision": "092b196c1f8f14a54bbc62f24759d43bde46dd3b",
+    "questions": 10,
+    "sharing": "include",
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "reason": "The pinned BIG-bench source provides Apache-2.0 terms; retain its notice and the crass_ai task provenance.",
+    "attribution": "BIG-bench crass_ai contributors",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "url": "https://raw.githubusercontent.com/google/BIG-bench/092b196c1f8f14a54bbc62f24759d43bde46dd3b/LICENSE",
+        "bundled_notice": "licenses/sources/crass/LICENSE"
+      },
+      {
+        "file": "README.md",
+        "sha256": "be15e44863b6070a1dda2000d4ba16b89e8d82208cae92b07a3ab6531e885a12",
+        "url": "https://raw.githubusercontent.com/google/BIG-bench/092b196c1f8f14a54bbc62f24759d43bde46dd3b/README.md",
+        "license_excerpts": []
+      },
+      {
+        "file": "bigbench/benchmark_tasks/crass_ai/README.md",
+        "sha256": "df400b01c35325d4628c8999a22c13daa8d8551fb67a8843916da76e7041fa5c",
+        "url": "https://raw.githubusercontent.com/google/BIG-bench/092b196c1f8f14a54bbc62f24759d43bde46dd3b/bigbench/benchmark_tasks/crass_ai/README.md",
+        "license_excerpts": []
+      }
+    ],
+    "downloads": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/google/BIG-bench/092b196c1f8f14a54bbc62f24759d43bde46dd3b/LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "bytes": 11358
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/google/BIG-bench/092b196c1f8f14a54bbc62f24759d43bde46dd3b/README.md",
+        "sha256": "be15e44863b6070a1dda2000d4ba16b89e8d82208cae92b07a3ab6531e885a12",
+        "bytes": 18767
+      },
+      {
+        "path": "bigbench/benchmark_tasks/crass_ai/README.md",
+        "url": "https://raw.githubusercontent.com/google/BIG-bench/092b196c1f8f14a54bbc62f24759d43bde46dd3b/bigbench/benchmark_tasks/crass_ai/README.md",
+        "sha256": "df400b01c35325d4628c8999a22c13daa8d8551fb67a8843916da76e7041fa5c",
+        "bytes": 10524
+      },
+      {
+        "path": "bigbench/benchmark_tasks/crass_ai/task.json",
+        "url": "https://raw.githubusercontent.com/google/BIG-bench/092b196c1f8f14a54bbc62f24759d43bde46dd3b/bigbench/benchmark_tasks/crass_ai/task.json",
+        "sha256": "7336d2c999f353b6fdaaa351ebf1138ea37eb38488593276f56e1d6faeed95bb",
+        "bytes": 14276
+      }
+    ]
+  },
+  {
+    "id": "cruxeval",
+    "title": "CRUXEval",
+    "url": "https://github.com/facebookresearch/cruxeval",
+    "revision": "190faf16d175b5847b0af05d937872b1fb395942",
+    "questions": 19,
+    "sharing": "include",
+    "license": "MIT",
+    "license_url": "https://opensource.org/license/mit",
+    "reason": "The pinned README explicitly says CRUXEval is MIT licensed; its LICENSE includes Meta's copyright notice. Retain both source credit and the adaptation notice.",
+    "attribution": "Meta; CRUXEval authors",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "LICENSE",
+        "sha256": "055ca9e3fa33562173156e02e2350ceff4089deab480b368a849b6bc04f09719",
+        "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/LICENSE",
+        "bundled_notice": "licenses/sources/cruxeval/LICENSE"
+      },
+      {
+        "file": "README.md",
+        "sha256": "b3873525279b57c5351b4350f4406ce4ad9196dbab6d1ca22a1700a2e96dadf6",
+        "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/README.md",
+        "license_excerpts": []
+      }
+    ],
+    "downloads": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/LICENSE",
+        "sha256": "055ca9e3fa33562173156e02e2350ceff4089deab480b368a849b6bc04f09719",
+        "bytes": 1061
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/README.md",
+        "sha256": "b3873525279b57c5351b4350f4406ce4ad9196dbab6d1ca22a1700a2e96dadf6",
+        "bytes": 7997
+      },
+      {
+        "path": "data/cruxeval.jsonl",
+        "url": "https://raw.githubusercontent.com/facebookresearch/cruxeval/190faf16d175b5847b0af05d937872b1fb395942/data/cruxeval.jsonl",
+        "sha256": "8368b81047dc5014e4caf5a2f97604eff7644e0ecd7415e3ceeb184bbc2e0c96",
+        "bytes": 186873
+      }
+    ]
+  },
+  {
+    "id": "emowoz",
+    "title": "EmoWOZ",
+    "url": "https://zenodo.org/records/6506504",
+    "revision": "6506504",
+    "questions": 6,
+    "sharing": "include",
+    "license": "CC-BY-NC-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "reason": "Included for the stated noncommercial research release under the publisher-declared CC BY-NC 4.0 terms. Retain creator credit, the license notice and normalization disclosures.",
+    "attribution": "Shutong Feng, Nurul Lubis, Christian Geishauser, Hsien-chin Lin, Michael Heck, Carel van Niekerk, Milica Gasic",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "data/raw/emowoz/README.md",
+        "sha256": "04ecc6242f82ff6172370bf2d081282ffc8e00d7ca62d9f64cce488171f77279",
+        "url": "https://zenodo.org/records/6506504",
+        "license_excerpts": [
+          "license: cc-by-nc-4.0 task_categories: - text-classification",
+          "  - [Licensing Information](#licensing-information)   - [Citation Information](#citation-information)   - [Contributions](#contributions)",
+          "### Licensing Information  The EmoWOZ datasetis released under the [CC-BY-NC-4.0 License](https://creativecommons.org/licenses/by-nc/4.0/). "
+        ]
+      }
+    ],
+    "downloads": []
+  },
+  {
+    "id": "fantom",
+    "title": "FANToM",
+    "url": "https://storage.googleapis.com/ai2-mosaic-public/projects/fantom/fantom.tar.gz",
+    "revision": null,
+    "questions": 17,
+    "sharing": "hold_license_scope",
+    "license": "MIT (project code)",
+    "license_url": null,
+    "reason": "The project code is MIT licensed, but redistribution terms for the separately hosted dataset archive are not explicit. Obtain the 17 dialogues from the publisher and preserve its evaluation-only intended-use statement.",
+    "attribution": "FANToM original creators; see source",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "url": "https://github.com/skywalker023/fantom/blob/main/LICENSE",
+        "git_blob_sha": "dcf576264eecb5c05c598caf6236044ad8792149",
+        "checked": "2026-11-09",
+        "excerpt": "MIT License",
+        "bundled_notice": "licenses/sources/fantom/upstream-fantom-LICENSE.txt",
+        "sha256": "f6ce05a54cb9eeee88634ab704b966252fce88b81b890fd7400cb42e9f9d93f8"
+      }
+    ],
+    "downloads": [
+      {
+        "path": "fantom.tar.gz",
+        "url": "https://storage.googleapis.com/ai2-mosaic-public/projects/fantom/fantom.tar.gz",
+        "sha256": "1d08dfa0ea474c7f83b9bc7e3a7b466eab25194043489dd618b4c5223e1253a4",
+        "bytes": 1040898
+      }
+    ],
+    "review_scope": "Bundling full question text in this repository; not a blanket finding about lawful local use.",
+    "local_recovery": "docs/recovering-inputs.md"
+  },
+  {
+    "id": "finqa",
+    "title": "FinQA",
+    "url": "https://github.com/czyssrs/FinQA",
+    "revision": "0f16e2867befa6840783e58be38c9efb9229d742",
+    "questions": 10,
+    "sharing": "include",
+    "license": "MIT",
+    "license_url": "https://opensource.org/license/mit",
+    "reason": "The pinned original repository LICENSE is MIT. Retain its notice and describe the choice-format adaptation; no claim of independent rights over other SEC material is added.",
+    "attribution": "Zhiyu Chen et al.; FinQA authors",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "LICENSE",
+        "sha256": "92c0e67bd762c15c07ba60de09558338315a8ebf99aac4f51f487179809ac087",
+        "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/LICENSE",
+        "bundled_notice": "licenses/sources/finqa/LICENSE"
+      },
+      {
+        "file": "README.md",
+        "sha256": "eb86779cfed6f0a253913761d8e4fabe032a29d9fcf2944e56c23bf007064605",
+        "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/README.md",
+        "license_excerpts": []
+      }
+    ],
+    "downloads": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/LICENSE",
+        "sha256": "92c0e67bd762c15c07ba60de09558338315a8ebf99aac4f51f487179809ac087",
+        "bytes": 1067
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/README.md",
+        "sha256": "eb86779cfed6f0a253913761d8e4fabe032a29d9fcf2944e56c23bf007064605",
+        "bytes": 6518
+      },
+      {
+        "path": "dataset/dev.json",
+        "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/dataset/dev.json",
+        "sha256": "a847fb7e0d61a3125a1e2909852df6b89f1ee64d2c5ff1bf689e332214deee51",
+        "bytes": 10954658
+      },
+      {
+        "path": "dataset/test.json",
+        "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/dataset/test.json",
+        "sha256": "831dbfb2e785dbc227f895ce3f24046433467aec67b09db2bd6ac7692a8a30dc",
+        "bytes": 14395143
+      },
+      {
+        "path": "dataset/train.json",
+        "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/dataset/train.json",
+        "sha256": "49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6",
+        "bytes": 78216616
+      }
+    ]
+  },
+  {
+    "id": "hle",
+    "title": "HLE-MultiChoice",
+    "url": "https://huggingface.co/datasets/cais/hle",
+    "revision": "5a81a4c7271a2a2a312b9a690f0c2fde837e4c29",
+    "questions": 7,
+    "sharing": "include",
+    "license": "MIT",
+    "license_url": "https://opensource.org/license/mit",
+    "reason": "The pinned publisher dataset card declares MIT. Retain publisher attribution and the dataset-card license declaration.",
+    "attribution": "Center for AI Safety, Scale AI, and Humanity's Last Exam contributors",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "data/raw/hle/README.md",
+        "sha256": "f16f96e69791f83bb835120613fe419233b0345beae7296cce543593c5c57b5a",
+        "url": "https://huggingface.co/datasets/cais/hle/blob/5a81a4c7271a2a2a312b9a690f0c2fde837e4c29/README.md",
+        "license_excerpts": [
+          "license: mit dataset_info:   features:"
+        ]
+      },
+      {
+        "url": "https://github.com/centerforaisafety/hle/blob/main/LICENSE",
+        "git_blob_sha": "ab3194876547c8459fcfdf96c1c1f1607f960865",
+        "checked": "2026-11-09",
+        "excerpt": "MIT License",
+        "bundled_notice": "licenses/sources/hle/upstream-hle-LICENSE.txt",
+        "sha256": "f402878026b8008bd53f2f038b5c9e3e6b7c1a690e05e2ca6ddbc9019aa3c08e"
+      }
+    ],
+    "downloads": []
+  },
+  {
+    "id": "isarcasmeval",
+    "title": "iSarcasmEval",
+    "url": "https://github.com/iabufarha/iSarcasmEval",
+    "revision": "dfc708b53bde1bb571abfb5692f63231c2232195",
+    "questions": 29,
+    "sharing": "include",
+    "license": "MIT",
+    "license_url": "https://opensource.org/license/mit",
+    "reason": "The pinned original repository provides an MIT license covering its distributed material; retain the original copyright notice. No claim of public-domain status is made for the messages.",
+    "attribution": "Ibrahim Abu Farha et al.; iSarcasmEval authors",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "data/raw/isarcasmeval/LICENSE",
+        "sha256": "f956625f01a15c08af3be7d32480d39d8302fc36f52075c484a004e8e849835f",
+        "url": "https://github.com/iabufarha/iSarcasmEval/blob/dfc708b53bde1bb571abfb5692f63231c2232195/LICENSE",
+        "bundled_notice": "licenses/sources/isarcasmeval/LICENSE"
+      },
+      {
+        "file": "data/raw/isarcasmeval/README.md",
+        "sha256": "98c79b76a4b5dc0e3cc2fb4e9653048e6c9a7156d6e2b1eacacf296b7acebb30",
+        "url": "https://github.com/iabufarha/iSarcasmEval/blob/dfc708b53bde1bb571abfb5692f63231c2232195/README.md",
+        "license_excerpts": []
+      },
+      {
+        "file": "data/raw/isarcasmeval/third-party annotations/README.md",
+        "sha256": "0f5915f4b1d2f022d35ec76950f9fb295dbc78a6ebdf6b1bd8b6955d14b2a7b7",
+        "url": "https://github.com/iabufarha/iSarcasmEval/blob/dfc708b53bde1bb571abfb5692f63231c2232195/README.md",
+        "license_excerpts": []
+      }
+    ],
+    "downloads": []
+  },
+  {
+    "id": "list_functions",
+    "title": "List Functions",
+    "url": "https://github.com/linlu-qiu/lm-inductive-reasoning",
+    "revision": "0eae21f3d3014b92be34c80b23c9120a7b15a51f",
+    "questions": 34,
+    "sharing": "include",
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "reason": "All 34 selected examples were matched directly to Apache-licensed BIG-bench task files, following the upstream author’s source explanation. The complete seen example pairs and evaluated test input/output values match. Retain the BIG-bench notice and per-question upstream locators.",
+    "attribution": "Joshua S. Rule, Steven T. Piantadosi, Joshua B. Tenenbaum; BIG-bench contributors; Linlu Qiu et al. (selection)",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "README.md",
+        "sha256": "821b8fb81c09d414c467b45ec31bbf97ceb2504b9b36eaaf5faa7794bc30ef81",
+        "url": "https://raw.githubusercontent.com/linlu-qiu/lm-inductive-reasoning/0eae21f3d3014b92be34c80b23c9120a7b15a51f/README.md",
+        "license_excerpts": []
+      },
+      {
+        "check": "list_functions",
+        "outcome": "No license file returned by checked upstream path",
+        "checked": "2026-11-09"
+      },
+      {
+        "check": "source-sharing-follow-up",
+        "checked": "2026-11-09",
+        "per_question_mapping": "data/source_attributions.json",
+        "outcome": "All 34 selected examples were matched directly to Apache-licensed BIG-bench task files, following the upstream author’s source explanation. The complete seen example pairs and evaluated test input/output values match. Retain the BIG-bench notice and per-question upstream locators."
+      },
+      {
+        "bundled_notice": "licenses/sources/list_functions/BIG-bench-LICENSE.txt",
+        "sha256": "8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac",
+        "checked": "2026-11-09"
+      },
+      {
+        "url": "https://github.com/linlu-qiu/lm-inductive-reasoning/issues/1#issuecomment-1790895994",
+        "author": "linlu-qiu",
+        "author_association": "OWNER",
+        "checked": "2026-11-09",
+        "explanation": "The upstream maintainer identifies Rule and BIG-bench as the source of List Functions."
+      },
+      {
+        "url": "https://github.com/google/BIG-bench/tree/6436ed17f979b138463224421f8e8977b89076ed/bigbench/benchmark_tasks/list_functions",
+        "revision": "6436ed17f979b138463224421f8e8977b89076ed",
+        "checked": "2026-11-09",
+        "matched_questions": 34
+      },
+      {
+        "url": "https://github.com/google/BIG-bench/blob/main/LICENSE",
+        "git_blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "checked": "2026-11-09"
+      }
+    ],
+    "downloads": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/linlu-qiu/lm-inductive-reasoning/0eae21f3d3014b92be34c80b23c9120a7b15a51f/README.md",
+        "sha256": "821b8fb81c09d414c467b45ec31bbf97ceb2504b9b36eaaf5faa7794bc30ef81",
+        "bytes": 5253
+      },
+      {
+        "path": "data/list_function.jsonl",
+        "url": "https://raw.githubusercontent.com/linlu-qiu/lm-inductive-reasoning/0eae21f3d3014b92be34c80b23c9120a7b15a51f/data/list_function.jsonl",
+        "sha256": "5985eb23921bb87c556354b524cab500b852a9c6830c0a2493eda00c33881180",
+        "bytes": 274939
+      }
+    ]
+  },
+  {
+    "id": "miniscan",
+    "title": "MiniSCAN",
+    "url": "https://github.com/linlu-qiu/lm-inductive-reasoning",
+    "revision": "0eae21f3d3014b92be34c80b23c9120a7b15a51f",
+    "questions": 33,
+    "sharing": "hold_unclear",
+    "license": null,
+    "license_url": null,
+    "reason": "These questions use a pseudoword adaptation whose exact source files have no established redistribution grant. Obtain those original files for local recovery; another task version or mirror’s license does not establish terms for this version.",
+    "attribution": "MiniSCAN original creators; see source",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "README.md",
+        "sha256": "821b8fb81c09d414c467b45ec31bbf97ceb2504b9b36eaaf5faa7794bc30ef81",
+        "url": "https://raw.githubusercontent.com/linlu-qiu/lm-inductive-reasoning/0eae21f3d3014b92be34c80b23c9120a7b15a51f/README.md",
+        "license_excerpts": []
+      }
+    ],
+    "downloads": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/linlu-qiu/lm-inductive-reasoning/0eae21f3d3014b92be34c80b23c9120a7b15a51f/README.md",
+        "sha256": "821b8fb81c09d414c467b45ec31bbf97ceb2504b9b36eaaf5faa7794bc30ef81",
+        "bytes": 5253
+      },
+      {
+        "path": "data/scan.jsonl",
+        "url": "https://raw.githubusercontent.com/linlu-qiu/lm-inductive-reasoning/0eae21f3d3014b92be34c80b23c9120a7b15a51f/data/scan.jsonl",
+        "sha256": "23665781927e344e158b8f2836726a50ede26f612b0062baec312a5feabb582c",
+        "bytes": 166793
+      },
+      {
+        "path": "data/scan_rand.jsonl",
+        "url": "https://raw.githubusercontent.com/linlu-qiu/lm-inductive-reasoning/0eae21f3d3014b92be34c80b23c9120a7b15a51f/data/scan_rand.jsonl",
+        "sha256": "d44ec68cb95acdcaae1ad136c5cdf9f8b4e22105fdc4c3ce8e739930d70183bb",
+        "bytes": 179513
+      }
+    ],
+    "review_scope": "Bundling full question text in this repository; not a blanket finding about lawful local use.",
+    "local_recovery": "docs/recovering-inputs.md"
+  },
+  {
+    "id": "mmlu",
+    "title": "MMLU",
+    "url": "https://huggingface.co/datasets/cais/mmlu",
+    "revision": "c30699e8356da336a370243923dbaf21066bb9fe",
+    "questions": 28,
+    "sharing": "include",
+    "license": "MIT",
+    "license_url": "https://opensource.org/license/mit",
+    "reason": "The pinned publisher card explicitly declares MIT and links the original benchmark license. Retain attribution and identify normalized multiple-choice labels.",
+    "attribution": "Dan Hendrycks et al.; MMLU authors",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "README.md",
+        "sha256": "665eef35ecd8a89037c1e4f1e1a0d7fd4c154edc04c81cea5634ace2d3e96953",
+        "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/README.md",
+        "license_excerpts": [
+          "license: - mit multilinguality:",
+          "  - [Licensing Information](#licensing-information)   - [Citation Information](#citation-information)   - [Contributions](#contributions)",
+          "### Licensing Information  [MIT License](https://github.com/hendrycks/test/blob/master/LICENSE)"
+        ]
+      },
+      {
+        "url": "https://github.com/hendrycks/test/blob/master/LICENSE",
+        "git_blob_sha": "fe20e951e94daaae0c02c070bad000ed85d1ad19",
+        "checked": "2026-11-09",
+        "excerpt": "MIT License",
+        "bundled_notice": "licenses/sources/mmlu/upstream-mmlu-LICENSE.txt",
+        "sha256": "5d841b9eee8bf0d721359b79fbae956a8b426d3139bfefee32149c7d4f2a1a9c"
+      }
+    ],
+    "downloads": [
+      {
+        "path": "README.md",
+        "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/README.md",
+        "sha256": "665eef35ecd8a89037c1e4f1e1a0d7fd4c154edc04c81cea5634ace2d3e96953",
+        "bytes": 53221
+      },
+      {
+        "path": "all/dev-00000-of-00001.parquet",
+        "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/all/dev-00000-of-00001.parquet",
+        "sha256": "2b19bde1ed8ca6b482fb283abc90e8e0d9d228947029c0b91795d64b28b3bc3f",
+        "bytes": 76504
+      },
+      {
+        "path": "all/test-00000-of-00001.parquet",
+        "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/all/test-00000-of-00001.parquet",
+        "sha256": "74a41822ce7d3def56e1682f958469c04642a5336a5ce912fa375fdb90fb25d7",
+        "bytes": 3504718
+      },
+      {
+        "path": "all/validation-00000-of-00001.parquet",
+        "url": "https://huggingface.co/datasets/cais/mmlu/resolve/c30699e8356da336a370243923dbaf21066bb9fe/all/validation-00000-of-00001.parquet",
+        "sha256": "66cdf0b090ccb657d18d13cd81e31fdc55c3467da9642ffb178653268a97c8ef",
+        "bytes": 408449
+      }
+    ]
+  },
+  {
+    "id": "mnli",
+    "title": "MNLI",
+    "url": "https://huggingface.co/datasets/nyu-mll/multi_nli",
+    "revision": "da70db2af9d09693783c3320c4249840212ee221",
+    "questions": 6,
+    "sharing": "include",
+    "license": "OANC (selected non-fiction genres)",
+    "license_url": "https://anc.org/OANC/license.txt",
+    "reason": "The six selected pairs use slate, telephone, oup, verbatim, government and letters, all documented OANC genres. Include the OANC license and Appendix I credits, per-question genre/pair identifiers and source links, and transparent-modification attribution/date. No fiction entries are in this selection.",
+    "attribution": "Adina Williams, Nikita Nangia, Samuel R. Bowman; American National Corpus Consortium and the selected OANC text providers",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "README.md",
+        "sha256": "e9bafc4de652caab3fb991ef3f1eded3b2385b7e1b2d1df2fd70523c376566fe",
+        "url": "https://huggingface.co/datasets/nyu-mll/multi_nli/resolve/da70db2af9d09693783c3320c4249840212ee221/README.md",
+        "license_excerpts": [
+          "license: - cc-by-3.0 - cc-by-sa-3.0",
+          "  - [Licensing Information](#licensing-information)   - [Citation Information](#citation-information)   - [Contributions](#contributions)",
+          "### Licensing Information  The majority of the corpus is released under the OANC’s license, which allows all content to be freely used, modified, and shared under permissive terms. The data in the FICTION section falls under several permissive licenses; Seven Swords is available under a Creative Commons Share-Alike 3.0 Unported License, and with th"
+        ]
+      },
+      {
+        "check": "source-sharing-follow-up",
+        "checked": "2026-11-09",
+        "per_question_mapping": "data/source_attributions.json",
+        "outcome": "The six selected pairs use slate, telephone, oup, verbatim, government and letters, all documented OANC genres. Include the OANC license and Appendix I credits, per-question genre/pair identifiers and source links, and transparent-modification attribution/date. No fiction entries are in this selection."
+      },
+      {
+        "bundled_notice": "licenses/sources/mnli/OANC-LICENSE.txt",
+        "sha256": "d898220e962ed3b8616be20b44aa32cbabffb802259c96cc805821b39cdbb564",
+        "checked": "2026-11-09"
+      },
+      {
+        "url": "https://cims.nyu.edu/~sbowman/multinli/",
+        "checked": "2026-11-09"
+      },
+      {
+        "url": "https://anc.org/OANC/index.html",
+        "checked": "2026-11-09"
+      },
+      {
+        "url": "https://anc.org/data/oanc/",
+        "checked": "2026-11-09"
+      },
+      {
+        "url": "https://anc.org/OANC/license.txt",
+        "checked": "2026-11-09"
+      }
+    ],
+    "downloads": [
+      {
+        "path": "README.md",
+        "url": "https://huggingface.co/datasets/nyu-mll/multi_nli/resolve/da70db2af9d09693783c3320c4249840212ee221/README.md",
+        "sha256": "e9bafc4de652caab3fb991ef3f1eded3b2385b7e1b2d1df2fd70523c376566fe",
+        "bytes": 8895
+      },
+      {
+        "path": "data/validation_matched-00000-of-00001.parquet",
+        "url": "https://huggingface.co/datasets/nyu-mll/multi_nli/resolve/da70db2af9d09693783c3320c4249840212ee221/data/validation_matched-00000-of-00001.parquet",
+        "sha256": "350c26950b55f460b50d36c76aef87d64b49c78812d7abf7bf97e5fede10f186",
+        "bytes": 4938568
+      },
+      {
+        "path": "data/validation_mismatched-00000-of-00001.parquet",
+        "url": "https://huggingface.co/datasets/nyu-mll/multi_nli/resolve/da70db2af9d09693783c3320c4249840212ee221/data/validation_mismatched-00000-of-00001.parquet",
+        "sha256": "6b0e1231cebedd255000a7d1732af37ad0500902239db625e231ed77c0c8f2f8",
+        "bytes": 5104992
+      }
+    ]
+  },
+  {
+    "id": "newton",
+    "title": "NEWTON",
+    "url": "https://huggingface.co/datasets/NEWTONReasoning/NEWTON",
+    "revision": "b55ed6d1ee3e1a1c3c142a5fe79df39319599626",
+    "questions": 31,
+    "sharing": "hold_unclear",
+    "license": null,
+    "license_url": null,
+    "reason": "No explicit dataset redistribution license was established for the selected source files. Obtain them from the publisher for local recovery; the README’s illustrative LICENSE entry is not a license grant.",
+    "attribution": "NEWTON original creators; see source",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "README.md",
+        "sha256": "8cb4afd30054c71373bec13295c30de19dcc6f0edb58e9858f9d9c73aa5aba9c",
+        "url": "https://huggingface.co/datasets/NEWTONReasoning/NEWTON/resolve/b55ed6d1ee3e1a1c3c142a5fe79df39319599626/README.md",
+        "license_excerpts": []
+      },
+      {
+        "check": "newton",
+        "outcome": "No license file returned by checked upstream path",
+        "checked": "2026-11-09"
+      }
+    ],
+    "downloads": [
+      {
+        "path": "README.md",
+        "url": "https://huggingface.co/datasets/NEWTONReasoning/NEWTON/resolve/b55ed6d1ee3e1a1c3c142a5fe79df39319599626/README.md",
+        "sha256": "8cb4afd30054c71373bec13295c30de19dcc6f0edb58e9858f9d9c73aa5aba9c",
+        "bytes": 1607
+      },
+      {
+        "path": "confident_questions.csv",
+        "url": "https://huggingface.co/datasets/NEWTONReasoning/NEWTON/resolve/b55ed6d1ee3e1a1c3c142a5fe79df39319599626/confident_questions.csv",
+        "sha256": "3d593fda55565cd4829ed2b655faf9cee469e39ac33d64841a4cb901c6fe1788",
+        "bytes": 846817
+      },
+      {
+        "path": "explicit_questions.csv",
+        "url": "https://huggingface.co/datasets/NEWTONReasoning/NEWTON/resolve/b55ed6d1ee3e1a1c3c142a5fe79df39319599626/explicit_questions.csv",
+        "sha256": "0c317dc3cbcbe07052605faa43bc4856693acffdbabc5f50387f064ddf15663d",
+        "bytes": 8558838
+      },
+      {
+        "path": "implicit_questions.csv",
+        "url": "https://huggingface.co/datasets/NEWTONReasoning/NEWTON/resolve/b55ed6d1ee3e1a1c3c142a5fe79df39319599626/implicit_questions.csv",
+        "sha256": "f516454ba05745048d675afae3f61e4cab620f7d30ee94c8c18c7b304722171c",
+        "bytes": 14767990
+      }
+    ],
+    "review_scope": "Bundling full question text in this repository; not a blanket finding about lawful local use.",
+    "local_recovery": "docs/recovering-inputs.md"
+  },
+  {
+    "id": "piqa",
+    "title": "PIQA",
+    "url": "https://github.com/ybisk/ybisk.github.io",
+    "revision": "21edab439af693b961be2f069e8690a88d3b4e37",
+    "questions": 30,
+    "sharing": "hold_distribution_conditions",
+    "license": "AFL-3.0",
+    "license_url": "https://opensource.org/license/afl-3-0-php",
+    "reason": "PIQA uses AFL 3.0, including a recipient-assent condition. The recovery tool requires license acceptance, downloads the original files and verifies the 30 selected inputs in local storage.",
+    "attribution": "PIQA original creators; see source",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "README.md",
+        "sha256": "650d7dd8991b85f7ae16a1cfa8bb0cd43e86fb684dc02d10124ebb50958e97d9",
+        "url": "https://raw.githubusercontent.com/ybisk/ybisk.github.io/21edab439af693b961be2f069e8690a88d3b4e37/README.md",
+        "license_excerpts": []
+      },
+      {
+        "file": "piqa/README.md",
+        "sha256": "f7bcb808a64959151698f2bca621572c4809459733d04b95d53f3c62588f1593",
+        "url": "https://raw.githubusercontent.com/ybisk/ybisk.github.io/21edab439af693b961be2f069e8690a88d3b4e37/piqa/README.md",
+        "license_excerpts": [
+          "License: [https://opensource.org/licenses/AFL-3.0](Academic Free License v. 3.0)  Data, in the data/"
+        ]
+      },
+      {
+        "file": "piqa/data/README.md",
+        "sha256": "e292aa5550a089e090cc82131d53e917bc69d46be7230dca8bcc9b4933b48327",
+        "url": "https://raw.githubusercontent.com/ybisk/ybisk.github.io/21edab439af693b961be2f069e8690a88d3b4e37/piqa/data/README.md",
+        "license_excerpts": []
+      },
+      {
+        "url": "https://github.com/ybisk/ybisk.github.io/blob/master/piqa/data/README.md",
+        "git_blob_sha": "d09794f5fe945aba4cc2c09d37a0da6d0fa56e66",
+        "checked": "2026-11-09",
+        "excerpt": "## Physical Interaction: Question Answering"
+      },
+      {
+        "url": "https://github.com/spdx/license-list-data/blob/main/text/AFL-3.0.txt",
+        "git_blob_sha": "e1b7792ae61361c9191c861af978e36a5f721efe",
+        "checked": "2026-11-09",
+        "excerpt": "Academic Free License (“AFL”) v. 3.0",
+        "bundled_notice": "licenses/sources/piqa/upstream-afl-LICENSE.txt",
+        "sha256": "de0612c5780d0d21f9982d2cadfd715d2d3b7a0dfeb532a5023d42a1d4fdce5c"
+      }
+    ],
+    "downloads": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/ybisk/ybisk.github.io/21edab439af693b961be2f069e8690a88d3b4e37/README.md",
+        "sha256": "650d7dd8991b85f7ae16a1cfa8bb0cd43e86fb684dc02d10124ebb50958e97d9",
+        "bytes": 110
+      },
+      {
+        "path": "piqa/README.md",
+        "url": "https://raw.githubusercontent.com/ybisk/ybisk.github.io/21edab439af693b961be2f069e8690a88d3b4e37/piqa/README.md",
+        "sha256": "f7bcb808a64959151698f2bca621572c4809459733d04b95d53f3c62588f1593",
+        "bytes": 244
+      },
+      {
+        "path": "piqa/data/README.md",
+        "url": "https://raw.githubusercontent.com/ybisk/ybisk.github.io/21edab439af693b961be2f069e8690a88d3b4e37/piqa/data/README.md",
+        "sha256": "e292aa5550a089e090cc82131d53e917bc69d46be7230dca8bcc9b4933b48327",
+        "bytes": 1215
+      },
+      {
+        "path": "piqa/data/tests.jsonl",
+        "url": "https://raw.githubusercontent.com/ybisk/ybisk.github.io/21edab439af693b961be2f069e8690a88d3b4e37/piqa/data/tests.jsonl",
+        "sha256": "402f1e2e61347db773e6e5e0a6b24f97396b59f6fd046dcdcbc12f483ac8553b",
+        "bytes": 814616
+      },
+      {
+        "path": "piqa/data/train-labels.lst",
+        "url": "https://raw.githubusercontent.com/ybisk/ybisk.github.io/21edab439af693b961be2f069e8690a88d3b4e37/piqa/data/train-labels.lst",
+        "sha256": "df8ae080c41f02f88e81f6932d425f4b7ee72f433ad552e6a30d45e358e8f8bb",
+        "bytes": 32226
+      },
+      {
+        "path": "piqa/data/train.jsonl",
+        "url": "https://raw.githubusercontent.com/ybisk/ybisk.github.io/21edab439af693b961be2f069e8690a88d3b4e37/piqa/data/train.jsonl",
+        "sha256": "f805f9c96518d7b59f2f870d90f712457cda949979469d9fa3fd706ce22e0a1a",
+        "bytes": 4382162
+      },
+      {
+        "path": "piqa/data/valid-labels.lst",
+        "url": "https://raw.githubusercontent.com/ybisk/ybisk.github.io/21edab439af693b961be2f069e8690a88d3b4e37/piqa/data/valid-labels.lst",
+        "sha256": "b4192dc3a2a0363d9d60ccf79800cbbe2f32ebb17726efdde6970e0b8131bceb",
+        "bytes": 3676
+      },
+      {
+        "path": "piqa/data/valid.jsonl",
+        "url": "https://raw.githubusercontent.com/ybisk/ybisk.github.io/21edab439af693b961be2f069e8690a88d3b4e37/piqa/data/valid.jsonl",
+        "sha256": "93503cc97c679e459b065c3d13e848282e44b2a25213985bed3e5d458abef72d",
+        "bytes": 495929
+      }
+    ],
+    "review_scope": "Bundling full question text in this repository; not a blanket finding about lawful local use.",
+    "local_recovery": "docs/recovering-inputs.md"
+  },
+  {
+    "id": "proofwriter",
+    "title": "ProofWriter",
+    "url": "https://aristo-data-public.s3.amazonaws.com/proofwriter/proofwriter-dataset-V2020.12.3.zip",
+    "revision": null,
+    "questions": 19,
+    "sharing": "hold_unclear",
+    "license": null,
+    "license_url": null,
+    "reason": "The original ProofWriter archive and paper provide no dataset license. The separate RuleTaker repository’s Apache license does not explicitly cover this later ProofWriter release; conflicting mirror labels remain insufficient.",
+    "attribution": "ProofWriter original creators; see source",
+    "checked": "2026-11-09",
+    "evidence": [],
+    "downloads": [
+      {
+        "path": "proofwriter.zip",
+        "url": "https://aristo-data-public.s3.amazonaws.com/proofwriter/proofwriter-dataset-V2020.12.3.zip",
+        "sha256": "bbc5694901e8306d0bd659aa1ad53ccfd02c201864f4b320ffa3777827d1fc26",
+        "bytes": 214185889
+      }
+    ],
+    "review_scope": "Bundling full question text in this repository; not a blanket finding about lawful local use.",
+    "local_recovery": "docs/recovering-inputs.md"
+  },
+  {
+    "id": "pub",
+    "title": "PUB",
+    "url": "https://huggingface.co/datasets/cfilt/PUB",
+    "revision": "65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff",
+    "questions": 31,
+    "sharing": "include",
+    "license": "MIT",
+    "license_url": "https://opensource.org/license/mit",
+    "reason": "The pinned publisher dataset card declares MIT. Retain that declaration, the publisher attribution, and task-specific source locators.",
+    "attribution": "CFILT, IIT Bombay; PUB authors",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "README.md",
+        "sha256": "6f9dd52fe2135b8f14b3d8033b4a002c4813a98b9df257253e404bed1313cceb",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/README.md",
+        "license_excerpts": [
+          "license: mit task_categories: - question-answering"
+        ]
+      }
+    ],
+    "downloads": [
+      {
+        "path": "README.md",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/README.md",
+        "sha256": "6f9dd52fe2135b8f14b3d8033b4a002c4813a98b9df257253e404bed1313cceb",
+        "bytes": 264
+      },
+      {
+        "path": "data/task_1.zip",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/data/task_1.zip",
+        "sha256": "0074fc571e5964a66806b05276da19229acf0b73938b124acb1c8c6f98c375fc",
+        "bytes": 70812
+      },
+      {
+        "path": "data/task_10.zip",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/data/task_10.zip",
+        "sha256": "7ff63a940190bb9572910277239adef46f859089b734ec7f80322bff16bdfea0",
+        "bytes": 42893
+      },
+      {
+        "path": "data/task_11.zip",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/data/task_11.zip",
+        "sha256": "961e83467527b5596954576484166cf4cc0d0ca80e6e68314febcc23546cd516",
+        "bytes": 49668
+      },
+      {
+        "path": "data/task_12.zip",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/data/task_12.zip",
+        "sha256": "a137740dd0887f95818cfd36c187c60e77a02a16b2833edd2deb749f5e0dc188",
+        "bytes": 158242
+      },
+      {
+        "path": "data/task_13.zip",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/data/task_13.zip",
+        "sha256": "f74cc9e5cbf81ff05d807069240c845593ad1a081bb46683107e00f49ad7a805",
+        "bytes": 118829
+      },
+      {
+        "path": "data/task_14.zip",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/data/task_14.zip",
+        "sha256": "30da0af46d953f62e43aac5a96784452f75676dccef75d8ce549311c9884df19",
+        "bytes": 28549
+      },
+      {
+        "path": "data/task_2.zip",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/data/task_2.zip",
+        "sha256": "b6909eed064c2bf97eea837136fa4490909a1894102e14f5c37d4f6d95e5299e",
+        "bytes": 83270
+      },
+      {
+        "path": "data/task_3.zip",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/data/task_3.zip",
+        "sha256": "6f505c5cb06e298de419f35fc88d516435b503c9553e37bc9f2ac15b5a55db2e",
+        "bytes": 130784
+      },
+      {
+        "path": "data/task_4.zip",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/data/task_4.zip",
+        "sha256": "703446381fc257ca5d918de1e5a879e58ee5ec068bddadfea133bc8bebea0406",
+        "bytes": 199616
+      },
+      {
+        "path": "data/task_5.zip",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/data/task_5.zip",
+        "sha256": "b41ef2d35c4897f7dbfb76ddab6a3130b6ef10ea63ebd94010a661550f6bf2a2",
+        "bytes": 69017
+      },
+      {
+        "path": "data/task_6.zip",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/data/task_6.zip",
+        "sha256": "1f8be8c5a60daee2b2bb52ef7f9939c9bb770fc87716e5b54a14018651602b26",
+        "bytes": 71826
+      },
+      {
+        "path": "data/task_7.zip",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/data/task_7.zip",
+        "sha256": "cd8b85db5cea80df2bbc45e6947f89ac0ad7b6e196a1d3eba9f1a6c488a5dbe9",
+        "bytes": 121414
+      },
+      {
+        "path": "data/task_8.zip",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/data/task_8.zip",
+        "sha256": "eac38fef1533df843d3af9625e724e2863e8c85a4e17d9d47e5827ab56296270",
+        "bytes": 176069
+      },
+      {
+        "path": "data/task_9.zip",
+        "url": "https://huggingface.co/datasets/cfilt/PUB/resolve/65a6a87359fe4aa5278952741d5ed7e0ecb0f0ff/data/task_9.zip",
+        "sha256": "f88fa614353cbec3f10f232eac40dbd965b1206792206bd5b620dd1f470f1a03",
+        "bytes": 185415
+      }
+    ]
+  },
+  {
+    "id": "questbench",
+    "title": "QuestBench (Google DeepMind)",
+    "url": "https://storage.googleapis.com/questbench/questbench_data.tar.gz",
+    "revision": null,
+    "questions": 38,
+    "sharing": "include",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "reason": "The original archive LICENSE distinguishes Apache-2.0 software from CC BY 4.0 other materials. The selected questions are dataset entries; retain Google copyright and the archive notice.",
+    "attribution": "Google LLC; QuestBench authors",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "archive_url": "https://storage.googleapis.com/questbench/questbench_data.tar.gz",
+        "archive_sha256": "dcda61264cf19e8264cdb5e19a2e662f93fbf023cdbcc35ca5312351e207dd0d",
+        "archive_member": "questbench_data/LICENSE",
+        "sha256": "a766855b64f9aa3cabc5d62489fb4ef867c85234274a25af93d5e39a57e1b39f",
+        "bundled_notice": "licenses/sources/questbench/LICENSE"
+      }
+    ],
+    "downloads": [
+      {
+        "path": "questbench.tar.gz",
+        "url": "https://storage.googleapis.com/questbench/questbench_data.tar.gz",
+        "sha256": "dcda61264cf19e8264cdb5e19a2e662f93fbf023cdbcc35ca5312351e207dd0d",
+        "bytes": 87640146
+      }
+    ]
+  },
+  {
+    "id": "rewardbench",
+    "title": "RewardBench",
+    "url": "https://huggingface.co/datasets/allenai/reward-bench",
+    "revision": "168d848cdbbea9764fae4a544dc9ca1e6cca4931",
+    "questions": 12,
+    "sharing": "include",
+    "license": "ODC-By-1.0 AND MIT (selected components)",
+    "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+    "reason": "All 12 selected entries are mapped to LLMBar, HumanEvalPack, or PRM800K. The original RewardBench component table and publisher notices identify MIT terms for these sources. Retain collection ODC-By attribution and all applicable component notices, including HumanEval and MATH.",
+    "attribution": "Nathan Lambert et al.; Allen Institute for AI; LLMBar, HumanEvalPack/HumanEval, PRM800K and MATH creators",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "LICENSE.md",
+        "sha256": "d1659bcee5039d7de41a1a57bc003a9f8a55ffaf397753ae05b66bce6561ed60",
+        "url": "https://huggingface.co/datasets/allenai/reward-bench/resolve/168d848cdbbea9764fae4a544dc9ca1e6cca4931/LICENSE.md",
+        "bundled_notice": "licenses/sources/rewardbench/LICENSE.md"
+      },
+      {
+        "file": "README.md",
+        "sha256": "819086ae803ffe3d3126eb2c188b8c67e2a0acb91b67096727f59f5aff423256",
+        "url": "https://huggingface.co/datasets/allenai/reward-bench/resolve/168d848cdbbea9764fae4a544dc9ca1e6cca4931/README.md",
+        "license_excerpts": [
+          "license: odc-by size_categories: - 1K<n<10K",
+          "| Dataset       | Variants                                                 | Data License                                              | |---------------|----------------------------------------------------------|------------------------------------------------------| | AlpacaEval    | {Easy, Length, Hard}                                        | ["
+        ]
+      },
+      {
+        "check": "source-sharing-follow-up",
+        "checked": "2026-11-09",
+        "per_question_mapping": "data/source_attributions.json",
+        "outcome": "All 12 selected entries are mapped to LLMBar, HumanEvalPack, or PRM800K. The original RewardBench component table and publisher notices identify MIT terms for these sources. Retain collection ODC-By attribution and all applicable component notices, including HumanEval and MATH."
+      },
+      {
+        "bundled_notice": "licenses/sources/rewardbench/LLMBar-MIT.txt",
+        "sha256": "27eaa9b0d4c6549be7d19b1f9b1ee5818e82d1583853c860e92f0e5769fc4936",
+        "checked": "2026-11-09"
+      },
+      {
+        "bundled_notice": "licenses/sources/rewardbench/HumanEvalPack-MIT.txt",
+        "sha256": "051c8b019cb07694e235204fdddd94cdef8d64629f52424b7f24ded775638385",
+        "checked": "2026-11-09"
+      },
+      {
+        "bundled_notice": "licenses/sources/rewardbench/HumanEval-MIT.txt",
+        "sha256": "70d957b74c0c1c3226b331f3d47e9654905c103cff09e57edee0ef52c2cc3eb5",
+        "checked": "2026-11-09"
+      },
+      {
+        "bundled_notice": "licenses/sources/rewardbench/PRM800K-MIT.txt",
+        "sha256": "dcf7927ec000e0bea021baf556c82ad7ac2e96cdd8285a1c8b2a7014e8300c6d",
+        "checked": "2026-11-09"
+      },
+      {
+        "bundled_notice": "licenses/sources/rewardbench/MATH-MIT.txt",
+        "sha256": "8f59bf9cef881a8425402f876f437ac9d94bf097289773f1835b6144d66d1833",
+        "checked": "2026-11-09"
+      },
+      {
+        "url": "https://github.com/princeton-nlp/LLMBar/blob/main/LICENSE",
+        "git_blob_sha": "3bf435ec0493e58e4c7d2da5f0303a72f6dd00e6",
+        "checked": "2026-11-09"
+      },
+      {
+        "url": "https://github.com/bigcode-project/octopack/blob/main/LICENSE",
+        "git_blob_sha": "feafaf6c251c6d3b37396ccb09bd42762e60c52f",
+        "checked": "2026-11-09"
+      },
+      {
+        "url": "https://github.com/openai/prm800k/blob/main/LICENSE",
+        "git_blob_sha": "4ccc7f8dba5cb9f5dc77f14778602ef4c0a585b2",
+        "checked": "2026-11-09"
+      },
+      {
+        "url": "https://github.com/hendrycks/math/blob/main/LICENSE",
+        "git_blob_sha": "2884bd5e0ebe3af32f148e407ca9648153b6f2fa",
+        "checked": "2026-11-09"
+      }
+    ],
+    "downloads": [
+      {
+        "path": "LICENSE.md",
+        "url": "https://huggingface.co/datasets/allenai/reward-bench/resolve/168d848cdbbea9764fae4a544dc9ca1e6cca4931/LICENSE.md",
+        "sha256": "d1659bcee5039d7de41a1a57bc003a9f8a55ffaf397753ae05b66bce6561ed60",
+        "bytes": 19792
+      },
+      {
+        "path": "README.md",
+        "url": "https://huggingface.co/datasets/allenai/reward-bench/resolve/168d848cdbbea9764fae4a544dc9ca1e6cca4931/README.md",
+        "sha256": "819086ae803ffe3d3126eb2c188b8c67e2a0acb91b67096727f59f5aff423256",
+        "bytes": 21113
+      },
+      {
+        "path": "data/filtered-00000-of-00001.parquet",
+        "url": "https://huggingface.co/datasets/allenai/reward-bench/resolve/168d848cdbbea9764fae4a544dc9ca1e6cca4931/data/filtered-00000-of-00001.parquet",
+        "sha256": "65473c20ed0627e02503557ae102c25c6b0e66b5ed69ee327e224bb95e70ca29",
+        "bytes": 2354751
+      }
+    ]
+  },
+  {
+    "id": "ruler",
+    "title": "RULER",
+    "url": "https://github.com/NVIDIA/RULER",
+    "revision": "db43f92ff634bbce1c33d1fb15858aec4bba509a",
+    "questions": 16,
+    "sharing": "include",
+    "license": "Apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+    "reason": "The pinned repository is Apache-2.0. These 16 cases are locally generated retrieval probes inspired by RULER, not unchanged RULER benchmark items; preserve that provenance.",
+    "attribution": "NVIDIA RULER authors; local probe adaptation by Afika Nyati / Raindrop",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "LICENSE",
+        "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+        "url": "https://raw.githubusercontent.com/NVIDIA/RULER/db43f92ff634bbce1c33d1fb15858aec4bba509a/LICENSE",
+        "bundled_notice": "licenses/sources/ruler/LICENSE"
+      },
+      {
+        "file": "README.md",
+        "sha256": "f3aae5bbd58fcd7de32aab099c455dd2bbc1da23a2efee9db3071eb9fbf894a3",
+        "url": "https://raw.githubusercontent.com/NVIDIA/RULER/db43f92ff634bbce1c33d1fb15858aec4bba509a/README.md",
+        "license_excerpts": []
+      }
+    ],
+    "downloads": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/NVIDIA/RULER/db43f92ff634bbce1c33d1fb15858aec4bba509a/LICENSE",
+        "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+        "bytes": 11356
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/NVIDIA/RULER/db43f92ff634bbce1c33d1fb15858aec4bba509a/README.md",
+        "sha256": "f3aae5bbd58fcd7de32aab099c455dd2bbc1da23a2efee9db3071eb9fbf894a3",
+        "bytes": 18187
+      },
+      {
+        "path": "scripts/data/synthetic/common_words_extraction.py",
+        "url": "https://raw.githubusercontent.com/NVIDIA/RULER/db43f92ff634bbce1c33d1fb15858aec4bba509a/scripts/data/synthetic/common_words_extraction.py",
+        "sha256": "2671d4a84a383acef2d9e8f691a0bea4da03f1632ca3f4ad3c1de6d27ccbc6b9",
+        "bytes": 9183
+      },
+      {
+        "path": "scripts/data/synthetic/constants.py",
+        "url": "https://raw.githubusercontent.com/NVIDIA/RULER/db43f92ff634bbce1c33d1fb15858aec4bba509a/scripts/data/synthetic/constants.py",
+        "sha256": "6296e901d495ec6200dc3f68993ea13d8282e3c0dbe1a8c47967f111105d1fde",
+        "bytes": 3052
+      },
+      {
+        "path": "scripts/data/synthetic/freq_words_extraction.py",
+        "url": "https://raw.githubusercontent.com/NVIDIA/RULER/db43f92ff634bbce1c33d1fb15858aec4bba509a/scripts/data/synthetic/freq_words_extraction.py",
+        "sha256": "29b7af97ffdd2122fde348df20cd02add390a21cd6d64b6fd66c8663dc487f67",
+        "bytes": 7766
+      },
+      {
+        "path": "scripts/data/synthetic/json/download_paulgraham_essay.py",
+        "url": "https://raw.githubusercontent.com/NVIDIA/RULER/db43f92ff634bbce1c33d1fb15858aec4bba509a/scripts/data/synthetic/json/download_paulgraham_essay.py",
+        "sha256": "d89622edfe08d4011718bb2634da742d69a56728139fa5e236e00cca703cc84c",
+        "bytes": 2783
+      },
+      {
+        "path": "scripts/data/synthetic/json/english_words.json",
+        "url": "https://raw.githubusercontent.com/NVIDIA/RULER/db43f92ff634bbce1c33d1fb15858aec4bba509a/scripts/data/synthetic/json/english_words.json",
+        "sha256": "42df658acd22f38accbe379f5d1e9fa73142db803a1562e1739abc8e36de401f",
+        "bytes": 132
+      },
+      {
+        "path": "scripts/data/synthetic/niah.py",
+        "url": "https://raw.githubusercontent.com/NVIDIA/RULER/db43f92ff634bbce1c33d1fb15858aec4bba509a/scripts/data/synthetic/niah.py",
+        "sha256": "53f2e2e0c61607d3814303c7f22b2f419fd004eb3bfe92a00ecf811e31aa8451",
+        "bytes": 12743
+      },
+      {
+        "path": "scripts/data/synthetic/qa.py",
+        "url": "https://raw.githubusercontent.com/NVIDIA/RULER/db43f92ff634bbce1c33d1fb15858aec4bba509a/scripts/data/synthetic/qa.py",
+        "sha256": "f00c0b59cf8698e90831bbf461c2c4f40f2a30f2469534c27455808c717281d0",
+        "bytes": 9833
+      },
+      {
+        "path": "scripts/data/synthetic/variable_tracking.py",
+        "url": "https://raw.githubusercontent.com/NVIDIA/RULER/db43f92ff634bbce1c33d1fb15858aec4bba509a/scripts/data/synthetic/variable_tracking.py",
+        "sha256": "9aac483420e158d116ab63fc43b9606bdb284ac0c053288c30776d5c365530e5",
+        "bytes": 14306
+      }
+    ]
+  },
+  {
+    "id": "selfaware",
+    "title": "SelfAware",
+    "url": "https://github.com/yinzhangyue/SelfAware",
+    "revision": "f0bad1ff77bd42fc4eb2360281ed646c7bb7bd0c",
+    "questions": 56,
+    "sharing": "include",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "reason": "The README explicitly distinguishes Apache-2.0 code from CC BY-SA 4.0 DATA. Release these adapted entries under CC BY-SA 4.0 with source credit; do not relabel the data Apache or MIT.",
+    "attribution": "Zhangyue Yin, Qiushi Sun, Qipeng Guo, Jiawen Wu, Xipeng Qiu, Xuanjing Huang; SelfAware authors",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "url": "https://raw.githubusercontent.com/yinzhangyue/SelfAware/f0bad1ff77bd42fc4eb2360281ed646c7bb7bd0c/LICENSE",
+        "bundled_notice": "licenses/sources/selfaware/LICENSE"
+      },
+      {
+        "file": "README.md",
+        "sha256": "006c883acf3d10286d3bb41ebdc6f4ba5e5ca13cd9457d866a3ed289cc50a8f2",
+        "url": "https://raw.githubusercontent.com/yinzhangyue/SelfAware/f0bad1ff77bd42fc4eb2360281ed646c7bb7bd0c/README.md",
+        "license_excerpts": [
+          "![Data License](https://img.shields.io/badge/Data%20License-CC--BY--SA--4.0-blue) ![python](https://img.shields.io/badge/python-3.8+-blue.svg) "
+        ]
+      }
+    ],
+    "downloads": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/yinzhangyue/SelfAware/f0bad1ff77bd42fc4eb2360281ed646c7bb7bd0c/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "bytes": 11357
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/yinzhangyue/SelfAware/f0bad1ff77bd42fc4eb2360281ed646c7bb7bd0c/README.md",
+        "sha256": "006c883acf3d10286d3bb41ebdc6f4ba5e5ca13cd9457d866a3ed289cc50a8f2",
+        "bytes": 6993
+      },
+      {
+        "path": "data/SelfAware.json",
+        "url": "https://raw.githubusercontent.com/yinzhangyue/SelfAware/f0bad1ff77bd42fc4eb2360281ed646c7bb7bd0c/data/SelfAware.json",
+        "sha256": "32929585ffdd4048f35f7f167720722eb8ddcf59908ffc958da2f84ea634dc54",
+        "bytes": 1286450
+      }
+    ]
+  },
+  {
+    "id": "socialiqa",
+    "title": "Social IQa",
+    "url": "https://storage.googleapis.com/ai2-mosaic/public/socialiqa/socialiqa-train-dev.zip",
+    "revision": null,
+    "questions": 18,
+    "sharing": "include",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "reason": "The publisher's allenai/social_i_qa dataset card explicitly states CC BY 4.0; retain the Sap et al. citation, original download URL, and normalization notice.",
+    "attribution": "Maarten Sap, Hannah Rashkin, Derek Chen, Ronan LeBras, Yejin Choi",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "url": "https://huggingface.co/datasets/allenai/social_i_qa/raw/main/README.md",
+        "checked": "2026-11-09",
+        "section": "Licensing Information",
+        "excerpt": "CC-BY-4.0"
+      }
+    ],
+    "downloads": [
+      {
+        "path": "socialiqa.zip",
+        "url": "https://storage.googleapis.com/ai2-mosaic/public/socialiqa/socialiqa-train-dev.zip",
+        "sha256": "ee073914a0fc33265cfbcfc50ec20df9b2e07809c3f420f599138d1f394ef5c3",
+        "bytes": 2198056
+      }
+    ]
+  },
+  {
+    "id": "spartqa",
+    "title": "SPARTQA",
+    "url": "https://github.com/HLR/SpartQA_generation",
+    "revision": "9892ed1bff9103f5a9103c68bd271b7630ab661e",
+    "questions": 36,
+    "sharing": "include",
+    "license": "MIT",
+    "license_url": "https://opensource.org/license/mit",
+    "reason": "The pinned original repository LICENSE.md is MIT. Retain its copyright notice and identify normalized answer choices.",
+    "attribution": "HLR / Roshanak Mirzaee et al.",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "LICENSE.md",
+        "sha256": "ddc28f0498d9c5b991cb4e7f69424c6e511d9af297be58b35c0e01178945751c",
+        "url": "https://raw.githubusercontent.com/HLR/SpartQA_generation/9892ed1bff9103f5a9103c68bd271b7630ab661e/LICENSE.md",
+        "bundled_notice": "licenses/sources/spartqa/LICENSE.md"
+      },
+      {
+        "file": "Readme.md",
+        "sha256": "c7520367b5c57111aff430f9a68dfaff175bb9e6d4b822590275ef44b5cda898",
+        "url": "https://raw.githubusercontent.com/HLR/SpartQA_generation/9892ed1bff9103f5a9103c68bd271b7630ab661e/Readme.md",
+        "license_excerpts": []
+      }
+    ],
+    "downloads": [
+      {
+        "path": "LICENSE.md",
+        "url": "https://raw.githubusercontent.com/HLR/SpartQA_generation/9892ed1bff9103f5a9103c68bd271b7630ab661e/LICENSE.md",
+        "sha256": "ddc28f0498d9c5b991cb4e7f69424c6e511d9af297be58b35c0e01178945751c",
+        "bytes": 1077
+      },
+      {
+        "path": "Readme.md",
+        "url": "https://raw.githubusercontent.com/HLR/SpartQA_generation/9892ed1bff9103f5a9103c68bd271b7630ab661e/Readme.md",
+        "sha256": "c7520367b5c57111aff430f9a68dfaff175bb9e6d4b822590275ef44b5cda898",
+        "bytes": 4074
+      },
+      {
+        "path": "SpartQA_Auto.zip",
+        "url": "https://www.cse.msu.edu/~kordjams/data/SpartQA_Auto.zip",
+        "sha256": "03154ef3010901fd8807d59c06526de91cb5d1923001d91bd7522a66d95568cb",
+        "bytes": 34687258
+      },
+      {
+        "path": "SpartQA_Human.zip",
+        "url": "https://www.cse.msu.edu/~kordjams/data/SpartQA_Human.zip",
+        "sha256": "2b6cec8c5d06cd01f2e7c8f1a6d4fa9472f53386fd4a7034f5aaf029e83b9f59",
+        "bytes": 287409
+      }
+    ]
+  },
+  {
+    "id": "sst2",
+    "title": "SST-2",
+    "url": "https://huggingface.co/datasets/stanfordnlp/sst2",
+    "revision": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+    "questions": 6,
+    "sharing": "hold_unclear",
+    "license": null,
+    "license_url": null,
+    "reason": "The publisher dataset card lists the license as unknown, and no redistribution grant for the selected movie-review text was established. Obtain the original files for local recovery.",
+    "attribution": "SST-2 original creators; see source",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "README.md",
+        "sha256": "b67282cc0ee148ca5fad017275f5559095cca4252a76a4ae7688377935c862fc",
+        "url": "https://huggingface.co/datasets/stanfordnlp/sst2/resolve/8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb/README.md",
+        "license_excerpts": [
+          "license: - unknown multilinguality:",
+          "  - [Licensing Information](#licensing-information)   - [Citation Information](#citation-information)   - [Contributions](#contributions)",
+          "### Licensing Information  Unknown."
+        ]
+      }
+    ],
+    "downloads": [
+      {
+        "path": "README.md",
+        "url": "https://huggingface.co/datasets/stanfordnlp/sst2/resolve/8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb/README.md",
+        "sha256": "b67282cc0ee148ca5fad017275f5559095cca4252a76a4ae7688377935c862fc",
+        "bytes": 5274
+      },
+      {
+        "path": "data/test-00000-of-00001.parquet",
+        "url": "https://huggingface.co/datasets/stanfordnlp/sst2/resolve/8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb/data/test-00000-of-00001.parquet",
+        "sha256": "20d27a86c0c59acb746a41a481ebb1fc71edb72d94b5ccee7f23b9041b17adcf",
+        "bytes": 147787
+      },
+      {
+        "path": "data/train-00000-of-00001.parquet",
+        "url": "https://huggingface.co/datasets/stanfordnlp/sst2/resolve/8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb/data/train-00000-of-00001.parquet",
+        "sha256": "c7921283b75a42e685f50edecb96798607ea0fcbfd0739ee8975f22c12d55f09",
+        "bytes": 3110458
+      },
+      {
+        "path": "data/validation-00000-of-00001.parquet",
+        "url": "https://huggingface.co/datasets/stanfordnlp/sst2/resolve/8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb/data/validation-00000-of-00001.parquet",
+        "sha256": "fb00fe008f6828f86ba2beda8415a4cf5da0c884f21c5f238c87131b5aa19529",
+        "bytes": 72813
+      }
+    ],
+    "review_scope": "Bundling full question text in this repository; not a blanket finding about lawful local use.",
+    "local_recovery": "docs/recovering-inputs.md"
+  },
+  {
+    "id": "tombench",
+    "title": "ToMBench",
+    "url": "https://github.com/zhchen18/ToMBench",
+    "revision": "4f491f0784ed31ef93a8837615fbc48f885cf78d",
+    "questions": 31,
+    "sharing": "include",
+    "license": "MIT",
+    "license_url": "https://opensource.org/license/mit",
+    "reason": "The pinned original repository LICENSE is MIT. Retain its notice and the source question identifiers.",
+    "attribution": "Zhuang Chen et al.; ToMBench authors",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "LICENSE",
+        "sha256": "a1375025201710494880ff99b397d63b1680fd366072f4f1a5d0542be8362356",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/LICENSE",
+        "bundled_notice": "licenses/sources/tombench/LICENSE"
+      },
+      {
+        "file": "README.md",
+        "sha256": "72f78bacebefb94d797279ff8e1a269ade7a5f756055c917d6a87fcd34bb2978",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/README.md",
+        "license_excerpts": []
+      }
+    ],
+    "downloads": [
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/LICENSE",
+        "sha256": "a1375025201710494880ff99b397d63b1680fd366072f4f1a5d0542be8362356",
+        "bytes": 1068
+      },
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/README.md",
+        "sha256": "72f78bacebefb94d797279ff8e1a269ade7a5f756055c917d6a87fcd34bb2978",
+        "bytes": 7422
+      },
+      {
+        "path": "data/Ambiguous Story Task.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Ambiguous Story Task.jsonl",
+        "sha256": "c99f365b6d3d0e982228623d4328afbafe11cf9a8da3a2838ed6c846e4f154d0",
+        "bytes": 403001
+      },
+      {
+        "path": "data/Completion of Failed Actions.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Completion of Failed Actions.jsonl",
+        "sha256": "cb68348ef3eb53d7c6bf0e426b9279856264748b94f181ce042c91dcf56ba5af",
+        "bytes": 34388
+      },
+      {
+        "path": "data/Discrepant Desires.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Discrepant Desires.jsonl",
+        "sha256": "73093d99923efac243e3610c393613c000b5dc04f88771c39a3b641b993a6b70",
+        "bytes": 31122
+      },
+      {
+        "path": "data/Discrepant Emotions.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Discrepant Emotions.jsonl",
+        "sha256": "100b7f05ba5b76aeaa8d2daf3897c90c6a4f08dc23b75a0dd87be0e82db11bf4",
+        "bytes": 27502
+      },
+      {
+        "path": "data/Discrepant Intentions.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Discrepant Intentions.jsonl",
+        "sha256": "d72c8353aa5b65f35073d72808996b6f8e980f7683539e25510a251ed8f1dac2",
+        "bytes": 88188
+      },
+      {
+        "path": "data/Emotion Regulation.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Emotion Regulation.jsonl",
+        "sha256": "553d0ee61733cddfa3a9c531c3f7306c40929edc9f0e1e1dda7088ed8804c96c",
+        "bytes": 47505
+      },
+      {
+        "path": "data/False Belief Task.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/False Belief Task.jsonl",
+        "sha256": "1a5c38362c4c883b219381e24d7b51c1f60abd959f39b6dc3e977ca11d7abff8",
+        "bytes": 574548
+      },
+      {
+        "path": "data/Faux-pas Recognition Test.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Faux-pas Recognition Test.jsonl",
+        "sha256": "374272690aedfe34529cb83fc4368a38960da288fb8d787a7bf50aba65dd349c",
+        "bytes": 883265
+      },
+      {
+        "path": "data/Hidden Emotions.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Hidden Emotions.jsonl",
+        "sha256": "57d0882eafddca8fb8d81148bf4291db0c5c6bbdd3a8ad5004c445d249b05124",
+        "bytes": 77644
+      },
+      {
+        "path": "data/Hinting Task Test.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Hinting Task Test.jsonl",
+        "sha256": "fd3a930403c7e0514e8730c48030da17d8bcd8a453e96001ca0795cbaee61afa",
+        "bytes": 140148
+      },
+      {
+        "path": "data/Knowledge-Attention Links.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Knowledge-Attention Links.jsonl",
+        "sha256": "9ea4c7bfc2086d4ebaa2a31cc1993ea2774f72e642d7415dbb9c9c0e21ead94f",
+        "bytes": 44564
+      },
+      {
+        "path": "data/Knowledge-Pretend Play Links.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Knowledge-Pretend Play Links.jsonl",
+        "sha256": "67e3d451089db0a3ac4a7702f4c6c58c2909dbe338aa53bda5e00e4cf9396242",
+        "bytes": 45125
+      },
+      {
+        "path": "data/Moral Emotions.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Moral Emotions.jsonl",
+        "sha256": "fac3eb293d2901b35274eab8244515b7e138e9cb3311037d5c4a0bda3810dd51",
+        "bytes": 94948
+      },
+      {
+        "path": "data/Multiple Desires.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Multiple Desires.jsonl",
+        "sha256": "7a49186ab802a2a199806ca191160019ae21d9ff85db9203799fb36b8960a914",
+        "bytes": 28158
+      },
+      {
+        "path": "data/Percepts-Knowledge Links.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Percepts-Knowledge Links.jsonl",
+        "sha256": "dda5b279b926eef0e0c440cef4ef68cbebbf82fc6c7b109b213c15c2f9d94804",
+        "bytes": 35406
+      },
+      {
+        "path": "data/Persuasion Story Task.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Persuasion Story Task.jsonl",
+        "sha256": "aefef5b6beb7097370cf3bc0c6503ed8caa495530297a4b184c4c31002e23169",
+        "bytes": 152968
+      },
+      {
+        "path": "data/Prediction of Actions.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Prediction of Actions.jsonl",
+        "sha256": "23c56589e459d253bafc2cdc0ea786fba1912c8bf388861a96042666f10b8a47",
+        "bytes": 33204
+      },
+      {
+        "path": "data/Scalar Implicature Test.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Scalar Implicature Test.jsonl",
+        "sha256": "4264d1842f556f8bcfd7fd56c5058aa8c55f6001931d27d253a85d7ecc19247e",
+        "bytes": 280234
+      },
+      {
+        "path": "data/Strange Story Task.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Strange Story Task.jsonl",
+        "sha256": "f0a1c6e12b9d9b8b5c936ea3383b24100ef28ed6610078c1fc7bd6769d7ef914",
+        "bytes": 585391
+      },
+      {
+        "path": "data/Unexpected Outcome Test.jsonl",
+        "url": "https://raw.githubusercontent.com/zhchen18/ToMBench/4f491f0784ed31ef93a8837615fbc48f885cf78d/data/Unexpected Outcome Test.jsonl",
+        "sha256": "f4ee872c98e17480272c40d5406a8eca31eed29b455f4155b9684328bf6dbf9c",
+        "bytes": 337138
+      }
+    ]
+  },
+  {
+    "id": "toxicchat",
+    "title": "ToxicChat",
+    "url": "https://huggingface.co/datasets/lmsys/toxic-chat",
+    "revision": "29df8e4dba60e1f4af4b4075c0705c5b313548a8",
+    "questions": 6,
+    "sharing": "include",
+    "license": "CC-BY-NC-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "reason": "Included for the stated noncommercial research release under CC BY-NC 4.0, which the pinned publisher card applies to both user prompts and model outputs. Retain creator credit, the license notice and normalization disclosures.",
+    "attribution": "Zi Lin, Zihan Wang, Yongqi Tong, Yangkun Wang, Yuxin Guo, Yujia Wang, Jingbo Shang",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "README.md",
+        "sha256": "70c63cac8fff2a4934c85b3d3b52d2e169b8af9fe893dd9de1ea5e4abdb51441",
+        "url": "https://huggingface.co/datasets/lmsys/toxic-chat/resolve/29df8e4dba60e1f4af4b4075c0705c5b313548a8/README.md",
+        "license_excerpts": [
+          "license: cc-by-nc-4.0 language: - en",
+          "Both the user prompts and the model outputs are licensed under CC-BY-NC-4.0.  ## Citation"
+        ]
+      }
+    ],
+    "downloads": [
+      {
+        "path": "README.md",
+        "url": "https://huggingface.co/datasets/lmsys/toxic-chat/resolve/29df8e4dba60e1f4af4b4075c0705c5b313548a8/README.md",
+        "sha256": "70c63cac8fff2a4934c85b3d3b52d2e169b8af9fe893dd9de1ea5e4abdb51441",
+        "bytes": 5463
+      },
+      {
+        "path": "data/0124/toxic-chat_annotation_test.csv",
+        "url": "https://huggingface.co/datasets/lmsys/toxic-chat/resolve/29df8e4dba60e1f4af4b4075c0705c5b313548a8/data/0124/toxic-chat_annotation_test.csv",
+        "sha256": "3c2e49889626f7738dca0a29bface0ba0a0595b2ffdd17f0e02f19df7c3c4c9b",
+        "bytes": 8090164
+      },
+      {
+        "path": "data/0124/toxic-chat_annotation_train.csv",
+        "url": "https://huggingface.co/datasets/lmsys/toxic-chat/resolve/29df8e4dba60e1f4af4b4075c0705c5b313548a8/data/0124/toxic-chat_annotation_train.csv",
+        "sha256": "702eb9b7cac96c3c35e28b9b95855a71f26f21afba8666f9d243f1fa469e81ed",
+        "bytes": 8199182
+      }
+    ]
+  },
+  {
+    "id": "trec",
+    "title": "TREC",
+    "url": "https://cogcomp.seas.upenn.edu/Data/QA/QC/train_5500.label",
+    "revision": null,
+    "questions": 6,
+    "sharing": "hold_unclear",
+    "license": null,
+    "license_url": null,
+    "reason": "The original question-classification page and downloaded label files provide no redistribution license. Five selected records are from the training collection and one from TREC 10; no blanket government-work assumption is made for the combined collection.",
+    "attribution": "TREC original creators; see source",
+    "checked": "2026-11-09",
+    "evidence": [],
+    "downloads": [
+      {
+        "path": "train_5500.label",
+        "url": "https://cogcomp.seas.upenn.edu/Data/QA/QC/train_5500.label",
+        "sha256": "9e4c8bdcaffb96ed61041bd64b564183d52793a8e91d84fc3a8646885f466ec3",
+        "bytes": 335858
+      },
+      {
+        "path": "test_10.label",
+        "url": "https://cogcomp.seas.upenn.edu/Data/QA/QC/TREC_10.label",
+        "sha256": "033f22c028c2bbba9ca682f68ffe204dc1aa6e1cf35dd6207f2d4ca67f0d0e8e",
+        "bytes": 23354
+      }
+    ],
+    "review_scope": "Bundling full question text in this repository; not a blanket finding about lawful local use.",
+    "local_recovery": "docs/recovering-inputs.md"
+  },
+  {
+    "id": "when2call",
+    "title": "When2Call",
+    "url": "https://huggingface.co/datasets/nvidia/When2Call",
+    "revision": "0582f7749df63a96fdc3070932e83e72396ace53",
+    "questions": 57,
+    "sharing": "include",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "reason": "The pinned NVIDIA dataset card explicitly licenses the dataset under CC BY 4.0. Retain source credit and describe the choice-format normalization.",
+    "attribution": "NVIDIA; When2Call authors",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "data/raw/when2call/README.md",
+        "sha256": "14217217ba73b9421b5c8ac9b35b0c210836212ea007b65ec866513fdb67aa75",
+        "url": "https://huggingface.co/datasets/nvidia/When2Call/blob/0582f7749df63a96fdc3070932e83e72396ace53/README.md",
+        "license_excerpts": [
+          "license: cc-by-4.0 configs: - config_name: test",
+          "This dataset is licensed under a Creative Commons Attribution 4.0 International License available at https://creativecommons.org/licenses/by/4.0/legalcode.  ## Intended Usage:"
+        ]
+      }
+    ],
+    "downloads": []
+  },
+  {
+    "id": "wildguardtest",
+    "title": "WildGuardTest",
+    "url": "https://huggingface.co/datasets/allenai/wildguardmix",
+    "revision": "d29c47f41c8b51348b5c8e8c81c039b3132b66d1",
+    "questions": 6,
+    "sharing": "include",
+    "license": "ODC-By-1.0",
+    "license_url": "https://opendatacommons.org/licenses/by/1-0/",
+    "reason": "The six selected records come from the synthetic WildGuardTest split described in the original paper, section 3.2. Retain the publisher’s ODC-By terms, source credit, original row locators and normalization notices.",
+    "attribution": "Seungju Han, Kavel Rao, Allyson Ettinger, Liwei Jiang, Bill Yuchen Lin, Nathan Lambert, Yejin Choi, Nouha Dziri; Allen Institute for AI",
+    "checked": "2026-11-09",
+    "evidence": [
+      {
+        "file": "data/raw/wildguardtest/README.md",
+        "sha256": "4cdee2c6fa839a2802237826a09f594522a31b2c33afe691f46be5ee98d66512",
+        "url": "https://huggingface.co/datasets/allenai/wildguardmix/blob/d29c47f41c8b51348b5c8e8c81c039b3132b66d1/README.md",
+        "license_excerpts": [
+          "license: odc-by tags: - safe"
+        ]
+      },
+      {
+        "check": "source-sharing-follow-up",
+        "checked": "2026-11-09",
+        "per_question_mapping": "data/source_attributions.json",
+        "outcome": "The six selected records are from the synthetic WildGuardTest split described in the original paper, section 3.2, rather than the mixed-source training corpus or separate XSTest-Resp evaluation. Retain the publisher-declared ODC-By terms, source credit, original row locators and normalization notices. The earlier aggregate-source hold applied the training mixture concern too broadly."
+      },
+      {
+        "bundled_notice": "licenses/sources/wildguardtest/ODC-By-1.0.txt",
+        "sha256": "d1659bcee5039d7de41a1a57bc003a9f8a55ffaf397753ae05b66bce6561ed60",
+        "checked": "2026-11-09"
+      },
+      {
+        "url": "https://arxiv.org/html/2406.18495v1#S3.SS2",
+        "section": "3.2",
+        "checked": "2026-11-09",
+        "explanation": "The paper identifies WildGuardTest as synthetic vanilla/adversarial prompt-response pairs; mixed-source training data and XSTest-Resp are distinct."
+      }
+    ],
+    "downloads": []
+  }
+]

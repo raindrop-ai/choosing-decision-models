@@ -1,0 +1,75 @@
+# Extra events · Add 2 unrelated events variant
+
+[Original question](../../../questions/communication/isarcasmeval-696c52736e472e33f11e.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Really insane to think Brandon Marshall had the best season of his Hall of Fame career while in his 30s and playing with Ryan Fitzpatrick for the New York jets
+
+## Question
+
+> Is this message intended to be sarcastic?
+>
+> Merovan is a fictional musical suite with a refrain. The refrain begins on the tonic. The refrain pauses.
+
+## Answer choices
+
+- **no.** Not sarcastic
+- **yes.** Sarcastic
+
+**Reference answer:** `no`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Really insane to think Brandon Marshall had the best season of his Hall of Fame career while in his 30s and playing with Ryan Fitzpatrick for the New York jets",
+  "question": "Is this message intended to be sarcastic?\n\nMerovan is a fictional musical suite with a refrain. The refrain begins on the tonic. The refrain pauses.",
+  "choices": {
+    "no": "Not sarcastic",
+    "yes": "Sarcastic"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Decider v1.1 | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Jev | `yes` — Sarcastic | `yes` — Sarcastic | Same answer |
+| Microsoft Decision-1 | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Clef | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Luna Decisions | `yes` — Sarcastic | `no` — Not sarcastic | Different answer |
+| Clef Flash | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Strands Decider | `yes` — Sarcastic | `yes` — Sarcastic | Same answer |
+| GLiNER2.5 Decide | `yes` — Sarcastic | `yes` — Sarcastic | Same answer |
+| Laya | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| CalDec v1 | `yes` — Sarcastic | `no` — Not sarcastic | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `isarcasmeval/696c52736e472e33f11e/event_count/2/clean-source_first_sarcasm_question_contexts_full_0182`
+
+**Input fingerprint:** `8d1a023d3a0ba355fac060faf5b04238e1c5801c985622d83eb9336baf5a8665`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 2 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/communication/isarcasmeval-696c52736e472e33f11e.md).

@@ -1,0 +1,109 @@
+# Repetition · Present the same evidence twice variant
+
+[Original question](../../../questions/state-tracking-and-updating/babi-4663e10024237607be95.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Sandra went to the office.
+> Sandra journeyed to the kitchen.
+> Sandra travelled to the bedroom.
+> Mary went to the kitchen.
+> Daniel travelled to the kitchen.
+> Mary went to the bedroom.
+> Daniel moved to the hallway.
+> Sandra moved to the bathroom.
+> John took the football there.
+> Mary went to the hallway.
+> Mary went back to the bathroom.
+> John went back to the bathroom.
+> Mary moved to the office.
+> John discarded the football.
+
+## Question
+
+> «Sandra went to the office.
+> Sandra journeyed to the kitchen.
+> Sandra travelled to the bedroom.
+> Mary went to the kitchen.
+> Daniel travelled to the kitchen.
+> Mary went to the bedroom.
+> Daniel moved to the hallway.
+> Sandra moved to the bathroom.
+> John took the football there.
+> Mary went to the hallway.
+> Mary went back to the bathroom.
+> John went back to the bathroom.
+> Mary moved to the office.
+> John discarded the football.»
+>
+> Where is the football? 
+
+## Answer choices
+
+- **A.** garden
+- **B.** hallway
+- **C.** bedroom
+- **D.** office
+- **E.** kitchen
+- **F.** bathroom
+
+**Reference answer:** `F`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Sandra went to the office.\nSandra journeyed to the kitchen.\nSandra travelled to the bedroom.\nMary went to the kitchen.\nDaniel travelled to the kitchen.\nMary went to the bedroom.\nDaniel moved to the hallway.\nSandra moved to the bathroom.\nJohn took the football there.\nMary went to the hallway.\nMary went back to the bathroom.\nJohn went back to the bathroom.\nMary moved to the office.\nJohn discarded the football.",
+  "question": "«Sandra went to the office.\nSandra journeyed to the kitchen.\nSandra travelled to the bedroom.\nMary went to the kitchen.\nDaniel travelled to the kitchen.\nMary went to the bedroom.\nDaniel moved to the hallway.\nSandra moved to the bathroom.\nJohn took the football there.\nMary went to the hallway.\nMary went back to the bathroom.\nJohn went back to the bathroom.\nMary moved to the office.\nJohn discarded the football.»\n\nWhere is the football? ",
+  "choices": {
+    "A": "garden",
+    "B": "hallway",
+    "C": "bedroom",
+    "D": "office",
+    "E": "kitchen",
+    "F": "bathroom"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `F` — bathroom | `F` — bathroom | Same answer |
+| Decider v1.1 | `F` — bathroom | `F` — bathroom | Same answer |
+| Jev | `F` — bathroom | `F` — bathroom | Same answer |
+| Microsoft Decision-1 | `F` — bathroom | `F` — bathroom | Same answer |
+| Clef | `F` — bathroom | `F` — bathroom | Same answer |
+| Luna Decisions | `F` — bathroom | `F` — bathroom | Same answer |
+| Clef Flash | `F` — bathroom | `F` — bathroom | Same answer |
+| Strands Decider | `F` — bathroom | `F` — bathroom | Same answer |
+| GLiNER2.5 Decide | `F` — bathroom | `F` — bathroom | Same answer |
+| Laya | `D` — office | `D` — office | Same answer |
+| CalDec v1 | `B` — hallway | `D` — office | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `babi/4663e10024237607be95/evidence_repetition/2/clean-source_first_quoted_belief_repetition_full_0209_v2`
+
+**Input fingerprint:** `f6fa6c3f61431a95d17b21e351c0fc988a6098ec81ae16f817b12a622a6df618`
+
+| Change | Recorded version |
+| --- | --- |
+| Repetition | Present the same evidence twice |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/state-tracking-and-updating/babi-4663e10024237607be95.md).

@@ -1,0 +1,84 @@
+# Paraphrasing · Change individual words and phrases variant
+
+[Original question](../../../questions/state-tracking-and-updating/cruxeval-42046394e30db69abc93.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+```text
+def f(nums):
+    a = 0
+    for i in range(len(nums)):
+        nums.insert(i, nums[a])
+        a += 1
+    return nums
+```
+
+## Question
+
+> What value is returned by f(\[1, 3, -1, 1, -2, 6\])?
+
+## Answer choices
+
+- **A.** [1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6]
+- **B.** [1, 1, 3, 1, 1, 1, 1, 3, -1, 1, -2, 6]
+- **C.** [1, 1, 1, 1, 2, 1, 1, 3, -1, 1, -2, 6]
+- **D.** [1, 1, 1, 1, 1, 1, 1, -3, -1, 1, -2, 6]
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "def f(nums):\n    a = 0\n    for i in range(len(nums)):\n        nums.insert(i, nums[a])\n        a += 1\n    return nums",
+  "question": "What value is returned by f([1, 3, -1, 1, -2, 6])?",
+  "choices": {
+    "A": "[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6]",
+    "B": "[1, 1, 3, 1, 1, 1, 1, 3, -1, 1, -2, 6]",
+    "C": "[1, 1, 1, 1, 2, 1, 1, 3, -1, 1, -2, 6]",
+    "D": "[1, 1, 1, 1, 1, 1, 1, -3, -1, 1, -2, 6]"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Decider v1.1 | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Jev | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Microsoft Decision-1 | `B` — \[1, 1, 3, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `B` — \[1, 1, 3, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Clef | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Luna Decisions | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Clef Flash | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Strands Decider | `B` — \[1, 1, 3, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `B` — \[1, 1, 3, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| GLiNER2.5 Decide | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Laya | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| CalDec v1 | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `cruxeval/42046394e30db69abc93/paraphrasing/surface`
+
+**Input fingerprint:** `764292033554a9f57f1ff6226a4a97fb79a19ec3a2a2f51de277a08b31b44ee3`
+
+| Change | Recorded version |
+| --- | --- |
+| Paraphrasing | Change individual words and phrases |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/state-tracking-and-updating/cruxeval-42046394e30db69abc93.md).

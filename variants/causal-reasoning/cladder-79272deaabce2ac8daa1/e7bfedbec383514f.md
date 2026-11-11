@@ -1,0 +1,78 @@
+# Repetition · Present the same evidence three times variant
+
+[Original question](../../../questions/causal-reasoning/cladder-79272deaabce2ac8daa1.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Imagine a self-contained, hypothetical world with only the following conditions, and without any unmentioned factors or causal relationships: Xevo has a direct effect on tijv. Tijv has a direct effect on gyzp.
+> For those who are not xevo, the probability of gyzp is 43%. For those who are xevo, the probability of gyzp is 49%.
+> Xevo has a direct effect on tijv. Tijv has a direct effect on gyzp.
+> For those who are not xevo, the probability of gyzp is 43%. For those who are xevo, the probability of gyzp is 49%.
+> Xevo has a direct effect on tijv. Tijv has a direct effect on gyzp.
+> For those who are not xevo, the probability of gyzp is 43%. For those who are xevo, the probability of gyzp is 49%.
+
+## Question
+
+> For those who are xevo, would it be less likely to see gyzp if the individual was not xevo?
+
+## Answer choices
+
+- **yes.** Yes
+- **no.** No
+
+**Reference answer:** `yes`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Imagine a self-contained, hypothetical world with only the following conditions, and without any unmentioned factors or causal relationships: Xevo has a direct effect on tijv. Tijv has a direct effect on gyzp.\nFor those who are not xevo, the probability of gyzp is 43%. For those who are xevo, the probability of gyzp is 49%.\nXevo has a direct effect on tijv. Tijv has a direct effect on gyzp.\nFor those who are not xevo, the probability of gyzp is 43%. For those who are xevo, the probability of gyzp is 49%.\nXevo has a direct effect on tijv. Tijv has a direct effect on gyzp.\nFor those who are not xevo, the probability of gyzp is 43%. For those who are xevo, the probability of gyzp is 49%.",
+  "question": "For those who are xevo, would it be less likely to see gyzp if the individual was not xevo?",
+  "choices": {
+    "yes": "Yes",
+    "no": "No"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `yes` — Yes | `yes` — Yes | Same answer |
+| Decider v1.1 | `yes` — Yes | `yes` — Yes | Same answer |
+| Jev | `yes` — Yes | `yes` — Yes | Same answer |
+| Microsoft Decision-1 | `yes` — Yes | `yes` — Yes | Same answer |
+| Clef | `yes` — Yes | `yes` — Yes | Same answer |
+| Luna Decisions | `no` — No | `yes` — Yes | Different answer |
+| Clef Flash | `yes` — Yes | `yes` — Yes | Same answer |
+| Strands Decider | `no` — No | `no` — No | Same answer |
+| GLiNER2.5 Decide | `yes` — Yes | `no` — No | Different answer |
+| Laya | `yes` — Yes | `no` — No | Different answer |
+| CalDec v1 | `yes` — Yes | `no` — No | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `cladder/79272deaabce2ac8daa1/evidence_repetition/3/clean-source_first_cladder_body_repetition_full_0135`
+
+**Input fingerprint:** `e7845069f8456db755e9adee2dc2750c90c56af4cb1d8038ee5a18b51ed4600d`
+
+| Change | Recorded version |
+| --- | --- |
+| Repetition | Present the same evidence three times |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/causal-reasoning/cladder-79272deaabce2ac8daa1.md).

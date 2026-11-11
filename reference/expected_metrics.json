@@ -1,0 +1,2194 @@
+{
+  "overall": [
+    {
+      "model": "astra",
+      "selected": 1005,
+      "answered": 1005,
+      "correct": 999,
+      "accuracy": 0.9940298507462687,
+      "coverage": 1.0,
+      "errors": 0,
+      "refusals": 0
+    },
+    {
+      "model": "opus55",
+      "selected": 1005,
+      "answered": 1003,
+      "correct": 997,
+      "accuracy": 0.9940179461615155,
+      "coverage": 0.9980099502487563,
+      "errors": 0,
+      "refusals": 2
+    },
+    {
+      "model": "glide",
+      "selected": 1005,
+      "answered": 1005,
+      "correct": 954,
+      "accuracy": 0.9492537313432836,
+      "coverage": 1.0,
+      "errors": 0,
+      "refusals": 0
+    },
+    {
+      "model": "decider11",
+      "selected": 1005,
+      "answered": 1005,
+      "correct": 919,
+      "accuracy": 0.9144278606965174,
+      "coverage": 1.0,
+      "errors": 0,
+      "refusals": 0
+    },
+    {
+      "model": "jev",
+      "selected": 1005,
+      "answered": 1005,
+      "correct": 892,
+      "accuracy": 0.8875621890547264,
+      "coverage": 1.0,
+      "errors": 0,
+      "refusals": 0
+    },
+    {
+      "model": "microsoft-decision-1",
+      "selected": 1005,
+      "answered": 1004,
+      "correct": 846,
+      "accuracy": 0.8426294820717132,
+      "coverage": 0.9990049751243781,
+      "errors": 1,
+      "refusals": 0
+    },
+    {
+      "model": "clef",
+      "selected": 1005,
+      "answered": 1005,
+      "correct": 835,
+      "accuracy": 0.8308457711442786,
+      "coverage": 1.0,
+      "errors": 0,
+      "refusals": 0
+    },
+    {
+      "model": "openai-decisions",
+      "selected": 1005,
+      "answered": 997,
+      "correct": 777,
+      "accuracy": 0.7793380140421263,
+      "coverage": 0.9920398009950249,
+      "errors": 1,
+      "refusals": 7
+    },
+    {
+      "model": "clef-flash",
+      "selected": 1005,
+      "answered": 1005,
+      "correct": 768,
+      "accuracy": 0.764179104477612,
+      "coverage": 1.0,
+      "errors": 0,
+      "refusals": 0
+    },
+    {
+      "model": "strands",
+      "selected": 1005,
+      "answered": 1005,
+      "correct": 678,
+      "accuracy": 0.6746268656716418,
+      "coverage": 1.0,
+      "errors": 0,
+      "refusals": 0
+    },
+    {
+      "model": "gliner",
+      "selected": 1005,
+      "answered": 1005,
+      "correct": 429,
+      "accuracy": 0.42686567164179107,
+      "coverage": 1.0,
+      "errors": 0,
+      "refusals": 0
+    },
+    {
+      "model": "laya",
+      "selected": 1005,
+      "answered": 1005,
+      "correct": 416,
+      "accuracy": 0.41393034825870645,
+      "coverage": 1.0,
+      "errors": 0,
+      "refusals": 0
+    },
+    {
+      "model": "caldec",
+      "selected": 1005,
+      "answered": 1005,
+      "correct": 408,
+      "accuracy": 0.4059701492537313,
+      "coverage": 1.0,
+      "errors": 0,
+      "refusals": 0
+    }
+  ],
+  "capabilities": [
+    {
+      "model": "astra",
+      "ability": "Perception and attention (retrieval)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "astra",
+      "ability": "State tracking and updating",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "astra",
+      "ability": "Concepts and categorization",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "astra",
+      "ability": "Relations",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "astra",
+      "ability": "Analogy",
+      "selected": 67,
+      "answered": 67,
+      "correct": 66,
+      "accuracy": 0.9850746268656716,
+      "coverage": 1.0
+    },
+    {
+      "model": "astra",
+      "ability": "Learning and induction",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "astra",
+      "ability": "Physical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 66,
+      "accuracy": 0.9850746268656716,
+      "coverage": 1.0
+    },
+    {
+      "model": "astra",
+      "ability": "Spatial cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 66,
+      "accuracy": 0.9850746268656716,
+      "coverage": 1.0
+    },
+    {
+      "model": "astra",
+      "ability": "Numerical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "astra",
+      "ability": "Causal reasoning",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "astra",
+      "ability": "Metacognition/Uncertainty monitoring (risk)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 66,
+      "accuracy": 0.9850746268656716,
+      "coverage": 1.0
+    },
+    {
+      "model": "astra",
+      "ability": "Information seeking (information gain)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "astra",
+      "ability": "Social cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "astra",
+      "ability": "Communication",
+      "selected": 67,
+      "answered": 67,
+      "correct": 65,
+      "accuracy": 0.9701492537313433,
+      "coverage": 1.0
+    },
+    {
+      "model": "astra",
+      "ability": "Rule application",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "opus55",
+      "ability": "Perception and attention (retrieval)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "opus55",
+      "ability": "State tracking and updating",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "opus55",
+      "ability": "Concepts and categorization",
+      "selected": 67,
+      "answered": 67,
+      "correct": 65,
+      "accuracy": 0.9701492537313433,
+      "coverage": 1.0
+    },
+    {
+      "model": "opus55",
+      "ability": "Relations",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "opus55",
+      "ability": "Analogy",
+      "selected": 67,
+      "answered": 67,
+      "correct": 65,
+      "accuracy": 0.9701492537313433,
+      "coverage": 1.0
+    },
+    {
+      "model": "opus55",
+      "ability": "Learning and induction",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "opus55",
+      "ability": "Physical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 66,
+      "accuracy": 0.9850746268656716,
+      "coverage": 1.0
+    },
+    {
+      "model": "opus55",
+      "ability": "Spatial cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "opus55",
+      "ability": "Numerical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "opus55",
+      "ability": "Causal reasoning",
+      "selected": 67,
+      "answered": 66,
+      "correct": 66,
+      "accuracy": 1.0,
+      "coverage": 0.9850746268656716
+    },
+    {
+      "model": "opus55",
+      "ability": "Metacognition/Uncertainty monitoring (risk)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "opus55",
+      "ability": "Information seeking (information gain)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "opus55",
+      "ability": "Social cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "opus55",
+      "ability": "Communication",
+      "selected": 67,
+      "answered": 67,
+      "correct": 66,
+      "accuracy": 0.9850746268656716,
+      "coverage": 1.0
+    },
+    {
+      "model": "opus55",
+      "ability": "Rule application",
+      "selected": 67,
+      "answered": 66,
+      "correct": 66,
+      "accuracy": 1.0,
+      "coverage": 0.9850746268656716
+    },
+    {
+      "model": "glide",
+      "ability": "Perception and attention (retrieval)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "glide",
+      "ability": "State tracking and updating",
+      "selected": 67,
+      "answered": 67,
+      "correct": 65,
+      "accuracy": 0.9701492537313433,
+      "coverage": 1.0
+    },
+    {
+      "model": "glide",
+      "ability": "Concepts and categorization",
+      "selected": 67,
+      "answered": 67,
+      "correct": 65,
+      "accuracy": 0.9701492537313433,
+      "coverage": 1.0
+    },
+    {
+      "model": "glide",
+      "ability": "Relations",
+      "selected": 67,
+      "answered": 67,
+      "correct": 59,
+      "accuracy": 0.8805970149253731,
+      "coverage": 1.0
+    },
+    {
+      "model": "glide",
+      "ability": "Analogy",
+      "selected": 67,
+      "answered": 67,
+      "correct": 58,
+      "accuracy": 0.8656716417910447,
+      "coverage": 1.0
+    },
+    {
+      "model": "glide",
+      "ability": "Learning and induction",
+      "selected": 67,
+      "answered": 67,
+      "correct": 65,
+      "accuracy": 0.9701492537313433,
+      "coverage": 1.0
+    },
+    {
+      "model": "glide",
+      "ability": "Physical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 63,
+      "accuracy": 0.9402985074626866,
+      "coverage": 1.0
+    },
+    {
+      "model": "glide",
+      "ability": "Spatial cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 66,
+      "accuracy": 0.9850746268656716,
+      "coverage": 1.0
+    },
+    {
+      "model": "glide",
+      "ability": "Numerical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 59,
+      "accuracy": 0.8805970149253731,
+      "coverage": 1.0
+    },
+    {
+      "model": "glide",
+      "ability": "Causal reasoning",
+      "selected": 67,
+      "answered": 67,
+      "correct": 66,
+      "accuracy": 0.9850746268656716,
+      "coverage": 1.0
+    },
+    {
+      "model": "glide",
+      "ability": "Metacognition/Uncertainty monitoring (risk)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 61,
+      "accuracy": 0.9104477611940298,
+      "coverage": 1.0
+    },
+    {
+      "model": "glide",
+      "ability": "Information seeking (information gain)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "glide",
+      "ability": "Social cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 61,
+      "accuracy": 0.9104477611940298,
+      "coverage": 1.0
+    },
+    {
+      "model": "glide",
+      "ability": "Communication",
+      "selected": 67,
+      "answered": 67,
+      "correct": 66,
+      "accuracy": 0.9850746268656716,
+      "coverage": 1.0
+    },
+    {
+      "model": "glide",
+      "ability": "Rule application",
+      "selected": 67,
+      "answered": 67,
+      "correct": 66,
+      "accuracy": 0.9850746268656716,
+      "coverage": 1.0
+    },
+    {
+      "model": "decider11",
+      "ability": "Perception and attention (retrieval)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "decider11",
+      "ability": "State tracking and updating",
+      "selected": 67,
+      "answered": 67,
+      "correct": 54,
+      "accuracy": 0.8059701492537313,
+      "coverage": 1.0
+    },
+    {
+      "model": "decider11",
+      "ability": "Concepts and categorization",
+      "selected": 67,
+      "answered": 67,
+      "correct": 64,
+      "accuracy": 0.9552238805970149,
+      "coverage": 1.0
+    },
+    {
+      "model": "decider11",
+      "ability": "Relations",
+      "selected": 67,
+      "answered": 67,
+      "correct": 55,
+      "accuracy": 0.8208955223880597,
+      "coverage": 1.0
+    },
+    {
+      "model": "decider11",
+      "ability": "Analogy",
+      "selected": 67,
+      "answered": 67,
+      "correct": 53,
+      "accuracy": 0.7910447761194029,
+      "coverage": 1.0
+    },
+    {
+      "model": "decider11",
+      "ability": "Learning and induction",
+      "selected": 67,
+      "answered": 67,
+      "correct": 65,
+      "accuracy": 0.9701492537313433,
+      "coverage": 1.0
+    },
+    {
+      "model": "decider11",
+      "ability": "Physical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 64,
+      "accuracy": 0.9552238805970149,
+      "coverage": 1.0
+    },
+    {
+      "model": "decider11",
+      "ability": "Spatial cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 65,
+      "accuracy": 0.9701492537313433,
+      "coverage": 1.0
+    },
+    {
+      "model": "decider11",
+      "ability": "Numerical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 57,
+      "accuracy": 0.8507462686567164,
+      "coverage": 1.0
+    },
+    {
+      "model": "decider11",
+      "ability": "Causal reasoning",
+      "selected": 67,
+      "answered": 67,
+      "correct": 61,
+      "accuracy": 0.9104477611940298,
+      "coverage": 1.0
+    },
+    {
+      "model": "decider11",
+      "ability": "Metacognition/Uncertainty monitoring (risk)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 56,
+      "accuracy": 0.835820895522388,
+      "coverage": 1.0
+    },
+    {
+      "model": "decider11",
+      "ability": "Information seeking (information gain)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 65,
+      "accuracy": 0.9701492537313433,
+      "coverage": 1.0
+    },
+    {
+      "model": "decider11",
+      "ability": "Social cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 64,
+      "accuracy": 0.9552238805970149,
+      "coverage": 1.0
+    },
+    {
+      "model": "decider11",
+      "ability": "Communication",
+      "selected": 67,
+      "answered": 67,
+      "correct": 66,
+      "accuracy": 0.9850746268656716,
+      "coverage": 1.0
+    },
+    {
+      "model": "decider11",
+      "ability": "Rule application",
+      "selected": 67,
+      "answered": 67,
+      "correct": 63,
+      "accuracy": 0.9402985074626866,
+      "coverage": 1.0
+    },
+    {
+      "model": "jev",
+      "ability": "Perception and attention (retrieval)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 64,
+      "accuracy": 0.9552238805970149,
+      "coverage": 1.0
+    },
+    {
+      "model": "jev",
+      "ability": "State tracking and updating",
+      "selected": 67,
+      "answered": 67,
+      "correct": 60,
+      "accuracy": 0.8955223880597015,
+      "coverage": 1.0
+    },
+    {
+      "model": "jev",
+      "ability": "Concepts and categorization",
+      "selected": 67,
+      "answered": 67,
+      "correct": 65,
+      "accuracy": 0.9701492537313433,
+      "coverage": 1.0
+    },
+    {
+      "model": "jev",
+      "ability": "Relations",
+      "selected": 67,
+      "answered": 67,
+      "correct": 55,
+      "accuracy": 0.8208955223880597,
+      "coverage": 1.0
+    },
+    {
+      "model": "jev",
+      "ability": "Analogy",
+      "selected": 67,
+      "answered": 67,
+      "correct": 43,
+      "accuracy": 0.6417910447761194,
+      "coverage": 1.0
+    },
+    {
+      "model": "jev",
+      "ability": "Learning and induction",
+      "selected": 67,
+      "answered": 67,
+      "correct": 54,
+      "accuracy": 0.8059701492537313,
+      "coverage": 1.0
+    },
+    {
+      "model": "jev",
+      "ability": "Physical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 63,
+      "accuracy": 0.9402985074626866,
+      "coverage": 1.0
+    },
+    {
+      "model": "jev",
+      "ability": "Spatial cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 52,
+      "accuracy": 0.7761194029850746,
+      "coverage": 1.0
+    },
+    {
+      "model": "jev",
+      "ability": "Numerical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 65,
+      "accuracy": 0.9701492537313433,
+      "coverage": 1.0
+    },
+    {
+      "model": "jev",
+      "ability": "Causal reasoning",
+      "selected": 67,
+      "answered": 67,
+      "correct": 62,
+      "accuracy": 0.9253731343283582,
+      "coverage": 1.0
+    },
+    {
+      "model": "jev",
+      "ability": "Metacognition/Uncertainty monitoring (risk)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 64,
+      "accuracy": 0.9552238805970149,
+      "coverage": 1.0
+    },
+    {
+      "model": "jev",
+      "ability": "Information seeking (information gain)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 66,
+      "accuracy": 0.9850746268656716,
+      "coverage": 1.0
+    },
+    {
+      "model": "jev",
+      "ability": "Social cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 59,
+      "accuracy": 0.8805970149253731,
+      "coverage": 1.0
+    },
+    {
+      "model": "jev",
+      "ability": "Communication",
+      "selected": 67,
+      "answered": 67,
+      "correct": 64,
+      "accuracy": 0.9552238805970149,
+      "coverage": 1.0
+    },
+    {
+      "model": "jev",
+      "ability": "Rule application",
+      "selected": 67,
+      "answered": 67,
+      "correct": 56,
+      "accuracy": 0.835820895522388,
+      "coverage": 1.0
+    },
+    {
+      "model": "microsoft-decision-1",
+      "ability": "Perception and attention (retrieval)",
+      "selected": 67,
+      "answered": 66,
+      "correct": 66,
+      "accuracy": 1.0,
+      "coverage": 0.9850746268656716
+    },
+    {
+      "model": "microsoft-decision-1",
+      "ability": "State tracking and updating",
+      "selected": 67,
+      "answered": 67,
+      "correct": 44,
+      "accuracy": 0.6567164179104478,
+      "coverage": 1.0
+    },
+    {
+      "model": "microsoft-decision-1",
+      "ability": "Concepts and categorization",
+      "selected": 67,
+      "answered": 67,
+      "correct": 63,
+      "accuracy": 0.9402985074626866,
+      "coverage": 1.0
+    },
+    {
+      "model": "microsoft-decision-1",
+      "ability": "Relations",
+      "selected": 67,
+      "answered": 67,
+      "correct": 45,
+      "accuracy": 0.6716417910447762,
+      "coverage": 1.0
+    },
+    {
+      "model": "microsoft-decision-1",
+      "ability": "Analogy",
+      "selected": 67,
+      "answered": 67,
+      "correct": 35,
+      "accuracy": 0.5223880597014925,
+      "coverage": 1.0
+    },
+    {
+      "model": "microsoft-decision-1",
+      "ability": "Learning and induction",
+      "selected": 67,
+      "answered": 67,
+      "correct": 49,
+      "accuracy": 0.7313432835820896,
+      "coverage": 1.0
+    },
+    {
+      "model": "microsoft-decision-1",
+      "ability": "Physical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 60,
+      "accuracy": 0.8955223880597015,
+      "coverage": 1.0
+    },
+    {
+      "model": "microsoft-decision-1",
+      "ability": "Spatial cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 62,
+      "accuracy": 0.9253731343283582,
+      "coverage": 1.0
+    },
+    {
+      "model": "microsoft-decision-1",
+      "ability": "Numerical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 51,
+      "accuracy": 0.7611940298507462,
+      "coverage": 1.0
+    },
+    {
+      "model": "microsoft-decision-1",
+      "ability": "Causal reasoning",
+      "selected": 67,
+      "answered": 67,
+      "correct": 58,
+      "accuracy": 0.8656716417910447,
+      "coverage": 1.0
+    },
+    {
+      "model": "microsoft-decision-1",
+      "ability": "Metacognition/Uncertainty monitoring (risk)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 65,
+      "accuracy": 0.9701492537313433,
+      "coverage": 1.0
+    },
+    {
+      "model": "microsoft-decision-1",
+      "ability": "Information seeking (information gain)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 66,
+      "accuracy": 0.9850746268656716,
+      "coverage": 1.0
+    },
+    {
+      "model": "microsoft-decision-1",
+      "ability": "Social cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 56,
+      "accuracy": 0.835820895522388,
+      "coverage": 1.0
+    },
+    {
+      "model": "microsoft-decision-1",
+      "ability": "Communication",
+      "selected": 67,
+      "answered": 67,
+      "correct": 64,
+      "accuracy": 0.9552238805970149,
+      "coverage": 1.0
+    },
+    {
+      "model": "microsoft-decision-1",
+      "ability": "Rule application",
+      "selected": 67,
+      "answered": 67,
+      "correct": 62,
+      "accuracy": 0.9253731343283582,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef",
+      "ability": "Perception and attention (retrieval)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef",
+      "ability": "State tracking and updating",
+      "selected": 67,
+      "answered": 67,
+      "correct": 45,
+      "accuracy": 0.6716417910447762,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef",
+      "ability": "Concepts and categorization",
+      "selected": 67,
+      "answered": 67,
+      "correct": 64,
+      "accuracy": 0.9552238805970149,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef",
+      "ability": "Relations",
+      "selected": 67,
+      "answered": 67,
+      "correct": 42,
+      "accuracy": 0.6268656716417911,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef",
+      "ability": "Analogy",
+      "selected": 67,
+      "answered": 67,
+      "correct": 58,
+      "accuracy": 0.8656716417910447,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef",
+      "ability": "Learning and induction",
+      "selected": 67,
+      "answered": 67,
+      "correct": 46,
+      "accuracy": 0.6865671641791045,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef",
+      "ability": "Physical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 59,
+      "accuracy": 0.8805970149253731,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef",
+      "ability": "Spatial cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 46,
+      "accuracy": 0.6865671641791045,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef",
+      "ability": "Numerical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 46,
+      "accuracy": 0.6865671641791045,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef",
+      "ability": "Causal reasoning",
+      "selected": 67,
+      "answered": 67,
+      "correct": 62,
+      "accuracy": 0.9253731343283582,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef",
+      "ability": "Metacognition/Uncertainty monitoring (risk)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 62,
+      "accuracy": 0.9253731343283582,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef",
+      "ability": "Information seeking (information gain)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef",
+      "ability": "Social cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 59,
+      "accuracy": 0.8805970149253731,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef",
+      "ability": "Communication",
+      "selected": 67,
+      "answered": 67,
+      "correct": 60,
+      "accuracy": 0.8955223880597015,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef",
+      "ability": "Rule application",
+      "selected": 67,
+      "answered": 67,
+      "correct": 52,
+      "accuracy": 0.7761194029850746,
+      "coverage": 1.0
+    },
+    {
+      "model": "openai-decisions",
+      "ability": "Perception and attention (retrieval)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 65,
+      "accuracy": 0.9701492537313433,
+      "coverage": 1.0
+    },
+    {
+      "model": "openai-decisions",
+      "ability": "State tracking and updating",
+      "selected": 67,
+      "answered": 67,
+      "correct": 38,
+      "accuracy": 0.5671641791044776,
+      "coverage": 1.0
+    },
+    {
+      "model": "openai-decisions",
+      "ability": "Concepts and categorization",
+      "selected": 67,
+      "answered": 67,
+      "correct": 63,
+      "accuracy": 0.9402985074626866,
+      "coverage": 1.0
+    },
+    {
+      "model": "openai-decisions",
+      "ability": "Relations",
+      "selected": 67,
+      "answered": 62,
+      "correct": 33,
+      "accuracy": 0.532258064516129,
+      "coverage": 0.9253731343283582
+    },
+    {
+      "model": "openai-decisions",
+      "ability": "Analogy",
+      "selected": 67,
+      "answered": 67,
+      "correct": 46,
+      "accuracy": 0.6865671641791045,
+      "coverage": 1.0
+    },
+    {
+      "model": "openai-decisions",
+      "ability": "Learning and induction",
+      "selected": 67,
+      "answered": 67,
+      "correct": 53,
+      "accuracy": 0.7910447761194029,
+      "coverage": 1.0
+    },
+    {
+      "model": "openai-decisions",
+      "ability": "Physical cognition",
+      "selected": 67,
+      "answered": 65,
+      "correct": 60,
+      "accuracy": 0.9230769230769231,
+      "coverage": 0.9701492537313433
+    },
+    {
+      "model": "openai-decisions",
+      "ability": "Spatial cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 40,
+      "accuracy": 0.5970149253731343,
+      "coverage": 1.0
+    },
+    {
+      "model": "openai-decisions",
+      "ability": "Numerical cognition",
+      "selected": 67,
+      "answered": 66,
+      "correct": 46,
+      "accuracy": 0.696969696969697,
+      "coverage": 0.9850746268656716
+    },
+    {
+      "model": "openai-decisions",
+      "ability": "Causal reasoning",
+      "selected": 67,
+      "answered": 67,
+      "correct": 53,
+      "accuracy": 0.7910447761194029,
+      "coverage": 1.0
+    },
+    {
+      "model": "openai-decisions",
+      "ability": "Metacognition/Uncertainty monitoring (risk)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 51,
+      "accuracy": 0.7611940298507462,
+      "coverage": 1.0
+    },
+    {
+      "model": "openai-decisions",
+      "ability": "Information seeking (information gain)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 65,
+      "accuracy": 0.9701492537313433,
+      "coverage": 1.0
+    },
+    {
+      "model": "openai-decisions",
+      "ability": "Social cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 58,
+      "accuracy": 0.8656716417910447,
+      "coverage": 1.0
+    },
+    {
+      "model": "openai-decisions",
+      "ability": "Communication",
+      "selected": 67,
+      "answered": 67,
+      "correct": 57,
+      "accuracy": 0.8507462686567164,
+      "coverage": 1.0
+    },
+    {
+      "model": "openai-decisions",
+      "ability": "Rule application",
+      "selected": 67,
+      "answered": 67,
+      "correct": 49,
+      "accuracy": 0.7313432835820896,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef-flash",
+      "ability": "Perception and attention (retrieval)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 66,
+      "accuracy": 0.9850746268656716,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef-flash",
+      "ability": "State tracking and updating",
+      "selected": 67,
+      "answered": 67,
+      "correct": 37,
+      "accuracy": 0.5522388059701493,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef-flash",
+      "ability": "Concepts and categorization",
+      "selected": 67,
+      "answered": 67,
+      "correct": 65,
+      "accuracy": 0.9701492537313433,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef-flash",
+      "ability": "Relations",
+      "selected": 67,
+      "answered": 67,
+      "correct": 37,
+      "accuracy": 0.5522388059701493,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef-flash",
+      "ability": "Analogy",
+      "selected": 67,
+      "answered": 67,
+      "correct": 34,
+      "accuracy": 0.5074626865671642,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef-flash",
+      "ability": "Learning and induction",
+      "selected": 67,
+      "answered": 67,
+      "correct": 46,
+      "accuracy": 0.6865671641791045,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef-flash",
+      "ability": "Physical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 58,
+      "accuracy": 0.8656716417910447,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef-flash",
+      "ability": "Spatial cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 44,
+      "accuracy": 0.6567164179104478,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef-flash",
+      "ability": "Numerical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 36,
+      "accuracy": 0.5373134328358209,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef-flash",
+      "ability": "Causal reasoning",
+      "selected": 67,
+      "answered": 67,
+      "correct": 66,
+      "accuracy": 0.9850746268656716,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef-flash",
+      "ability": "Metacognition/Uncertainty monitoring (risk)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 61,
+      "accuracy": 0.9104477611940298,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef-flash",
+      "ability": "Information seeking (information gain)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 62,
+      "accuracy": 0.9253731343283582,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef-flash",
+      "ability": "Social cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 52,
+      "accuracy": 0.7761194029850746,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef-flash",
+      "ability": "Communication",
+      "selected": 67,
+      "answered": 67,
+      "correct": 56,
+      "accuracy": 0.835820895522388,
+      "coverage": 1.0
+    },
+    {
+      "model": "clef-flash",
+      "ability": "Rule application",
+      "selected": 67,
+      "answered": 67,
+      "correct": 48,
+      "accuracy": 0.7164179104477612,
+      "coverage": 1.0
+    },
+    {
+      "model": "strands",
+      "ability": "Perception and attention (retrieval)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 67,
+      "accuracy": 1.0,
+      "coverage": 1.0
+    },
+    {
+      "model": "strands",
+      "ability": "State tracking and updating",
+      "selected": 67,
+      "answered": 67,
+      "correct": 30,
+      "accuracy": 0.44776119402985076,
+      "coverage": 1.0
+    },
+    {
+      "model": "strands",
+      "ability": "Concepts and categorization",
+      "selected": 67,
+      "answered": 67,
+      "correct": 59,
+      "accuracy": 0.8805970149253731,
+      "coverage": 1.0
+    },
+    {
+      "model": "strands",
+      "ability": "Relations",
+      "selected": 67,
+      "answered": 67,
+      "correct": 26,
+      "accuracy": 0.3880597014925373,
+      "coverage": 1.0
+    },
+    {
+      "model": "strands",
+      "ability": "Analogy",
+      "selected": 67,
+      "answered": 67,
+      "correct": 27,
+      "accuracy": 0.40298507462686567,
+      "coverage": 1.0
+    },
+    {
+      "model": "strands",
+      "ability": "Learning and induction",
+      "selected": 67,
+      "answered": 67,
+      "correct": 48,
+      "accuracy": 0.7164179104477612,
+      "coverage": 1.0
+    },
+    {
+      "model": "strands",
+      "ability": "Physical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 52,
+      "accuracy": 0.7761194029850746,
+      "coverage": 1.0
+    },
+    {
+      "model": "strands",
+      "ability": "Spatial cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 46,
+      "accuracy": 0.6865671641791045,
+      "coverage": 1.0
+    },
+    {
+      "model": "strands",
+      "ability": "Numerical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 39,
+      "accuracy": 0.582089552238806,
+      "coverage": 1.0
+    },
+    {
+      "model": "strands",
+      "ability": "Causal reasoning",
+      "selected": 67,
+      "answered": 67,
+      "correct": 40,
+      "accuracy": 0.5970149253731343,
+      "coverage": 1.0
+    },
+    {
+      "model": "strands",
+      "ability": "Metacognition/Uncertainty monitoring (risk)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 50,
+      "accuracy": 0.746268656716418,
+      "coverage": 1.0
+    },
+    {
+      "model": "strands",
+      "ability": "Information seeking (information gain)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 60,
+      "accuracy": 0.8955223880597015,
+      "coverage": 1.0
+    },
+    {
+      "model": "strands",
+      "ability": "Social cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 47,
+      "accuracy": 0.7014925373134329,
+      "coverage": 1.0
+    },
+    {
+      "model": "strands",
+      "ability": "Communication",
+      "selected": 67,
+      "answered": 67,
+      "correct": 46,
+      "accuracy": 0.6865671641791045,
+      "coverage": 1.0
+    },
+    {
+      "model": "strands",
+      "ability": "Rule application",
+      "selected": 67,
+      "answered": 67,
+      "correct": 41,
+      "accuracy": 0.6119402985074627,
+      "coverage": 1.0
+    },
+    {
+      "model": "gliner",
+      "ability": "Perception and attention (retrieval)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 47,
+      "accuracy": 0.7014925373134329,
+      "coverage": 1.0
+    },
+    {
+      "model": "gliner",
+      "ability": "State tracking and updating",
+      "selected": 67,
+      "answered": 67,
+      "correct": 24,
+      "accuracy": 0.3582089552238806,
+      "coverage": 1.0
+    },
+    {
+      "model": "gliner",
+      "ability": "Concepts and categorization",
+      "selected": 67,
+      "answered": 67,
+      "correct": 44,
+      "accuracy": 0.6567164179104478,
+      "coverage": 1.0
+    },
+    {
+      "model": "gliner",
+      "ability": "Relations",
+      "selected": 67,
+      "answered": 67,
+      "correct": 11,
+      "accuracy": 0.16417910447761194,
+      "coverage": 1.0
+    },
+    {
+      "model": "gliner",
+      "ability": "Analogy",
+      "selected": 67,
+      "answered": 67,
+      "correct": 17,
+      "accuracy": 0.2537313432835821,
+      "coverage": 1.0
+    },
+    {
+      "model": "gliner",
+      "ability": "Learning and induction",
+      "selected": 67,
+      "answered": 67,
+      "correct": 22,
+      "accuracy": 0.3283582089552239,
+      "coverage": 1.0
+    },
+    {
+      "model": "gliner",
+      "ability": "Physical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 21,
+      "accuracy": 0.31343283582089554,
+      "coverage": 1.0
+    },
+    {
+      "model": "gliner",
+      "ability": "Spatial cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 22,
+      "accuracy": 0.3283582089552239,
+      "coverage": 1.0
+    },
+    {
+      "model": "gliner",
+      "ability": "Numerical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 24,
+      "accuracy": 0.3582089552238806,
+      "coverage": 1.0
+    },
+    {
+      "model": "gliner",
+      "ability": "Causal reasoning",
+      "selected": 67,
+      "answered": 67,
+      "correct": 35,
+      "accuracy": 0.5223880597014925,
+      "coverage": 1.0
+    },
+    {
+      "model": "gliner",
+      "ability": "Metacognition/Uncertainty monitoring (risk)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 38,
+      "accuracy": 0.5671641791044776,
+      "coverage": 1.0
+    },
+    {
+      "model": "gliner",
+      "ability": "Information seeking (information gain)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 22,
+      "accuracy": 0.3283582089552239,
+      "coverage": 1.0
+    },
+    {
+      "model": "gliner",
+      "ability": "Social cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 41,
+      "accuracy": 0.6119402985074627,
+      "coverage": 1.0
+    },
+    {
+      "model": "gliner",
+      "ability": "Communication",
+      "selected": 67,
+      "answered": 67,
+      "correct": 38,
+      "accuracy": 0.5671641791044776,
+      "coverage": 1.0
+    },
+    {
+      "model": "gliner",
+      "ability": "Rule application",
+      "selected": 67,
+      "answered": 67,
+      "correct": 23,
+      "accuracy": 0.34328358208955223,
+      "coverage": 1.0
+    },
+    {
+      "model": "laya",
+      "ability": "Perception and attention (retrieval)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 55,
+      "accuracy": 0.8208955223880597,
+      "coverage": 1.0
+    },
+    {
+      "model": "laya",
+      "ability": "State tracking and updating",
+      "selected": 67,
+      "answered": 67,
+      "correct": 21,
+      "accuracy": 0.31343283582089554,
+      "coverage": 1.0
+    },
+    {
+      "model": "laya",
+      "ability": "Concepts and categorization",
+      "selected": 67,
+      "answered": 67,
+      "correct": 48,
+      "accuracy": 0.7164179104477612,
+      "coverage": 1.0
+    },
+    {
+      "model": "laya",
+      "ability": "Relations",
+      "selected": 67,
+      "answered": 67,
+      "correct": 13,
+      "accuracy": 0.19402985074626866,
+      "coverage": 1.0
+    },
+    {
+      "model": "laya",
+      "ability": "Analogy",
+      "selected": 67,
+      "answered": 67,
+      "correct": 5,
+      "accuracy": 0.07462686567164178,
+      "coverage": 1.0
+    },
+    {
+      "model": "laya",
+      "ability": "Learning and induction",
+      "selected": 67,
+      "answered": 67,
+      "correct": 13,
+      "accuracy": 0.19402985074626866,
+      "coverage": 1.0
+    },
+    {
+      "model": "laya",
+      "ability": "Physical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 23,
+      "accuracy": 0.34328358208955223,
+      "coverage": 1.0
+    },
+    {
+      "model": "laya",
+      "ability": "Spatial cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 22,
+      "accuracy": 0.3283582089552239,
+      "coverage": 1.0
+    },
+    {
+      "model": "laya",
+      "ability": "Numerical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 19,
+      "accuracy": 0.2835820895522388,
+      "coverage": 1.0
+    },
+    {
+      "model": "laya",
+      "ability": "Causal reasoning",
+      "selected": 67,
+      "answered": 67,
+      "correct": 37,
+      "accuracy": 0.5522388059701493,
+      "coverage": 1.0
+    },
+    {
+      "model": "laya",
+      "ability": "Metacognition/Uncertainty monitoring (risk)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 25,
+      "accuracy": 0.373134328358209,
+      "coverage": 1.0
+    },
+    {
+      "model": "laya",
+      "ability": "Information seeking (information gain)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 41,
+      "accuracy": 0.6119402985074627,
+      "coverage": 1.0
+    },
+    {
+      "model": "laya",
+      "ability": "Social cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 34,
+      "accuracy": 0.5074626865671642,
+      "coverage": 1.0
+    },
+    {
+      "model": "laya",
+      "ability": "Communication",
+      "selected": 67,
+      "answered": 67,
+      "correct": 36,
+      "accuracy": 0.5373134328358209,
+      "coverage": 1.0
+    },
+    {
+      "model": "laya",
+      "ability": "Rule application",
+      "selected": 67,
+      "answered": 67,
+      "correct": 24,
+      "accuracy": 0.3582089552238806,
+      "coverage": 1.0
+    },
+    {
+      "model": "caldec",
+      "ability": "Perception and attention (retrieval)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 54,
+      "accuracy": 0.8059701492537313,
+      "coverage": 1.0
+    },
+    {
+      "model": "caldec",
+      "ability": "State tracking and updating",
+      "selected": 67,
+      "answered": 67,
+      "correct": 22,
+      "accuracy": 0.3283582089552239,
+      "coverage": 1.0
+    },
+    {
+      "model": "caldec",
+      "ability": "Concepts and categorization",
+      "selected": 67,
+      "answered": 67,
+      "correct": 48,
+      "accuracy": 0.7164179104477612,
+      "coverage": 1.0
+    },
+    {
+      "model": "caldec",
+      "ability": "Relations",
+      "selected": 67,
+      "answered": 67,
+      "correct": 11,
+      "accuracy": 0.16417910447761194,
+      "coverage": 1.0
+    },
+    {
+      "model": "caldec",
+      "ability": "Analogy",
+      "selected": 67,
+      "answered": 67,
+      "correct": 13,
+      "accuracy": 0.19402985074626866,
+      "coverage": 1.0
+    },
+    {
+      "model": "caldec",
+      "ability": "Learning and induction",
+      "selected": 67,
+      "answered": 67,
+      "correct": 14,
+      "accuracy": 0.208955223880597,
+      "coverage": 1.0
+    },
+    {
+      "model": "caldec",
+      "ability": "Physical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 18,
+      "accuracy": 0.26865671641791045,
+      "coverage": 1.0
+    },
+    {
+      "model": "caldec",
+      "ability": "Spatial cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 24,
+      "accuracy": 0.3582089552238806,
+      "coverage": 1.0
+    },
+    {
+      "model": "caldec",
+      "ability": "Numerical cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 13,
+      "accuracy": 0.19402985074626866,
+      "coverage": 1.0
+    },
+    {
+      "model": "caldec",
+      "ability": "Causal reasoning",
+      "selected": 67,
+      "answered": 67,
+      "correct": 34,
+      "accuracy": 0.5074626865671642,
+      "coverage": 1.0
+    },
+    {
+      "model": "caldec",
+      "ability": "Metacognition/Uncertainty monitoring (risk)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 21,
+      "accuracy": 0.31343283582089554,
+      "coverage": 1.0
+    },
+    {
+      "model": "caldec",
+      "ability": "Information seeking (information gain)",
+      "selected": 67,
+      "answered": 67,
+      "correct": 38,
+      "accuracy": 0.5671641791044776,
+      "coverage": 1.0
+    },
+    {
+      "model": "caldec",
+      "ability": "Social cognition",
+      "selected": 67,
+      "answered": 67,
+      "correct": 34,
+      "accuracy": 0.5074626865671642,
+      "coverage": 1.0
+    },
+    {
+      "model": "caldec",
+      "ability": "Communication",
+      "selected": 67,
+      "answered": 67,
+      "correct": 38,
+      "accuracy": 0.5671641791044776,
+      "coverage": 1.0
+    },
+    {
+      "model": "caldec",
+      "ability": "Rule application",
+      "selected": 67,
+      "answered": 67,
+      "correct": 26,
+      "accuracy": 0.3880597014925373,
+      "coverage": 1.0
+    }
+  ],
+  "native_binary": [
+    {
+      "model": "astra",
+      "selected": 214,
+      "answered": 214,
+      "tp": 90,
+      "fp": 2,
+      "fn": 1,
+      "tn": 121,
+      "precision": 0.9782608695652174,
+      "recall": 0.989010989010989
+    },
+    {
+      "model": "opus55",
+      "selected": 214,
+      "answered": 214,
+      "tp": 91,
+      "fp": 1,
+      "fn": 0,
+      "tn": 122,
+      "precision": 0.9891304347826086,
+      "recall": 1.0
+    },
+    {
+      "model": "glide",
+      "selected": 214,
+      "answered": 214,
+      "tp": 85,
+      "fp": 1,
+      "fn": 6,
+      "tn": 122,
+      "precision": 0.9883720930232558,
+      "recall": 0.9340659340659341
+    },
+    {
+      "model": "decider11",
+      "selected": 214,
+      "answered": 214,
+      "tp": 82,
+      "fp": 5,
+      "fn": 9,
+      "tn": 118,
+      "precision": 0.9425287356321839,
+      "recall": 0.9010989010989011
+    },
+    {
+      "model": "jev",
+      "selected": 214,
+      "answered": 214,
+      "tp": 88,
+      "fp": 5,
+      "fn": 3,
+      "tn": 118,
+      "precision": 0.946236559139785,
+      "recall": 0.967032967032967
+    },
+    {
+      "model": "microsoft-decision-1",
+      "selected": 214,
+      "answered": 214,
+      "tp": 82,
+      "fp": 8,
+      "fn": 9,
+      "tn": 115,
+      "precision": 0.9111111111111111,
+      "recall": 0.9010989010989011
+    },
+    {
+      "model": "clef",
+      "selected": 214,
+      "answered": 214,
+      "tp": 82,
+      "fp": 4,
+      "fn": 9,
+      "tn": 119,
+      "precision": 0.9534883720930233,
+      "recall": 0.9010989010989011
+    },
+    {
+      "model": "openai-decisions",
+      "selected": 214,
+      "answered": 214,
+      "tp": 67,
+      "fp": 17,
+      "fn": 24,
+      "tn": 106,
+      "precision": 0.7976190476190477,
+      "recall": 0.7362637362637363
+    },
+    {
+      "model": "clef-flash",
+      "selected": 214,
+      "answered": 214,
+      "tp": 79,
+      "fp": 3,
+      "fn": 12,
+      "tn": 120,
+      "precision": 0.9634146341463414,
+      "recall": 0.8681318681318682
+    },
+    {
+      "model": "strands",
+      "selected": 214,
+      "answered": 214,
+      "tp": 66,
+      "fp": 27,
+      "fn": 25,
+      "tn": 96,
+      "precision": 0.7096774193548387,
+      "recall": 0.7252747252747253
+    },
+    {
+      "model": "gliner",
+      "selected": 214,
+      "answered": 214,
+      "tp": 66,
+      "fp": 57,
+      "fn": 25,
+      "tn": 66,
+      "precision": 0.5365853658536586,
+      "recall": 0.7252747252747253
+    },
+    {
+      "model": "laya",
+      "selected": 214,
+      "answered": 214,
+      "tp": 46,
+      "fp": 43,
+      "fn": 45,
+      "tn": 80,
+      "precision": 0.5168539325842697,
+      "recall": 0.5054945054945055
+    },
+    {
+      "model": "caldec",
+      "selected": 214,
+      "answered": 214,
+      "tp": 48,
+      "fp": 54,
+      "fn": 43,
+      "tn": 69,
+      "precision": 0.47058823529411764,
+      "recall": 0.5274725274725275
+    }
+  ],
+  "cost_timing": [
+    {
+      "model": "astra",
+      "serving": "api",
+      "gpu": null,
+      "timed": 1005,
+      "median_ms": 3217.1176659758203,
+      "p95_ms": 5801.003291999223,
+      "priced_requests": 1005,
+      "unknown_cost_requests": 0,
+      "known_api_cost_usd": 7.4561925,
+      "api_cost_per_1000_requests": 7.419097014925373
+    },
+    {
+      "model": "opus55",
+      "serving": "api",
+      "gpu": null,
+      "timed": 1003,
+      "median_ms": 1753.1998750055209,
+      "p95_ms": 3906.0050420230255,
+      "priced_requests": 1005,
+      "unknown_cost_requests": 0,
+      "known_api_cost_usd": 4.756948,
+      "api_cost_per_1000_requests": 4.733281592039801
+    },
+    {
+      "model": "glide",
+      "serving": "self-hosted",
+      "gpu": "A100-80GB",
+      "timed": 1004,
+      "median_ms": 137.35685799997555,
+      "p95_ms": 480.81231199989816,
+      "priced_requests": 0,
+      "unknown_cost_requests": null,
+      "known_api_cost_usd": null,
+      "api_cost_per_1000_requests": null
+    },
+    {
+      "model": "decider11",
+      "serving": "self-hosted",
+      "gpu": "A100-80GB",
+      "timed": 1004,
+      "median_ms": 144.63838600002532,
+      "p95_ms": 487.6991409999789,
+      "priced_requests": 0,
+      "unknown_cost_requests": null,
+      "known_api_cost_usd": null,
+      "api_cost_per_1000_requests": null
+    },
+    {
+      "model": "jev",
+      "serving": "api",
+      "gpu": null,
+      "timed": 1005,
+      "median_ms": 219.1838329890743,
+      "p95_ms": 359.80266699334607,
+      "priced_requests": 1005,
+      "unknown_cost_requests": 0,
+      "known_api_cost_usd": 0.124118708,
+      "api_cost_per_1000_requests": 0.12350120199004976
+    },
+    {
+      "model": "microsoft-decision-1",
+      "serving": "api",
+      "gpu": null,
+      "timed": 1004,
+      "median_ms": 329.9540619918844,
+      "p95_ms": 505.6325829937123,
+      "priced_requests": 1004,
+      "unknown_cost_requests": 1,
+      "known_api_cost_usd": 0.115796654,
+      "api_cost_per_1000_requests": 0.11533531274900398
+    },
+    {
+      "model": "clef",
+      "serving": "self-hosted",
+      "gpu": "A100-80GB",
+      "timed": 1004,
+      "median_ms": 190.3627075000145,
+      "p95_ms": 849.1178040000023,
+      "priced_requests": 0,
+      "unknown_cost_requests": null,
+      "known_api_cost_usd": null,
+      "api_cost_per_1000_requests": null
+    },
+    {
+      "model": "openai-decisions",
+      "serving": "api",
+      "gpu": null,
+      "timed": 997,
+      "median_ms": 375.1718330022413,
+      "p95_ms": 649.5100829924922,
+      "priced_requests": 1004,
+      "unknown_cost_requests": 1,
+      "known_api_cost_usd": 0.141336075,
+      "api_cost_per_1000_requests": 0.1407729830677291
+    },
+    {
+      "model": "clef-flash",
+      "serving": "self-hosted",
+      "gpu": "A100-80GB",
+      "timed": 1004,
+      "median_ms": 98.5307040001544,
+      "p95_ms": 292.20299999997223,
+      "priced_requests": 0,
+      "unknown_cost_requests": null,
+      "known_api_cost_usd": null,
+      "api_cost_per_1000_requests": null
+    },
+    {
+      "model": "strands",
+      "serving": "self-hosted",
+      "gpu": "A100-80GB",
+      "timed": 1004,
+      "median_ms": 93.29990649996489,
+      "p95_ms": 194.8653430001741,
+      "priced_requests": 0,
+      "unknown_cost_requests": null,
+      "known_api_cost_usd": null,
+      "api_cost_per_1000_requests": null
+    },
+    {
+      "model": "gliner",
+      "serving": "self-hosted",
+      "gpu": "A100-80GB",
+      "timed": 1004,
+      "median_ms": 39.334911500077396,
+      "p95_ms": 165.18868599996495,
+      "priced_requests": 0,
+      "unknown_cost_requests": null,
+      "known_api_cost_usd": null,
+      "api_cost_per_1000_requests": null
+    },
+    {
+      "model": "laya",
+      "serving": "self-hosted",
+      "gpu": "A100-80GB",
+      "timed": 1004,
+      "median_ms": 26.373742499913533,
+      "p95_ms": 32.65123999995012,
+      "priced_requests": 0,
+      "unknown_cost_requests": null,
+      "known_api_cost_usd": null,
+      "api_cost_per_1000_requests": null
+    },
+    {
+      "model": "caldec",
+      "serving": "self-hosted",
+      "gpu": "A100-80GB",
+      "timed": 1004,
+      "median_ms": 26.930326000069726,
+      "p95_ms": 34.514039999976376,
+      "priced_requests": 0,
+      "unknown_cost_requests": null,
+      "known_api_cost_usd": null,
+      "api_cost_per_1000_requests": null
+    }
+  ]
+}

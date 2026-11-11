@@ -1,0 +1,86 @@
+# Repetition · Present the same evidence twice variant
+
+[Original question](../../../questions/communication/pub-022a4c7f5dee09eaf4b8.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Context: Y has just told X that he/she is considering switching his/her job.
+> X: Do you prefer a different career?
+> Y: Only if the promotion opportunities are better.
+
+## Question
+
+> Choose the interpretation or answer requested by the text.
+>
+> «Context: Y has just told X that he/she is considering switching his/her job.
+> X: Do you prefer a different career?
+> Y: Only if the promotion opportunities are better.
+> »
+
+## Answer choices
+
+- **A.** Yes
+- **B.** No
+- **C.** Yes, subject to some conditions
+- **D.** In the middle, neither yes nor no
+- **E.** Other
+
+**Reference answer:** `C`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Context: Y has just told X that he/she is considering switching his/her job.\nX: Do you prefer a different career?\nY: Only if the promotion opportunities are better.\n",
+  "question": "Choose the interpretation or answer requested by the text.\n\n«Context: Y has just told X that he/she is considering switching his/her job.\nX: Do you prefer a different career?\nY: Only if the promotion opportunities are better.\n»",
+  "choices": {
+    "A": "Yes",
+    "B": "No",
+    "C": "Yes, subject to some conditions",
+    "D": "In the middle, neither yes nor no",
+    "E": "Other"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `C` — Yes, subject to some conditions | `C` — Yes, subject to some conditions | Same answer |
+| Decider v1.1 | `C` — Yes, subject to some conditions | `C` — Yes, subject to some conditions | Same answer |
+| Jev | `C` — Yes, subject to some conditions | `C` — Yes, subject to some conditions | Same answer |
+| Microsoft Decision-1 | `C` — Yes, subject to some conditions | `C` — Yes, subject to some conditions | Same answer |
+| Clef | `C` — Yes, subject to some conditions | `C` — Yes, subject to some conditions | Same answer |
+| Luna Decisions | `C` — Yes, subject to some conditions | `C` — Yes, subject to some conditions | Same answer |
+| Clef Flash | `C` — Yes, subject to some conditions | `C` — Yes, subject to some conditions | Same answer |
+| Strands Decider | `C` — Yes, subject to some conditions | `C` — Yes, subject to some conditions | Same answer |
+| GLiNER2.5 Decide | `E` — Other | `E` — Other | Same answer |
+| Laya | `A` — Yes | `A` — Yes | Same answer |
+| CalDec v1 | `A` — Yes | `A` — Yes | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `pub/022a4c7f5dee09eaf4b8/evidence_repetition/2/clean-source_first_pub_record_quote_completion_contexts_full_0228`
+
+**Input fingerprint:** `d77000731a04ae383f488ee6f58dc9941ab404176bf9f0a089a0576be53b4b0b`
+
+| Change | Recorded version |
+| --- | --- |
+| Repetition | Present the same evidence twice |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/communication/pub-022a4c7f5dee09eaf4b8.md).

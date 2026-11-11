@@ -1,0 +1,85 @@
+# Paraphrasing · Change the sentence structure variant
+
+[Original question](../../../questions/spatial-cognition/spartqa-48eef2d2dbdde48bc27d.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> There are three blocks, A, B and C. Block C is to the left of B and block B is below A. Block A contains a medium blue square. The medium blue square is below a medium black square. Block B contains a medium yellow square and a medium blue square. The medium yellow square is touching the bottom edge of this block. It is below the medium blue square. And block C has two medium yellow squares. Medium yellow square number one is below medium yellow square number two.. One medium blue square is also touching the bottom edge of this block. Below medium yellow square number one and medium yellow square number two is the medium blue square.
+
+## Question
+
+> How is the medium object that is below medium yellow object number one positioned with respect to the yellow square which is above a yellow square?
+
+## Answer choices
+
+- **0.** left
+- **1.** right
+- **2.** above
+- **3.** below
+- **4.** near to
+- **5.** far from
+- **6.** touching
+- **7.** DK
+
+**Reference answer:** `3`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "There are three blocks, A, B and C. Block C is to the left of B and block B is below A. Block A contains a medium blue square. The medium blue square is below a medium black square. Block B contains a medium yellow square and a medium blue square. The medium yellow square is touching the bottom edge of this block. It is below the medium blue square. And block C has two medium yellow squares. Medium yellow square number one is below medium yellow square number two.. One medium blue square is also touching the bottom edge of this block. Below medium yellow square number one and medium yellow square number two is the medium blue square.",
+  "question": "How is the medium object that is below medium yellow object number one positioned with respect to the yellow square which is above a yellow square?",
+  "choices": {
+    "0": "left",
+    "1": "right",
+    "2": "above",
+    "3": "below",
+    "4": "near to",
+    "5": "far from",
+    "6": "touching",
+    "7": "DK"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `3` — below | `3` — below | Same answer |
+| Decider v1.1 | `3` — below | `3` — below | Same answer |
+| Jev | `3` — below | `3` — below | Same answer |
+| Microsoft Decision-1 | `3` — below | `3` — below | Same answer |
+| Clef | `3` — below | `3` — below | Same answer |
+| Luna Decisions | `0` — left | `3` — below | Different answer |
+| Clef Flash | `3` — below | `3` — below | Same answer |
+| Strands Decider | `3` — below | `3` — below | Same answer |
+| GLiNER2.5 Decide | `3` — below | `3` — below | Same answer |
+| Laya | `3` — below | `3` — below | Same answer |
+| CalDec v1 | `3` — below | `3` — below | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `spartqa/48eef2d2dbdde48bc27d/paraphrasing/structural`
+
+**Input fingerprint:** `75839feeced64e707db87d46c6f3f01f58dee787639ad8a636c4c75839a75292`
+
+| Change | Recorded version |
+| --- | --- |
+| Paraphrasing | Change the sentence structure |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/spatial-cognition/spartqa-48eef2d2dbdde48bc27d.md).

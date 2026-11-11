@@ -1,0 +1,83 @@
+# Paraphrasing · Change the sentence structure variant
+
+[Original question](../../../questions/state-tracking-and-updating/cruxeval-e9b9076165dab30b931e.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+```text
+def f(nums):
+    count = len(nums) // 2
+    for _ in range(count):
+        nums.pop(0)
+    return nums
+```
+
+## Question
+
+> Determine the return value of f(\[3, 4, 1, 2, 3\]).
+
+## Answer choices
+
+- **A.** [1, 2, 2]
+- **B.** [1, 2, 4]
+- **C.** [3, 2, 3]
+- **D.** [1, 2, 3]
+
+**Reference answer:** `D`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "def f(nums):\n    count = len(nums) // 2\n    for _ in range(count):\n        nums.pop(0)\n    return nums",
+  "question": "Determine the return value of f([3, 4, 1, 2, 3]).",
+  "choices": {
+    "A": "[1, 2, 2]",
+    "B": "[1, 2, 4]",
+    "C": "[3, 2, 3]",
+    "D": "[1, 2, 3]"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `D` — \[1, 2, 3\] | `D` — \[1, 2, 3\] | Same answer |
+| Decider v1.1 | `D` — \[1, 2, 3\] | `D` — \[1, 2, 3\] | Same answer |
+| Jev | `D` — \[1, 2, 3\] | `D` — \[1, 2, 3\] | Same answer |
+| Microsoft Decision-1 | `D` — \[1, 2, 3\] | `D` — \[1, 2, 3\] | Same answer |
+| Clef | `D` — \[1, 2, 3\] | `D` — \[1, 2, 3\] | Same answer |
+| Luna Decisions | `D` — \[1, 2, 3\] | `D` — \[1, 2, 3\] | Same answer |
+| Clef Flash | `D` — \[1, 2, 3\] | `D` — \[1, 2, 3\] | Same answer |
+| Strands Decider | `D` — \[1, 2, 3\] | `D` — \[1, 2, 3\] | Same answer |
+| GLiNER2.5 Decide | `A` — \[1, 2, 2\] | `A` — \[1, 2, 2\] | Same answer |
+| Laya | `A` — \[1, 2, 2\] | `A` — \[1, 2, 2\] | Same answer |
+| CalDec v1 | `A` — \[1, 2, 2\] | `A` — \[1, 2, 2\] | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `cruxeval/e9b9076165dab30b931e/paraphrasing/structural`
+
+**Input fingerprint:** `73ca94e98f75d6de5ffba3cef80819b75e8f20a0c16efa009d78fc586dbbc199`
+
+| Change | Recorded version |
+| --- | --- |
+| Paraphrasing | Change the sentence structure |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/state-tracking-and-updating/cruxeval-e9b9076165dab30b931e.md).

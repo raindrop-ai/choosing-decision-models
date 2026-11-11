@@ -1,0 +1,111 @@
+{
+  "run_date": "2026-11-09",
+  "models": [
+    "decider11",
+    "glide",
+    "clef",
+    "strands",
+    "laya",
+    "gliner",
+    "caldec",
+    "clef-flash"
+  ],
+  "originals_per_model": 1005,
+  "shared_physical_gpu": {
+    "name": "NVIDIA A100 80GB PCIe",
+    "memory_gib": 80,
+    "compute_capability": [
+      8,
+      0
+    ],
+    "multiprocessor_count": 108,
+    "identity_verified_before_and_after_each_model": true
+  },
+  "cpu_cores": 2,
+  "host_memory_gib": 64,
+  "batch_size": 1,
+  "seed": 0,
+  "tf32": false,
+  "model_process_isolation": "One fresh process per model, separate model caches; one active model at a time.",
+  "runtime_for_model": {
+    "decider11": "large",
+    "glide": "large",
+    "clef": "core",
+    "strands": "core",
+    "laya": "core",
+    "gliner": "core",
+    "caldec": "core",
+    "clef-flash": "core"
+  },
+  "runtime_versions": {
+    "decider11": {
+      "torch": "2.14.0",
+      "transformers": "5.17.0",
+      "huggingface-hub": "1.33.0",
+      "c_compiler": "12.2.0"
+    },
+    "glide": {
+      "torch": "2.14.0",
+      "transformers": "5.17.0",
+      "huggingface-hub": "1.33.0",
+      "c_compiler": "12.2.0"
+    },
+    "clef": {
+      "torch": "2.14.0",
+      "transformers": "5.22.1",
+      "huggingface-hub": "1.33.0",
+      "c_compiler": "12.2.0"
+    },
+    "strands": {
+      "torch": "2.14.0",
+      "transformers": "5.22.1",
+      "huggingface-hub": "1.33.0",
+      "c_compiler": "12.2.0"
+    },
+    "laya": {
+      "torch": "2.14.0",
+      "transformers": "5.22.1",
+      "huggingface-hub": "1.33.0",
+      "c_compiler": "12.2.0"
+    },
+    "gliner": {
+      "torch": "2.14.0",
+      "transformers": "5.22.1",
+      "huggingface-hub": "1.33.0",
+      "c_compiler": "12.2.0"
+    },
+    "caldec": {
+      "torch": "2.14.0",
+      "transformers": "5.22.1",
+      "huggingface-hub": "1.33.0",
+      "c_compiler": "12.2.0"
+    },
+    "clef-flash": {
+      "torch": "2.14.0",
+      "transformers": "5.22.1",
+      "huggingface-hub": "1.33.0",
+      "c_compiler": "12.2.0"
+    }
+  },
+  "timing": {
+    "scope": "Synchronized native input encoding, forward pass, and native probabilities inside an already-loaded GPU worker.",
+    "excluded": "Downloads, model loading, network transport, and the first forward with kernel startup.",
+    "successful_predictions_per_model": 1005,
+    "timed_predictions_per_model": 1004,
+    "p95_method": "nearest_rank"
+  },
+  "source_plan_sha256": "664a352ca0ed368f3eb18a1ba003ba722c412e607b9e716a491a16ae3de48e44",
+  "source_receipts_sha256": {
+    "decider11": "9d605a83db45c348f8eceee225ac0d44a86122042d6dfa497475712cd408320d",
+    "glide": "974bb0abbc1f707f5faf8c530fe080fe296e93aba007168b2d09c142b83d4420",
+    "clef": "4b16655a6c72837d75679affc8144acb34c31b86b482de41780af5589665ebca",
+    "strands": "dc1538befc85ab664c5c91f06e49166a2e53ed0497fbf4b3e7901d332018d8fd",
+    "laya": "840034f6823b402b700d2f3a52f8ddddad21ec112a6f28add3ab31994e741466",
+    "gliner": "18224bac48f1c54e05fa07a9df5578388f8817a0f711647f515b83d508395e7e",
+    "caldec": "7db785317f9d39b940d4d4fdb8016b60a229c5b828b828e2a32848a3bff838b9",
+    "clef-flash": "21df6df590c128af7f13d0198c005e76efc03d86e1398967dc8ce7e25974c1e2"
+  },
+  "all_original_inputs_ordered_choices_and_reference_answers_unchanged": true,
+  "original_question_order": "Ascending question ID (lexicographic); the first is ag_news/3188eeb640120e6f97b6.",
+  "cost_scope": "Reported hosted API charges only. No per-prediction GPU cost is assigned to self-hosted models."
+}

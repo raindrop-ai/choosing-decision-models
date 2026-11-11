@@ -1,0 +1,77 @@
+# Evidence order · Reorder smaller phrases within the original text variant
+
+[Original question](../../../questions/concepts-and-categorization/mnli-9f29122b74e1dbd1b45d.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Rukeyser's Sphinx was not, either, very affable.)
+
+## Question
+
+> Does the premise entail, contradict, or leave undetermined this statement? The Sphinx wasn't very friendly.
+
+## Answer choices
+
+- **0.** Entailment
+- **1.** Neither entailed nor contradicted
+- **2.** Contradiction
+
+**Reference answer:** `0`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Rukeyser's Sphinx was not, either, very affable.)",
+  "question": "Does the premise entail, contradict, or leave undetermined this statement? The Sphinx wasn't very friendly.",
+  "choices": {
+    "0": "Entailment",
+    "1": "Neither entailed nor contradicted",
+    "2": "Contradiction"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `0` — Entailment | `0` — Entailment | Same answer |
+| Decider v1.1 | `0` — Entailment | `0` — Entailment | Same answer |
+| Jev | `0` — Entailment | `0` — Entailment | Same answer |
+| Microsoft Decision-1 | `0` — Entailment | `0` — Entailment | Same answer |
+| Clef | `0` — Entailment | `0` — Entailment | Same answer |
+| Luna Decisions | `0` — Entailment | `0` — Entailment | Same answer |
+| Clef Flash | `0` — Entailment | `0` — Entailment | Same answer |
+| Strands Decider | `0` — Entailment | `0` — Entailment | Same answer |
+| GLiNER2.5 Decide | `1` — Neither entailed nor contradicted | `1` — Neither entailed nor contradicted | Same answer |
+| Laya | `0` — Entailment | `2` — Contradiction | Different answer |
+| CalDec v1 | `0` — Entailment | `2` — Contradiction | Different answer |
+
+**Ordering comparison:** coupled wording reference chronology or representation. Only the exact matched comparison sets contribute to the reported ordering contrasts.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `mnli/9f29122b74e1dbd1b45d/presentation_order/source_specific_native_finer_unit_order/clean-source_first_remaining_finer_orders_full_0324`
+
+**Input fingerprint:** `acd169f0ec27aa2efe468df3659de4444a7331729abfbaea66171ff2f68ef112`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence order | Reorder smaller phrases within the original text |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/concepts-and-categorization/mnli-9f29122b74e1dbd1b45d.md).

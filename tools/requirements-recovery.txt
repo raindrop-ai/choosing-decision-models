@@ -1,0 +1,3 @@
+# Optional: only AG News and SST-2 recovery read Parquet files.
+# Offline scoring and all other source recovery use the Python standard library.
+pyarrow==23.0.1

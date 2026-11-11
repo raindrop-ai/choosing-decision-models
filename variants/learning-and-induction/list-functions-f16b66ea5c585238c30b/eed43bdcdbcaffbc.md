@@ -1,0 +1,80 @@
+# Extra events · Add 6 unrelated events variant
+
+[Original question](../../../questions/learning-and-induction/list_functions-f16b66ea5c585238c30b.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The building contains a lobby, a reading room, a courtyard, a gallery, a kitchen, and a workshop. The caretaker is in the lobby.
+> The caretaker walks from the lobby to the reading room. The caretaker walks from the reading room to the courtyard. The caretaker walks from the courtyard to the gallery. The caretaker walks from the gallery to the kitchen. The caretaker walks from the kitchen to the workshop. The caretaker walks from the workshop to the lobby.
+>
+> \[{"input": "\[6, 2, 57, 57, 57, 22, 57, 97, 2\]", "output": "\[57, 57, 57, 22, 57, 2, 2\]"}, {"input": "\[1, 1, 1, 1, 1, 1\]", "output": "\[1, 1, 1, 1\]"}, {"input": "\[3, 3, 16, 2, 20, 8, 23, 6\]", "output": "\[16, 2, 3, 8, 23, 6\]"}, {"input": "\[5, 5, 91, 31, 31, 7, 31, 72\]", "output": "\[91, 31, 31, 7, 5, 72\]"}, {"input": "\[4, 4, 4, 4, 4, 4, 4, 4\]", "output": "\[4, 4, 4, 4, 4, 4\]"}, {"input": "\[5, 3, 3, 1, 5, 2, 3, 60, 2\]", "output": "\[3, 1, 5, 2, 3, 60, 2\]"}, {"input": "\[3, 5, 8, 6, 77, 91, 31, 5, 44, 20\]", "output": "\[8, 6, 5, 91, 31, 5, 44, 20\]"}, {"input": "\[3, 7, 8, 4, 26, 23, 98, 2, 6, 90\]", "output": "\[8, 4, 7, 23, 98, 2, 6, 90\]"}\]
+
+## Question
+
+> Apply the same inferred rule to this new input: \[3, 2, 6, 32, 1, 7, 14, 9, 24, 5\]
+
+## Answer choices
+
+- **A.** [2, 6, 32, 14, 24, 2, 6, 32]
+- **B.** [6, 32, 2, 7, 14, 9, 24, 5]
+- **C.** [3, 6, 1, 14, 24, 3, 6, 1]
+- **D.** [8, 26, 15, 46, 8, 8, 46, 15]
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The building contains a lobby, a reading room, a courtyard, a gallery, a kitchen, and a workshop. The caretaker is in the lobby.\nThe caretaker walks from the lobby to the reading room. The caretaker walks from the reading room to the courtyard. The caretaker walks from the courtyard to the gallery. The caretaker walks from the gallery to the kitchen. The caretaker walks from the kitchen to the workshop. The caretaker walks from the workshop to the lobby.\n\n[{\"input\": \"[6, 2, 57, 57, 57, 22, 57, 97, 2]\", \"output\": \"[57, 57, 57, 22, 57, 2, 2]\"}, {\"input\": \"[1, 1, 1, 1, 1, 1]\", \"output\": \"[1, 1, 1, 1]\"}, {\"input\": \"[3, 3, 16, 2, 20, 8, 23, 6]\", \"output\": \"[16, 2, 3, 8, 23, 6]\"}, {\"input\": \"[5, 5, 91, 31, 31, 7, 31, 72]\", \"output\": \"[91, 31, 31, 7, 5, 72]\"}, {\"input\": \"[4, 4, 4, 4, 4, 4, 4, 4]\", \"output\": \"[4, 4, 4, 4, 4, 4]\"}, {\"input\": \"[5, 3, 3, 1, 5, 2, 3, 60, 2]\", \"output\": \"[3, 1, 5, 2, 3, 60, 2]\"}, {\"input\": \"[3, 5, 8, 6, 77, 91, 31, 5, 44, 20]\", \"output\": \"[8, 6, 5, 91, 31, 5, 44, 20]\"}, {\"input\": \"[3, 7, 8, 4, 26, 23, 98, 2, 6, 90]\", \"output\": \"[8, 4, 7, 23, 98, 2, 6, 90]\"}]",
+  "question": "Apply the same inferred rule to this new input: [3, 2, 6, 32, 1, 7, 14, 9, 24, 5]",
+  "choices": {
+    "A": "[2, 6, 32, 14, 24, 2, 6, 32]",
+    "B": "[6, 32, 2, 7, 14, 9, 24, 5]",
+    "C": "[3, 6, 1, 14, 24, 3, 6, 1]",
+    "D": "[8, 26, 15, 46, 8, 8, 46, 15]"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | Same answer |
+| Decider v1.1 | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | Same answer |
+| Jev | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | Same answer |
+| Microsoft Decision-1 | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | Same answer |
+| Clef | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | Same answer |
+| Luna Decisions | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | Same answer |
+| Clef Flash | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | Same answer |
+| Strands Decider | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | Same answer |
+| GLiNER2.5 Decide | `B` — \[6, 32, 2, 7, 14, 9, 24, 5\] | `A` — \[2, 6, 32, 14, 24, 2, 6, 32\] | Different answer |
+| Laya | `A` — \[2, 6, 32, 14, 24, 2, 6, 32\] | `A` — \[2, 6, 32, 14, 24, 2, 6, 32\] | Same answer |
+| CalDec v1 | `A` — \[2, 6, 32, 14, 24, 2, 6, 32\] | `A` — \[2, 6, 32, 14, 24, 2, 6, 32\] | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `list_functions/f16b66ea5c585238c30b/event_count/6/clean-bare_induction_natural_events_full_0047`
+
+**Input fingerprint:** `a7b62fbd50fba2c451a717dafd7ce8ca138189d1a0b99b6bed6d19c127e4aa0b`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 6 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/learning-and-induction/list_functions-f16b66ea5c585238c30b.md).

@@ -1,0 +1,36 @@
+{
+  "requirements": [
+    "workers/requirements.txt",
+    "workers/decision27.txt"
+  ],
+  "system_packages": [
+    "gcc=4:12.2.0-3",
+    "gcc-12=12.2.0-14+deb12u1",
+    "libc6-dev=2.36-9+deb12u14"
+  ],
+  "gpu_by_model": {
+    "decider11": "A100-80GB",
+    "glide": "A100-80GB",
+    "clef": "A100-80GB",
+    "strands": "A100-80GB",
+    "laya": "A100-80GB",
+    "gliner": "A100-80GB",
+    "caldec": "A100-80GB",
+    "clef-flash": "A100-80GB"
+  },
+  "execution": "Isolated Linux CUDA worker; weights staged before inference, with inference networking disabled. Do not load model code on a laptop.",
+  "physical_gpu": "NVIDIA A100 80GB PCIe",
+  "measurement_conditions": "configs/measurement_conditions.json",
+  "runtime_for_model": {
+    "decider11": "large",
+    "glide": "large",
+    "clef": "core",
+    "strands": "core",
+    "laya": "core",
+    "gliner": "core",
+    "caldec": "core",
+    "clef-flash": "core"
+  },
+  "cpu_cores": 2,
+  "host_memory_gib": 64
+}

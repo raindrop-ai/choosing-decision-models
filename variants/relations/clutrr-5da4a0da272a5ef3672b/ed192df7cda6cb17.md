@@ -1,0 +1,107 @@
+# Evidence order · Reverse the order of sections variant
+
+[Original question](../../../questions/relations/clutrr-5da4a0da272a5ef3672b.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> \[Joanne\] took her father \[Johnny\] to his doctor's appointment and afterward her brother \[Clyde\] came over and visited for awhile. \[Gene\] asked his brother \[Clyde\] if he would come help him fix his car next weekend. \[Kecia\] and her sister, \[Helen\], frequently bicker. However, they always make up quickly. \[Gene\]'s mother \[Helen\] had to help him with his homework because he was having a test soon. \[Johnny\] was so excited to surprise his son, \[Leo\], with the tickets to the playoffs.
+
+## Question
+
+> What is Kecia’s relationship to Leo?
+
+## Answer choices
+
+- **aunt.** aunt
+- **brother.** brother
+- **daughter.** daughter
+- **daughter-in-law.** daughter-in-law
+- **father.** father
+- **father-in-law.** father-in-law
+- **granddaughter.** granddaughter
+- **grandfather.** grandfather
+- **grandmother.** grandmother
+- **grandson.** grandson
+- **mother.** mother
+- **mother-in-law.** mother-in-law
+- **nephew.** nephew
+- **niece.** niece
+- **sister.** sister
+- **son.** son
+- **son-in-law.** son-in-law
+- **uncle.** uncle
+
+**Reference answer:** `aunt`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "[Joanne] took her father [Johnny] to his doctor's appointment and afterward her brother [Clyde] came over and visited for awhile. [Gene] asked his brother [Clyde] if he would come help him fix his car next weekend. [Kecia] and her sister, [Helen], frequently bicker. However, they always make up quickly. [Gene]'s mother [Helen] had to help him with his homework because he was having a test soon. [Johnny] was so excited to surprise his son, [Leo], with the tickets to the playoffs.",
+  "question": "What is Kecia’s relationship to Leo?",
+  "choices": {
+    "aunt": "aunt",
+    "brother": "brother",
+    "daughter": "daughter",
+    "daughter-in-law": "daughter-in-law",
+    "father": "father",
+    "father-in-law": "father-in-law",
+    "granddaughter": "granddaughter",
+    "grandfather": "grandfather",
+    "grandmother": "grandmother",
+    "grandson": "grandson",
+    "mother": "mother",
+    "mother-in-law": "mother-in-law",
+    "nephew": "nephew",
+    "niece": "niece",
+    "sister": "sister",
+    "son": "son",
+    "son-in-law": "son-in-law",
+    "uncle": "uncle"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `aunt` — aunt | `aunt` — aunt | Same answer |
+| Decider v1.1 | `aunt` — aunt | `aunt` — aunt | Same answer |
+| Jev | `aunt` — aunt | `aunt` — aunt | Same answer |
+| Microsoft Decision-1 | `aunt` — aunt | `aunt` — aunt | Same answer |
+| Clef | `aunt` — aunt | `aunt` — aunt | Same answer |
+| Luna Decisions | Refused | Refused | — |
+| Clef Flash | `aunt` — aunt | `aunt` — aunt | Same answer |
+| Strands Decider | `sister` — sister | `sister` — sister | Same answer |
+| GLiNER2.5 Decide | `brother` — brother | `brother` — brother | Same answer |
+| Laya | `sister` — sister | `sister` — sister | Same answer |
+| CalDec v1 | `mother` — mother | `sister` — sister | Different answer |
+
+**Ordering comparison:** literal local or custom unit permutation. Only the exact matched comparison sets contribute to the reported ordering contrasts.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `clutrr/5da4a0da272a5ef3672b/presentation_order/reverse_blocks/clean-source_first_clutrr_order_full_0218`
+
+**Input fingerprint:** `920b69bb149e5fd913342b40ee8b77856ca895c87585cce7804a0af378b95e90`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence order | Reverse the order of sections |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/clutrr-5da4a0da272a5ef3672b.md).

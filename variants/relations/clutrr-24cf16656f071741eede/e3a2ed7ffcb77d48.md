@@ -1,0 +1,105 @@
+# Paraphrasing · Change individual words and phrases variant
+
+[Original question](../../../questions/relations/clutrr-24cf16656f071741eede.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> \[Timothy\] was walked down to the bus stop by his sister \[Christina\] because his mother \[Patricia\] told her to to do so. \[Nicole\] went to visit her daughter \[Patricia\] the other day. \[Nicole\]'s son \[Frank\] was too busy at work to go along.
+
+## Question
+
+> How is Frank related to Christina?
+
+## Answer choices
+
+- **aunt.** aunt
+- **brother.** brother
+- **daughter.** daughter
+- **daughter-in-law.** daughter-in-law
+- **father.** father
+- **father-in-law.** father-in-law
+- **granddaughter.** granddaughter
+- **grandfather.** grandfather
+- **grandmother.** grandmother
+- **grandson.** grandson
+- **mother.** mother
+- **mother-in-law.** mother-in-law
+- **nephew.** nephew
+- **niece.** niece
+- **sister.** sister
+- **son.** son
+- **son-in-law.** son-in-law
+- **uncle.** uncle
+
+**Reference answer:** `uncle`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "[Timothy] was walked down to the bus stop by his sister [Christina] because his mother [Patricia] told her to to do so. [Nicole] went to visit her daughter [Patricia] the other day. [Nicole]'s son [Frank] was too busy at work to go along.",
+  "question": "How is Frank related to Christina?",
+  "choices": {
+    "aunt": "aunt",
+    "brother": "brother",
+    "daughter": "daughter",
+    "daughter-in-law": "daughter-in-law",
+    "father": "father",
+    "father-in-law": "father-in-law",
+    "granddaughter": "granddaughter",
+    "grandfather": "grandfather",
+    "grandmother": "grandmother",
+    "grandson": "grandson",
+    "mother": "mother",
+    "mother-in-law": "mother-in-law",
+    "nephew": "nephew",
+    "niece": "niece",
+    "sister": "sister",
+    "son": "son",
+    "son-in-law": "son-in-law",
+    "uncle": "uncle"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `uncle` — uncle | `uncle` — uncle | Same answer |
+| Decider v1.1 | `uncle` — uncle | `uncle` — uncle | Same answer |
+| Jev | `uncle` — uncle | `uncle` — uncle | Same answer |
+| Microsoft Decision-1 | `uncle` — uncle | `uncle` — uncle | Same answer |
+| Clef | `uncle` — uncle | `brother` — brother | Different answer |
+| Luna Decisions | `brother` — brother | `brother` — brother | Same answer |
+| Clef Flash | `nephew` — nephew | `nephew` — nephew | Same answer |
+| Strands Decider | `son` — son | `son` — son | Same answer |
+| GLiNER2.5 Decide | `sister` — sister | `sister` — sister | Same answer |
+| Laya | `sister` — sister | `sister` — sister | Same answer |
+| CalDec v1 | `sister` — sister | `sister` — sister | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `clutrr/24cf16656f071741eede/paraphrasing/surface`
+
+**Input fingerprint:** `291d9dd7c97339d23eb4922331dead3de651a124aa94d876949b7a3d400a1ec2`
+
+| Change | Recorded version |
+| --- | --- |
+| Paraphrasing | Change individual words and phrases |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/clutrr-24cf16656f071741eede.md).

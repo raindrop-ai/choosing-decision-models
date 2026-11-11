@@ -1,0 +1,79 @@
+# Irrelevant details · Add a small amount of irrelevant detail variant
+
+[Original question](../../../questions/communication/tombench-26b2923c5f0c29f0d0ec.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> In the self-study class, Mingming suddenly gives a hearty laugh. Shuhua, who sits at the same table, looks over and smiles at him, saying, "Mingming, your laughter really has a unique character."
+>
+> The musical suite Merovan includes a refrain.
+
+## Question
+
+> What does Shuhua really want to say when she says this?
+
+## Answer choices
+
+- **A.** Shuhua really likes Mingming&#x27;s laughter and thinks it is very special.
+- **B.** Shuhua hints that Mingming&#x27;s laughter is too loud and he should be quieter.
+- **C.** Shuhua praises Mingming, thinking his laughter has a unique attraction.
+- **D.** Shuhua finds Mingming&#x27;s laughter interesting, it makes her happy.
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "In the self-study class, Mingming suddenly gives a hearty laugh. Shuhua, who sits at the same table, looks over and smiles at him, saying, \"Mingming, your laughter really has a unique character.\"\n\nThe musical suite Merovan includes a refrain.",
+  "question": "What does Shuhua really want to say when she says this?",
+  "choices": {
+    "A": "Shuhua really likes Mingming's laughter and thinks it is very special.",
+    "B": "Shuhua hints that Mingming's laughter is too loud and he should be quieter.",
+    "C": "Shuhua praises Mingming, thinking his laughter has a unique attraction.",
+    "D": "Shuhua finds Mingming's laughter interesting, it makes her happy."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — Shuhua hints that Mingming&#x27;s laughter is too loud and he should be quieter. | `B` — Shuhua hints that Mingming&#x27;s laughter is too loud and he should be quieter. | Same answer |
+| Decider v1.1 | `B` — Shuhua hints that Mingming&#x27;s laughter is too loud and he should be quieter. | `B` — Shuhua hints that Mingming&#x27;s laughter is too loud and he should be quieter. | Same answer |
+| Jev | `B` — Shuhua hints that Mingming&#x27;s laughter is too loud and he should be quieter. | `B` — Shuhua hints that Mingming&#x27;s laughter is too loud and he should be quieter. | Same answer |
+| Microsoft Decision-1 | `B` — Shuhua hints that Mingming&#x27;s laughter is too loud and he should be quieter. | `B` — Shuhua hints that Mingming&#x27;s laughter is too loud and he should be quieter. | Same answer |
+| Clef | `B` — Shuhua hints that Mingming&#x27;s laughter is too loud and he should be quieter. | `B` — Shuhua hints that Mingming&#x27;s laughter is too loud and he should be quieter. | Same answer |
+| Luna Decisions | `B` — Shuhua hints that Mingming&#x27;s laughter is too loud and he should be quieter. | `B` — Shuhua hints that Mingming&#x27;s laughter is too loud and he should be quieter. | Same answer |
+| Clef Flash | `B` — Shuhua hints that Mingming&#x27;s laughter is too loud and he should be quieter. | `B` — Shuhua hints that Mingming&#x27;s laughter is too loud and he should be quieter. | Same answer |
+| Strands Decider | `C` — Shuhua praises Mingming, thinking his laughter has a unique attraction. | `C` — Shuhua praises Mingming, thinking his laughter has a unique attraction. | Same answer |
+| GLiNER2.5 Decide | `C` — Shuhua praises Mingming, thinking his laughter has a unique attraction. | `C` — Shuhua praises Mingming, thinking his laughter has a unique attraction. | Same answer |
+| Laya | `C` — Shuhua praises Mingming, thinking his laughter has a unique attraction. | `A` — Shuhua really likes Mingming&#x27;s laughter and thinks it is very special. | Different answer |
+| CalDec v1 | `C` — Shuhua praises Mingming, thinking his laughter has a unique attraction. | `C` — Shuhua praises Mingming, thinking his laughter has a unique attraction. | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `tombench/26b2923c5f0c29f0d0ec/irrelevant_details/low/clean-source_first_tombench_music_contexts_full_0155`
+
+**Input fingerprint:** `da3dc6116eed9eb0797664fb681e979672db0eb0eaf2912bbca9bdfb9a8588a1`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a small amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/communication/tombench-26b2923c5f0c29f0d0ec.md).

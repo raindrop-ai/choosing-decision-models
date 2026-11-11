@@ -1,0 +1,83 @@
+# Misleading details · Add an unverified claim that conflicts with the evidence variant
+
+[Original question](../../../questions/spatial-cognition/babi-80d2a9dfbea2ad192d5e.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The hallway is east of the office.
+> The garden is north of the hallway.
+> The kitchen is east of the garden.
+> The bedroom is east of the bathroom.
+> The bathroom is east of the hallway.
+>
+> A reader thinks: «The proposed route from the garden to the bathroom is south, then south.»
+
+## Question
+
+> How do you go from the garden to the bathroom?
+
+## Answer choices
+
+- **A.** s,s
+- **B.** w,n
+- **C.** s,e
+- **D.** e,w
+
+**Reference answer:** `C`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The hallway is east of the office.\nThe garden is north of the hallway.\nThe kitchen is east of the garden.\nThe bedroom is east of the bathroom.\nThe bathroom is east of the hallway.\n\nA reader thinks: «The proposed route from the garden to the bathroom is south, then south.»",
+  "question": "How do you go from the garden to the bathroom?",
+  "choices": {
+    "A": "s,s",
+    "B": "w,n",
+    "C": "s,e",
+    "D": "e,w"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `C` — s,e | `C` — s,e | Same answer |
+| Decider v1.1 | `C` — s,e | `C` — s,e | Same answer |
+| Jev | `C` — s,e | `C` — s,e | Same answer |
+| Microsoft Decision-1 | `C` — s,e | `C` — s,e | Same answer |
+| Clef | `C` — s,e | `C` — s,e | Same answer |
+| Luna Decisions | `A` — s,s | `A` — s,s | Same answer |
+| Clef Flash | `A` — s,s | `C` — s,e | Different answer |
+| Strands Decider | `C` — s,e | `C` — s,e | Same answer |
+| GLiNER2.5 Decide | `A` — s,s | `A` — s,s | Same answer |
+| Laya | `C` — s,e | `A` — s,s | Different answer |
+| CalDec v1 | `A` — s,s | `A` — s,s | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `babi/80d2a9dfbea2ad192d5e/misleading_summary/misleading/clean-source_first_babi_route_worlds_full_0090`
+
+**Input fingerprint:** `cefd8bc2e8a363130ade5d8925fc907468896a9c78f3234bcd60a0ee2e71e41f`
+
+| Change | Recorded version |
+| --- | --- |
+| Misleading details | Add an unverified claim that conflicts with the evidence |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/spatial-cognition/babi-80d2a9dfbea2ad192d5e.md).

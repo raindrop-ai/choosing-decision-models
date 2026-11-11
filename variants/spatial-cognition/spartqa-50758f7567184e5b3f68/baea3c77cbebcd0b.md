@@ -1,0 +1,77 @@
+# Similar distractors · Add fewer similar but irrelevant items variant
+
+[Original question](../../../questions/spatial-cognition/spartqa-50758f7567184e5b3f68.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> There are three blocks, A, B and C. Block B is to the left of C. Block C is to the right of A. Block A contains a small blue circle. Block B contains a medium blue circle, a big yellow triangle and a medium yellow square. Near to, above and to the left of a small yellow triangle is the medium yellow square. The medium blue circle is touching the bottom edge of this block. The big yellow triangle is touching the right edge of this block. The small yellow triangle is touching the bottom edge of this block. To the left of, far from and below the big yellow triangle there is the medium blue circle. It is near to the square which is near to the small yellow triangle. And block C has one medium black square and a small blue square. The medium black square is near to the small blue square.
+
+## Question
+
+> Is there a small blue square , to the right of a small blue circle?
+>
+> «Is the teal cylinder Ovelin above the amber prism Nerath?»
+
+## Answer choices
+
+- **Yes.** Yes
+- **No.** No
+- **DK.** DK
+
+**Reference answer:** `Yes`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "There are three blocks, A, B and C. Block B is to the left of C. Block C is to the right of A. Block A contains a small blue circle. Block B contains a medium blue circle, a big yellow triangle and a medium yellow square. Near to, above and to the left of a small yellow triangle is the medium yellow square. The medium blue circle is touching the bottom edge of this block. The big yellow triangle is touching the right edge of this block. The small yellow triangle is touching the bottom edge of this block. To the left of, far from and below the big yellow triangle there is the medium blue circle. It is near to the square which is near to the small yellow triangle. And block C has one medium black square and a small blue square. The medium black square is near to the small blue square.",
+  "question": "Is there a small blue square , to the right of a small blue circle?\n\n«Is the teal cylinder Ovelin above the amber prism Nerath?»",
+  "choices": {
+    "Yes": "Yes",
+    "No": "No",
+    "DK": "DK"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Decider v1.1 | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Jev | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Microsoft Decision-1 | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Clef | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Luna Decisions | `Yes` — Yes | `DK` — DK | Different answer |
+| Clef Flash | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Strands Decider | `Yes` — Yes | `No` — No | Different answer |
+| GLiNER2.5 Decide | `No` — No | `No` — No | Same answer |
+| Laya | `Yes` — Yes | `DK` — DK | Different answer |
+| CalDec v1 | `Yes` — Yes | `Yes` — Yes | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `spartqa/50758f7567184e5b3f68/similar_distractors/low/clean-source_first_spartqa_near_questions_full_0223`
+
+**Input fingerprint:** `8cb258363a5fed684d54c9339d7ec7c3066381f78ca3ab4cd46a4942fd515612`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add fewer similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/spatial-cognition/spartqa-50758f7567184e5b3f68.md).

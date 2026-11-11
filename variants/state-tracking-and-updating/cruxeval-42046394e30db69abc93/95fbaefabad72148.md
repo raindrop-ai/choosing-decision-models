@@ -1,0 +1,93 @@
+# Similar distractors · Add more similar but irrelevant items variant
+
+[Original question](../../../questions/state-tracking-and-updating/cruxeval-42046394e30db69abc93.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+```text
+def neighbor_a(seq):
+    return seq[::-1]
+
+def neighbor_b(seq):
+    return seq + seq
+
+def neighbor_c(seq):
+    return seq[:1]
+
+def f(nums):
+    a = 0
+    for i in range(len(nums)):
+        nums.insert(i, nums[a])
+        a += 1
+    return nums
+```
+
+## Question
+
+> What does f(\[1, 3, -1, 1, -2, 6\]) return?
+
+## Answer choices
+
+- **A.** [1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6]
+- **B.** [1, 1, 3, 1, 1, 1, 1, 3, -1, 1, -2, 6]
+- **C.** [1, 1, 1, 1, 2, 1, 1, 3, -1, 1, -2, 6]
+- **D.** [1, 1, 1, 1, 1, 1, 1, -3, -1, 1, -2, 6]
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "def neighbor_a(seq):\n    return seq[::-1]\n\ndef neighbor_b(seq):\n    return seq + seq\n\ndef neighbor_c(seq):\n    return seq[:1]\n\ndef f(nums):\n    a = 0\n    for i in range(len(nums)):\n        nums.insert(i, nums[a])\n        a += 1\n    return nums",
+  "question": "What does f([1, 3, -1, 1, -2, 6]) return?",
+  "choices": {
+    "A": "[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6]",
+    "B": "[1, 1, 3, 1, 1, 1, 1, 3, -1, 1, -2, 6]",
+    "C": "[1, 1, 1, 1, 2, 1, 1, 3, -1, 1, -2, 6]",
+    "D": "[1, 1, 1, 1, 1, 1, 1, -3, -1, 1, -2, 6]"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Decider v1.1 | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Jev | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Microsoft Decision-1 | `B` — \[1, 1, 3, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `B` — \[1, 1, 3, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Clef | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Luna Decisions | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Clef Flash | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Strands Decider | `B` — \[1, 1, 3, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Different answer |
+| GLiNER2.5 Decide | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| Laya | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+| CalDec v1 | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | `A` — \[1, 1, 1, 1, 1, 1, 1, 3, -1, 1, -2, 6\] | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `cruxeval/42046394e30db69abc93/similar_distractors/high/clean-source_first_crux_neighbor_definitions_full_0083`
+
+**Input fingerprint:** `9c7971f97cfbb48f6d5f33e9ea0b15515474691e8fd2014efefd029cc4df4d08`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add more similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/state-tracking-and-updating/cruxeval-42046394e30db69abc93.md).

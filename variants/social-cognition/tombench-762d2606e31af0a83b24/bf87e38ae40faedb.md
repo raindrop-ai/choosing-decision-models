@@ -1,0 +1,79 @@
+# Irrelevant details · Add a small amount of irrelevant detail variant
+
+[Original question](../../../questions/social-cognition/tombench-762d2606e31af0a83b24.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Xiao Ming wins the championship, but does not mention that Xiao Gang makes a big contribution to Xiao Ming's success.
+>
+> The musical suite Merovan includes a refrain.
+
+## Question
+
+> What kind of emotion does Xiao Gang have?
+
+## Answer choices
+
+- **A.** Thrilled
+- **B.** Angry
+- **C.** Embarrassed
+- **D.** Regretful
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Xiao Ming wins the championship, but does not mention that Xiao Gang makes a big contribution to Xiao Ming's success.\n\nThe musical suite Merovan includes a refrain.",
+  "question": "What kind of emotion does Xiao Gang have?",
+  "choices": {
+    "A": "Thrilled",
+    "B": "Angry",
+    "C": "Embarrassed",
+    "D": "Regretful"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — Angry | `B` — Angry | Same answer |
+| Decider v1.1 | `B` — Angry | `B` — Angry | Same answer |
+| Jev | `B` — Angry | `B` — Angry | Same answer |
+| Microsoft Decision-1 | `B` — Angry | `B` — Angry | Same answer |
+| Clef | `B` — Angry | `B` — Angry | Same answer |
+| Luna Decisions | `B` — Angry | `B` — Angry | Same answer |
+| Clef Flash | `B` — Angry | `B` — Angry | Same answer |
+| Strands Decider | `C` — Embarrassed | `C` — Embarrassed | Same answer |
+| GLiNER2.5 Decide | `A` — Thrilled | `A` — Thrilled | Same answer |
+| Laya | `A` — Thrilled | `A` — Thrilled | Same answer |
+| CalDec v1 | `A` — Thrilled | `A` — Thrilled | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `tombench/762d2606e31af0a83b24/irrelevant_details/low/clean-source_first_tombench_music_contexts_full_0155`
+
+**Input fingerprint:** `e19a8bc014ca252edcd050380b8b10cbc8319dae535a0b6af9beffb74b3b65df`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a small amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/social-cognition/tombench-762d2606e31af0a83b24.md).

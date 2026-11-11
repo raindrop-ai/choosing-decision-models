@@ -1,0 +1,77 @@
+# Similar distractors · Add fewer similar but irrelevant items variant
+
+[Original question](../../../questions/numerical-cognition/bbh-a2cf02e5372b6d6b00a3.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> ((3 + 3 - -4 - 2) + (-2 - -7 \* -2 \* 1)) =
+
+## Question
+
+> ((-5 + 1 - 2 - -3) \* (-9 \* 3 + 9 + -1)) =
+
+## Answer choices
+
+- **A.** -57
+- **B.** -19
+- **C.** 57
+- **D.** 175
+
+**Reference answer:** `C`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "((3 + 3 - -4 - 2) + (-2 - -7 * -2 * 1)) =",
+  "question": "((-5 + 1 - 2 - -3) * (-9 * 3 + 9 + -1)) =",
+  "choices": {
+    "A": "-57",
+    "B": "-19",
+    "C": "57",
+    "D": "175"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `C` — 57 | `A` — -57 | Different answer |
+| Decider v1.1 | `C` — 57 | `B` — -19 | Different answer |
+| Jev | `C` — 57 | `C` — 57 | Same answer |
+| Microsoft Decision-1 | `A` — -57 | `A` — -57 | Same answer |
+| Clef | `C` — 57 | `A` — -57 | Different answer |
+| Luna Decisions | `A` — -57 | `A` — -57 | Same answer |
+| Clef Flash | `A` — -57 | `A` — -57 | Same answer |
+| Strands Decider | `C` — 57 | `B` — -19 | Different answer |
+| GLiNER2.5 Decide | `A` — -57 | `A` — -57 | Same answer |
+| Laya | `A` — -57 | `A` — -57 | Same answer |
+| CalDec v1 | `A` — -57 | `A` — -57 | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/a2cf02e5372b6d6b00a3/similar_distractors/low/clean-bare_arithmetic_unsolved_neighbors_full_0057`
+
+**Input fingerprint:** `d025f2e0919a93d38f1943ea5023ebbf06cea2f99ab3062b29585d21a94d9ad0`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add fewer similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/numerical-cognition/bbh-a2cf02e5372b6d6b00a3.md).

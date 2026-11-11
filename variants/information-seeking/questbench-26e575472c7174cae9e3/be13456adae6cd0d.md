@@ -1,0 +1,79 @@
+# Similar distractors · Add more similar but irrelevant items variant
+
+[Original question](../../../questions/information-seeking/questbench-26e575472c7174cae9e3.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> «Varelin packs three boxes with four marbles in each box. How many marbles does Varelin pack?»
+>
+> «Zorven begins with nine counters and gives away two counters. How many counters remain with Zorven?»
+>
+> «Nerava divides twelve shells into three equal groups. How many shells are in each group?»
+>
+> Carlos, Jim, and Carrey were at the beach playing and they decided to gather some seashells. Jim collected 27 seashells, which was more than what Carlos collected. Carlos collected twice as many as Carrey. They gathered all their seashells and divided them equally between themselves. How many did each person get?
+
+## Question
+
+> Which missing variable should be asked about to solve this problem?
+
+## Answer choices
+
+- **F1.** The difference between Jim and Carlos&#x27; seashells
+- **X.** The number of seashells the seagull stole and a friendly beachcomber gave back to Jim
+
+**Reference answer:** `F1`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "«Varelin packs three boxes with four marbles in each box. How many marbles does Varelin pack?»\n\n«Zorven begins with nine counters and gives away two counters. How many counters remain with Zorven?»\n\n«Nerava divides twelve shells into three equal groups. How many shells are in each group?»\n\nCarlos, Jim, and Carrey were at the beach playing and they decided to gather some seashells. Jim collected 27 seashells, which was more than what Carlos collected. Carlos collected twice as many as Carrey. They gathered all their seashells and divided them equally between themselves. How many did each person get?",
+  "question": "Which missing variable should be asked about to solve this problem?",
+  "choices": {
+    "F1": "The difference between Jim and Carlos' seashells",
+    "X": "The number of seashells the seagull stole and a friendly beachcomber gave back to Jim"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `F1` — The difference between Jim and Carlos&#x27; seashells | `F1` — The difference between Jim and Carlos&#x27; seashells | Same answer |
+| Decider v1.1 | `F1` — The difference between Jim and Carlos&#x27; seashells | `F1` — The difference between Jim and Carlos&#x27; seashells | Same answer |
+| Jev | `F1` — The difference between Jim and Carlos&#x27; seashells | `F1` — The difference between Jim and Carlos&#x27; seashells | Same answer |
+| Microsoft Decision-1 | `F1` — The difference between Jim and Carlos&#x27; seashells | `F1` — The difference between Jim and Carlos&#x27; seashells | Same answer |
+| Clef | `F1` — The difference between Jim and Carlos&#x27; seashells | `F1` — The difference between Jim and Carlos&#x27; seashells | Same answer |
+| Luna Decisions | `F1` — The difference between Jim and Carlos&#x27; seashells | `F1` — The difference between Jim and Carlos&#x27; seashells | Same answer |
+| Clef Flash | `F1` — The difference between Jim and Carlos&#x27; seashells | `F1` — The difference between Jim and Carlos&#x27; seashells | Same answer |
+| Strands Decider | `F1` — The difference between Jim and Carlos&#x27; seashells | `F1` — The difference between Jim and Carlos&#x27; seashells | Same answer |
+| GLiNER2.5 Decide | `F1` — The difference between Jim and Carlos&#x27; seashells | `F1` — The difference between Jim and Carlos&#x27; seashells | Same answer |
+| Laya | `F1` — The difference between Jim and Carlos&#x27; seashells | `F1` — The difference between Jim and Carlos&#x27; seashells | Same answer |
+| CalDec v1 | `F1` — The difference between Jim and Carlos&#x27; seashells | `F1` — The difference between Jim and Carlos&#x27; seashells | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `questbench/26e575472c7174cae9e3/similar_distractors/high/clean-source_first_quest_near_problems_full_0212`
+
+**Input fingerprint:** `72e29e4d1aae380e5a605671cd936e440fb39dcacd1e896a0ae14f9a6d3be3e1`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add more similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/information-seeking/questbench-26e575472c7174cae9e3.md).

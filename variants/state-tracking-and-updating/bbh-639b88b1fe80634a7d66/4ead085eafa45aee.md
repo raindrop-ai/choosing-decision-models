@@ -1,0 +1,84 @@
+# Evidence position · Place the relevant information in the middle variant
+
+[Original question](../../../questions/state-tracking-and-updating/bbh-639b88b1fe80634a7d66.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context, question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The notebook has a linen cover.
+>
+> The notebook's title is embossed.
+>
+> Alice, Bob, and Claire are holding a white elephant gift exchange. At the start of the event, they are each holding a present of a different color: Alice has a black ball, Bob has a purple present, and Claire has a blue present.
+> As the event progresses, pairs of people swap gifts. First, Claire and Alice swap their gifts. Then, Bob and Claire swap their gifts. Finally, Alice and Bob swap their gifts. 
+>
+> The notebook's page edges are uneven.
+>
+> The notebook's binding is stitched.
+
+## Question
+
+> At the end of the event, Alice has the
+
+## Answer choices
+
+- **A.** black ball
+- **B.** purple present
+- **C.** blue present
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The notebook has a linen cover.\n\nThe notebook's title is embossed.\n\nAlice, Bob, and Claire are holding a white elephant gift exchange. At the start of the event, they are each holding a present of a different color: Alice has a black ball, Bob has a purple present, and Claire has a blue present.\nAs the event progresses, pairs of people swap gifts. First, Claire and Alice swap their gifts. Then, Bob and Claire swap their gifts. Finally, Alice and Bob swap their gifts. \n\nThe notebook's page edges are uneven.\n\nThe notebook's binding is stitched.",
+  "question": "At the end of the event, Alice has the",
+  "choices": {
+    "A": "black ball",
+    "B": "purple present",
+    "C": "blue present"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — black ball | `A` — black ball | Same answer |
+| Decider v1.1 | `B` — purple present | `B` — purple present | Same answer |
+| Jev | `C` — blue present | `C` — blue present | Same answer |
+| Microsoft Decision-1 | `C` — blue present | `A` — black ball | Different answer |
+| Clef | `B` — purple present | `B` — purple present | Same answer |
+| Luna Decisions | `B` — purple present | `A` — black ball | Different answer |
+| Clef Flash | `B` — purple present | `B` — purple present | Same answer |
+| Strands Decider | `B` — purple present | `B` — purple present | Same answer |
+| GLiNER2.5 Decide | `A` — black ball | `A` — black ball | Same answer |
+| Laya | `A` — black ball | `A` — black ball | Same answer |
+| CalDec v1 | `A` — black ball | `A` — black ball | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/639b88b1fe80634a7d66/evidence_position/middle/clean-source_first_tracking_position_full_0126`
+
+**Input fingerprint:** `d285d50aef6a82108db314ccdae3946ec354db4461c861710ce662e899fce093`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence position | Place the relevant information in the middle |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/state-tracking-and-updating/bbh-639b88b1fe80634a7d66.md).

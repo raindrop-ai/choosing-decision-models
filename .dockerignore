@@ -1,0 +1,9 @@
+**
+!workers/
+!workers/requirements.txt
+!workers/decision27.txt
+!evaluation/
+!evaluation/reference/
+!evaluation/reference/**
+**/__pycache__
+**/*.pyc

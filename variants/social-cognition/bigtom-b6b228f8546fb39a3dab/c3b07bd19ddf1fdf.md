@@ -1,0 +1,75 @@
+# Option order · Move the first answer choice to the end variant
+
+[Original question](../../../questions/social-cognition/bigtom-b6b228f8546fb39a3dab.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** answer choices or their order.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Kofi is at the town market in search of fresh fruits and vegetables. Kofi wants to find a ripe watermelon to take home and share with his family. Kofi sees that the watermelon he picks up has a deep, hollow sound when he taps it. Kofi believes that the watermelon is ripe based on its sound. When Kofi is not looking, a small child accidentally drops the watermelon, causing it to crack and become damaged. Kofi notices the watermelon has been dropped and cracked.
+
+## Question
+
+> Does Kofi believe the watermelon is ripe and undamaged or cracked and damaged?
+
+## Answer choices
+
+- **B.** Kofi believes the watermelon is ripe and undamaged.
+- **A.** Kofi believes the watermelon is cracked and damaged.
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Kofi is at the town market in search of fresh fruits and vegetables. Kofi wants to find a ripe watermelon to take home and share with his family. Kofi sees that the watermelon he picks up has a deep, hollow sound when he taps it. Kofi believes that the watermelon is ripe based on its sound. When Kofi is not looking, a small child accidentally drops the watermelon, causing it to crack and become damaged. Kofi notices the watermelon has been dropped and cracked.",
+  "question": "Does Kofi believe the watermelon is ripe and undamaged or cracked and damaged?",
+  "choices": {
+    "B": "Kofi believes the watermelon is ripe and undamaged.",
+    "A": "Kofi believes the watermelon is cracked and damaged."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — Kofi believes the watermelon is cracked and damaged. | `A` — Kofi believes the watermelon is cracked and damaged. | Same answer |
+| Decider v1.1 | `A` — Kofi believes the watermelon is cracked and damaged. | `A` — Kofi believes the watermelon is cracked and damaged. | Same answer |
+| Jev | `A` — Kofi believes the watermelon is cracked and damaged. | `A` — Kofi believes the watermelon is cracked and damaged. | Same answer |
+| Microsoft Decision-1 | `A` — Kofi believes the watermelon is cracked and damaged. | `A` — Kofi believes the watermelon is cracked and damaged. | Same answer |
+| Clef | `A` — Kofi believes the watermelon is cracked and damaged. | `A` — Kofi believes the watermelon is cracked and damaged. | Same answer |
+| Luna Decisions | `A` — Kofi believes the watermelon is cracked and damaged. | `B` — Kofi believes the watermelon is ripe and undamaged. | Different answer |
+| Clef Flash | `A` — Kofi believes the watermelon is cracked and damaged. | `A` — Kofi believes the watermelon is cracked and damaged. | Same answer |
+| Strands Decider | `A` — Kofi believes the watermelon is cracked and damaged. | `A` — Kofi believes the watermelon is cracked and damaged. | Same answer |
+| GLiNER2.5 Decide | `A` — Kofi believes the watermelon is cracked and damaged. | `A` — Kofi believes the watermelon is cracked and damaged. | Same answer |
+| Laya | `A` — Kofi believes the watermelon is cracked and damaged. | `A` — Kofi believes the watermelon is cracked and damaged. | Same answer |
+| CalDec v1 | `A` — Kofi believes the watermelon is cracked and damaged. | `A` — Kofi believes the watermelon is cracked and damaged. | Same answer |
+
+Clef and Clef Flash sort answer choices in their published input-processing code. Their choice-order results describe that preprocessing.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bigtom/b6b228f8546fb39a3dab/option_order/rotate_1`
+
+**Input fingerprint:** `b63f3d37e2ceae3324b36850e5e5c77733be2c71e9a1fddc6634018d9fd7bea6`
+
+| Change | Recorded version |
+| --- | --- |
+| Option order | Move the first answer choice to the end |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/social-cognition/bigtom-b6b228f8546fb39a3dab.md).

@@ -1,0 +1,77 @@
+# Paraphrasing · Change individual words and phrases variant
+
+[Original question](../../../questions/learning-and-induction/list_functions-0518e0d2ba2683485bea.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> \[{"input": "\[4, 79, 57, 8, 55, 90, 6, 2, 3\]", "output": "\[2, 3, 4, 6, 8, 90, 55, 57, 79\]"}, {"input": "\[73, 93, 6, 25, 71, 9, 53, 84, 1, 3\]", "output": "\[1, 3, 6, 25, 71, 53, 9, 73, 93, 84\]"}, {"input": "\[2, 65, 4, 7, 25, 98, 6\]", "output": "\[2, 4, 6, 7, 25, 65, 98\]"}, {"input": "\[60, 9, 72, 2, 0, 59, 6, 1, 68, 19\]", "output": "\[0, 1, 2, 60, 6, 9, 72, 19, 59, 68\]"}, {"input": "\[67, 7, 2, 16, 0, 30\]", "output": "\[0, 2, 30, 7, 16, 67\]"}, {"input": "\[66, 39, 4, 47, 96, 69, 99\]", "output": "\[4, 47, 66, 39, 96, 69, 99\]"}, {"input": "\[94, 4, 5, 3, 91, 40\]", "output": "\[3, 4, 40, 5, 91, 94\]"}, {"input": "\[43, 96, 0, 27, 85, 7\]", "output": "\[0, 43, 7, 27, 85, 96\]"}\]
+
+## Question
+
+> Using the rule inferred from these examples, give the output for this new input: \[45, 9, 73, 66, 33, 53, 5\]
+
+## Answer choices
+
+- **A.** [5, 33, 53, 45, 9, 73, 66]
+- **B.** [66, 66, 66, 66, 66, 66, 66]
+- **C.** [45, 73, 33, 5, 45, 73, 33]
+- **D.** [45, 9, 73, 66, 33, 53, 5]
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "[{\"input\": \"[4, 79, 57, 8, 55, 90, 6, 2, 3]\", \"output\": \"[2, 3, 4, 6, 8, 90, 55, 57, 79]\"}, {\"input\": \"[73, 93, 6, 25, 71, 9, 53, 84, 1, 3]\", \"output\": \"[1, 3, 6, 25, 71, 53, 9, 73, 93, 84]\"}, {\"input\": \"[2, 65, 4, 7, 25, 98, 6]\", \"output\": \"[2, 4, 6, 7, 25, 65, 98]\"}, {\"input\": \"[60, 9, 72, 2, 0, 59, 6, 1, 68, 19]\", \"output\": \"[0, 1, 2, 60, 6, 9, 72, 19, 59, 68]\"}, {\"input\": \"[67, 7, 2, 16, 0, 30]\", \"output\": \"[0, 2, 30, 7, 16, 67]\"}, {\"input\": \"[66, 39, 4, 47, 96, 69, 99]\", \"output\": \"[4, 47, 66, 39, 96, 69, 99]\"}, {\"input\": \"[94, 4, 5, 3, 91, 40]\", \"output\": \"[3, 4, 40, 5, 91, 94]\"}, {\"input\": \"[43, 96, 0, 27, 85, 7]\", \"output\": \"[0, 43, 7, 27, 85, 96]\"}]",
+  "question": "Using the rule inferred from these examples, give the output for this new input: [45, 9, 73, 66, 33, 53, 5]",
+  "choices": {
+    "A": "[5, 33, 53, 45, 9, 73, 66]",
+    "B": "[66, 66, 66, 66, 66, 66, 66]",
+    "C": "[45, 73, 33, 5, 45, 73, 33]",
+    "D": "[45, 9, 73, 66, 33, 53, 5]"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — \[5, 33, 53, 45, 9, 73, 66\] | `A` — \[5, 33, 53, 45, 9, 73, 66\] | Same answer |
+| Decider v1.1 | `A` — \[5, 33, 53, 45, 9, 73, 66\] | `A` — \[5, 33, 53, 45, 9, 73, 66\] | Same answer |
+| Jev | `A` — \[5, 33, 53, 45, 9, 73, 66\] | `A` — \[5, 33, 53, 45, 9, 73, 66\] | Same answer |
+| Microsoft Decision-1 | `A` — \[5, 33, 53, 45, 9, 73, 66\] | `A` — \[5, 33, 53, 45, 9, 73, 66\] | Same answer |
+| Clef | `A` — \[5, 33, 53, 45, 9, 73, 66\] | `A` — \[5, 33, 53, 45, 9, 73, 66\] | Same answer |
+| Luna Decisions | `A` — \[5, 33, 53, 45, 9, 73, 66\] | `A` — \[5, 33, 53, 45, 9, 73, 66\] | Same answer |
+| Clef Flash | `A` — \[5, 33, 53, 45, 9, 73, 66\] | `A` — \[5, 33, 53, 45, 9, 73, 66\] | Same answer |
+| Strands Decider | `A` — \[5, 33, 53, 45, 9, 73, 66\] | `A` — \[5, 33, 53, 45, 9, 73, 66\] | Same answer |
+| GLiNER2.5 Decide | `A` — \[5, 33, 53, 45, 9, 73, 66\] | `A` — \[5, 33, 53, 45, 9, 73, 66\] | Same answer |
+| Laya | `C` — \[45, 73, 33, 5, 45, 73, 33\] | `C` — \[45, 73, 33, 5, 45, 73, 33\] | Same answer |
+| CalDec v1 | `A` — \[5, 33, 53, 45, 9, 73, 66\] | `A` — \[5, 33, 53, 45, 9, 73, 66\] | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `list_functions/0518e0d2ba2683485bea/paraphrasing/surface`
+
+**Input fingerprint:** `4559170cb59d1b20e68536da90347e67e97bdb84933b4c6589cb053cfe101fc5`
+
+| Change | Recorded version |
+| --- | --- |
+| Paraphrasing | Change individual words and phrases |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/learning-and-induction/list_functions-0518e0d2ba2683485bea.md).

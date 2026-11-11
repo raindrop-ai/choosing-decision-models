@@ -1,0 +1,75 @@
+# Option order · Move the first answer choice to the end variant
+
+[Original question](../../../questions/uncertainty-monitoring/selfaware-093386d3996f6db19b7d.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** answer choices or their order.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The diet of what mythical monster periodically included seven youths and seven maidens?
+
+## Question
+
+> Does this question have a determinate answer?
+
+## Answer choices
+
+- **no.** Unanswerable
+- **yes.** Answerable
+
+**Reference answer:** `yes`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The diet of what mythical monster periodically included seven youths and seven maidens?",
+  "question": "Does this question have a determinate answer?",
+  "choices": {
+    "no": "Unanswerable",
+    "yes": "Answerable"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Decider v1.1 | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Jev | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Microsoft Decision-1 | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Clef | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Luna Decisions | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Clef Flash | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Strands Decider | `yes` — Answerable | `yes` — Answerable | Same answer |
+| GLiNER2.5 Decide | `no` — Unanswerable | `no` — Unanswerable | Same answer |
+| Laya | `yes` — Answerable | `yes` — Answerable | Same answer |
+| CalDec v1 | `no` — Unanswerable | `yes` — Answerable | Different answer |
+
+Clef and Clef Flash sort answer choices in their published input-processing code. Their choice-order results describe that preprocessing.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `selfaware/093386d3996f6db19b7d/option_order/rotate_1`
+
+**Input fingerprint:** `a1d17b26abe9c3d46083224019810072ac1f5b52fda84bc65a2526714e5f3003`
+
+| Change | Recorded version |
+| --- | --- |
+| Option order | Move the first answer choice to the end |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/uncertainty-monitoring/selfaware-093386d3996f6db19b7d.md).

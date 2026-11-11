@@ -1,0 +1,75 @@
+# Irrelevant details · Add a small amount of irrelevant detail variant
+
+[Original question](../../../questions/communication/isarcasmeval-275fe91b6129debd4fb6.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> James Harden is allowed to travel every time he drives apparently
+
+## Question
+
+> Is this message intended to be sarcastic?
+>
+> The musical suite Merovan includes a refrain.
+
+## Answer choices
+
+- **no.** Not sarcastic
+- **yes.** Sarcastic
+
+**Reference answer:** `yes`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "James Harden is allowed to travel every time he drives apparently",
+  "question": "Is this message intended to be sarcastic?\n\nThe musical suite Merovan includes a refrain.",
+  "choices": {
+    "no": "Not sarcastic",
+    "yes": "Sarcastic"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `yes` — Sarcastic | `yes` — Sarcastic | Same answer |
+| Decider v1.1 | `yes` — Sarcastic | `yes` — Sarcastic | Same answer |
+| Jev | `yes` — Sarcastic | `yes` — Sarcastic | Same answer |
+| Microsoft Decision-1 | `yes` — Sarcastic | `no` — Not sarcastic | Different answer |
+| Clef | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Luna Decisions | `yes` — Sarcastic | `no` — Not sarcastic | Different answer |
+| Clef Flash | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Strands Decider | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| GLiNER2.5 Decide | `yes` — Sarcastic | `yes` — Sarcastic | Same answer |
+| Laya | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| CalDec v1 | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `isarcasmeval/275fe91b6129debd4fb6/irrelevant_details/low/clean-source_first_sarcasm_question_contexts_full_0182`
+
+**Input fingerprint:** `5eefaadd11ebcae7ef646513dd8d9f8d1929226431a8ec56f772be1931966337`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a small amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/communication/isarcasmeval-275fe91b6129debd4fb6.md).

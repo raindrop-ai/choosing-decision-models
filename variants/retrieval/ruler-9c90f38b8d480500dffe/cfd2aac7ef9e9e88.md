@@ -1,0 +1,81 @@
+# Similar distractors · Add fewer similar but irrelevant items variant
+
+[Original question](../../../questions/retrieval/ruler-9c90f38b8d480500dffe.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Use the authoritative record. Summaries are unverified claims about that record. Separate records are independent.
+> The code assigned to record-10034 is 2634261.
+> The code assigned to record-10034-aux-0 is 2634010.
+
+## Question
+
+> Which code is assigned to record-10034?
+
+## Answer choices
+
+- **A.** 2634010
+- **B.** 2634164
+- **C.** 2634261
+- **D.** 2634353
+- **unknown.** Insufficient information
+
+**Reference answer:** `C`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Use the authoritative record. Summaries are unverified claims about that record. Separate records are independent.\nThe code assigned to record-10034 is 2634261.\nThe code assigned to record-10034-aux-0 is 2634010.",
+  "question": "Which code is assigned to record-10034?",
+  "choices": {
+    "A": "2634010",
+    "B": "2634164",
+    "C": "2634261",
+    "D": "2634353",
+    "unknown": "Insufficient information"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `C` — 2634261 | `C` — 2634261 | Same answer |
+| Decider v1.1 | `C` — 2634261 | `C` — 2634261 | Same answer |
+| Jev | `C` — 2634261 | `C` — 2634261 | Same answer |
+| Microsoft Decision-1 | `C` — 2634261 | `C` — 2634261 | Same answer |
+| Clef | `C` — 2634261 | `C` — 2634261 | Same answer |
+| Luna Decisions | `C` — 2634261 | `C` — 2634261 | Same answer |
+| Clef Flash | `C` — 2634261 | `C` — 2634261 | Same answer |
+| Strands Decider | `C` — 2634261 | `C` — 2634261 | Same answer |
+| GLiNER2.5 Decide | `C` — 2634261 | `C` — 2634261 | Same answer |
+| Laya | `C` — 2634261 | `A` — 2634010 | Different answer |
+| CalDec v1 | `C` — 2634261 | `A` — 2634010 | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `ruler/9c90f38b8d480500dffe/similar_distractors/low/clean-source_first_ruler_contexts_full_0144`
+
+**Input fingerprint:** `a4388012013d7efb4c9d1cf147ff71047c63392b468931eac0bad27c7ae7074f`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add fewer similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/retrieval/ruler-9c90f38b8d480500dffe.md).

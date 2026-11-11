@@ -1,0 +1,42 @@
+{
+  "files": {
+    "workers/requirements.txt": {
+      "original_path": "workers/requirements.txt",
+      "sha256": "78ad46272fcf15e1f4a30bf9c73673be02dfa72c6e3c6968b0f465c0788b4501"
+    },
+    "workers/requirements.in": {
+      "original_path": "workers/requirements.in",
+      "sha256": "973cac6921293079d728d7982e288d6eece177744ac0948a84215ca2350c4a06"
+    },
+    "workers/decision27.txt": {
+      "original_path": "workers/decision27.txt",
+      "sha256": "ee46105521d3b417b3efc094fe6349bfb1aa27fc3d6e21deea85119442338cc6"
+    },
+    "workers/decision27.in": {
+      "original_path": "workers/decision27.in",
+      "sha256": "b723ec36bb36cb20685d5928f3aeeec2677d80f6826a2e56d95a49afdb3b2725"
+    },
+    "evaluation/reference/decision_lab/worker_entry.py": {
+      "original_path": "decision_lab/worker_entry.py",
+      "sha256": "2396f0415bfa6e37ebdd4a404156933373d6f14e96011c0b438f5cd75080130b"
+    },
+    "evaluation/reference/decision_lab/decision27.py": {
+      "original_path": "decision_lab/decision27.py",
+      "sha256": "6dafca1a4f34dec5616df2efb12d18b62977db348b54bd718c7256a61d8598dc"
+    },
+    "evaluation/reference/decision_lab/common_native.py": {
+      "original_path": "work/context-manipulations/hardware-perturbation-40-0001/worker_0004.py",
+      "sha256": "b18e2d845e106a2b53009b459af5fdf58b7298059306991f30e693bf5ff3dbac"
+    },
+    "evaluation/reference/device_worker.py": {
+      "original_path": "work/context-manipulations/hardware-perturbation-40-0001/common-gpu-originals-0002/device_worker.py",
+      "sha256": "d5a7780f820066f1ef6ec2db1da0b26b62488ca1f5748f8def85f6d2cbd7c52d"
+    },
+    "evaluation/reference/worker_entry.py": {
+      "role": "Local entrypoint shim for the unchanged native worker package.",
+      "sha256": "e4a20fdbddc98196f2bdcf4ccb27f13b0f74d8af57ee80cabcbc7e4f56db246e"
+    }
+  },
+  "scope": "Exact native loaders and synchronized measurement wrappers from the completed 2026-11-09 shared physical GPU run.",
+  "source_plan_sha256": "664a352ca0ed368f3eb18a1ba003ba722c412e607b9e716a491a16ae3de48e44"
+}

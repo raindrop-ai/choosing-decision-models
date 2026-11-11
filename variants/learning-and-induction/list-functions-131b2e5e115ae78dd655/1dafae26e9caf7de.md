@@ -1,0 +1,80 @@
+# Extra events · Add 12 unrelated events variant
+
+[Original question](../../../questions/learning-and-induction/list_functions-131b2e5e115ae78dd655.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The building contains a lobby, a reading room, a courtyard, a gallery, a kitchen, and a workshop. The caretaker is in the lobby.
+> The caretaker walks from the lobby to the reading room. The caretaker walks from the reading room to the courtyard. The caretaker walks from the courtyard to the gallery. The caretaker walks from the gallery to the kitchen. The caretaker walks from the kitchen to the workshop. The caretaker walks from the workshop to the lobby. The caretaker walks from the lobby to the gallery. The caretaker walks from the gallery to the reading room. The caretaker walks from the reading room to the workshop. The caretaker walks from the workshop to the courtyard. The caretaker walks from the courtyard to the kitchen. The caretaker walks from the kitchen to the lobby.
+>
+> \[{"input": "\[3, 1\]", "output": "\[3, 3, 1, 1\]"}, {"input": "\[6, 4, 9, 1, 2\]", "output": "\[6, 6, 4, 4, 9, 9, 1, 1, 2, 2\]"}, {"input": "\[3\]", "output": "\[3, 3\]"}, {"input": "\[7, 2, 4, 0\]", "output": "\[7, 7, 2, 2, 4, 4, 0, 0\]"}, {"input": "\[2, 3, 6, 5, 0\]", "output": "\[2, 2, 3, 3, 6, 6, 5, 5, 0, 0\]"}, {"input": "\[0, 5, 4\]", "output": "\[0, 0, 5, 5, 4, 4\]"}, {"input": "\[3, 5, 0, 6, 7, 2\]", "output": "\[3, 3, 5, 5, 0, 0, 6, 6, 7, 7, 2, 2\]"}, {"input": "\[2\]", "output": "\[2, 2\]"}\]
+
+## Question
+
+> Apply the same inferred rule to this new input: \[5, 8, 3, 7, 2, 4, 6\]
+
+## Answer choices
+
+- **A.** [6, 9, 4, 8, 3, 5, 7, 6, 9, 4, 8, 3, 5, 7]
+- **B.** [8, 7, 4, 8, 7, 4, 8, 7, 4, 8, 7, 4, 8, 7]
+- **C.** [5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6]
+- **D.** [4, 7, 2, 6, 1, 3, 5, 4, 7, 2, 6, 1, 3, 5]
+
+**Reference answer:** `C`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The building contains a lobby, a reading room, a courtyard, a gallery, a kitchen, and a workshop. The caretaker is in the lobby.\nThe caretaker walks from the lobby to the reading room. The caretaker walks from the reading room to the courtyard. The caretaker walks from the courtyard to the gallery. The caretaker walks from the gallery to the kitchen. The caretaker walks from the kitchen to the workshop. The caretaker walks from the workshop to the lobby. The caretaker walks from the lobby to the gallery. The caretaker walks from the gallery to the reading room. The caretaker walks from the reading room to the workshop. The caretaker walks from the workshop to the courtyard. The caretaker walks from the courtyard to the kitchen. The caretaker walks from the kitchen to the lobby.\n\n[{\"input\": \"[3, 1]\", \"output\": \"[3, 3, 1, 1]\"}, {\"input\": \"[6, 4, 9, 1, 2]\", \"output\": \"[6, 6, 4, 4, 9, 9, 1, 1, 2, 2]\"}, {\"input\": \"[3]\", \"output\": \"[3, 3]\"}, {\"input\": \"[7, 2, 4, 0]\", \"output\": \"[7, 7, 2, 2, 4, 4, 0, 0]\"}, {\"input\": \"[2, 3, 6, 5, 0]\", \"output\": \"[2, 2, 3, 3, 6, 6, 5, 5, 0, 0]\"}, {\"input\": \"[0, 5, 4]\", \"output\": \"[0, 0, 5, 5, 4, 4]\"}, {\"input\": \"[3, 5, 0, 6, 7, 2]\", \"output\": \"[3, 3, 5, 5, 0, 0, 6, 6, 7, 7, 2, 2]\"}, {\"input\": \"[2]\", \"output\": \"[2, 2]\"}]",
+  "question": "Apply the same inferred rule to this new input: [5, 8, 3, 7, 2, 4, 6]",
+  "choices": {
+    "A": "[6, 9, 4, 8, 3, 5, 7, 6, 9, 4, 8, 3, 5, 7]",
+    "B": "[8, 7, 4, 8, 7, 4, 8, 7, 4, 8, 7, 4, 8, 7]",
+    "C": "[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6]",
+    "D": "[4, 7, 2, 6, 1, 3, 5, 4, 7, 2, 6, 1, 3, 5]"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | Same answer |
+| Decider v1.1 | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | Same answer |
+| Jev | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | Same answer |
+| Microsoft Decision-1 | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | Same answer |
+| Clef | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | Same answer |
+| Luna Decisions | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | Same answer |
+| Clef Flash | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | Same answer |
+| Strands Decider | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | `C` — \[5, 5, 8, 8, 3, 3, 7, 7, 2, 2, 4, 4, 6, 6\] | Same answer |
+| GLiNER2.5 Decide | `A` — \[6, 9, 4, 8, 3, 5, 7, 6, 9, 4, 8, 3, 5, 7\] | `A` — \[6, 9, 4, 8, 3, 5, 7, 6, 9, 4, 8, 3, 5, 7\] | Same answer |
+| Laya | `D` — \[4, 7, 2, 6, 1, 3, 5, 4, 7, 2, 6, 1, 3, 5\] | `D` — \[4, 7, 2, 6, 1, 3, 5, 4, 7, 2, 6, 1, 3, 5\] | Same answer |
+| CalDec v1 | `A` — \[6, 9, 4, 8, 3, 5, 7, 6, 9, 4, 8, 3, 5, 7\] | `A` — \[6, 9, 4, 8, 3, 5, 7, 6, 9, 4, 8, 3, 5, 7\] | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `list_functions/131b2e5e115ae78dd655/event_count/12/clean-bare_induction_natural_events_full_0047`
+
+**Input fingerprint:** `37ad6d3e207a80579d6e06400a116269a2471bc40304fa580a9245e0fe86571f`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 12 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/learning-and-induction/list_functions-131b2e5e115ae78dd655.md).

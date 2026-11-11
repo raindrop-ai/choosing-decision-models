@@ -1,0 +1,77 @@
+# Extra events · Add 6 unrelated events variant
+
+[Original question](../../../questions/concepts-and-categorization/socialiqa-2e44383838889746f4be.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Merovan is a fictional musical suite with a refrain. The refrain begins on the tonic. The refrain pauses. The refrain resumes on a dominant tone. The refrain changes to detached articulation. The refrain returns to the tonic. The refrain repeats its final interval.
+>
+> Kai gave them a huge hug when they were feeling down.
+
+## Question
+
+> How would you describe Kai?
+
+## Answer choices
+
+- **A.** uncaring
+- **B.** affectionate
+- **C.** rude
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Merovan is a fictional musical suite with a refrain. The refrain begins on the tonic. The refrain pauses. The refrain resumes on a dominant tone. The refrain changes to detached articulation. The refrain returns to the tonic. The refrain repeats its final interval.\n\nKai gave them a huge hug when they were feeling down.",
+  "question": "How would you describe Kai?",
+  "choices": {
+    "A": "uncaring",
+    "B": "affectionate",
+    "C": "rude"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — affectionate | `B` — affectionate | Same answer |
+| Decider v1.1 | `B` — affectionate | `B` — affectionate | Same answer |
+| Jev | `B` — affectionate | `B` — affectionate | Same answer |
+| Microsoft Decision-1 | `B` — affectionate | `B` — affectionate | Same answer |
+| Clef | `B` — affectionate | `B` — affectionate | Same answer |
+| Luna Decisions | `B` — affectionate | `B` — affectionate | Same answer |
+| Clef Flash | `B` — affectionate | `B` — affectionate | Same answer |
+| Strands Decider | `B` — affectionate | `B` — affectionate | Same answer |
+| GLiNER2.5 Decide | `B` — affectionate | `B` — affectionate | Same answer |
+| Laya | `B` — affectionate | `B` — affectionate | Same answer |
+| CalDec v1 | `B` — affectionate | `B` — affectionate | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `socialiqa/2e44383838889746f4be/event_count/6/clean-source_first_socialiqa_music_contexts_full_0158`
+
+**Input fingerprint:** `9d3b74134b6b0d9936ca6a449cfb701e3233475b2ec130fece613ff12a6c492c`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 6 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/concepts-and-categorization/socialiqa-2e44383838889746f4be.md).

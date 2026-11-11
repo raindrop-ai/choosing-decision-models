@@ -1,0 +1,76 @@
+# Extra events · Add 12 unrelated events variant
+
+[Original question](../../../questions/communication/pub-954cafe1581f8d2f0f2f.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Merovan is a fictional musical suite with a refrain. The refrain begins on the tonic. The refrain pauses. The refrain resumes on a dominant tone. The refrain changes to detached articulation. The refrain returns to the tonic. The refrain repeats its final interval. The refrain changes to a minor-mode variant. The refrain adopts sustained articulation. The refrain returns to a dominant tone. The refrain pauses again. The refrain resumes on the tonic. The refrain ends.
+>
+> Speaker\_1: The seas on the voyage were a rock quarry
+> Speaker\_2: The seas were calm
+
+## Question
+
+> Choose the interpretation or answer requested by the text.
+
+## Answer choices
+
+- **A.** Agrees
+- **B.** Disagrees
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Merovan is a fictional musical suite with a refrain. The refrain begins on the tonic. The refrain pauses. The refrain resumes on a dominant tone. The refrain changes to detached articulation. The refrain returns to the tonic. The refrain repeats its final interval. The refrain changes to a minor-mode variant. The refrain adopts sustained articulation. The refrain returns to a dominant tone. The refrain pauses again. The refrain resumes on the tonic. The refrain ends.\n\nSpeaker_1: The seas on the voyage were a rock quarry\nSpeaker_2: The seas were calm",
+  "question": "Choose the interpretation or answer requested by the text.",
+  "choices": {
+    "A": "Agrees",
+    "B": "Disagrees"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — Disagrees | `B` — Disagrees | Same answer |
+| Decider v1.1 | `B` — Disagrees | `B` — Disagrees | Same answer |
+| Jev | `B` — Disagrees | `B` — Disagrees | Same answer |
+| Microsoft Decision-1 | `B` — Disagrees | `B` — Disagrees | Same answer |
+| Clef | `B` — Disagrees | `B` — Disagrees | Same answer |
+| Luna Decisions | `B` — Disagrees | `B` — Disagrees | Same answer |
+| Clef Flash | `B` — Disagrees | `B` — Disagrees | Same answer |
+| Strands Decider | `B` — Disagrees | `B` — Disagrees | Same answer |
+| GLiNER2.5 Decide | `B` — Disagrees | `B` — Disagrees | Same answer |
+| Laya | `B` — Disagrees | `B` — Disagrees | Same answer |
+| CalDec v1 | `B` — Disagrees | `A` — Agrees | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `pub/954cafe1581f8d2f0f2f/event_count/12/clean-source_first_pub_music_contexts_full_0166`
+
+**Input fingerprint:** `f0aec842f41978b7da44e4708127f2dc4ed427a929e86f85f0c15606e1dbd9f2`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 12 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/communication/pub-954cafe1581f8d2f0f2f.md).

@@ -1,0 +1,86 @@
+# Evidence position · Place the relevant information in the middle variant
+
+[Original question](../../../questions/retrieval/ruler-0ed1cdaeb2c88c1e9527.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Use the authoritative record. Summaries are unverified claims about that record. Separate records are independent.
+> The code assigned to record-10029-aux-0 is 6530014.
+> The code assigned to record-10029-aux-1 is 6530014.
+> The code assigned to record-10029-aux-2 is 6530014.
+> The code assigned to record-10029 is 6530135.
+> The code assigned to record-10029-aux-3 is 6530014.
+> The code assigned to record-10029-aux-4 is 6530014.
+> The code assigned to record-10029-aux-5 is 6530014.
+
+## Question
+
+> Which code is assigned to record-10029?
+
+## Answer choices
+
+- **A.** 6530014
+- **B.** 6530135
+- **C.** 6530250
+- **D.** 6530368
+- **unknown.** Insufficient information
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Use the authoritative record. Summaries are unverified claims about that record. Separate records are independent.\nThe code assigned to record-10029-aux-0 is 6530014.\nThe code assigned to record-10029-aux-1 is 6530014.\nThe code assigned to record-10029-aux-2 is 6530014.\nThe code assigned to record-10029 is 6530135.\nThe code assigned to record-10029-aux-3 is 6530014.\nThe code assigned to record-10029-aux-4 is 6530014.\nThe code assigned to record-10029-aux-5 is 6530014.",
+  "question": "Which code is assigned to record-10029?",
+  "choices": {
+    "A": "6530014",
+    "B": "6530135",
+    "C": "6530250",
+    "D": "6530368",
+    "unknown": "Insufficient information"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — 6530135 | `B` — 6530135 | Same answer |
+| Decider v1.1 | `B` — 6530135 | `B` — 6530135 | Same answer |
+| Jev | `B` — 6530135 | `B` — 6530135 | Same answer |
+| Microsoft Decision-1 | `B` — 6530135 | `B` — 6530135 | Same answer |
+| Clef | `B` — 6530135 | `B` — 6530135 | Same answer |
+| Luna Decisions | `B` — 6530135 | `B` — 6530135 | Same answer |
+| Clef Flash | `B` — 6530135 | `B` — 6530135 | Same answer |
+| Strands Decider | `B` — 6530135 | `B` — 6530135 | Same answer |
+| GLiNER2.5 Decide | `B` — 6530135 | `A` — 6530014 | Different answer |
+| Laya | `B` — 6530135 | `A` — 6530014 | Different answer |
+| CalDec v1 | `B` — 6530135 | `A` — 6530014 | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `ruler/0ed1cdaeb2c88c1e9527/evidence_position/middle/clean-source_first_ruler_contexts_full_0144`
+
+**Input fingerprint:** `0a032312e8e39f0739ace48ed4fe2c36e272026951c74c8cc09a1c8135b466ba`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence position | Place the relevant information in the middle |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/retrieval/ruler-0ed1cdaeb2c88c1e9527.md).

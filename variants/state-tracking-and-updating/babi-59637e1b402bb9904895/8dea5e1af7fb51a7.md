@@ -1,0 +1,92 @@
+# Evidence position · Place the relevant information at the beginning variant
+
+[Original question](../../../questions/state-tracking-and-updating/babi-59637e1b402bb9904895.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Daniel travelled to the office.
+> Sandra went back to the office.
+> Mary went to the office.
+> Daniel moved to the bathroom.
+> John went to the hallway.
+> Sandra moved to the bedroom.
+> Sandra travelled to the office.
+> John went back to the garden.
+> The office desk has brass handles.
+> The kitchen cupboards are cream-colored.
+> The bedroom rug is striped.
+> The bathroom tiles are gray.
+
+## Question
+
+> Where is Sandra? 
+
+## Answer choices
+
+- **A.** garden
+- **B.** bedroom
+- **C.** kitchen
+- **D.** office
+- **E.** hallway
+- **F.** bathroom
+
+**Reference answer:** `D`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Daniel travelled to the office.\nSandra went back to the office.\nMary went to the office.\nDaniel moved to the bathroom.\nJohn went to the hallway.\nSandra moved to the bedroom.\nSandra travelled to the office.\nJohn went back to the garden.\nThe office desk has brass handles.\nThe kitchen cupboards are cream-colored.\nThe bedroom rug is striped.\nThe bathroom tiles are gray.",
+  "question": "Where is Sandra? ",
+  "choices": {
+    "A": "garden",
+    "B": "bedroom",
+    "C": "kitchen",
+    "D": "office",
+    "E": "hallway",
+    "F": "bathroom"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `D` — office | `D` — office | Same answer |
+| Decider v1.1 | `D` — office | `D` — office | Same answer |
+| Jev | `D` — office | `D` — office | Same answer |
+| Microsoft Decision-1 | `D` — office | `D` — office | Same answer |
+| Clef | `D` — office | `D` — office | Same answer |
+| Luna Decisions | `D` — office | `D` — office | Same answer |
+| Clef Flash | `D` — office | `D` — office | Same answer |
+| Strands Decider | `D` — office | `D` — office | Same answer |
+| GLiNER2.5 Decide | `A` — garden | `D` — office | Different answer |
+| Laya | `B` — bedroom | `B` — bedroom | Same answer |
+| CalDec v1 | `B` — bedroom | `B` — bedroom | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `babi/59637e1b402bb9904895/evidence_position/start/clean-source_first_babi_qa1_lengths_positions_full_0085`
+
+**Input fingerprint:** `5925aafaa2a41de82989aa31dfe19ef7921c3689473ffeef2be4a4eb46556330`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence position | Place the relevant information at the beginning |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/state-tracking-and-updating/babi-59637e1b402bb9904895.md).

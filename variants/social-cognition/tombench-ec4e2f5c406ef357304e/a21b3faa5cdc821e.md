@@ -1,0 +1,79 @@
+# Option order · Move the first answer choice to the end variant
+
+[Original question](../../../questions/social-cognition/tombench-ec4e2f5c406ef357304e.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** answer choices or their order.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Xiao Li does his math homework in his room. His mom tells him to go to his aunt's house tonight. Xiao Li is busy doing his homework, only thinking about finishing it quickly, and casually agrees. At dinner, his dad asks, "Are we going to your aunt's house tonight?" Xiao Li says, "No, we don't have plans."
+
+## Question
+
+> Why does Xiao Li say this?
+
+## Answer choices
+
+- **B.** Xiao Li forgets the plan his mother tells him because he focuses on his math homework.
+- **C.** Xiao Li deliberately lies because he wants to continue doing homework.
+- **D.** Xiao Li is busy thinking about eating and does not hear his mother&#x27;s plan for tonight.
+- **A.** Xiao Li deliberately lies because he does not want to go to his aunt&#x27;s house.
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Xiao Li does his math homework in his room. His mom tells him to go to his aunt's house tonight. Xiao Li is busy doing his homework, only thinking about finishing it quickly, and casually agrees. At dinner, his dad asks, \"Are we going to your aunt's house tonight?\" Xiao Li says, \"No, we don't have plans.\"",
+  "question": "Why does Xiao Li say this?",
+  "choices": {
+    "B": "Xiao Li forgets the plan his mother tells him because he focuses on his math homework.",
+    "C": "Xiao Li deliberately lies because he wants to continue doing homework.",
+    "D": "Xiao Li is busy thinking about eating and does not hear his mother's plan for tonight.",
+    "A": "Xiao Li deliberately lies because he does not want to go to his aunt's house."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | Same answer |
+| Decider v1.1 | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | Same answer |
+| Jev | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | Same answer |
+| Microsoft Decision-1 | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | Same answer |
+| Clef | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | Same answer |
+| Luna Decisions | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | Same answer |
+| Clef Flash | `C` — Xiao Li deliberately lies because he wants to continue doing homework. | `C` — Xiao Li deliberately lies because he wants to continue doing homework. | Same answer |
+| Strands Decider | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | Same answer |
+| GLiNER2.5 Decide | `A` — Xiao Li deliberately lies because he does not want to go to his aunt&#x27;s house. | `A` — Xiao Li deliberately lies because he does not want to go to his aunt&#x27;s house. | Same answer |
+| Laya | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | Same answer |
+| CalDec v1 | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | `B` — Xiao Li forgets the plan his mother tells him because he focuses on his math homework. | Same answer |
+
+Clef and Clef Flash sort answer choices in their published input-processing code. Their choice-order results describe that preprocessing.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `tombench/ec4e2f5c406ef357304e/option_order/rotate_1`
+
+**Input fingerprint:** `259c3087b2ab94f4fee18d1b440d9199a7bbe2a0bac838d7d6a5df790941b66e`
+
+| Change | Recorded version |
+| --- | --- |
+| Option order | Move the first answer choice to the end |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/social-cognition/tombench-ec4e2f5c406ef357304e.md).

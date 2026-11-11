@@ -1,0 +1,107 @@
+# Similar distractors · Add fewer similar but irrelevant items variant
+
+[Original question](../../../questions/relations/clutrr-1fd773b8c91c0e4c6c91.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> \[Joel\] and his sister, \[Nola\] love it when their grandmother visits because she spoils them. She is coming this week to watch them while their parents are out of town. \[Floyd\] bought gifts for his lovely sister, \[Ashley\] \[Jamie\] fixed her husband \[Daniel\] dinner and then they watched a movie they rented. \[Jamie\] was happy to babysit her niece, \[Ashley\]. \[Ashley\] was a great child. \[Daniel\] took his daughter, \[Nola\], to a baseball game. \[Brad\] and his brother, \[Anthony\], went to the movies with their father, \[Charles\]. Afterwards, \[Brad\]'s brother \[Floyd\] met them for dinner at a restaurant.
+>
+> Velora is the mother of Tisven. Tisven is the brother of Merali.
+
+## Question
+
+> What is Joel’s relationship to Charles?
+
+## Answer choices
+
+- **aunt.** aunt
+- **brother.** brother
+- **daughter.** daughter
+- **daughter-in-law.** daughter-in-law
+- **father.** father
+- **father-in-law.** father-in-law
+- **granddaughter.** granddaughter
+- **grandfather.** grandfather
+- **grandmother.** grandmother
+- **grandson.** grandson
+- **mother.** mother
+- **mother-in-law.** mother-in-law
+- **nephew.** nephew
+- **niece.** niece
+- **sister.** sister
+- **son.** son
+- **son-in-law.** son-in-law
+- **uncle.** uncle
+
+**Reference answer:** `nephew`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "[Joel] and his sister, [Nola] love it when their grandmother visits because she spoils them. She is coming this week to watch them while their parents are out of town. [Floyd] bought gifts for his lovely sister, [Ashley] [Jamie] fixed her husband [Daniel] dinner and then they watched a movie they rented. [Jamie] was happy to babysit her niece, [Ashley]. [Ashley] was a great child. [Daniel] took his daughter, [Nola], to a baseball game. [Brad] and his brother, [Anthony], went to the movies with their father, [Charles]. Afterwards, [Brad]'s brother [Floyd] met them for dinner at a restaurant.\n\nVelora is the mother of Tisven. Tisven is the brother of Merali.",
+  "question": "What is Joel’s relationship to Charles?",
+  "choices": {
+    "aunt": "aunt",
+    "brother": "brother",
+    "daughter": "daughter",
+    "daughter-in-law": "daughter-in-law",
+    "father": "father",
+    "father-in-law": "father-in-law",
+    "granddaughter": "granddaughter",
+    "grandfather": "grandfather",
+    "grandmother": "grandmother",
+    "grandson": "grandson",
+    "mother": "mother",
+    "mother-in-law": "mother-in-law",
+    "nephew": "nephew",
+    "niece": "niece",
+    "sister": "sister",
+    "son": "son",
+    "son-in-law": "son-in-law",
+    "uncle": "uncle"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `grandson` — grandson | `grandson` — grandson | Same answer |
+| Decider v1.1 | `son-in-law` — son-in-law | `nephew` — nephew | Different answer |
+| Jev | `grandson` — grandson | `grandson` — grandson | Same answer |
+| Microsoft Decision-1 | `nephew` — nephew | `nephew` — nephew | Same answer |
+| Clef | `nephew` — nephew | `nephew` — nephew | Same answer |
+| Luna Decisions | `son` — son | `grandson` — grandson | Different answer |
+| Clef Flash | `uncle` — uncle | `uncle` — uncle | Same answer |
+| Strands Decider | `grandmother` — grandmother | `grandmother` — grandmother | Same answer |
+| GLiNER2.5 Decide | `grandmother` — grandmother | `grandmother` — grandmother | Same answer |
+| Laya | `grandmother` — grandmother | `grandmother` — grandmother | Same answer |
+| CalDec v1 | `grandmother` — grandmother | `grandmother` — grandmother | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `clutrr/1fd773b8c91c0e4c6c91/similar_distractors/low/clean-source_first_kinship_distractors_full_0142`
+
+**Input fingerprint:** `ba3e16d2066f6dee563853462734b073db173ae7a3073255709c1e579869ee97`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add fewer similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/clutrr-1fd773b8c91c0e4c6c91.md).

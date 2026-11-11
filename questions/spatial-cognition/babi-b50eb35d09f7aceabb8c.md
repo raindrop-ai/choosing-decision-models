@@ -1,0 +1,82 @@
+# Spatial cognition · question 21
+
+[Back to Spatial cognition](README.md) · [All capabilities](../README.md)
+
+**Question ID:** `babi/b50eb35d09f7aceabb8c`  
+**Source:** [bAbI](https://dl.fbaipublicfiles.com/babi/tasks_1-20_v1-2.tar.gz)  
+**Input format:** adapted choices
+
+[Explore this question’s altered versions](../../variants/spatial-cognition/babi-b50eb35d09f7aceabb8c/README.md)
+
+## Context
+
+> The yellow square is below the pink rectangle.
+> The pink rectangle is below the red square.
+
+## Question
+
+> Is the red square below the yellow square?
+
+## Answer choices
+
+- **no:** no
+- **yes:** yes
+
+**Reference answer:** no (`no`)
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The yellow square is below the pink rectangle.\nThe pink rectangle is below the red square.",
+  "question": "Is the red square below the yellow square?",
+  "choices": {
+    "no": "no",
+    "yes": "yes"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+| Model | Answer | Outcome |
+| --- | --- | --- |
+| Astra | no | Correct |
+| Opus 5.5 | no | Correct |
+| GLiDE v1.2 | no | Correct |
+| Decider v1.1 | no | Correct |
+| Jev | no | Correct |
+| Microsoft Decision-1 | no | Correct |
+| Clef | no | Correct |
+| Luna Decisions | no | Correct |
+| Clef Flash | no | Correct |
+| Strands Decider | no | Correct |
+| GLiNER2.5 Decide | yes | Incorrect |
+| Laya | no | Correct |
+| CalDec v1 | no | Correct |
+
+## Source and sharing
+
+Attribution: Facebook, Inc.; bAbI authors.  
+Terms: **[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/)**. [Source sharing decision](../../docs/data-sharing.md).  
+The capability assignment and choice-format normalization are part of this experiment. Source data retain their own terms.
+
+<details>
+<summary>Exact source locator and input fingerprint</summary>
+
+```json
+{
+  "source_locator": {
+    "path": "extracted/tasks.tar.gz/tasks_1-20_v1-2/en/qa17_positional-reasoning_test.txt",
+    "record": "1095",
+    "kind": "source_file_record"
+  },
+  "source_revision": null,
+  "input_hash": "10b8ba82abebbd472f5f179526b81e83137152935c2d80bddf92ddcddd6f715b"
+}
+```
+
+</details>

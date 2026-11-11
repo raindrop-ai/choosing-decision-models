@@ -1,0 +1,33 @@
+{
+  "state": "research_companion",
+  "scope": "Raindrop judgment-calls study",
+  "questions": 1005,
+  "models": 13,
+  "decision_models": 11,
+  "llm_baselines": 2,
+  "outcomes": 13065,
+  "question_text_included": 857,
+  "question_text_held": 148,
+  "sharing_counts": {
+    "include": 857,
+    "hold_unclear": 101,
+    "hold_distribution_conditions": 30,
+    "hold_license_scope": 17
+  },
+  "sharing_checked": "2026-11-09",
+  "source_count": 39,
+  "outcome_counts": {
+    "ok": 13054,
+    "refusal": 9,
+    "error": 2
+  },
+  "results_temporary": false,
+  "intended_use": "Noncommercial research; confirmed by the author on 2026-11-09. Source-specific terms remain applicable.",
+  "input_distribution": {
+    "bundled_question_texts": 857,
+    "separately_recovered_question_texts": 148,
+    "recovery_supported": true,
+    "documentation": "docs/recovering-inputs.md",
+    "redistribution_followup": "Optional clarification before bundling additional source text; source access and use terms still apply."
+  }
+}

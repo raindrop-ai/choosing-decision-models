@@ -1,0 +1,48 @@
+# Extra events · Add 12 unrelated events variant
+
+[Original question](../../../questions/learning-and-induction/miniscan-329bfabcd260944e2eb7.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Recover the question text
+
+The original dataset’s terms do not clearly support republishing its text here, or require additional conditions. This variant’s full text is therefore reconstructed locally. [Follow the recovery instructions](../../../docs/variant-reproduction.md#recover-the-remaining-variant-texts).
+
+**Reference answer key:** `D`.
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `D` | `D` | Same answer |
+| Decider v1.1 | `D` | `D` | Same answer |
+| Jev | `D` | `D` | Same answer |
+| Microsoft Decision-1 | `D` | `D` | Same answer |
+| Clef | `D` | `D` | Same answer |
+| Luna Decisions | `D` | `C` | Different answer |
+| Clef Flash | `D` | `D` | Same answer |
+| Strands Decider | `D` | `D` | Same answer |
+| GLiNER2.5 Decide | `A` | `A` | Same answer |
+| Laya | `A` | `A` | Same answer |
+| CalDec v1 | `A` | `A` | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `miniscan/329bfabcd260944e2eb7/event_count/12/clean-bare_induction_natural_events_full_0047`
+
+**Input fingerprint:** `b6f397def4ee157a3fb1f775f85473c59b51fb8a7f52f4c3a80babf70e144170`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 12 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/learning-and-induction/miniscan-329bfabcd260944e2eb7.md).

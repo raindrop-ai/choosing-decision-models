@@ -1,0 +1,77 @@
+# Repetition · Present the same evidence twice variant
+
+[Original question](../../../questions/causal-reasoning/crass-bb5de0e9c0915ff53920.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> «A boy strikes a match.»
+
+## Question
+
+> A boy strikes a match. What would have happened if the boy had ditched the match?
+
+## Answer choices
+
+- **A.** The lighting of the match would not have occurred.
+- **B.** He would have been disqualified.
+- **C.** I don&#x27;t know.
+- **D.** The game would have ended tied.
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "«A boy strikes a match.»",
+  "question": "A boy strikes a match. What would have happened if the boy had ditched the match?",
+  "choices": {
+    "A": "The lighting of the match would not have occurred.",
+    "B": "He would have been disqualified.",
+    "C": "I don't know.",
+    "D": "The game would have ended tied."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — The lighting of the match would not have occurred. | `A` — The lighting of the match would not have occurred. | Same answer |
+| Decider v1.1 | `A` — The lighting of the match would not have occurred. | `A` — The lighting of the match would not have occurred. | Same answer |
+| Jev | `A` — The lighting of the match would not have occurred. | `A` — The lighting of the match would not have occurred. | Same answer |
+| Microsoft Decision-1 | `A` — The lighting of the match would not have occurred. | `A` — The lighting of the match would not have occurred. | Same answer |
+| Clef | `A` — The lighting of the match would not have occurred. | `A` — The lighting of the match would not have occurred. | Same answer |
+| Luna Decisions | `A` — The lighting of the match would not have occurred. | `A` — The lighting of the match would not have occurred. | Same answer |
+| Clef Flash | `A` — The lighting of the match would not have occurred. | `A` — The lighting of the match would not have occurred. | Same answer |
+| Strands Decider | `A` — The lighting of the match would not have occurred. | `A` — The lighting of the match would not have occurred. | Same answer |
+| GLiNER2.5 Decide | `B` — He would have been disqualified. | `C` — I don&#x27;t know. | Different answer |
+| Laya | `A` — The lighting of the match would not have occurred. | `A` — The lighting of the match would not have occurred. | Same answer |
+| CalDec v1 | `A` — The lighting of the match would not have occurred. | `A` — The lighting of the match would not have occurred. | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `crass/bb5de0e9c0915ff53920/evidence_repetition/2/clean-source_first_parallel_b_operations_0302`
+
+**Input fingerprint:** `19e38607b60d8ccade9e815b94e7953a1cba5cb564cf0604e15f1f08ac450c5d`
+
+| Change | Recorded version |
+| --- | --- |
+| Repetition | Present the same evidence twice |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/causal-reasoning/crass-bb5de0e9c0915ff53920.md).

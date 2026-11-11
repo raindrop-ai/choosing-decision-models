@@ -1,0 +1,77 @@
+# Repetition · Present the same evidence twice variant
+
+[Original question](../../../questions/causal-reasoning/crass-c0dbf291e4d3da7afa58.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> «A woman dates a man.»
+
+## Question
+
+> A woman dates a man. What would have happened if the woman had cheated on the man?
+
+## Answer choices
+
+- **A.** The man would be embarrassed to have been caught cheating.
+- **B.** That is not possible.
+- **C.** The man would have been very happy and would have married her.
+- **D.** Their relationship would have been put in jeopardy.
+
+**Reference answer:** `D`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "«A woman dates a man.»",
+  "question": "A woman dates a man. What would have happened if the woman had cheated on the man?",
+  "choices": {
+    "A": "The man would be embarrassed to have been caught cheating.",
+    "B": "That is not possible.",
+    "C": "The man would have been very happy and would have married her.",
+    "D": "Their relationship would have been put in jeopardy."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Decider v1.1 | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Jev | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Microsoft Decision-1 | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Clef | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Luna Decisions | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Clef Flash | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Strands Decider | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| GLiNER2.5 Decide | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Laya | `A` — The man would be embarrassed to have been caught cheating. | `B` — That is not possible. | Different answer |
+| CalDec v1 | `A` — The man would be embarrassed to have been caught cheating. | `B` — That is not possible. | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `crass/c0dbf291e4d3da7afa58/evidence_repetition/2/clean-source_first_parallel_b_operations_0302`
+
+**Input fingerprint:** `100537efbe815c9b795768d9d0fad738138d59c465d0df0f9803ec267a3c1d30`
+
+| Change | Recorded version |
+| --- | --- |
+| Repetition | Present the same evidence twice |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/causal-reasoning/crass-c0dbf291e4d3da7afa58.md).

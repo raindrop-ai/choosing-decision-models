@@ -1,0 +1,107 @@
+# Repetition · Present the same evidence twice variant
+
+[Original question](../../../questions/relations/clutrr-2469bc58872eb54578bd.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> \[Dwight\] took his daughter \[Donna\] to ballet class. \[Dwight\]'s father, \[Jason\], recently had a falling out with each other.
+>
+> \[Dwight\] took his daughter \[Donna\] to ballet class. \[Dwight\]'s father, \[Jason\], recently had a falling out with each other.
+
+## Question
+
+> What is Jason’s relationship to Donna?
+
+## Answer choices
+
+- **aunt.** aunt
+- **brother.** brother
+- **daughter.** daughter
+- **daughter-in-law.** daughter-in-law
+- **father.** father
+- **father-in-law.** father-in-law
+- **granddaughter.** granddaughter
+- **grandfather.** grandfather
+- **grandmother.** grandmother
+- **grandson.** grandson
+- **mother.** mother
+- **mother-in-law.** mother-in-law
+- **nephew.** nephew
+- **niece.** niece
+- **sister.** sister
+- **son.** son
+- **son-in-law.** son-in-law
+- **uncle.** uncle
+
+**Reference answer:** `grandfather`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "[Dwight] took his daughter [Donna] to ballet class. [Dwight]'s father, [Jason], recently had a falling out with each other.\n\n[Dwight] took his daughter [Donna] to ballet class. [Dwight]'s father, [Jason], recently had a falling out with each other.",
+  "question": "What is Jason’s relationship to Donna?",
+  "choices": {
+    "aunt": "aunt",
+    "brother": "brother",
+    "daughter": "daughter",
+    "daughter-in-law": "daughter-in-law",
+    "father": "father",
+    "father-in-law": "father-in-law",
+    "granddaughter": "granddaughter",
+    "grandfather": "grandfather",
+    "grandmother": "grandmother",
+    "grandson": "grandson",
+    "mother": "mother",
+    "mother-in-law": "mother-in-law",
+    "nephew": "nephew",
+    "niece": "niece",
+    "sister": "sister",
+    "son": "son",
+    "son-in-law": "son-in-law",
+    "uncle": "uncle"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `grandfather` — grandfather | `grandfather` — grandfather | Same answer |
+| Decider v1.1 | `grandfather` — grandfather | `grandfather` — grandfather | Same answer |
+| Jev | `grandfather` — grandfather | `grandfather` — grandfather | Same answer |
+| Microsoft Decision-1 | `grandfather` — grandfather | `grandfather` — grandfather | Same answer |
+| Clef | `grandfather` — grandfather | `grandfather` — grandfather | Same answer |
+| Luna Decisions | `grandfather` — grandfather | `grandfather` — grandfather | Same answer |
+| Clef Flash | `grandfather` — grandfather | `grandfather` — grandfather | Same answer |
+| Strands Decider | `father` — father | `father` — father | Same answer |
+| GLiNER2.5 Decide | `father` — father | `father` — father | Same answer |
+| Laya | `father` — father | `daughter` — daughter | Different answer |
+| CalDec v1 | `father` — father | `daughter` — daughter | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `clutrr/2469bc58872eb54578bd/evidence_repetition/2/clean-source_first_kinship_repetition_pilot_full_0169`
+
+**Input fingerprint:** `ef0e6f2960c5ac66c3c7777c8ea6533ec458bd2ba60342c8a43f12f75f97dd54`
+
+| Change | Recorded version |
+| --- | --- |
+| Repetition | Present the same evidence twice |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/clutrr-2469bc58872eb54578bd.md).

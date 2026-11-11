@@ -1,0 +1,76 @@
+# Irrelevant details · Add a small amount of irrelevant detail variant
+
+[Original question](../../../questions/concepts-and-categorization/rewardbench-0786690556fed9dd4821.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Replace the words in brackets with a suitable synonym
+> The provision of \[generous\] incentives motivated many employees to work hard.
+
+## Question
+
+> The musical suite Merovan includes a refrain.
+>
+> Which response better satisfies the request?
+
+## Answer choices
+
+- **A.** The provision of [bountiful] incentives motivated many employees to work hard.
+- **B.** The provision of [charitable] incentives motivated many employees to work hard.
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Replace the words in brackets with a suitable synonym\nThe provision of [generous] incentives motivated many employees to work hard.",
+  "question": "The musical suite Merovan includes a refrain.\n\nWhich response better satisfies the request?",
+  "choices": {
+    "A": "The provision of [bountiful] incentives motivated many employees to work hard.",
+    "B": "The provision of [charitable] incentives motivated many employees to work hard."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | Same answer |
+| Decider v1.1 | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | Same answer |
+| Jev | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | Same answer |
+| Microsoft Decision-1 | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | Same answer |
+| Clef | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | Same answer |
+| Luna Decisions | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | Same answer |
+| Clef Flash | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | Same answer |
+| Strands Decider | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | Same answer |
+| GLiNER2.5 Decide | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | Same answer |
+| Laya | `B` — The provision of \[charitable\] incentives motivated many employees to work hard. | `B` — The provision of \[charitable\] incentives motivated many employees to work hard. | Same answer |
+| CalDec v1 | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | `A` — The provision of \[bountiful\] incentives motivated many employees to work hard. | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `rewardbench/0786690556fed9dd4821/irrelevant_details/low/clean-source_first_reward_question_contexts_full_0201_v2`
+
+**Input fingerprint:** `e5a01cbd8897051bd9ae0b1713dd5d9411200449e069b068967a2a2d1a7e6934`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a small amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/concepts-and-categorization/rewardbench-0786690556fed9dd4821.md).

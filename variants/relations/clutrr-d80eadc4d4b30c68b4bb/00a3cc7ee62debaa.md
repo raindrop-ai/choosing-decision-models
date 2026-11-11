@@ -1,0 +1,113 @@
+# Evidence position · Place the relevant information at the end variant
+
+[Original question](../../../questions/relations/clutrr-d80eadc4d4b30c68b4bb.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The notebook has a linen cover.
+>
+> The cover has an embossed title.
+>
+> The page edges are uneven.
+>
+> The binding is stitched.
+>
+> \[Craig\] and his son \[George\] went to look at cars. \[Craig\] ended up buying the Mustang. \[George\] took his nephew \[Michael\] to the hockey game. \[George\] took his son \[Craig\] and daughter \[Jean\] out for ice cream. \[Jean\]'s brother \[David\] could n't make it because he was stuck in traffic. \[David\]'s brother, \[Larry\], recently made it into town. \[Spencer\] 'son, \[Michael\], aced his math class and made his father proud.
+
+## Question
+
+> What is Larry’s relationship to Spencer?
+
+## Answer choices
+
+- **aunt.** aunt
+- **brother.** brother
+- **daughter.** daughter
+- **daughter-in-law.** daughter-in-law
+- **father.** father
+- **father-in-law.** father-in-law
+- **granddaughter.** granddaughter
+- **grandfather.** grandfather
+- **grandmother.** grandmother
+- **grandson.** grandson
+- **mother.** mother
+- **mother-in-law.** mother-in-law
+- **nephew.** nephew
+- **niece.** niece
+- **sister.** sister
+- **son.** son
+- **son-in-law.** son-in-law
+- **uncle.** uncle
+
+**Reference answer:** `nephew`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The notebook has a linen cover.\n\nThe cover has an embossed title.\n\nThe page edges are uneven.\n\nThe binding is stitched.\n\n[Craig] and his son [George] went to look at cars. [Craig] ended up buying the Mustang. [George] took his nephew [Michael] to the hockey game. [George] took his son [Craig] and daughter [Jean] out for ice cream. [Jean]'s brother [David] could n't make it because he was stuck in traffic. [David]'s brother, [Larry], recently made it into town. [Spencer] 'son, [Michael], aced his math class and made his father proud.",
+  "question": "What is Larry’s relationship to Spencer?",
+  "choices": {
+    "aunt": "aunt",
+    "brother": "brother",
+    "daughter": "daughter",
+    "daughter-in-law": "daughter-in-law",
+    "father": "father",
+    "father-in-law": "father-in-law",
+    "granddaughter": "granddaughter",
+    "grandfather": "grandfather",
+    "grandmother": "grandmother",
+    "grandson": "grandson",
+    "mother": "mother",
+    "mother-in-law": "mother-in-law",
+    "nephew": "nephew",
+    "niece": "niece",
+    "sister": "sister",
+    "son": "son",
+    "son-in-law": "son-in-law",
+    "uncle": "uncle"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `uncle` — uncle | `uncle` — uncle | Same answer |
+| Decider v1.1 | `nephew` — nephew | `uncle` — uncle | Different answer |
+| Jev | `uncle` — uncle | `brother` — brother | Different answer |
+| Microsoft Decision-1 | `uncle` — uncle | `uncle` — uncle | Same answer |
+| Clef | `uncle` — uncle | `uncle` — uncle | Same answer |
+| Luna Decisions | `brother` — brother | Refused | — |
+| Clef Flash | `uncle` — uncle | `uncle` — uncle | Same answer |
+| Strands Decider | `brother` — brother | `brother` — brother | Same answer |
+| GLiNER2.5 Decide | `father` — father | `father` — father | Same answer |
+| Laya | `son` — son | `father` — father | Different answer |
+| CalDec v1 | `daughter` — daughter | `daughter` — daughter | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `clutrr/d80eadc4d4b30c68b4bb/evidence_position/end/clean-source_first_kinship_length_position_events_full_0102`
+
+**Input fingerprint:** `4de9a487148ec7451d21b1297356fd732606cb5270e05069d385451548d1af0c`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence position | Place the relevant information at the end |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/clutrr-d80eadc4d4b30c68b4bb.md).

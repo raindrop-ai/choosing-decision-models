@@ -1,0 +1,85 @@
+# Evidence position · Place the relevant information in the middle variant
+
+[Original question](../../../questions/rule-application/cruxeval-0ac3f5256ca2c072c21c.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+```text
+# The poem is untitled.
+# Its author is anonymous.
+def f(numbers):
+    floats = [n % 1 for n in numbers]
+    return floats if 1 in floats else []
+# Its narrator speaks in the first person.
+# It contains a refrain.
+```
+
+## Question
+
+> What does f(range(100, 120)) return?
+
+## Answer choices
+
+- **A.** []
+- **B.** [2]
+- **C.** [0]
+- **D.** [1]
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "# The poem is untitled.\n# Its author is anonymous.\ndef f(numbers):\n    floats = [n % 1 for n in numbers]\n    return floats if 1 in floats else []\n# Its narrator speaks in the first person.\n# It contains a refrain.",
+  "question": "What does f(range(100, 120)) return?",
+  "choices": {
+    "A": "[]",
+    "B": "[2]",
+    "C": "[0]",
+    "D": "[1]"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — \[\] | `A` — \[\] | Same answer |
+| Decider v1.1 | `A` — \[\] | `A` — \[\] | Same answer |
+| Jev | `A` — \[\] | `A` — \[\] | Same answer |
+| Microsoft Decision-1 | `A` — \[\] | `A` — \[\] | Same answer |
+| Clef | `A` — \[\] | `A` — \[\] | Same answer |
+| Luna Decisions | `C` — \[0\] | `C` — \[0\] | Same answer |
+| Clef Flash | `A` — \[\] | `A` — \[\] | Same answer |
+| Strands Decider | `D` — \[1\] | `D` — \[1\] | Same answer |
+| GLiNER2.5 Decide | `A` — \[\] | `A` — \[\] | Same answer |
+| Laya | `A` — \[\] | `A` — \[\] | Same answer |
+| CalDec v1 | `A` — \[\] | `A` — \[\] | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `cruxeval/0ac3f5256ca2c072c21c/evidence_position/middle/clean-source_first_crux_comment_contexts_full_0081`
+
+**Input fingerprint:** `8d50b270c7920f884df8133892d9288bcbde0fa65bb972c1487d2f23c8479f8f`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence position | Place the relevant information in the middle |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/rule-application/cruxeval-0ac3f5256ca2c072c21c.md).

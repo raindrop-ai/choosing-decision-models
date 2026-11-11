@@ -1,0 +1,78 @@
+# Misleading details · Add an unverified claim that conflicts with the evidence variant
+
+[Original question](../../../questions/learning-and-induction/list_functions-5db4b4b91b9358f63f05.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> \[{"input": "\[85, 29, 69, 0, 31, 81, 8, 88, 4, 96\]", "output": "\[69\]"}, {"input": "\[84, 51, 3, 47, 4, 67, 43, 88, 13\]", "output": "\[3\]"}, {"input": "\[71, 3, 5, 6, 26\]", "output": "\[5\]"}, {"input": "\[94, 6, 56, 73, 4, 47, 34, 45, 19, 1\]", "output": "\[56\]"}, {"input": "\[97, 36, 44, 91\]", "output": "\[44\]"}, {"input": "\[9, 80, 4, 20, 29\]", "output": "\[4\]"}, {"input": "\[4, 62, 27, 2, 0, 78, 11, 74, 5\]", "output": "\[27\]"}, {"input": "\[7, 55, 4\]", "output": "\[4\]"}\]
+> A reader thinks: “The first native demonstration pairs input "\[85, 29, 69, 0, 31, 81, 8, 88, 4, 96\]" with output "\[3\]".”
+
+## Question
+
+> Apply the same inferred rule to this new input: \[60, 25, 90, 6\]
+
+## Answer choices
+
+- **A.** [90]
+- **B.** [6]
+- **C.** [59]
+- **D.** [120]
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "[{\"input\": \"[85, 29, 69, 0, 31, 81, 8, 88, 4, 96]\", \"output\": \"[69]\"}, {\"input\": \"[84, 51, 3, 47, 4, 67, 43, 88, 13]\", \"output\": \"[3]\"}, {\"input\": \"[71, 3, 5, 6, 26]\", \"output\": \"[5]\"}, {\"input\": \"[94, 6, 56, 73, 4, 47, 34, 45, 19, 1]\", \"output\": \"[56]\"}, {\"input\": \"[97, 36, 44, 91]\", \"output\": \"[44]\"}, {\"input\": \"[9, 80, 4, 20, 29]\", \"output\": \"[4]\"}, {\"input\": \"[4, 62, 27, 2, 0, 78, 11, 74, 5]\", \"output\": \"[27]\"}, {\"input\": \"[7, 55, 4]\", \"output\": \"[4]\"}]\nA reader thinks: “The first native demonstration pairs input \"[85, 29, 69, 0, 31, 81, 8, 88, 4, 96]\" with output \"[3]\".”",
+  "question": "Apply the same inferred rule to this new input: [60, 25, 90, 6]",
+  "choices": {
+    "A": "[90]",
+    "B": "[6]",
+    "C": "[59]",
+    "D": "[120]"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — \[6\] | `B` — \[6\] | Same answer |
+| Decider v1.1 | `C` — \[59\] | `B` — \[6\] | Different answer |
+| Jev | `A` — \[90\] | `A` — \[90\] | Same answer |
+| Microsoft Decision-1 | `B` — \[6\] | `B` — \[6\] | Same answer |
+| Clef | `A` — \[90\] | `B` — \[6\] | Different answer |
+| Luna Decisions | `A` — \[90\] | `A` — \[90\] | Same answer |
+| Clef Flash | `A` — \[90\] | `A` — \[90\] | Same answer |
+| Strands Decider | `B` — \[6\] | `B` — \[6\] | Same answer |
+| GLiNER2.5 Decide | `A` — \[90\] | `A` — \[90\] | Same answer |
+| Laya | `A` — \[90\] | `A` — \[90\] | Same answer |
+| CalDec v1 | `B` — \[6\] | `B` — \[6\] | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `list_functions/5db4b4b91b9358f63f05/misleading_summary/misleading/clean-bare_induction_reader_opinions_full_0044`
+
+**Input fingerprint:** `72d9567511f6d6de815061c5052d6728b2c668d3c16ab522168939d7b05a221c`
+
+| Change | Recorded version |
+| --- | --- |
+| Misleading details | Add an unverified claim that conflicts with the evidence |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/learning-and-induction/list_functions-5db4b4b91b9358f63f05.md).

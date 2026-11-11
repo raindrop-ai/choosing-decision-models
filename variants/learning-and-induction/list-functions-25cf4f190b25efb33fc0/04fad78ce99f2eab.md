@@ -1,0 +1,83 @@
+# Irrelevant details · Add a larger amount of irrelevant detail variant
+
+[Original question](../../../questions/learning-and-induction/list_functions-25cf4f190b25efb33fc0.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> \[{"input": "\[2, 0, 5, 1, 3, 8, 9, 4, 7\]", "output": "\[2, 0\]"}, {"input": "\[3, 7, 9, 8, 6, 0, 4\]", "output": "\[3, 7\]"}, {"input": "\[1, 0, 8\]", "output": "\[1, 0\]"}, {"input": "\[0, 2, 7, 4, 5, 9, 3, 1, 8\]", "output": "\[0, 2\]"}, {"input": "\[8, 6, 4, 5, 7\]", "output": "\[8, 6\]"}, {"input": "\[2, 4, 7, 0, 8, 3, 5, 6, 1, 9\]", "output": "\[2, 4\]"}, {"input": "\[5\]", "output": "\[5\]"}, {"input": "\[6, 8, 3, 2, 9, 4, 5, 1\]", "output": "\[6, 8\]"}\]
+> The notebook has a linen cover.
+> The binding is stitched.
+> The page edges are straight.
+> The sheet has a broad margin.
+> The cover has a matte finish.
+> The clasp is brass.
+
+## Question
+
+> Apply the same inferred rule to this new input: \[7, 1, 4\]
+
+## Answer choices
+
+- **A.** [6, 0]
+- **B.** [4, 1]
+- **C.** [7, 1]
+- **D.** [4, 7]
+
+**Reference answer:** `C`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "[{\"input\": \"[2, 0, 5, 1, 3, 8, 9, 4, 7]\", \"output\": \"[2, 0]\"}, {\"input\": \"[3, 7, 9, 8, 6, 0, 4]\", \"output\": \"[3, 7]\"}, {\"input\": \"[1, 0, 8]\", \"output\": \"[1, 0]\"}, {\"input\": \"[0, 2, 7, 4, 5, 9, 3, 1, 8]\", \"output\": \"[0, 2]\"}, {\"input\": \"[8, 6, 4, 5, 7]\", \"output\": \"[8, 6]\"}, {\"input\": \"[2, 4, 7, 0, 8, 3, 5, 6, 1, 9]\", \"output\": \"[2, 4]\"}, {\"input\": \"[5]\", \"output\": \"[5]\"}, {\"input\": \"[6, 8, 3, 2, 9, 4, 5, 1]\", \"output\": \"[6, 8]\"}]\nThe notebook has a linen cover.\nThe binding is stitched.\nThe page edges are straight.\nThe sheet has a broad margin.\nThe cover has a matte finish.\nThe clasp is brass.",
+  "question": "Apply the same inferred rule to this new input: [7, 1, 4]",
+  "choices": {
+    "A": "[6, 0]",
+    "B": "[4, 1]",
+    "C": "[7, 1]",
+    "D": "[4, 7]"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `C` — \[7, 1\] | `C` — \[7, 1\] | Same answer |
+| Decider v1.1 | `C` — \[7, 1\] | `C` — \[7, 1\] | Same answer |
+| Jev | `C` — \[7, 1\] | `C` — \[7, 1\] | Same answer |
+| Microsoft Decision-1 | `C` — \[7, 1\] | `C` — \[7, 1\] | Same answer |
+| Clef | `C` — \[7, 1\] | `C` — \[7, 1\] | Same answer |
+| Luna Decisions | `C` — \[7, 1\] | `C` — \[7, 1\] | Same answer |
+| Clef Flash | `C` — \[7, 1\] | `C` — \[7, 1\] | Same answer |
+| Strands Decider | `C` — \[7, 1\] | `C` — \[7, 1\] | Same answer |
+| GLiNER2.5 Decide | `A` — \[6, 0\] | `A` — \[6, 0\] | Same answer |
+| Laya | `B` — \[4, 1\] | `C` — \[7, 1\] | Different answer |
+| CalDec v1 | `A` — \[6, 0\] | `A` — \[6, 0\] | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `list_functions/25cf4f190b25efb33fc0/irrelevant_details/high/clean-bare_induction_physical_details_full_0043`
+
+**Input fingerprint:** `792a20a3d15c17faa39fd6170dd46a6cb55fc9d120c06c78a503b20c3af15aed`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a larger amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/learning-and-induction/list_functions-25cf4f190b25efb33fc0.md).

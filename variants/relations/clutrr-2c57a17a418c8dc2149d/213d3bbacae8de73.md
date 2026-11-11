@@ -1,0 +1,107 @@
+# Misleading details · Add an unverified claim that agrees with the evidence variant
+
+[Original question](../../../questions/relations/clutrr-2c57a17a418c8dc2149d.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> \[Nicole\] loves cooking for her son. His name is \[Frank\] \[Frank\] went to the game with his sister \[Patricia\]. \[Nicole\] and her daughter \[April\] went to see a movie yesterday and then got ice cream afterwards. \[Richard\] took his sister, \[April\], to a baseball game.
+>
+> A reader thinks: «Patricia is Richard's sister.»
+
+## Question
+
+> What is Patricia’s relationship to Richard?
+
+## Answer choices
+
+- **aunt.** aunt
+- **brother.** brother
+- **daughter.** daughter
+- **daughter-in-law.** daughter-in-law
+- **father.** father
+- **father-in-law.** father-in-law
+- **granddaughter.** granddaughter
+- **grandfather.** grandfather
+- **grandmother.** grandmother
+- **grandson.** grandson
+- **mother.** mother
+- **mother-in-law.** mother-in-law
+- **nephew.** nephew
+- **niece.** niece
+- **sister.** sister
+- **son.** son
+- **son-in-law.** son-in-law
+- **uncle.** uncle
+
+**Reference answer:** `sister`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "[Nicole] loves cooking for her son. His name is [Frank] [Frank] went to the game with his sister [Patricia]. [Nicole] and her daughter [April] went to see a movie yesterday and then got ice cream afterwards. [Richard] took his sister, [April], to a baseball game.\n\nA reader thinks: «Patricia is Richard's sister.»",
+  "question": "What is Patricia’s relationship to Richard?",
+  "choices": {
+    "aunt": "aunt",
+    "brother": "brother",
+    "daughter": "daughter",
+    "daughter-in-law": "daughter-in-law",
+    "father": "father",
+    "father-in-law": "father-in-law",
+    "granddaughter": "granddaughter",
+    "grandfather": "grandfather",
+    "grandmother": "grandmother",
+    "grandson": "grandson",
+    "mother": "mother",
+    "mother-in-law": "mother-in-law",
+    "nephew": "nephew",
+    "niece": "niece",
+    "sister": "sister",
+    "son": "son",
+    "son-in-law": "son-in-law",
+    "uncle": "uncle"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `niece` — niece | `sister` — sister | Different answer |
+| Decider v1.1 | `niece` — niece | `niece` — niece | Same answer |
+| Jev | `sister` — sister | `sister` — sister | Same answer |
+| Microsoft Decision-1 | `niece` — niece | `niece` — niece | Same answer |
+| Clef | `niece` — niece | `sister` — sister | Different answer |
+| Luna Decisions | Refused | `sister` — sister | — |
+| Clef Flash | `niece` — niece | `niece` — niece | Same answer |
+| Strands Decider | `sister` — sister | `sister` — sister | Same answer |
+| GLiNER2.5 Decide | `sister` — sister | `sister` — sister | Same answer |
+| Laya | `sister` — sister | `sister` — sister | Same answer |
+| CalDec v1 | `sister` — sister | `sister` — sister | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `clutrr/2c57a17a418c8dc2149d/misleading_summary/accurate/clean-source_first_kinship_reader_opinions_full_0104`
+
+**Input fingerprint:** `3e84b3c609ce56da98944bda7d884780662c81b83b3ba4b57eb8f5537345b006`
+
+| Change | Recorded version |
+| --- | --- |
+| Misleading details | Add an unverified claim that agrees with the evidence |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/clutrr-2c57a17a418c8dc2149d.md).

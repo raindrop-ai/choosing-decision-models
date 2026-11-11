@@ -1,0 +1,79 @@
+# Irrelevant details · Add a larger amount of irrelevant detail variant
+
+[Original question](../../../questions/communication/tombench-f6e207cefe0db85a1890.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> In the national library, Xiao Hua is reading a book seriously. Then a girl comes in, sits next to Xiao Hua, she turns on the music player on her phone, the volume is very loud. Xiao Hua lifts his head and looks at her, then continues to read his book and says, "Excuse me, is this the national library?"
+>
+> The fictional colored-cell pattern Evarin has a coral border. Evarin contains paired ivory cells. Evarin uses slate cells between the ivory pairs. Evarin places amber cells at its corners. Evarin has a diagonal chain of teal cells. Evarin leaves alternating gaps along one edge.
+
+## Question
+
+> What does Xiao Hua really want to say when he says this?
+
+## Answer choices
+
+- **A.** Xiao Hua is asking about his current location
+- **B.** Xiao Hua wants the girl to read books with him.
+- **C.** Xiao Hua is interested in the music on the girl&#x27;s phone.
+- **D.** Xiao Hua hints the girl to turn off the music on her phone.
+
+**Reference answer:** `D`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "In the national library, Xiao Hua is reading a book seriously. Then a girl comes in, sits next to Xiao Hua, she turns on the music player on her phone, the volume is very loud. Xiao Hua lifts his head and looks at her, then continues to read his book and says, \"Excuse me, is this the national library?\"\n\nThe fictional colored-cell pattern Evarin has a coral border. Evarin contains paired ivory cells. Evarin uses slate cells between the ivory pairs. Evarin places amber cells at its corners. Evarin has a diagonal chain of teal cells. Evarin leaves alternating gaps along one edge.",
+  "question": "What does Xiao Hua really want to say when he says this?",
+  "choices": {
+    "A": "Xiao Hua is asking about his current location",
+    "B": "Xiao Hua wants the girl to read books with him.",
+    "C": "Xiao Hua is interested in the music on the girl's phone.",
+    "D": "Xiao Hua hints the girl to turn off the music on her phone."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `D` — Xiao Hua hints the girl to turn off the music on her phone. | `D` — Xiao Hua hints the girl to turn off the music on her phone. | Same answer |
+| Decider v1.1 | `D` — Xiao Hua hints the girl to turn off the music on her phone. | `D` — Xiao Hua hints the girl to turn off the music on her phone. | Same answer |
+| Jev | `D` — Xiao Hua hints the girl to turn off the music on her phone. | `D` — Xiao Hua hints the girl to turn off the music on her phone. | Same answer |
+| Microsoft Decision-1 | `D` — Xiao Hua hints the girl to turn off the music on her phone. | `D` — Xiao Hua hints the girl to turn off the music on her phone. | Same answer |
+| Clef | `D` — Xiao Hua hints the girl to turn off the music on her phone. | `D` — Xiao Hua hints the girl to turn off the music on her phone. | Same answer |
+| Luna Decisions | `D` — Xiao Hua hints the girl to turn off the music on her phone. | `D` — Xiao Hua hints the girl to turn off the music on her phone. | Same answer |
+| Clef Flash | `D` — Xiao Hua hints the girl to turn off the music on her phone. | `D` — Xiao Hua hints the girl to turn off the music on her phone. | Same answer |
+| Strands Decider | `D` — Xiao Hua hints the girl to turn off the music on her phone. | `D` — Xiao Hua hints the girl to turn off the music on her phone. | Same answer |
+| GLiNER2.5 Decide | `A` — Xiao Hua is asking about his current location | `A` — Xiao Hua is asking about his current location | Same answer |
+| Laya | `A` — Xiao Hua is asking about his current location | `A` — Xiao Hua is asking about his current location | Same answer |
+| CalDec v1 | `A` — Xiao Hua is asking about his current location | `A` — Xiao Hua is asking about his current location | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `tombench/f6e207cefe0db85a1890/irrelevant_details/high/clean-source_first_tombench893_pattern_contexts_full_0157`
+
+**Input fingerprint:** `753ecf2633f4d046c8877b2a0fb879ee07f1afd7c3e69a22c029094fa4a0e3cb`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a larger amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/communication/tombench-f6e207cefe0db85a1890.md).

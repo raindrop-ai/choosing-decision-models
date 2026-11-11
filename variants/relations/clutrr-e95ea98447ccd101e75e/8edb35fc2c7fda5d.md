@@ -1,0 +1,107 @@
+# Similar distractors · Add fewer similar but irrelevant items variant
+
+[Original question](../../../questions/relations/clutrr-e95ea98447ccd101e75e.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> \[Anthony\] took his parents, \[Sandra\] and \[James\], his gas grill. \[Sandra\] wanted to cook steaks for her brother \[Alan\].
+>
+> Velora is the mother of Tisven. Tisven is the brother of Merali.
+
+## Question
+
+> What is Anthony’s relationship to Alan?
+
+## Answer choices
+
+- **aunt.** aunt
+- **brother.** brother
+- **daughter.** daughter
+- **daughter-in-law.** daughter-in-law
+- **father.** father
+- **father-in-law.** father-in-law
+- **granddaughter.** granddaughter
+- **grandfather.** grandfather
+- **grandmother.** grandmother
+- **grandson.** grandson
+- **mother.** mother
+- **mother-in-law.** mother-in-law
+- **nephew.** nephew
+- **niece.** niece
+- **sister.** sister
+- **son.** son
+- **son-in-law.** son-in-law
+- **uncle.** uncle
+
+**Reference answer:** `nephew`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "[Anthony] took his parents, [Sandra] and [James], his gas grill. [Sandra] wanted to cook steaks for her brother [Alan].\n\nVelora is the mother of Tisven. Tisven is the brother of Merali.",
+  "question": "What is Anthony’s relationship to Alan?",
+  "choices": {
+    "aunt": "aunt",
+    "brother": "brother",
+    "daughter": "daughter",
+    "daughter-in-law": "daughter-in-law",
+    "father": "father",
+    "father-in-law": "father-in-law",
+    "granddaughter": "granddaughter",
+    "grandfather": "grandfather",
+    "grandmother": "grandmother",
+    "grandson": "grandson",
+    "mother": "mother",
+    "mother-in-law": "mother-in-law",
+    "nephew": "nephew",
+    "niece": "niece",
+    "sister": "sister",
+    "son": "son",
+    "son-in-law": "son-in-law",
+    "uncle": "uncle"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `nephew` — nephew | `nephew` — nephew | Same answer |
+| Decider v1.1 | `nephew` — nephew | `nephew` — nephew | Same answer |
+| Jev | `nephew` — nephew | `nephew` — nephew | Same answer |
+| Microsoft Decision-1 | `nephew` — nephew | `nephew` — nephew | Same answer |
+| Clef | `nephew` — nephew | `uncle` — uncle | Different answer |
+| Luna Decisions | `son` — son | `nephew` — nephew | Different answer |
+| Clef Flash | `nephew` — nephew | `uncle` — uncle | Different answer |
+| Strands Decider | `uncle` — uncle | `uncle` — uncle | Same answer |
+| GLiNER2.5 Decide | `brother` — brother | `brother` — brother | Same answer |
+| Laya | `brother` — brother | `mother-in-law` — mother-in-law | Different answer |
+| CalDec v1 | `mother` — mother | `mother` — mother | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `clutrr/e95ea98447ccd101e75e/similar_distractors/low/clean-source_first_kinship_distractors_full_0142`
+
+**Input fingerprint:** `8e29b8847d15ee0d3dffa73fc56452c50038a6f0000fcea5d3a552a2376205d1`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add fewer similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/clutrr-e95ea98447ccd101e75e.md).

@@ -1,0 +1,82 @@
+# Irrelevant details · Add a larger amount of irrelevant detail variant
+
+[Original question](../../../questions/physical-cognition/mmlu-fe496c5645f5c78aad17.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The notebook has a linen cover.
+> The cover has an embossed title.
+> The page edges are uneven.
+> The binding is stitched.
+> A ribbon marks a page.
+> The back cover has a pocket.
+
+## Question
+
+> A toy car and a toy truck collide. If the toy truck’s mass is double the toy car’s mass, then, compared to the acceleration of the truck, the acceleration of the car during the collision will be
+
+## Answer choices
+
+- **A.** double the magnitude and in the same direction
+- **B.** double the magnitude and in the opposite direction
+- **C.** half the magnitude and in the same direction
+- **D.** half the magnitude and in the opposite direction
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The notebook has a linen cover.\nThe cover has an embossed title.\nThe page edges are uneven.\nThe binding is stitched.\nA ribbon marks a page.\nThe back cover has a pocket.",
+  "question": "A toy car and a toy truck collide. If the toy truck’s mass is double the toy car’s mass, then, compared to the acceleration of the truck, the acceleration of the car during the collision will be",
+  "choices": {
+    "A": "double the magnitude and in the same direction",
+    "B": "double the magnitude and in the opposite direction",
+    "C": "half the magnitude and in the same direction",
+    "D": "half the magnitude and in the opposite direction"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — double the magnitude and in the opposite direction | `B` — double the magnitude and in the opposite direction | Same answer |
+| Decider v1.1 | `B` — double the magnitude and in the opposite direction | `B` — double the magnitude and in the opposite direction | Same answer |
+| Jev | `B` — double the magnitude and in the opposite direction | `B` — double the magnitude and in the opposite direction | Same answer |
+| Microsoft Decision-1 | `B` — double the magnitude and in the opposite direction | `B` — double the magnitude and in the opposite direction | Same answer |
+| Clef | `B` — double the magnitude and in the opposite direction | `B` — double the magnitude and in the opposite direction | Same answer |
+| Luna Decisions | `B` — double the magnitude and in the opposite direction | `B` — double the magnitude and in the opposite direction | Same answer |
+| Clef Flash | `B` — double the magnitude and in the opposite direction | `B` — double the magnitude and in the opposite direction | Same answer |
+| Strands Decider | `C` — half the magnitude and in the same direction | `C` — half the magnitude and in the same direction | Same answer |
+| GLiNER2.5 Decide | `B` — double the magnitude and in the opposite direction | `B` — double the magnitude and in the opposite direction | Same answer |
+| Laya | `A` — double the magnitude and in the same direction | `A` — double the magnitude and in the same direction | Same answer |
+| CalDec v1 | `A` — double the magnitude and in the same direction | `A` — double the magnitude and in the same direction | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `mmlu/fe496c5645f5c78aad17/irrelevant_details/high/clean-source_first_mmlu_other_short_contexts_full_0100`
+
+**Input fingerprint:** `a862bdf1a8fc977a6e09b29c9a910eb52444066040cd67e12501a547456aad45`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a larger amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/physical-cognition/mmlu-fe496c5645f5c78aad17.md).

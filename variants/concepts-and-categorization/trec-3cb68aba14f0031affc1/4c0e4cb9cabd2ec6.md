@@ -1,0 +1,48 @@
+# Text length · 2,048-token input target variant
+
+[Original question](../../../questions/concepts-and-categorization/trec-3cb68aba14f0031affc1.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Recover the question text
+
+The original dataset’s terms do not clearly support republishing its text here, or require additional conditions. This variant’s full text is therefore reconstructed locally. [Follow the recovery instructions](../../../docs/variant-reproduction.md#recover-the-remaining-variant-texts).
+
+**Reference answer key:** `HUM`.
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `HUM` | `HUM` | Same answer |
+| Decider v1.1 | `HUM` | `HUM` | Same answer |
+| Jev | `HUM` | `HUM` | Same answer |
+| Microsoft Decision-1 | `HUM` | `HUM` | Same answer |
+| Clef | `HUM` | `HUM` | Same answer |
+| Luna Decisions | `HUM` | `HUM` | Same answer |
+| Clef Flash | `HUM` | `HUM` | Same answer |
+| Strands Decider | `HUM` | `HUM` | Same answer |
+| GLiNER2.5 Decide | `ENTY` | `DESC` | Different answer |
+| Laya | `HUM` | `DESC` | Different answer |
+| CalDec v1 | `ENTY` | `DESC` | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `trec/3cb68aba14f0031affc1/text_length/2048/clean-source_first_classification_contexts_full_0148`
+
+**Input fingerprint:** `19cd55aaa41aaa0a567ef53565f5eb5103f6b250f6b915784251ed70a95aff4b`
+
+| Change | Recorded version |
+| --- | --- |
+| Text length | 2,048-token input target |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/concepts-and-categorization/trec-3cb68aba14f0031affc1.md).

@@ -1,0 +1,76 @@
+# Unrelated examples · No worked example (absence-control recipe) variant
+
+[Original question](../../../questions/state-tracking-and-updating/bbh-1d7003d497502a576b00.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The notebook cover is linen.
+
+## Question
+
+> Alice, Bob, and Claire are on the same team in a soccer match. At the start of the match, they are each assigned to a position: Alice is playing goalkeeper, Bob is playing left midfielder, and Claire is playing striker.
+> As the game progresses, pairs of players occasionally swap positions. First, Bob and Claire trade positions. Then, Bob and Alice trade positions. Finally, Claire and Alice trade positions. At the end of the match, Bob is playing
+
+## Answer choices
+
+- **A.** goalkeeper
+- **B.** left midfielder
+- **C.** striker
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The notebook cover is linen.",
+  "question": "Alice, Bob, and Claire are on the same team in a soccer match. At the start of the match, they are each assigned to a position: Alice is playing goalkeeper, Bob is playing left midfielder, and Claire is playing striker.\nAs the game progresses, pairs of players occasionally swap positions. First, Bob and Claire trade positions. Then, Bob and Alice trade positions. Finally, Claire and Alice trade positions. At the end of the match, Bob is playing",
+  "choices": {
+    "A": "goalkeeper",
+    "B": "left midfielder",
+    "C": "striker"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — goalkeeper | `A` — goalkeeper | Same answer |
+| Decider v1.1 | `A` — goalkeeper | `A` — goalkeeper | Same answer |
+| Jev | `A` — goalkeeper | `A` — goalkeeper | Same answer |
+| Microsoft Decision-1 | `C` — striker | `C` — striker | Same answer |
+| Clef | `A` — goalkeeper | `A` — goalkeeper | Same answer |
+| Luna Decisions | `A` — goalkeeper | `A` — goalkeeper | Same answer |
+| Clef Flash | `A` — goalkeeper | `A` — goalkeeper | Same answer |
+| Strands Decider | `C` — striker | `C` — striker | Same answer |
+| GLiNER2.5 Decide | `A` — goalkeeper | `A` — goalkeeper | Same answer |
+| Laya | `A` — goalkeeper | `A` — goalkeeper | Same answer |
+| CalDec v1 | `B` — left midfielder | `A` — goalkeeper | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/1d7003d497502a576b00/examples/absent/clean-source_first_tracking_short_contexts_full_0121`
+
+**Input fingerprint:** `27a8f0e9a26c7ebc997c4bd1dd5519b1b302077eaabe80c4442b2af1e33276c2`
+
+| Change | Recorded version |
+| --- | --- |
+| Unrelated examples | No worked example (absence-control recipe) |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/state-tracking-and-updating/bbh-1d7003d497502a576b00.md).

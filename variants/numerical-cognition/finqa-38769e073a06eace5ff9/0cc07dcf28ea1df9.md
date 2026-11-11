@@ -1,0 +1,83 @@
+# Unrelated examples · Add examples unrelated to the question variant
+
+[Original question](../../../questions/numerical-cognition/finqa-38769e073a06eace5ff9.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+<details>
+<summary>Read the full context</summary>
+
+> {"pre\_text": \["an adverse development with respect to one claim in 2008 and favorable developments in three cases in 2009 .", "other costs were also lower in 2009 compared to 2008 , driven by a decrease in expenses for freight and property damages , employee travel , and utilities .", "in addition , higher bad debt expense in 2008 due to the uncertain impact of the recessionary economy drove a favorable year-over-year comparison .", "conversely , an additional expense of $ 30 million related to a transaction with pacer international , inc .", "and higher property taxes partially offset lower costs in 2009 .", "other costs were higher in 2008 compared to 2007 due to an increase in bad debts , state and local taxes , loss and damage expenses , utility costs , and other miscellaneous expenses totaling $ 122 million .", "conversely , personal injury costs ( including asbestos-related claims ) were $ 8 million lower in 2008 compared to 2007 .", "the reduction reflects improvements in our safety experience and lower estimated costs to resolve claims as indicated in the actuarial studies of our personal injury expense and annual reviews of asbestos-related claims in both 2008 and 2007 .", "the year-over-year comparison also includes the negative impact of adverse development associated with one claim in 2008 .", "in addition , environmental and toxic tort expenses were $ 7 million lower in 2008 compared to 2007 .", "non-operating items millions of dollars 2009 2008 2007 % (  % ) change 2009 v 2008 % (  % ) change 2008 v 2007 ."\], "table": \[\["millions of dollars", "2009", "2008", "2007", "% (  % ) change 2009 v 2008", "% (  % ) change 2008 v 2007"\], \["other income", "$ 195", "$ 92", "$ 116", "112 % (  % )", "( 21 ) % (  % )"\], \["interest expense", "-600 ( 600 )", "-511 ( 511 )", "-482 ( 482 )", "17", "6"\], \["income taxes", "-1089 ( 1089 )", "-1318 ( 1318 )", "-1154 ( 1154 )", "-17 ( 17 )", "14"\]\], "post\_text": \["other income 2013 other income increased $ 103 million in 2009 compared to 2008 primarily due to higher gains from real estate sales , which included the $ 116 million pre-tax gain from a land sale to the regional transportation district ( rtd ) in colorado and lower interest expense on our sale of receivables program , resulting from lower interest rates and a lower outstanding balance .", "reduced rental and licensing income and lower returns on cash investments , reflecting lower interest rates , partially offset these increases .", "other income decreased in 2008 compared to 2007 due to lower gains from real estate sales and decreased returns on cash investments reflecting lower interest rates .", "higher rental and licensing income and lower interest expense on our sale of receivables program partially offset the decreases .", "interest expense 2013 interest expense increased in 2009 versus 2008 due primarily to higher weighted- average debt levels .", "in 2009 , the weighted-average debt level was $ 9.6 billion ( including the restructuring of locomotive leases in may of 2009 ) , compared to $ 8.3 billion in 2008 .", "our effective interest rate was 6.3% ( 6.3 % ) in 2009 , compared to 6.1% ( 6.1 % ) in 2008 .", "interest expense increased in 2008 versus 2007 due to a higher weighted-average debt level of $ 8.3 billion , compared to $ 7.3 billion in 2007 .", "a lower effective interest rate of 6.1% ( 6.1 % ) in 2008 , compared to 6.6% ( 6.6 % ) in 2007 , partially offset the effects of the higher weighted-average debt level .", "income taxes 2013 income taxes were lower in 2009 compared to 2008 , driven by lower pre-tax income .", "our effective tax rate for the year was 36.5% ( 36.5 % ) compared to 36.1% ( 36.1 % ) in 2008 .", "income taxes were higher in 2008 compared to 2007 , driven by higher pre-tax income .", "our effective tax rates were 36.1% ( 36.1 % ) and 38.4% ( 38.4 % ) in 2008 and 2007 , respectively .", "the lower effective tax rate in 2008 resulted from several reductions in tax expense related to federal audits and state tax law changes .", "in addition , the effective tax rate in 2007 was increased by illinois legislation that increased deferred tax expense in the third quarter of 2007. ."\]}
+> Capitalization: harbor → Harbor
+
+</details>
+
+## Question
+
+> what would other income have increased to in 2009 absent the pre-tax gain from a land sale , in millions?
+
+## Answer choices
+
+- **A.** 79
+- **B.** 311
+- **C.** 7900
+- **D.** 195
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "{\"pre_text\": [\"an adverse development with respect to one claim in 2008 and favorable developments in three cases in 2009 .\", \"other costs were also lower in 2009 compared to 2008 , driven by a decrease in expenses for freight and property damages , employee travel , and utilities .\", \"in addition , higher bad debt expense in 2008 due to the uncertain impact of the recessionary economy drove a favorable year-over-year comparison .\", \"conversely , an additional expense of $ 30 million related to a transaction with pacer international , inc .\", \"and higher property taxes partially offset lower costs in 2009 .\", \"other costs were higher in 2008 compared to 2007 due to an increase in bad debts , state and local taxes , loss and damage expenses , utility costs , and other miscellaneous expenses totaling $ 122 million .\", \"conversely , personal injury costs ( including asbestos-related claims ) were $ 8 million lower in 2008 compared to 2007 .\", \"the reduction reflects improvements in our safety experience and lower estimated costs to resolve claims as indicated in the actuarial studies of our personal injury expense and annual reviews of asbestos-related claims in both 2008 and 2007 .\", \"the year-over-year comparison also includes the negative impact of adverse development associated with one claim in 2008 .\", \"in addition , environmental and toxic tort expenses were $ 7 million lower in 2008 compared to 2007 .\", \"non-operating items millions of dollars 2009 2008 2007 % (  % ) change 2009 v 2008 % (  % ) change 2008 v 2007 .\"], \"table\": [[\"millions of dollars\", \"2009\", \"2008\", \"2007\", \"% (  % ) change 2009 v 2008\", \"% (  % ) change 2008 v 2007\"], [\"other income\", \"$ 195\", \"$ 92\", \"$ 116\", \"112 % (  % )\", \"( 21 ) % (  % )\"], [\"interest expense\", \"-600 ( 600 )\", \"-511 ( 511 )\", \"-482 ( 482 )\", \"17\", \"6\"], [\"income taxes\", \"-1089 ( 1089 )\", \"-1318 ( 1318 )\", \"-1154 ( 1154 )\", \"-17 ( 17 )\", \"14\"]], \"post_text\": [\"other income 2013 other income increased $ 103 million in 2009 compared to 2008 primarily due to higher gains from real estate sales , which included the $ 116 million pre-tax gain from a land sale to the regional transportation district ( rtd ) in colorado and lower interest expense on our sale of receivables program , resulting from lower interest rates and a lower outstanding balance .\", \"reduced rental and licensing income and lower returns on cash investments , reflecting lower interest rates , partially offset these increases .\", \"other income decreased in 2008 compared to 2007 due to lower gains from real estate sales and decreased returns on cash investments reflecting lower interest rates .\", \"higher rental and licensing income and lower interest expense on our sale of receivables program partially offset the decreases .\", \"interest expense 2013 interest expense increased in 2009 versus 2008 due primarily to higher weighted- average debt levels .\", \"in 2009 , the weighted-average debt level was $ 9.6 billion ( including the restructuring of locomotive leases in may of 2009 ) , compared to $ 8.3 billion in 2008 .\", \"our effective interest rate was 6.3% ( 6.3 % ) in 2009 , compared to 6.1% ( 6.1 % ) in 2008 .\", \"interest expense increased in 2008 versus 2007 due to a higher weighted-average debt level of $ 8.3 billion , compared to $ 7.3 billion in 2007 .\", \"a lower effective interest rate of 6.1% ( 6.1 % ) in 2008 , compared to 6.6% ( 6.6 % ) in 2007 , partially offset the effects of the higher weighted-average debt level .\", \"income taxes 2013 income taxes were lower in 2009 compared to 2008 , driven by lower pre-tax income .\", \"our effective tax rate for the year was 36.5% ( 36.5 % ) compared to 36.1% ( 36.1 % ) in 2008 .\", \"income taxes were higher in 2008 compared to 2007 , driven by higher pre-tax income .\", \"our effective tax rates were 36.1% ( 36.1 % ) and 38.4% ( 38.4 % ) in 2008 and 2007 , respectively .\", \"the lower effective tax rate in 2008 resulted from several reductions in tax expense related to federal audits and state tax law changes .\", \"in addition , the effective tax rate in 2007 was increased by illinois legislation that increased deferred tax expense in the third quarter of 2007. .\"]}\nCapitalization: harbor → Harbor",
+  "question": "what would other income have increased to in 2009 absent the pre-tax gain from a land sale , in millions?",
+  "choices": {
+    "A": "79",
+    "B": "311",
+    "C": "7900",
+    "D": "195"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — 79 | `A` — 79 | Same answer |
+| Decider v1.1 | `A` — 79 | `A` — 79 | Same answer |
+| Jev | `A` — 79 | `A` — 79 | Same answer |
+| Microsoft Decision-1 | `A` — 79 | `A` — 79 | Same answer |
+| Clef | `A` — 79 | `A` — 79 | Same answer |
+| Luna Decisions | `A` — 79 | `A` — 79 | Same answer |
+| Clef Flash | `B` — 311 | `B` — 311 | Same answer |
+| Strands Decider | `A` — 79 | `A` — 79 | Same answer |
+| GLiNER2.5 Decide | `A` — 79 | `A` — 79 | Same answer |
+| Laya | `C` — 7900 | `C` — 7900 | Same answer |
+| CalDec v1 | `B` — 311 | `B` — 311 | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `finqa/38769e073a06eace5ff9/examples/irrelevant/clean-source_first_financial_short_contexts_full_0116`
+
+**Input fingerprint:** `2cfac8fe5e3cc34c5a1ba736c7ec5d1fd85a420dfffc33d99473a8aa492f0205`
+
+| Change | Recorded version |
+| --- | --- |
+| Unrelated examples | Add examples unrelated to the question |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/numerical-cognition/finqa-38769e073a06eace5ff9.md).

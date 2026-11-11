@@ -1,0 +1,81 @@
+# Irrelevant details · Add a larger amount of irrelevant detail variant
+
+[Original question](../../../questions/spatial-cognition/babi-453a430bdae501027752.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The triangle is to the left of the yellow square.
+> The triangle is to the right of the pink rectangle.
+>
+> The poem is untitled.
+> Its author is anonymous.
+> Its narrator speaks in the first person.
+> It contains a refrain.
+> The refrain addresses an unnamed listener.
+> Its final line repeats its opening line.
+
+## Question
+
+> Is the yellow square to the left of the pink rectangle?
+
+## Answer choices
+
+- **yes.** yes
+- **no.** no
+
+**Reference answer:** `no`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The triangle is to the left of the yellow square.\nThe triangle is to the right of the pink rectangle.\n\nThe poem is untitled.\nIts author is anonymous.\nIts narrator speaks in the first person.\nIt contains a refrain.\nThe refrain addresses an unnamed listener.\nIts final line repeats its opening line.",
+  "question": "Is the yellow square to the left of the pink rectangle?",
+  "choices": {
+    "yes": "yes",
+    "no": "no"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `no` — no | `no` — no | Same answer |
+| Decider v1.1 | `no` — no | `no` — no | Same answer |
+| Jev | `no` — no | `no` — no | Same answer |
+| Microsoft Decision-1 | `no` — no | `no` — no | Same answer |
+| Clef | `no` — no | `no` — no | Same answer |
+| Luna Decisions | `no` — no | `no` — no | Same answer |
+| Clef Flash | `no` — no | `no` — no | Same answer |
+| Strands Decider | `no` — no | `no` — no | Same answer |
+| GLiNER2.5 Decide | `yes` — yes | `yes` — yes | Same answer |
+| Laya | `no` — no | `no` — no | Same answer |
+| CalDec v1 | `yes` — yes | `no` — no | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `babi/453a430bdae501027752/irrelevant_details/high/clean-source_first_babi_static_worlds_full_0089`
+
+**Input fingerprint:** `f28df955e143b9cb5459272eab4825c31b7c4e9e0d3e06d0972cfcd130355123`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a larger amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/spatial-cognition/babi-453a430bdae501027752.md).

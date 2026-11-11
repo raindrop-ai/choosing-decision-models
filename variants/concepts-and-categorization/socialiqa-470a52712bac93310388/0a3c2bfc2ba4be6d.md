@@ -1,0 +1,81 @@
+# Similar distractors · Add more similar but irrelevant items variant
+
+[Original question](../../../questions/concepts-and-categorization/socialiqa-470a52712bac93310388.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> “A player missed the last shot and her team lost.”
+>
+> “A teammate watched a championship game from the stands.”
+>
+> “An athlete practiced alone before the tournament.”
+>
+> Quinn hit a home run to win the championship for her team.
+
+## Question
+
+> How would Quinn feel afterwards?
+
+## Answer choices
+
+- **A.** Disheartened
+- **B.** Thrilled and fulfilled
+- **C.** Sad and discontent
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "“A player missed the last shot and her team lost.”\n\n“A teammate watched a championship game from the stands.”\n\n“An athlete practiced alone before the tournament.”\n\nQuinn hit a home run to win the championship for her team.",
+  "question": "How would Quinn feel afterwards?",
+  "choices": {
+    "A": "Disheartened",
+    "B": "Thrilled and fulfilled",
+    "C": "Sad and discontent"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — Thrilled and fulfilled | `B` — Thrilled and fulfilled | Same answer |
+| Decider v1.1 | `B` — Thrilled and fulfilled | `B` — Thrilled and fulfilled | Same answer |
+| Jev | `B` — Thrilled and fulfilled | `B` — Thrilled and fulfilled | Same answer |
+| Microsoft Decision-1 | `B` — Thrilled and fulfilled | `B` — Thrilled and fulfilled | Same answer |
+| Clef | `B` — Thrilled and fulfilled | `B` — Thrilled and fulfilled | Same answer |
+| Luna Decisions | `B` — Thrilled and fulfilled | `B` — Thrilled and fulfilled | Same answer |
+| Clef Flash | `B` — Thrilled and fulfilled | `B` — Thrilled and fulfilled | Same answer |
+| Strands Decider | `B` — Thrilled and fulfilled | `B` — Thrilled and fulfilled | Same answer |
+| GLiNER2.5 Decide | `B` — Thrilled and fulfilled | `B` — Thrilled and fulfilled | Same answer |
+| Laya | `B` — Thrilled and fulfilled | `B` — Thrilled and fulfilled | Same answer |
+| CalDec v1 | `B` — Thrilled and fulfilled | `B` — Thrilled and fulfilled | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `socialiqa/470a52712bac93310388/similar_distractors/high/clean-source_first_social_quoted_companions_full_0207_v2`
+
+**Input fingerprint:** `9c3dfe91bf52b10fa1c7c6b7ef05d020257080aa3be74d9e9b591c28d01bec97`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add more similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/concepts-and-categorization/socialiqa-470a52712bac93310388.md).

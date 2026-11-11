@@ -1,0 +1,8 @@
+{
+  "format": "openai-chat",
+  "endpoint": "http://127.0.0.1:8000/v1/chat/completions",
+  "model_id": "your-served-model-id",
+  "auth": "none",
+  "structured_output": "json_schema",
+  "request_parameters": {"max_tokens": 1024, "temperature": 0}
+}

@@ -1,0 +1,75 @@
+# Unrelated examples · No worked example (prose-control recipe) variant
+
+[Original question](../../../questions/social-cognition/bigtom-4012dc502f51ca533d71.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Noor is working as a barista at a busy coffee shop. Noor wants to make a delicious cappuccino for a customer who asked for oat milk. Noor grabs a milk pitcher and fills it with oat milk. Noor believes that the milk pitcher contains oatmilk. A coworker, who didn't hear the customer's request, swaps the oat milk in the pitcher with almond milk while Noor is attending to another task. Noor does not see her coworker swapping the milk.
+>
+> Merovan has a melodic refrain.
+
+## Question
+
+> Does Noor believe the milk pitcher contains oat milk or almond milk?
+
+## Answer choices
+
+- **A.** Noor believes the milk pitcher contains almond milk.
+- **B.** Noor believes the milk pitcher contains oat milk.
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Noor is working as a barista at a busy coffee shop. Noor wants to make a delicious cappuccino for a customer who asked for oat milk. Noor grabs a milk pitcher and fills it with oat milk. Noor believes that the milk pitcher contains oatmilk. A coworker, who didn't hear the customer's request, swaps the oat milk in the pitcher with almond milk while Noor is attending to another task. Noor does not see her coworker swapping the milk.\n\nMerovan has a melodic refrain.",
+  "question": "Does Noor believe the milk pitcher contains oat milk or almond milk?",
+  "choices": {
+    "A": "Noor believes the milk pitcher contains almond milk.",
+    "B": "Noor believes the milk pitcher contains oat milk."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — Noor believes the milk pitcher contains oat milk. | `B` — Noor believes the milk pitcher contains oat milk. | Same answer |
+| Decider v1.1 | `B` — Noor believes the milk pitcher contains oat milk. | `B` — Noor believes the milk pitcher contains oat milk. | Same answer |
+| Jev | `B` — Noor believes the milk pitcher contains oat milk. | `B` — Noor believes the milk pitcher contains oat milk. | Same answer |
+| Microsoft Decision-1 | `B` — Noor believes the milk pitcher contains oat milk. | `B` — Noor believes the milk pitcher contains oat milk. | Same answer |
+| Clef | `B` — Noor believes the milk pitcher contains oat milk. | `B` — Noor believes the milk pitcher contains oat milk. | Same answer |
+| Luna Decisions | `B` — Noor believes the milk pitcher contains oat milk. | `B` — Noor believes the milk pitcher contains oat milk. | Same answer |
+| Clef Flash | `B` — Noor believes the milk pitcher contains oat milk. | `B` — Noor believes the milk pitcher contains oat milk. | Same answer |
+| Strands Decider | `B` — Noor believes the milk pitcher contains oat milk. | `B` — Noor believes the milk pitcher contains oat milk. | Same answer |
+| GLiNER2.5 Decide | `B` — Noor believes the milk pitcher contains oat milk. | `B` — Noor believes the milk pitcher contains oat milk. | Same answer |
+| Laya | `B` — Noor believes the milk pitcher contains oat milk. | `B` — Noor believes the milk pitcher contains oat milk. | Same answer |
+| CalDec v1 | `B` — Noor believes the milk pitcher contains oat milk. | `B` — Noor believes the milk pitcher contains oat milk. | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bigtom/4012dc502f51ca533d71/examples/prose_control/clean-source_first_belief_toxicity_contexts_full_0150`
+
+**Input fingerprint:** `ec508f756ef69a1abf1404a6b6242a438adcb72b3f6cce2da4d6ddaf1f8d1de6`
+
+| Change | Recorded version |
+| --- | --- |
+| Unrelated examples | No worked example (prose-control recipe) |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/social-cognition/bigtom-4012dc502f51ca533d71.md).

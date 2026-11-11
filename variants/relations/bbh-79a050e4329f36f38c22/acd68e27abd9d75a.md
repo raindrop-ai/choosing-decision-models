@@ -1,0 +1,80 @@
+# Extra events · Add 12 unrelated events variant
+
+[Original question](../../../questions/relations/bbh-79a050e4329f36f38c22.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Nolan is the editor of a poetry catalog. Its entries are Virel, Zorven, Kesil, Nereth, Pavrel, and Sovrin.
+> Nolan classifies Virel as a dialogue. Nolan classifies Zorven as a monologue. Nolan classifies Kesil as an elegy. Nolan classifies Nereth as a satire. Nolan classifies Pavrel as a fable. Nolan classifies Sovrin as a ballad. Nolan reclassifies Virel as a monologue. Nolan reclassifies Zorven as a dialogue. Nolan reclassifies Kesil as a ballad. Nolan reclassifies Nereth as a fable. Nolan reclassifies Pavrel as a satire. Nolan reclassifies Sovrin as an elegy.
+
+## Question
+
+> The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were five golfers: Ana, Rob, Amy, Dan, and Joe. Rob finished below Dan. Joe finished below Ana. Joe finished above Amy. Dan finished below Amy.
+
+## Answer choices
+
+- **A.** Ana finished last
+- **B.** Rob finished last
+- **C.** Amy finished last
+- **D.** Dan finished last
+- **E.** Joe finished last
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Nolan is the editor of a poetry catalog. Its entries are Virel, Zorven, Kesil, Nereth, Pavrel, and Sovrin.\nNolan classifies Virel as a dialogue. Nolan classifies Zorven as a monologue. Nolan classifies Kesil as an elegy. Nolan classifies Nereth as a satire. Nolan classifies Pavrel as a fable. Nolan classifies Sovrin as a ballad. Nolan reclassifies Virel as a monologue. Nolan reclassifies Zorven as a dialogue. Nolan reclassifies Kesil as a ballad. Nolan reclassifies Nereth as a fable. Nolan reclassifies Pavrel as a satire. Nolan reclassifies Sovrin as an elegy.",
+  "question": "The following paragraphs each describe a set of five objects arranged in a fixed order. The statements are logically consistent within each paragraph. In a golf tournament, there were five golfers: Ana, Rob, Amy, Dan, and Joe. Rob finished below Dan. Joe finished below Ana. Joe finished above Amy. Dan finished below Amy.",
+  "choices": {
+    "A": "Ana finished last",
+    "B": "Rob finished last",
+    "C": "Amy finished last",
+    "D": "Dan finished last",
+    "E": "Joe finished last"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — Rob finished last | `B` — Rob finished last | Same answer |
+| Decider v1.1 | `B` — Rob finished last | `B` — Rob finished last | Same answer |
+| Jev | `B` — Rob finished last | `B` — Rob finished last | Same answer |
+| Microsoft Decision-1 | `B` — Rob finished last | `B` — Rob finished last | Same answer |
+| Clef | `B` — Rob finished last | `B` — Rob finished last | Same answer |
+| Luna Decisions | `A` — Ana finished last | `E` — Joe finished last | Different answer |
+| Clef Flash | `B` — Rob finished last | `B` — Rob finished last | Same answer |
+| Strands Decider | `B` — Rob finished last | `D` — Dan finished last | Different answer |
+| GLiNER2.5 Decide | `B` — Rob finished last | `E` — Joe finished last | Different answer |
+| Laya | `A` — Ana finished last | `D` — Dan finished last | Different answer |
+| CalDec v1 | `A` — Ana finished last | `B` — Rob finished last | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/79a050e4329f36f38c22/event_count/12/clean-source_first_ordinal_combined_contexts_full_0139`
+
+**Input fingerprint:** `5ef968dd3cc79524000b0eb0c3bb7d63ac430b260ad64447adead81fc3b415eb`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 12 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/relations/bbh-79a050e4329f36f38c22.md).

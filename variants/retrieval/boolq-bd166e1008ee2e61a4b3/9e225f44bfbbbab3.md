@@ -1,0 +1,75 @@
+# Evidence order · Present the evidence in reverse order variant
+
+[Original question](../../../questions/retrieval/boolq-bd166e1008ee2e61a4b3.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Jackson monitored these units with live satellite feeds, and with the added pressure of constant script re-writes and the multiple units handling his vision, he only got around 4 hours of sleep a night. The trilogy was shot at over 150 different locations, with seven different units shooting, as well as soundstages around Wellington and Queenstown. Peter Jackson directed the whole production, while other unit directors included Alun Bollinger, John Mahaffie, Geoff Murphy, Fran Walsh, Barrie Osborne, and Rick Porras. Principal photography for The Lord of the Rings film trilogy was conducted concurrently in New Zealand for 438 days from October 11, 1999 through to December 22, 2000. Pick-up shoots were conducted annually from 2001 to 2003.
+
+## Question
+
+> did they film the lord of the rings all at once
+
+## Answer choices
+
+- **yes.** Yes
+- **no.** No
+
+**Reference answer:** `yes`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Jackson monitored these units with live satellite feeds, and with the added pressure of constant script re-writes and the multiple units handling his vision, he only got around 4 hours of sleep a night. The trilogy was shot at over 150 different locations, with seven different units shooting, as well as soundstages around Wellington and Queenstown. Peter Jackson directed the whole production, while other unit directors included Alun Bollinger, John Mahaffie, Geoff Murphy, Fran Walsh, Barrie Osborne, and Rick Porras. Principal photography for The Lord of the Rings film trilogy was conducted concurrently in New Zealand for 438 days from October 11, 1999 through to December 22, 2000. Pick-up shoots were conducted annually from 2001 to 2003.",
+  "question": "did they film the lord of the rings all at once",
+  "choices": {
+    "yes": "Yes",
+    "no": "No"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `yes` — Yes | `yes` — Yes | Same answer |
+| Decider v1.1 | `yes` — Yes | `yes` — Yes | Same answer |
+| Jev | `no` — No | `no` — No | Same answer |
+| Microsoft Decision-1 | `yes` — Yes | `yes` — Yes | Same answer |
+| Clef | `yes` — Yes | `yes` — Yes | Same answer |
+| Luna Decisions | `yes` — Yes | `yes` — Yes | Same answer |
+| Clef Flash | `yes` — Yes | `yes` — Yes | Same answer |
+| Strands Decider | `yes` — Yes | `yes` — Yes | Same answer |
+| GLiNER2.5 Decide | `no` — No | `no` — No | Same answer |
+| Laya | `yes` — Yes | `yes` — Yes | Same answer |
+| CalDec v1 | `no` — No | `yes` — Yes | Different answer |
+
+**Ordering comparison:** literal requested source unit permutation. Only the exact matched comparison sets contribute to the reported ordering contrasts.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `boolq/bd166e1008ee2e61a4b3/presentation_order/reverse_presentation/clean-source_first_parallel_b_descriptive_orders_0322`
+
+**Input fingerprint:** `0c1b8879ffd4ee8040bd3c1722ca5dea2980bd11da301726d402753c4dac4c8d`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence order | Present the evidence in reverse order |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/retrieval/boolq-bd166e1008ee2e61a4b3.md).

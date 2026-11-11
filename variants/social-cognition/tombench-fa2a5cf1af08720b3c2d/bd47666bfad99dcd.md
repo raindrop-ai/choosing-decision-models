@@ -1,0 +1,81 @@
+# Evidence order · Present the evidence in reverse order variant
+
+[Original question](../../../questions/social-cognition/tombench-fa2a5cf1af08720b3c2d.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> After smiling at Jiayi, Xinxin's face suddenly becomes serious. Qiaoqiao sees Xinxin's pointing and the change in her face.
+> Before that, Seeing Jiayi completes a task, Xinxin gives Jiayi an appreciative smile, then gently points at Qiaoqiao who is chatting, and then looks at Jiayi with her eyes.
+> Before that, Xinxin, Jiayi, and Qiaoqiao are in a group, preparing for the end-of-term project meeting. Qiaoqiao chats with other classmates on the side, while Xinxin and Jiayi dedicate themselves to this project.
+
+## Question
+
+> Why does Xinxin's face become serious after looking at Qiaoqiao?
+
+## Answer choices
+
+- **A.** Xinxin shows her appreciation for Jiayi in front of Qiaoqiao to stimulate Qiaoqiao&#x27;s envy.
+- **B.** Xinxin is dissatisfied with Qiaoqiao not participating in the project work.
+- **C.** Xinxin sees Qiaoqiao chatting and thinks their topic is stupid.
+- **D.** Xinxin wants Jiayi to join her in blaming Qiaoqiao who does not work.
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "After smiling at Jiayi, Xinxin's face suddenly becomes serious. Qiaoqiao sees Xinxin's pointing and the change in her face.\nBefore that, Seeing Jiayi completes a task, Xinxin gives Jiayi an appreciative smile, then gently points at Qiaoqiao who is chatting, and then looks at Jiayi with her eyes.\nBefore that, Xinxin, Jiayi, and Qiaoqiao are in a group, preparing for the end-of-term project meeting. Qiaoqiao chats with other classmates on the side, while Xinxin and Jiayi dedicate themselves to this project.",
+  "question": "Why does Xinxin's face become serious after looking at Qiaoqiao?",
+  "choices": {
+    "A": "Xinxin shows her appreciation for Jiayi in front of Qiaoqiao to stimulate Qiaoqiao's envy.",
+    "B": "Xinxin is dissatisfied with Qiaoqiao not participating in the project work.",
+    "C": "Xinxin sees Qiaoqiao chatting and thinks their topic is stupid.",
+    "D": "Xinxin wants Jiayi to join her in blaming Qiaoqiao who does not work."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | Same answer |
+| Decider v1.1 | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | Same answer |
+| Jev | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | Same answer |
+| Microsoft Decision-1 | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | Same answer |
+| Clef | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | Same answer |
+| Luna Decisions | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | Same answer |
+| Clef Flash | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | Same answer |
+| Strands Decider | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | Same answer |
+| GLiNER2.5 Decide | `A` — Xinxin shows her appreciation for Jiayi in front of Qiaoqiao to stimulate Qiaoqiao&#x27;s envy. | `A` — Xinxin shows her appreciation for Jiayi in front of Qiaoqiao to stimulate Qiaoqiao&#x27;s envy. | Same answer |
+| Laya | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | `B` — Xinxin is dissatisfied with Qiaoqiao not participating in the project work. | Same answer |
+| CalDec v1 | `A` — Xinxin shows her appreciation for Jiayi in front of Qiaoqiao to stimulate Qiaoqiao&#x27;s envy. | `A` — Xinxin shows her appreciation for Jiayi in front of Qiaoqiao to stimulate Qiaoqiao&#x27;s envy. | Same answer |
+
+**Ordering comparison:** coupled wording reference chronology or representation. Only the exact matched comparison sets contribute to the reported ordering contrasts.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `tombench/fa2a5cf1af08720b3c2d/presentation_order/reverse_presentation/clean-source_first_parallel_b_retrospective_batch_0370`
+
+**Input fingerprint:** `5e62a625d62db8b091cd07f24e87158c0237d386ff06cca5da7ef462c95a84c5`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence order | Present the evidence in reverse order |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/social-cognition/tombench-fa2a5cf1af08720b3c2d.md).

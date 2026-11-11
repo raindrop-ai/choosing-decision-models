@@ -1,0 +1,75 @@
+# Irrelevant details · Add a larger amount of irrelevant detail variant
+
+[Original question](../../../questions/retrieval/boolq-1900c9c9ff70e2307a24.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The musical suite Merovan includes a refrain. Merovan uses a tonic cadence. Merovan includes rests. Merovan has sustained harmonies. Merovan has detached melodic notes. Merovan varies its accompaniment.
+>
+> In 933, the islands were granted to William I Longsword by Raoul King of Western Francia and annexed to the Duchy of Normandy. In 1066, William II of Normandy invaded and conquered England, becoming William I of England, also known as William the Conqueror. In the period 1204--1214, King John lost the Angevin lands in northern France, including mainland Normandy, to King Philip II of France, but managed to retain control of the Channel Islands. In 1259, his successor, Henry III of England, by the Treaty of Paris, officially surrendered his claim and title to the Duchy of Normandy, while the King of France gave up claim to the Channel Islands, which was based upon his position as feudal overlord of the Duke of Normandy. Since then, the Channel Islands have been governed as possessions of the Crown and were never absorbed into the Kingdom of England and its successor kingdoms of Great Britain and the United Kingdom.
+
+## Question
+
+> are the channel islands a part of great britain
+
+## Answer choices
+
+- **yes.** Yes
+- **no.** No
+
+**Reference answer:** `no`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The musical suite Merovan includes a refrain. Merovan uses a tonic cadence. Merovan includes rests. Merovan has sustained harmonies. Merovan has detached melodic notes. Merovan varies its accompaniment.\n\nIn 933, the islands were granted to William I Longsword by Raoul King of Western Francia and annexed to the Duchy of Normandy. In 1066, William II of Normandy invaded and conquered England, becoming William I of England, also known as William the Conqueror. In the period 1204--1214, King John lost the Angevin lands in northern France, including mainland Normandy, to King Philip II of France, but managed to retain control of the Channel Islands. In 1259, his successor, Henry III of England, by the Treaty of Paris, officially surrendered his claim and title to the Duchy of Normandy, while the King of France gave up claim to the Channel Islands, which was based upon his position as feudal overlord of the Duke of Normandy. Since then, the Channel Islands have been governed as possessions of the Crown and were never absorbed into the Kingdom of England and its successor kingdoms of Great Britain and the United Kingdom.",
+  "question": "are the channel islands a part of great britain",
+  "choices": {
+    "yes": "Yes",
+    "no": "No"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `no` — No | `no` — No | Same answer |
+| Decider v1.1 | `no` — No | `no` — No | Same answer |
+| Jev | `no` — No | `no` — No | Same answer |
+| Microsoft Decision-1 | `no` — No | `no` — No | Same answer |
+| Clef | `no` — No | `no` — No | Same answer |
+| Luna Decisions | `no` — No | `no` — No | Same answer |
+| Clef Flash | `no` — No | `no` — No | Same answer |
+| Strands Decider | `no` — No | `no` — No | Same answer |
+| GLiNER2.5 Decide | `no` — No | `no` — No | Same answer |
+| Laya | `no` — No | `no` — No | Same answer |
+| CalDec v1 | `no` — No | `no` — No | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `boolq/1900c9c9ff70e2307a24/irrelevant_details/high/clean-source_first_boolq_music_contexts_full_0164`
+
+**Input fingerprint:** `b0bf23ef4f437639f3b42a109e7d91c2d2d03efb9c564d83fb4b51598303a10f`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a larger amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/retrieval/boolq-1900c9c9ff70e2307a24.md).

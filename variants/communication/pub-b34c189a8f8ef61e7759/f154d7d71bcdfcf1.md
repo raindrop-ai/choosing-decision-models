@@ -1,0 +1,80 @@
+# Irrelevant details · Add a larger amount of irrelevant detail variant
+
+[Original question](../../../questions/communication/pub-b34c189a8f8ef61e7759.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The musical suite Merovan includes a refrain. Merovan uses a tonic cadence. Merovan includes rests. Merovan has sustained harmonies. Merovan has detached melodic notes. Merovan varies its accompaniment.
+>
+> Context: I waved down a taxi 
+> Question: What does the sentence refer to ?
+
+## Question
+
+> Choose the interpretation or answer requested by the text.
+
+## Answer choices
+
+- **A.** Got a taxi 
+- **B.** Didn&#x27;t get a taxi 
+- **C.** Said Hai to the taxi 
+- **D.** Said Bye to the taxi 
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The musical suite Merovan includes a refrain. Merovan uses a tonic cadence. Merovan includes rests. Merovan has sustained harmonies. Merovan has detached melodic notes. Merovan varies its accompaniment.\n\nContext: I waved down a taxi \nQuestion: What does the sentence refer to ?\n",
+  "question": "Choose the interpretation or answer requested by the text.",
+  "choices": {
+    "A": "Got a taxi ",
+    "B": "Didn't get a taxi ",
+    "C": "Said Hai to the taxi ",
+    "D": "Said Bye to the taxi "
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — Got a taxi  | `A` — Got a taxi  | Same answer |
+| Decider v1.1 | `A` — Got a taxi  | `A` — Got a taxi  | Same answer |
+| Jev | `A` — Got a taxi  | `A` — Got a taxi  | Same answer |
+| Microsoft Decision-1 | `A` — Got a taxi  | `A` — Got a taxi  | Same answer |
+| Clef | `A` — Got a taxi  | `A` — Got a taxi  | Same answer |
+| Luna Decisions | `A` — Got a taxi  | `A` — Got a taxi  | Same answer |
+| Clef Flash | `A` — Got a taxi  | `A` — Got a taxi  | Same answer |
+| Strands Decider | `A` — Got a taxi  | `A` — Got a taxi  | Same answer |
+| GLiNER2.5 Decide | `A` — Got a taxi  | `A` — Got a taxi  | Same answer |
+| Laya | `C` — Said Hai to the taxi  | `A` — Got a taxi  | Different answer |
+| CalDec v1 | `C` — Said Hai to the taxi  | `C` — Said Hai to the taxi  | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `pub/b34c189a8f8ef61e7759/irrelevant_details/high/clean-source_first_pub_music_contexts_full_0166`
+
+**Input fingerprint:** `57ac0057abbd39fe4c5cf447dadb06ef39996f94eb72ef92abd43824f32ae9c2`
+
+| Change | Recorded version |
+| --- | --- |
+| Irrelevant details | Add a larger amount of irrelevant detail |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/communication/pub-b34c189a8f8ef61e7759.md).

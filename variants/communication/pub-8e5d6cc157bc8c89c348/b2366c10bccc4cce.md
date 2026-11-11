@@ -1,0 +1,85 @@
+# Similar distractors · Add fewer similar but irrelevant items variant
+
+[Original question](../../../questions/communication/pub-8e5d6cc157bc8c89c348.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> «Context: Varelin and Nerava are choosing an outing.
+> Varelin: Would you like to visit the gallery?
+> Nerava: I would rather spend the afternoon outdoors.»
+>
+> Context: X and Y are childhood neighbours who unexpectedly run into each other at a cafe.
+> X: Are you working nearby?
+> Y: I work in this building.
+
+## Question
+
+> Choose the interpretation or answer requested by the text.
+
+## Answer choices
+
+- **A.** Yes
+- **B.** No
+- **C.** Yes, subject to some conditions
+- **D.** In the middle, neither yes nor no
+- **E.** Other
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "«Context: Varelin and Nerava are choosing an outing.\nVarelin: Would you like to visit the gallery?\nNerava: I would rather spend the afternoon outdoors.»\n\nContext: X and Y are childhood neighbours who unexpectedly run into each other at a cafe.\nX: Are you working nearby?\nY: I work in this building.\n",
+  "question": "Choose the interpretation or answer requested by the text.",
+  "choices": {
+    "A": "Yes",
+    "B": "No",
+    "C": "Yes, subject to some conditions",
+    "D": "In the middle, neither yes nor no",
+    "E": "Other"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — Yes | `A` — Yes | Same answer |
+| Decider v1.1 | `A` — Yes | `A` — Yes | Same answer |
+| Jev | `A` — Yes | `A` — Yes | Same answer |
+| Microsoft Decision-1 | `A` — Yes | `A` — Yes | Same answer |
+| Clef | `A` — Yes | `A` — Yes | Same answer |
+| Luna Decisions | `E` — Other | `E` — Other | Same answer |
+| Clef Flash | `A` — Yes | `C` — Yes, subject to some conditions | Different answer |
+| Strands Decider | `A` — Yes | `A` — Yes | Same answer |
+| GLiNER2.5 Decide | `E` — Other | `E` — Other | Same answer |
+| Laya | `C` — Yes, subject to some conditions | `B` — No | Different answer |
+| CalDec v1 | `A` — Yes | `B` — No | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `pub/8e5d6cc157bc8c89c348/similar_distractors/low/clean-source_first_pub_near_records_full_0244`
+
+**Input fingerprint:** `e0a45a4dd505999faab848b649ec7d6ee21ee5e34e0d01b0efc27f3d9edd86f3`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add fewer similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/communication/pub-8e5d6cc157bc8c89c348.md).

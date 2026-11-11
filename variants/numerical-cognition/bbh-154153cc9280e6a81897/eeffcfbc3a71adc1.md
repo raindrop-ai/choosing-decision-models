@@ -1,0 +1,78 @@
+# Repetition · Present the same evidence three times variant
+
+[Original question](../../../questions/numerical-cognition/bbh-154153cc9280e6a81897.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> ((-2 \* -1 + 1 \* -3) - (7 \* -7 + -5 \* 6)) =
+> ((-2 \* -1 + 1 \* -3) - (7 \* -7 + -5 \* 6)) =
+
+## Question
+
+> ((-2 \* -1 + 1 \* -3) - (7 \* -7 + -5 \* 6)) =
+
+## Answer choices
+
+- **A.** 78
+- **B.** -3
+- **C.** -1
+- **D.** -6
+
+**Reference answer:** `A`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "((-2 * -1 + 1 * -3) - (7 * -7 + -5 * 6)) =\n((-2 * -1 + 1 * -3) - (7 * -7 + -5 * 6)) =",
+  "question": "((-2 * -1 + 1 * -3) - (7 * -7 + -5 * 6)) =",
+  "choices": {
+    "A": "78",
+    "B": "-3",
+    "C": "-1",
+    "D": "-6"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `A` — 78 | `A` — 78 | Same answer |
+| Decider v1.1 | `A` — 78 | `A` — 78 | Same answer |
+| Jev | `A` — 78 | `A` — 78 | Same answer |
+| Microsoft Decision-1 | `A` — 78 | `D` — -6 | Different answer |
+| Clef | `B` — -3 | `B` — -3 | Same answer |
+| Luna Decisions | `A` — 78 | `A` — 78 | Same answer |
+| Clef Flash | `B` — -3 | `B` — -3 | Same answer |
+| Strands Decider | `A` — 78 | `D` — -6 | Different answer |
+| GLiNER2.5 Decide | `A` — 78 | `A` — 78 | Same answer |
+| Laya | `B` — -3 | `A` — 78 | Different answer |
+| CalDec v1 | `B` — -3 | `A` — 78 | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `bbh/154153cc9280e6a81897/evidence_repetition/3/clean-bare_arithmetic_expression_repetition_full_0060`
+
+**Input fingerprint:** `48d3ab03ad0d49ebbbfeb0baff5d39896facec1c7ee032fd5f5dfac86cb7960f`
+
+| Change | Recorded version |
+| --- | --- |
+| Repetition | Present the same evidence three times |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/numerical-cognition/bbh-154153cc9280e6a81897.md).

@@ -1,0 +1,48 @@
+# Paraphrasing · Change individual words and phrases variant
+
+[Original question](../../../questions/rule-application/proofwriter-03188ca676f9a9ed527a.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Recover the question text
+
+The original dataset’s terms do not clearly support republishing its text here, or require additional conditions. This variant’s full text is therefore reconstructed locally. [Follow the recovery instructions](../../../docs/variant-reproduction.md#recover-the-remaining-variant-texts).
+
+**Reference answer key:** `unknown`.
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `unknown` | `unknown` | Same answer |
+| Decider v1.1 | `unknown` | `unknown` | Same answer |
+| Jev | `true` | `true` | Same answer |
+| Microsoft Decision-1 | `unknown` | `unknown` | Same answer |
+| Clef | `false` | `false` | Same answer |
+| Luna Decisions | `false` | `false` | Same answer |
+| Clef Flash | `false` | `false` | Same answer |
+| Strands Decider | `false` | `false` | Same answer |
+| GLiNER2.5 Decide | `false` | `false` | Same answer |
+| Laya | `false` | `false` | Same answer |
+| CalDec v1 | `true` | `true` | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `proofwriter/03188ca676f9a9ed527a/paraphrasing/surface`
+
+**Input fingerprint:** `af3d0aac99b19e5d87914974e9cca4eaa152c00cbce2f23a29ed701cd665ac03`
+
+| Change | Recorded version |
+| --- | --- |
+| Paraphrasing | Change individual words and phrases |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/rule-application/proofwriter-03188ca676f9a9ed527a.md).

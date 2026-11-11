@@ -1,0 +1,126 @@
+{
+  "0751b1bd3ebc8f7fe86881d239ec1e6d6c08c5cdf2f9d1ad00bebb239786e4fa": {
+    "backend": "gateway_llm",
+    "model_id": "anthropic/claude-opus-5.5",
+    "reported_model_aliases": [
+      "claude-opus-5-5"
+    ],
+    "reasoning_effort": "high",
+    "max_output_tokens": 8192,
+    "max_input_bound": 1000000,
+    "role": "Additional decision baseline; screening overlap disclosed"
+  },
+  "0c30e43bea50d9c87cf76bd17e1beadd96d0d1061bc5cc7fe2519ad8ab3fce25": {
+    "backend": "modal",
+    "kind": "laya",
+    "model_id": "kgrozdanovski/caldec-v1-laya",
+    "max_input_tokens": 8192,
+    "gpu": "A100-80GB",
+    "dtype": "float32",
+    "specialist": true,
+    "revision": "6a7e10eb795806dd3a8e80c2ae8d1fa803991757",
+    "input_fit_recovery": "complete-input-v1"
+  },
+  "1c716c89d1a1ab328383439e6550be6dd8187e213abd3219d28dcebf504f0869": {
+    "backend": "modal",
+    "kind": "gliner",
+    "model_id": "fastino/GLiNER2.5-Decide",
+    "max_input_tokens": 8192,
+    "gpu": "A100-80GB",
+    "dtype": "float32",
+    "revision": "9d1bfb848cd16d93ee56ccbc59cd92bf0f284d90",
+    "input_fit_recovery": "complete-input-v1"
+  },
+  "2f78db2dd535e10ae09af62f98b8878a9396d9de01417390cbf096750eac766f": {
+    "backend": "modal",
+    "kind": "strands",
+    "model_id": "StrandsAgents/strands-decider-2B-qwen3.5-v1-2610",
+    "max_input_tokens": 8192,
+    "gpu": "A100-80GB",
+    "dtype": "bfloat16",
+    "revision": "216d1ccb46a9e9b036eb9187b248db98480f77d4",
+    "input_fit_recovery": "complete-input-v1",
+    "native_probability_precision": true
+  },
+  "35ac4f680ec46acb267ba7755338c4095d038358e21ab5d3a3501aef3e629702": {
+    "backend": "gateway",
+    "kind": "gateway",
+    "api": "gateway-evaluation-v4",
+    "model_id": "typesafe-ai/jev",
+    "max_input_tokens": 32768,
+    "input_per_million_usd": 0.042,
+    "version_note": "Gateway alias; record provider-reported model and routing per response."
+  },
+  "56b270a42dc97a4333db39976baccaed602f068233b0be51edd9afe62e3ee156": {
+    "backend": "modal",
+    "kind": "decider11",
+    "model_id": "perplexity-ai/pplx-decider-v1.1-27b",
+    "revision": "14c9d90137962d300f3de95633f7b6535e80c5ce",
+    "gpu": "A100-80GB",
+    "max_input_tokens": 8192,
+    "dtype": "bfloat16",
+    "version": "1.1"
+  },
+  "7c4d4bec2d1d1a0b228d043131d7ab3bbcb9049a01abbd5f0aa8a426e3512a78": {
+    "backend": "gateway_llm",
+    "model_id": "openai/gpt-6-astra",
+    "reasoning_effort": "high",
+    "max_output_tokens": 8192,
+    "max_input_bound": 120000,
+    "role": "User-requested primary test baseline; separate from Sol/Sonnet screening"
+  },
+  "92cac03abc7915f7397aab47cb1ed49c083dcf32d546e4e9e8eb1bc56d6f172d": {
+    "backend": "modal",
+    "kind": "clef",
+    "model_id": "Cloudflare/clef-flash",
+    "max_input_tokens": 16384,
+    "gpu": "A100-80GB",
+    "dtype": "bfloat16",
+    "revision": "fb4417d31c1d0f9e7e77f1141b40aaede7491e00"
+  },
+  "ba0f304f972975955ba0c54e187b62673b532959e2463d0c06d7dca60b70a924": {
+    "backend": "modal",
+    "kind": "laya",
+    "model_id": "convaiinnovations/laya",
+    "max_input_tokens": 8192,
+    "gpu": "A100-80GB",
+    "dtype": "float32",
+    "revision": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+    "input_fit_recovery": "complete-input-v1"
+  },
+  "e0230453945808bbda7498969e3c9f48001cc8a0d3a3a0eeb3d403da87ea986b": {
+    "backend": "modal",
+    "kind": "glide",
+    "model_id": "fastino/GLiDE",
+    "revision": "d199b6d7e04523d87986b8b68cd62272ed1cefc0",
+    "gpu": "A100-80GB",
+    "max_input_tokens": 40000,
+    "dtype": "bfloat16",
+    "version": "1.2"
+  },
+  "e252880e259f43d05d2d4cd7d5d1ba6b29815d22828d6a6fc47b5472e66c6fba": {
+    "backend": "modal",
+    "kind": "clef",
+    "model_id": "Cloudflare/clef",
+    "max_input_tokens": 16384,
+    "gpu": "A100-80GB",
+    "dtype": "bfloat16",
+    "revision": "cfddda043dd190ef3b01cff449d5ee8cff1e8ec6"
+  },
+  "f6197f7313867967c60fdc84480e09103523dd5836581cd586474886e9f26354": {
+    "backend": "gateway",
+    "kind": "gateway",
+    "api": "decisions-v1",
+    "model_id": "openai/gpt-6-luna-decisions",
+    "max_input_tokens": 32768,
+    "input_per_million_usd": 0.1
+  },
+  "feb0e7b9cc5079265ef0304fd378be3d436b96bd992ea10d30656673e4820f24": {
+    "backend": "gateway",
+    "kind": "gateway",
+    "api": "gateway-evaluation-v4",
+    "model_id": "microsoft/microsoft-decision-1",
+    "max_input_tokens": 32768,
+    "input_per_million_usd": 0.042
+  }
+}

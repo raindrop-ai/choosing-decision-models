@@ -1,0 +1,82 @@
+# Evidence position · Place the relevant information at the end variant
+
+[Original question](../../../questions/causal-reasoning/cladder-2f42ba0ce24a35eaa5b5.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> The notebook has a linen cover.
+>
+> The notebook's title is embossed.
+>
+> The notebook's page edges are uneven.
+>
+> The notebook's binding is stitched.
+>
+> Imagine a self-contained, hypothetical world with only the following conditions, and without any unmentioned factors or causal relationships: Qwiu has a direct effect on jyka and kwox. Jyka has a direct effect on yupt. Yupt has a direct effect on kwox. Qwiu is unobserved.
+> For those who are not jyka, the probability of yupt is 96%. For those who are jyka, the probability of yupt is 37%. For those who are not jyka and are not yupt, the probability of kwox is 49%. For those who are not jyka and are yupt, the probability of kwox is 82%. For those who are jyka and are not yupt, the probability of kwox is 44%. For those who are jyka and are yupt, the probability of kwox is 84%. The overall probability of jyka is 32%.
+
+## Question
+
+> Will jyka decrease the chance of kwox?
+
+## Answer choices
+
+- **yes.** Yes
+- **no.** No
+
+**Reference answer:** `yes`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "The notebook has a linen cover.\n\nThe notebook's title is embossed.\n\nThe notebook's page edges are uneven.\n\nThe notebook's binding is stitched.\n\nImagine a self-contained, hypothetical world with only the following conditions, and without any unmentioned factors or causal relationships: Qwiu has a direct effect on jyka and kwox. Jyka has a direct effect on yupt. Yupt has a direct effect on kwox. Qwiu is unobserved.\nFor those who are not jyka, the probability of yupt is 96%. For those who are jyka, the probability of yupt is 37%. For those who are not jyka and are not yupt, the probability of kwox is 49%. For those who are not jyka and are yupt, the probability of kwox is 82%. For those who are jyka and are not yupt, the probability of kwox is 44%. For those who are jyka and are yupt, the probability of kwox is 84%. The overall probability of jyka is 32%.",
+  "question": "Will jyka decrease the chance of kwox?",
+  "choices": {
+    "yes": "Yes",
+    "no": "No"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `yes` — Yes | `yes` — Yes | Same answer |
+| Decider v1.1 | `yes` — Yes | `yes` — Yes | Same answer |
+| Jev | `yes` — Yes | `yes` — Yes | Same answer |
+| Microsoft Decision-1 | `yes` — Yes | `yes` — Yes | Same answer |
+| Clef | `yes` — Yes | `yes` — Yes | Same answer |
+| Luna Decisions | `no` — No | `yes` — Yes | Different answer |
+| Clef Flash | `yes` — Yes | `yes` — Yes | Same answer |
+| Strands Decider | `yes` — Yes | `yes` — Yes | Same answer |
+| GLiNER2.5 Decide | `no` — No | `no` — No | Same answer |
+| Laya | `no` — No | `yes` — Yes | Different answer |
+| CalDec v1 | `no` — No | `no` — No | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `cladder/2f42ba0ce24a35eaa5b5/evidence_position/end/clean-source_first_cladder_position_full_0133`
+
+**Input fingerprint:** `cb1495330a0be8e40a9b7ec78cff9c9bf52465274935def26b76d9b4e9b76c70`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence position | Place the relevant information at the end |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/causal-reasoning/cladder-2f42ba0ce24a35eaa5b5.md).

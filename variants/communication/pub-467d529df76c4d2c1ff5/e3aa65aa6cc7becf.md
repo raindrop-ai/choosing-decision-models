@@ -1,0 +1,79 @@
+# Similar distractors · Add more similar but irrelevant items variant
+
+[Original question](../../../questions/communication/pub-467d529df76c4d2c1ff5.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Sentence : I start to prowl across the room like a tightrope walker on dental floss.
+
+## Question
+
+> Choose the interpretation or answer requested by the text.
+>
+> «What does “perfectly imperfect” mean?»
+>
+> «What does “painfully pleasant” mean?»
+>
+> «What does “clearly obscure” mean?»
+
+## Answer choices
+
+- **A.** I start to walk across the room recklessly.
+- **B.** I start to walk across the room cautiously.
+
+**Reference answer:** `B`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Sentence : I start to prowl across the room like a tightrope walker on dental floss.",
+  "question": "Choose the interpretation or answer requested by the text.\n\n«What does “perfectly imperfect” mean?»\n\n«What does “painfully pleasant” mean?»\n\n«What does “clearly obscure” mean?»",
+  "choices": {
+    "A": "I start to walk across the room recklessly.",
+    "B": "I start to walk across the room cautiously."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `B` — I start to walk across the room cautiously. | `B` — I start to walk across the room cautiously. | Same answer |
+| Decider v1.1 | `B` — I start to walk across the room cautiously. | `B` — I start to walk across the room cautiously. | Same answer |
+| Jev | `B` — I start to walk across the room cautiously. | `B` — I start to walk across the room cautiously. | Same answer |
+| Microsoft Decision-1 | `B` — I start to walk across the room cautiously. | `B` — I start to walk across the room cautiously. | Same answer |
+| Clef | `B` — I start to walk across the room cautiously. | `B` — I start to walk across the room cautiously. | Same answer |
+| Luna Decisions | `B` — I start to walk across the room cautiously. | `A` — I start to walk across the room recklessly. | Different answer |
+| Clef Flash | `B` — I start to walk across the room cautiously. | `B` — I start to walk across the room cautiously. | Same answer |
+| Strands Decider | `B` — I start to walk across the room cautiously. | `B` — I start to walk across the room cautiously. | Same answer |
+| GLiNER2.5 Decide | `A` — I start to walk across the room recklessly. | `A` — I start to walk across the room recklessly. | Same answer |
+| Laya | `A` — I start to walk across the room recklessly. | `A` — I start to walk across the room recklessly. | Same answer |
+| CalDec v1 | `A` — I start to walk across the room recklessly. | `A` — I start to walk across the room recklessly. | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `pub/467d529df76c4d2c1ff5/similar_distractors/high/clean-source_first_referent_free_near_full_0285`
+
+**Input fingerprint:** `f71c9cba2d43b8a7a52f8209b8778bedf95e32dbb2863d4d139d4fd4b67cea23`
+
+| Change | Recorded version |
+| --- | --- |
+| Similar distractors | Add more similar but irrelevant items |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/communication/pub-467d529df76c4d2c1ff5.md).

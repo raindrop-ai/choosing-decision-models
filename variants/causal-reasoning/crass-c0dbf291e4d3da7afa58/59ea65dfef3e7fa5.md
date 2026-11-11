@@ -1,0 +1,77 @@
+# Extra events · Add 2 unrelated events variant
+
+[Original question](../../../questions/causal-reasoning/crass-c0dbf291e4d3da7afa58.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Merovan is a fictional musical suite with a refrain. The refrain begins on the tonic. The refrain pauses.
+
+## Question
+
+> A woman dates a man. What would have happened if the woman had cheated on the man?
+
+## Answer choices
+
+- **A.** The man would be embarrassed to have been caught cheating.
+- **B.** That is not possible.
+- **C.** The man would have been very happy and would have married her.
+- **D.** Their relationship would have been put in jeopardy.
+
+**Reference answer:** `D`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Merovan is a fictional musical suite with a refrain. The refrain begins on the tonic. The refrain pauses.",
+  "question": "A woman dates a man. What would have happened if the woman had cheated on the man?",
+  "choices": {
+    "A": "The man would be embarrassed to have been caught cheating.",
+    "B": "That is not possible.",
+    "C": "The man would have been very happy and would have married her.",
+    "D": "Their relationship would have been put in jeopardy."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Decider v1.1 | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Jev | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Microsoft Decision-1 | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Clef | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Luna Decisions | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Clef Flash | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Strands Decider | `D` — Their relationship would have been put in jeopardy. | `B` — That is not possible. | Different answer |
+| GLiNER2.5 Decide | `D` — Their relationship would have been put in jeopardy. | `D` — Their relationship would have been put in jeopardy. | Same answer |
+| Laya | `A` — The man would be embarrassed to have been caught cheating. | `A` — The man would be embarrassed to have been caught cheating. | Same answer |
+| CalDec v1 | `A` — The man would be embarrassed to have been caught cheating. | `A` — The man would be embarrassed to have been caught cheating. | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `crass/c0dbf291e4d3da7afa58/event_count/2/clean-source_first_crass_contexts_full_0199`
+
+**Input fingerprint:** `81da31bcc11268bf511626c281a57d7297aeaacd2c2ed9aefcf99ab660e669d0`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 2 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/causal-reasoning/crass-c0dbf291e4d3da7afa58.md).

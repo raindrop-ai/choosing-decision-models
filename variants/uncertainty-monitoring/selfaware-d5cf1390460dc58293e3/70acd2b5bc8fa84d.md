@@ -1,0 +1,75 @@
+# Evidence order · Swap the condition and the question variant
+
+[Original question](../../../questions/uncertainty-monitoring/selfaware-d5cf1390460dc58293e3.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> What would you fear, if you were a nyctophobic?
+
+## Question
+
+> Does this question have a determinate answer?
+
+## Answer choices
+
+- **yes.** Answerable
+- **no.** Unanswerable
+
+**Reference answer:** `yes`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "What would you fear, if you were a nyctophobic?",
+  "question": "Does this question have a determinate answer?",
+  "choices": {
+    "yes": "Answerable",
+    "no": "Unanswerable"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Decider v1.1 | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Jev | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Microsoft Decision-1 | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Clef | `yes` — Answerable | `no` — Unanswerable | Different answer |
+| Luna Decisions | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Clef Flash | `yes` — Answerable | `yes` — Answerable | Same answer |
+| Strands Decider | `yes` — Answerable | `yes` — Answerable | Same answer |
+| GLiNER2.5 Decide | `no` — Unanswerable | `no` — Unanswerable | Same answer |
+| Laya | `yes` — Answerable | `yes` — Answerable | Same answer |
+| CalDec v1 | `no` — Unanswerable | `yes` — Answerable | Different answer |
+
+**Ordering comparison:** coupled wording reference chronology or representation. Only the exact matched comparison sets contribute to the reported ordering contrasts.
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `selfaware/d5cf1390460dc58293e3/presentation_order/swap_condition_question_units/clean-source_first_native_record_conditional_order_full_0289`
+
+**Input fingerprint:** `8118d803fe986b5a602b5f6f9934ce8c9697b87f491836047a363a9b0f13cd48`
+
+| Change | Recorded version |
+| --- | --- |
+| Evidence order | Swap the condition and the question |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/uncertainty-monitoring/selfaware-d5cf1390460dc58293e3.md).

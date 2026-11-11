@@ -1,0 +1,77 @@
+# Unrelated examples · Add examples unrelated to the question variant
+
+[Original question](../../../questions/retrieval/spartqa-b862b916bd8e951302e0.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Capitalization: harbor → Harbor
+>
+> There are three blocks. We call them A, B and C. Block C is to the right of A. Block A is above B. Block A has one small yellow triangle and one medium yellow triangle. The small yellow triangle is touching the right edge of this block. This block also has a medium black triangle. Below the medium yellow triangle and the medium black triangle there is the small yellow triangle. Block B contains one small yellow triangle. And block C has one small blue triangle and a big yellow square. The small blue triangle is to the left of, near to and above the big yellow square.
+
+## Question
+
+> Is the blue triangle , above the big yellow square?
+
+## Answer choices
+
+- **Yes.** Yes
+- **No.** No
+- **DK.** DK
+
+**Reference answer:** `Yes`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Capitalization: harbor → Harbor\n\nThere are three blocks. We call them A, B and C. Block C is to the right of A. Block A is above B. Block A has one small yellow triangle and one medium yellow triangle. The small yellow triangle is touching the right edge of this block. This block also has a medium black triangle. Below the medium yellow triangle and the medium black triangle there is the small yellow triangle. Block B contains one small yellow triangle. And block C has one small blue triangle and a big yellow square. The small blue triangle is to the left of, near to and above the big yellow square.",
+  "question": "Is the blue triangle , above the big yellow square?",
+  "choices": {
+    "Yes": "Yes",
+    "No": "No",
+    "DK": "DK"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Decider v1.1 | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Jev | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Microsoft Decision-1 | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Clef | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Luna Decisions | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Clef Flash | `Yes` — Yes | `Yes` — Yes | Same answer |
+| Strands Decider | `Yes` — Yes | `Yes` — Yes | Same answer |
+| GLiNER2.5 Decide | `No` — No | `No` — No | Same answer |
+| Laya | `Yes` — Yes | `Yes` — Yes | Same answer |
+| CalDec v1 | `Yes` — Yes | `Yes` — Yes | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `spartqa/b862b916bd8e951302e0/examples/irrelevant/clean-source_first_spartqa_short_contexts_full_0136`
+
+**Input fingerprint:** `78280e7c7fe2b8fd3d0e1df6a45d1466fd877fd8fe77fad9841cf270a0bc8123`
+
+| Change | Recorded version |
+| --- | --- |
+| Unrelated examples | Add examples unrelated to the question |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/retrieval/spartqa-b862b916bd8e951302e0.md).

@@ -1,0 +1,194 @@
+{
+  "original_questions": 1005,
+  "variants": 24563,
+  "common_fit_variants": 23374,
+  "models": [
+    "glide",
+    "decider11",
+    "jev",
+    "microsoft-decision-1",
+    "clef",
+    "openai-decisions",
+    "clef-flash",
+    "strands",
+    "gliner",
+    "laya",
+    "caldec"
+  ],
+  "full_text_variants": 20961,
+  "recovered_text_variants": 3602,
+  "outcomes": {
+    "glide": {
+      "ok": 24562,
+      "unknown": 1
+    },
+    "decider11": {
+      "ok": 23392,
+      "not_supported": 1171
+    },
+    "jev": {
+      "ok": 24561,
+      "error": 1,
+      "not_supported": 1
+    },
+    "microsoft-decision-1": {
+      "ok": 24559,
+      "unknown": 2,
+      "not_supported": 1,
+      "error": 1
+    },
+    "clef": {
+      "ok": 24562,
+      "not_supported": 1
+    },
+    "openai-decisions": {
+      "ok": 24293,
+      "refusal": 260,
+      "unknown": 8,
+      "not_supported": 1,
+      "unknown_prior_attempt": 1
+    },
+    "clef-flash": {
+      "ok": 24562,
+      "not_supported": 1
+    },
+    "strands": {
+      "ok": 23401,
+      "not_supported": 1162
+    },
+    "gliner": {
+      "ok": 24234,
+      "not_supported": 328,
+      "error": 1
+    },
+    "laya": {
+      "ok": 23380,
+      "not_supported": 1183
+    },
+    "caldec": {
+      "ok": 23380,
+      "not_supported": 1183
+    }
+  },
+  "source_file_sha256": {
+    "variant-original-pairings-0001.sqlite": "2c09f52416e115f0108cd329d59670e3b55c159b70edbda2d82ac034f44d5d64",
+    "manipulation-comparison-manifest-0002.json": "e4b60b52ed5d5cbd182ca37c9d972de1b4711897055ebccfcec5c5e61172280c",
+    "authored-level-comparison-families-0001.json": "35c7a6fad97763a7423b6ee9130d54277aefeba04d08f703be37748a5cfdb62e",
+    "all-cases.jsonl": "93b2a7c3c255480cd9710bc0eaa9c32892abf2d339c215a9ef7c1a566599f656",
+    "condition-map.jsonl": "261cb03789b9a7d64b86a80c17b0e33b5016b5dd4b0006b1db70ba869ac45cf1"
+  },
+  "exclusions": [
+    {
+      "variant_id": "babi/2f265669fdfd296e8814/event_count/plus_one_event/clean-revision-1",
+      "input_hash": "79fd49d599a8a412c258d4b04b3352b50d73bbefbcf278baf838a7c86de7353b",
+      "reason": "Single-original extra-event condition omitted from the reported comparison set."
+    }
+  ],
+  "model_configurations": {
+    "jev": {
+      "backend": "gateway",
+      "kind": "gateway",
+      "api": "gateway-evaluation-v4",
+      "model_id": "typesafe-ai/jev",
+      "max_input_tokens": 32768,
+      "input_per_million_usd": 0.042,
+      "version_note": "Gateway alias; record provider-reported model and routing per response."
+    },
+    "openai-decisions": {
+      "backend": "gateway",
+      "kind": "gateway",
+      "api": "decisions-v1",
+      "model_id": "openai/gpt-6-luna-decisions",
+      "max_input_tokens": 32768,
+      "input_per_million_usd": 0.1
+    },
+    "microsoft-decision-1": {
+      "backend": "gateway",
+      "kind": "gateway",
+      "api": "gateway-evaluation-v4",
+      "model_id": "microsoft/microsoft-decision-1",
+      "max_input_tokens": 32768,
+      "input_per_million_usd": 0.042
+    },
+    "clef-flash": {
+      "backend": "modal",
+      "kind": "clef",
+      "model_id": "Cloudflare/clef-flash",
+      "max_input_tokens": 16384,
+      "gpu": "A100-80GB",
+      "dtype": "bfloat16",
+      "revision": "fb4417d31c1d0f9e7e77f1141b40aaede7491e00"
+    },
+    "clef": {
+      "backend": "modal",
+      "kind": "clef",
+      "model_id": "Cloudflare/clef",
+      "max_input_tokens": 16384,
+      "gpu": "A100-80GB",
+      "dtype": "bfloat16",
+      "revision": "cfddda043dd190ef3b01cff449d5ee8cff1e8ec6"
+    },
+    "strands": {
+      "backend": "modal",
+      "kind": "strands",
+      "model_id": "StrandsAgents/strands-decider-2B-qwen3.5-v1-2610",
+      "max_input_tokens": 8192,
+      "gpu": "L4",
+      "dtype": "bfloat16",
+      "revision": "216d1ccb46a9e9b036eb9187b248db98480f77d4",
+      "input_fit_recovery": "complete-input-v1",
+      "native_probability_precision": true
+    },
+    "laya": {
+      "backend": "modal",
+      "kind": "laya",
+      "model_id": "convaiinnovations/laya",
+      "max_input_tokens": 8192,
+      "gpu": "L4",
+      "dtype": "float32",
+      "revision": "7b928d828b7b0e022f929d9bd2e44165aa270148",
+      "input_fit_recovery": "complete-input-v1"
+    },
+    "gliner": {
+      "backend": "modal",
+      "kind": "gliner",
+      "model_id": "fastino/GLiNER2.5-Decide",
+      "max_input_tokens": 8192,
+      "gpu": "A100-80GB",
+      "dtype": "float32",
+      "revision": "9d1bfb848cd16d93ee56ccbc59cd92bf0f284d90",
+      "input_fit_recovery": "complete-input-v1"
+    },
+    "caldec": {
+      "backend": "modal",
+      "kind": "laya",
+      "model_id": "kgrozdanovski/caldec-v1-laya",
+      "max_input_tokens": 8192,
+      "gpu": "L4",
+      "dtype": "float32",
+      "specialist": true,
+      "revision": "6a7e10eb795806dd3a8e80c2ae8d1fa803991757",
+      "input_fit_recovery": "complete-input-v1"
+    },
+    "decider11": {
+      "backend": "modal",
+      "kind": "decider11",
+      "model_id": "perplexity-ai/pplx-decider-v1.1-27b",
+      "revision": "14c9d90137962d300f3de95633f7b6535e80c5ce",
+      "gpu": "H100",
+      "max_input_tokens": 8192,
+      "dtype": "bfloat16",
+      "version": "1.1"
+    },
+    "glide": {
+      "backend": "modal",
+      "kind": "glide",
+      "model_id": "fastino/GLiDE",
+      "revision": "d199b6d7e04523d87986b8b68cd62272ed1cefc0",
+      "gpu": "A100-80GB",
+      "max_input_tokens": 40000,
+      "dtype": "bfloat16",
+      "version": "1.2"
+    }
+  }
+}

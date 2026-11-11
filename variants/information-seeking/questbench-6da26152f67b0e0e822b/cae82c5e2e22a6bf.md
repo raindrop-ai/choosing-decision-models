@@ -1,0 +1,77 @@
+# Repetition · Present the same evidence twice variant
+
+[Original question](../../../questions/information-seeking/questbench-6da26152f67b0e0e822b.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** context.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> In Tate's garden pond, there are 4 male guppies, 7 female guppies, 3 male goldfishes, and 5 female goldfishes. He buys 2 male guppies, 1 female guppy, male goldfishes, and 3 female goldfishes. Additionally, he also buys male betta fish and  female betta fish, but later gives them all away to his friend. Now, how many more female fishes than male fishes does Tate have in his pond?
+>
+> In Tate's garden pond, there are 4 male guppies, 7 female guppies, 3 male goldfishes, and 5 female goldfishes. He buys 2 male guppies, 1 female guppy, male goldfishes, and 3 female goldfishes. Additionally, he also buys male betta fish and  female betta fish, but later gives them all away to his friend. Now, how many more female fishes than male fishes does Tate have in his pond?
+
+## Question
+
+> Which missing variable should be asked about to solve this problem?
+
+## Answer choices
+
+- **G.** The number of male goldfish Tate purchased.
+- **I.** The number of male betta fish Tate purchased but gave away.
+- **J.** The number of female betta fish Tate purchased but gave away.
+
+**Reference answer:** `G`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "In Tate's garden pond, there are 4 male guppies, 7 female guppies, 3 male goldfishes, and 5 female goldfishes. He buys 2 male guppies, 1 female guppy, male goldfishes, and 3 female goldfishes. Additionally, he also buys male betta fish and  female betta fish, but later gives them all away to his friend. Now, how many more female fishes than male fishes does Tate have in his pond?\n\nIn Tate's garden pond, there are 4 male guppies, 7 female guppies, 3 male goldfishes, and 5 female goldfishes. He buys 2 male guppies, 1 female guppy, male goldfishes, and 3 female goldfishes. Additionally, he also buys male betta fish and  female betta fish, but later gives them all away to his friend. Now, how many more female fishes than male fishes does Tate have in his pond?",
+  "question": "Which missing variable should be asked about to solve this problem?",
+  "choices": {
+    "G": "The number of male goldfish Tate purchased.",
+    "I": "The number of male betta fish Tate purchased but gave away.",
+    "J": "The number of female betta fish Tate purchased but gave away."
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `G` — The number of male goldfish Tate purchased. | `G` — The number of male goldfish Tate purchased. | Same answer |
+| Decider v1.1 | `G` — The number of male goldfish Tate purchased. | `G` — The number of male goldfish Tate purchased. | Same answer |
+| Jev | `G` — The number of male goldfish Tate purchased. | `G` — The number of male goldfish Tate purchased. | Same answer |
+| Microsoft Decision-1 | `G` — The number of male goldfish Tate purchased. | `G` — The number of male goldfish Tate purchased. | Same answer |
+| Clef | `G` — The number of male goldfish Tate purchased. | `G` — The number of male goldfish Tate purchased. | Same answer |
+| Luna Decisions | `G` — The number of male goldfish Tate purchased. | `G` — The number of male goldfish Tate purchased. | Same answer |
+| Clef Flash | `G` — The number of male goldfish Tate purchased. | `G` — The number of male goldfish Tate purchased. | Same answer |
+| Strands Decider | `G` — The number of male goldfish Tate purchased. | `J` — The number of female betta fish Tate purchased but gave away. | Different answer |
+| GLiNER2.5 Decide | `J` — The number of female betta fish Tate purchased but gave away. | `J` — The number of female betta fish Tate purchased but gave away. | Same answer |
+| Laya | `J` — The number of female betta fish Tate purchased but gave away. | `G` — The number of male goldfish Tate purchased. | Different answer |
+| CalDec v1 | `J` — The number of female betta fish Tate purchased but gave away. | `I` — The number of male betta fish Tate purchased but gave away. | Different answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `questbench/6da26152f67b0e0e822b/evidence_repetition/2/clean-source_first_quest_problem_repetition_full_0188`
+
+**Input fingerprint:** `986d4298ed71d246ddbfeabc13a4508de119e149bef6a8533a2cbacaebf45a96`
+
+| Change | Recorded version |
+| --- | --- |
+| Repetition | Present the same evidence twice |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/information-seeking/questbench-6da26152f67b0e0e822b.md).

@@ -1,0 +1,75 @@
+# Extra events · Add 12 unrelated events variant
+
+[Original question](../../../questions/communication/isarcasmeval-50039007b81a935b1eb9.md) · [Other versions of this question](README.md) · [All variants](../../README.md)
+
+This version keeps the original reference answer. Its context, question instructions or answer choices were changed as described below.
+
+**Changed fields:** question instructions.
+
+[How the edits were constructed](../../../docs/variant-methods.md)
+
+## Context
+
+> Michael Carricks interview after the Chelsea game, "i thought we were unlucky not to get the 3 points today" 3 Points, i am sure you have to start shooting to score goals to win games !!!
+
+## Question
+
+> Is this message intended to be sarcastic?
+>
+> Merovan is a fictional musical suite with a refrain. The refrain begins on the tonic. The refrain pauses. The refrain resumes on a dominant tone. The refrain changes to detached articulation. The refrain returns to the tonic. The refrain repeats its final interval. The refrain changes to a minor-mode variant. The refrain adopts sustained articulation. The refrain returns to a dominant tone. The refrain pauses again. The refrain resumes on the tonic. The refrain ends.
+
+## Answer choices
+
+- **no.** Not sarcastic
+- **yes.** Sarcastic
+
+**Reference answer:** `yes`.
+
+<details>
+<summary>Exact evaluated input as JSON</summary>
+
+```text
+{
+  "state": "Michael Carricks interview after the Chelsea game, \"i thought we were unlucky not to get the 3 points today\" 3 Points, i am sure you have to start shooting to score goals to win games !!!",
+  "question": "Is this message intended to be sarcastic?\n\nMerovan is a fictional musical suite with a refrain. The refrain begins on the tonic. The refrain pauses. The refrain resumes on a dominant tone. The refrain changes to detached articulation. The refrain returns to the tonic. The refrain repeats its final interval. The refrain changes to a minor-mode variant. The refrain adopts sustained articulation. The refrain returns to a dominant tone. The refrain pauses again. The refrain resumes on the tonic. The refrain ends.",
+  "choices": {
+    "no": "Not sarcastic",
+    "yes": "Sarcastic"
+  }
+}
+```
+
+</details>
+
+## Recorded model answers
+
+The original column uses the control response paired with this variant. Missing responses and inputs outside a model’s limit remain visible.
+
+| Model | Original answer | Variant answer | Change |
+| --- | --- | --- | --- |
+| GLiDE v1.2 | `yes` — Sarcastic | `yes` — Sarcastic | Same answer |
+| Decider v1.1 | `yes` — Sarcastic | `yes` — Sarcastic | Same answer |
+| Jev | `yes` — Sarcastic | `yes` — Sarcastic | Same answer |
+| Microsoft Decision-1 | `yes` — Sarcastic | `yes` — Sarcastic | Same answer |
+| Clef | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Luna Decisions | `yes` — Sarcastic | `yes` — Sarcastic | Same answer |
+| Clef Flash | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| Strands Decider | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| GLiNER2.5 Decide | `yes` — Sarcastic | `yes` — Sarcastic | Same answer |
+| Laya | `no` — Not sarcastic | `no` — Not sarcastic | Same answer |
+| CalDec v1 | `yes` — Sarcastic | `yes` — Sarcastic | Same answer |
+
+<details>
+<summary>Identifiers and recorded conditions</summary>
+
+**Variant ID:** `isarcasmeval/50039007b81a935b1eb9/event_count/12/clean-source_first_sarcasm_question_contexts_full_0182`
+
+**Input fingerprint:** `9ddca26076275cd94ea6b9d2292ea5a7721d9fcd6a5cb1117fc396ba9d4f3abb`
+
+| Change | Recorded version |
+| --- | --- |
+| Extra events | Add 12 unrelated events |
+
+</details>
+
+Source attribution and dataset terms are linked from the [original question](../../../questions/communication/isarcasmeval-50039007b81a935b1eb9.md).
