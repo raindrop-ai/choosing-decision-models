@@ -1,0 +1,12 @@
+{
+  "name": "raindrop-judgment-calls-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test test.mjs"
+  },
+  "dependencies": { "marked": "17.0.5" }
+}
