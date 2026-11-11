@@ -56,7 +56,10 @@ export function renderMarkdown(source, current, inventory) {
     }
   }});
   // The website supplies its own logo in the header. GitHub retains the README's image.
-  if (current === 'README.md') source = source.replace(/^<a href="https:\/\/www\.raindrop\.ai\/">[\s\S]*?<\/a>\s*/, '');
+  if (current === 'README.md') {
+    source = source.replace(/^<a href="https:\/\/www\.raindrop\.ai\/">[\s\S]*?<\/a>\s*/, '');
+    source = source.replace(/^# .+$/m, '# Overview');
+  }
   return engine.parse(source);
 }
 
@@ -70,7 +73,7 @@ const sections = [
 
 function document(source, current, inventory) {
   const rel = target => path.posix.relative(path.posix.dirname(htmlPath(current)), target);
-  const title = (source.match(/^# (.+)$/m) || [])[1] || current;
+  const title = current === 'README.md' ? 'Overview' : (source.match(/^# (.+)$/m) || [])[1] || current;
   const nav = sections.map(([label, items]) => `<div class="nav-section"><span>${label}</span>${items.map(([text,file]) => `<a ${file === current ? 'aria-current="page" ' : ''}href="${escape(rel(htmlPath(file)))}">${text}</a>`).join('')}</div>`).join('');
   const github = `${repository}/blob/main/${current.split('/').map(encodeURIComponent).join('/')}`;
   const contents = [...source.matchAll(/^## (.+)$/gm)].map(([,text]) => `<a href="#${escape(slug(text))}">${escape(text)}</a>`).join('');
@@ -111,7 +114,7 @@ export async function build() {
     await mkdir(path.dirname(target),{recursive:true});
     await writeFile(target,html);
     size += Buffer.byteLength(html); count++;
-    const title = (source.match(/^# (.+)$/m) || [])[1] || file;
+    const title = file === 'README.md' ? 'Overview' : (source.match(/^# (.+)$/m) || [])[1] || file;
     const snippet = source.match(/## (?:Context|Question)\n([\s\S]*?)(?=\n## |$)/)?.[1] || source;
     search.push({title, path:htmlPath(file), excerpt:snippet.replace(/^#.*$/gm,'').replace(/<[^>]*>/g,'').replace(/[\[\]>*`]/g,'').replace(/\s+/g,' ').trim().slice(0,450)});
   }
