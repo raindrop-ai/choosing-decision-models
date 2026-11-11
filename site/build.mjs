@@ -33,6 +33,8 @@ export function resolveLink(href, current, inventory, image = false) {
 }
 
 export function renderMarkdown(source, current, inventory) {
+  const navigationTitle = navigationTitles.get(current);
+  const originalTitle = (source.match(/^# (.+)$/m) || [])[1];
   const engine = new Marked({ gfm: true });
   engine.use({ renderer: {
     html({ text }) {
@@ -52,28 +54,33 @@ export function renderMarkdown(source, current, inventory) {
       return href ? `<img src="${escape(href)}" alt="${escape(token.text)}" loading="lazy">` : escape(token.text);
     },
     heading(token) {
-      return `<h${token.depth} id="${escape(slug(token.text))}">${this.parser.parseInline(token.tokens)}</h${token.depth}>\n`;
+      const id = slug(token.text);
+      const originalId = originalTitle ? slug(originalTitle) : '';
+      const alias = token.depth === 1 && navigationTitle && originalId && originalId !== id ? `<span id="${escape(originalId)}" aria-hidden="true"></span>` : '';
+      return `<h${token.depth} id="${escape(id)}">${alias}${this.parser.parseInline(token.tokens)}</h${token.depth}>\n`;
     }
   }});
   // The website supplies its own logo in the header. GitHub retains the README's image.
   if (current === 'README.md') {
     source = source.replace(/^<a href="https:\/\/www\.raindrop\.ai\/">[\s\S]*?<\/a>\s*/, '');
-    source = source.replace(/^# .+$/m, '# Overview');
   }
+  if (navigationTitle) source = source.replace(/^# .+$/m, `# ${navigationTitle}`);
   return engine.parse(source);
 }
 
-const sections = [
+export const sections = [
   ['Explore', [['Overview','README.md'],['Questions','questions/README.md'],['Question variants','variants/README.md'],['Binary subset','questions/binary-subset.md']]],
   ['Findings', [['Baseline results','docs/results.md'],['Context changes','docs/variant-results.md']]],
   ['Understand', [['Methods','docs/methods.md'],['How variants were made','docs/variant-methods.md'],['Source terms','docs/data-sharing.md']]],
   ['Reproduce', [['Baseline experiment','docs/reproduction.md'],['Variant experiment','docs/variant-reproduction.md'],['Connect a model','docs/connecting-models.md'],['Recover question texts','docs/recovering-inputs.md']]],
   ['About', [['Licenses','licenses/README.md'],['Contribute & contact','CONTRIBUTING.md']]]
 ];
+const navigationTitles = new Map(sections.flatMap(([, items]) => items.map(([title, file]) => [file, title])));
+const pageTitle = (source, file) => navigationTitles.get(file) ?? (source.match(/^# (.+)$/m) || [])[1] ?? file;
 
 function document(source, current, inventory) {
   const rel = target => path.posix.relative(path.posix.dirname(htmlPath(current)), target);
-  const title = current === 'README.md' ? 'Overview' : (source.match(/^# (.+)$/m) || [])[1] || current;
+  const title = pageTitle(source, current);
   const nav = sections.map(([label, items]) => `<div class="nav-section"><span>${label}</span>${items.map(([text,file]) => `<a ${file === current ? 'aria-current="page" ' : ''}href="${escape(rel(htmlPath(file)))}">${text}</a>`).join('')}</div>`).join('');
   const github = `${repository}/blob/main/${current.split('/').map(encodeURIComponent).join('/')}`;
   const contents = [...source.matchAll(/^## (.+)$/gm)].map(([,text]) => `<a href="#${escape(slug(text))}">${escape(text)}</a>`).join('');
@@ -114,7 +121,7 @@ export async function build() {
     await mkdir(path.dirname(target),{recursive:true});
     await writeFile(target,html);
     size += Buffer.byteLength(html); count++;
-    const title = file === 'README.md' ? 'Overview' : (source.match(/^# (.+)$/m) || [])[1] || file;
+    const title = pageTitle(source, file);
     const snippet = source.match(/## (?:Context|Question)\n([\s\S]*?)(?=\n## |$)/)?.[1] || source;
     search.push({title, path:htmlPath(file), excerpt:snippet.replace(/^#.*$/gm,'').replace(/<[^>]*>/g,'').replace(/[\[\]>*`]/g,'').replace(/\s+/g,' ').trim().slice(0,450)});
   }
