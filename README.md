@@ -4,9 +4,9 @@
 
 # The subtle art of making judgment calls
 
-Questions, model answers, and scoring code accompanying [Raindrop’s research post](https://dawn-landing-git-codex-judgment-calls-blog.previews.raindrop.ai/blog/judgment-calls/). The study compares judgment accuracy across 15 capabilities and examines how changes in wording, framing and context affect those judgments. Inspect individual answers and reproduce the reported scores.
+Questions, model answers, and scoring code accompanying [Raindrop’s research post](https://www.raindrop.ai/blog/judgment-calls/). The study compares judgment accuracy across 15 capabilities and examines how changes in wording, framing and context affect those judgments. Inspect individual answers and reproduce the reported scores.
 
-[Read the post](https://dawn-landing-git-codex-judgment-calls-blog.previews.raindrop.ai/blog/judgment-calls/) · [Browse questions](questions/README.md) · [Variants](variants/README.md) · [Results](docs/results.md) · [Methods](docs/methods.md) · [Reproduce](docs/reproduction.md)
+[Read the post](https://www.raindrop.ai/blog/judgment-calls/) · [Browse questions](questions/README.md) · [Variants](variants/README.md) · [Results](docs/results.md) · [Methods](docs/methods.md) · [Reproduce](docs/reproduction.md)
 
 | Original questions | Capability areas | Baseline models | Baseline outcomes |
 | ---: | ---: | ---: | ---: |
@@ -200,7 +200,7 @@ Third-party datasets, downloaded model code and weights, and Raindrop brand artw
 
 ## About this research
 
-Research by Afika Nyati at [Raindrop](https://www.raindrop.ai/), accompanying *The subtle art of making judgment calls* (2026). The [post](https://dawn-landing-git-codex-judgment-calls-blog.previews.raindrop.ai/blog/judgment-calls/) explains the findings; the [methods](docs/methods.md) and saved question-level outcomes document what was measured.
+Research by Afika Nyati at [Raindrop](https://www.raindrop.ai/), accompanying *The subtle art of making judgment calls* (2026). The [post](https://www.raindrop.ai/blog/judgment-calls/) explains the findings; the [methods](docs/methods.md) and saved question-level outcomes document what was measured.
 
 ## Data format and scoring
 
@@ -210,7 +210,7 @@ The [scoring definitions](docs/methods.md#scoring) explain accuracy, coverage, p
 
 ## Citation
 
-Afika Nyati. *The subtle art of making judgment calls.* Raindrop, 2026. [Read the post](https://dawn-landing-git-codex-judgment-calls-blog.previews.raindrop.ai/blog/judgment-calls/).
+Afika Nyati. *The subtle art of making judgment calls.* Raindrop, 2026. [Read the post](https://www.raindrop.ai/blog/judgment-calls/).
 
 ```bibtex
 @misc{nyati2026judgmentcalls,
@@ -218,7 +218,7 @@ Afika Nyati. *The subtle art of making judgment calls.* Raindrop, 2026. [Read th
   title = {The subtle art of making judgment calls},
   year = {2026},
   howpublished = {Raindrop},
-  url = {https://dawn-landing-git-codex-judgment-calls-blog.previews.raindrop.ai/blog/judgment-calls/}
+  url = {https://www.raindrop.ai/blog/judgment-calls/}
 }
 ```
 
