@@ -17,13 +17,10 @@ Open <http://127.0.0.1:3003/>. Stop the server with Ctrl+C. The build checks sou
 
 ## GitHub Pages
 
-The Actions workflow builds and tests pull requests. It deploys updates to `main` only when both of these settings are verified:
+The Actions workflow builds and tests pull requests and deploys updates to `main`. It verifies that the repository remains **Internal**, that GitHub reports the website’s visibility, and that **GitHub Actions** is the Pages build source. It accepts the companion’s private address or its public address, <https://raindrop-ai.github.io/judgment-calls/>.
 
-- The repository visibility is **Internal**.
-- The Pages website visibility is **Private**, with **GitHub Actions** selected as its build source.
+Website access is separate from repository access. A **Public** Pages website can be read without a GitHub account while the repository stays internal. Code and download links on GitHub still require repository access. A **Private** website is restricted to people with read access to the repository.
 
-A repository administrator configures these in [Settings → Pages](https://github.com/raindrop-ai/judgment-calls/settings/pages). Private Pages requires GitHub Enterprise Cloud. It restricts the website to people with read access to this repository; an internal repository alone does not restrict a public Pages website. Use the private address shown in Settings after configuration.
+A repository administrator changes website visibility in [Settings → Pages](https://github.com/raindrop-ai/judgment-calls/settings/pages). The workflow never changes access settings. After changing visibility, use the website address shown in Settings; the public address can differ from the private one.
 
-The workflow never enables Pages automatically or changes visibility. Missing settings or an inability to verify them stops deployment. To publish publicly later, deliberately update the deployment check and Pages visibility after publication is approved.
-
-[GitHub’s documentation on private Pages](https://docs.github.com/en/enterprise-cloud@latest/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site) · [Companion README](../README.md)
+[GitHub’s documentation on Pages visibility](https://docs.github.com/en/enterprise-cloud@latest/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site) · [Companion README](../README.md)

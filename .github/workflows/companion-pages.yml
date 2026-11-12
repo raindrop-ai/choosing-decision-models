@@ -49,10 +49,10 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: '22'
-      - name: Require an internal repository and private Pages site
+      - name: Verify the internal repository and Pages settings
         run: node site/privacy.mjs
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      - name: Deploy the private website
+      - name: Deploy the companion website
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

@@ -32,12 +32,16 @@ test('Untrusted question markup is escaped while disclosures remain usable', () 
   assert.ok(rendered.includes('<details><summary>Answers</summary>'));
   assert.ok(rendered.includes('</details>'));
 });
-test('Deployment fails closed unless the repository AND website are internal/private', () => {
+test('Deployment verifies the internal repository and explicit private or public Pages settings', () => {
   const repo = {full_name:'raindrop-ai/judgment-calls',visibility:'internal'};
-  const pages = {public:false,build_type:'workflow',html_url:'https://private-site.pages.github.io/'};
-  assert.doesNotThrow(() => checkPrivacy(repo,pages));
-  for (const visibility of ['public','private',undefined]) assert.throws(() => checkPrivacy({...repo,visibility},pages));
-  for (const publicValue of [true,undefined,null]) assert.throws(() => checkPrivacy(repo,{...pages,public:publicValue}));
-  assert.throws(() => checkPrivacy(repo,{...pages,html_url:'https://raindrop-ai.github.io/judgment-calls/'}));
-  assert.throws(() => checkPrivacy(repo,{...pages,build_type:'legacy'}));
+  const privateSite = {public:false,build_type:'workflow',html_url:'https://symmetrical-tribble-9e2vwqp.pages.github.io/'};
+  const publicSite = {public:true,build_type:'workflow',html_url:'https://raindrop-ai.github.io/judgment-calls/'};
+  for (const pages of [privateSite, publicSite, {...privateSite, public:true}]) {
+    assert.doesNotThrow(() => checkPrivacy(repo,pages));
+    for (const visibility of ['public','private',undefined]) assert.throws(() => checkPrivacy({...repo,visibility},pages));
+    for (const publicValue of [undefined,null,'true']) assert.throws(() => checkPrivacy(repo,{...pages,public:publicValue}));
+    for (const html_url of ['https://example.com/', 'https://raindrop-ai.github.io/another-project/', 'https://symmetrical-tribble-9e2vwqp.pages.github.io/?unexpected=true']) assert.throws(() => checkPrivacy(repo,{...pages,html_url}));
+    assert.throws(() => checkPrivacy(repo,{...pages,build_type:'legacy'}));
+  }
+  assert.throws(() => checkPrivacy(repo,{...publicSite,public:false}));
 });
