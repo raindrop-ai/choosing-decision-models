@@ -2,7 +2,7 @@
   <img src="docs/assets/raindrop-logo.jpg" alt="Raindrop" width="88" height="88">
 </a>
 
-# Deciding between decision models
+# A practical guide to choosing decision models
 
 Questions, model answers, and scoring code accompanying [Raindrop’s research post](https://www.raindrop.ai/blog/choosing-decision-models/). The study compares judgment accuracy across 15 capabilities and examines how changes in wording, framing and context affect those judgments. Inspect individual answers and reproduce the reported scores.
 
@@ -200,7 +200,7 @@ Third-party datasets, downloaded model code and weights, and Raindrop brand artw
 
 ## About this research
 
-Research by Afika Nyati at [Raindrop](https://www.raindrop.ai/), accompanying *Deciding between decision models* (2026). The [post](https://www.raindrop.ai/blog/choosing-decision-models/) explains the findings; the [methods](docs/methods.md) and saved question-level outcomes document what was measured.
+Research by Afika Nyati at [Raindrop](https://www.raindrop.ai/), accompanying *A practical guide to choosing decision models* (2026). The [post](https://www.raindrop.ai/blog/choosing-decision-models/) explains the findings; the [methods](docs/methods.md) and saved question-level outcomes document what was measured.
 
 ## Data format and scoring
 
@@ -210,12 +210,12 @@ The [scoring definitions](docs/methods.md#scoring) explain accuracy, coverage, p
 
 ## Citation
 
-Afika Nyati. *Deciding between decision models.* Raindrop, 2026. [Read the post](https://www.raindrop.ai/blog/choosing-decision-models/).
+Afika Nyati. *A practical guide to choosing decision models.* Raindrop, 2026. [Read the post](https://www.raindrop.ai/blog/choosing-decision-models/).
 
 ```bibtex
 @misc{nyati2026decisionmodels,
   author = {Afika Nyati},
-  title = {Deciding between decision models},
+  title = {A practical guide to choosing decision models},
   year = {2026},
   howpublished = {Raindrop},
   url = {https://www.raindrop.ai/blog/choosing-decision-models/}

@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use these questions, recorded outcomes or scoring code, please cite the accompanying Raindrop post."
 type: dataset
-title: "Deciding between decision models: questions, results and scoring code"
+title: "A practical guide to choosing decision models: questions, results and scoring code"
 authors:
   - family-names: Nyati
     given-names: Afika
