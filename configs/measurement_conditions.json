@@ -107,5 +107,5 @@
   },
   "all_original_inputs_ordered_choices_and_reference_answers_unchanged": true,
   "original_question_order": "Ascending question ID (lexicographic); the first is ag_news/3188eeb640120e6f97b6.",
-  "cost_scope": "Reported hosted API charges only. No per-prediction GPU cost is assigned to self-hosted models."
+  "cost_scope": "Saved model inference charges excluding Gateway fees (including zero-data-retention surcharges). Applicable output/cache charges and priced refusals remain included. Original charges and separate components are retained per request. No per-prediction GPU cost is assigned to self-hosted models."
 }

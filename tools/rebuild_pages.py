@@ -157,7 +157,7 @@ def build_browse_pages(cases, manifests, shared, predictions, models, sources, s
         if r["serving"] != "self-hosted":
             continue
         lines.append(f"| {models[r['model']]['name']} | {r['median_ms']:.0f} ms | {r['p95_ms']:.0f} ms |")
-    lines += ["", "### Hosted models", "", "API request times include network travel and routing; GPU-worker timings measure prediction after model loading.", "", "| Model | Median request time | p95 request time | Cost / 1,000 priced requests |", "| --- | ---: | ---: | ---: |"]
+    lines += ["", "### Hosted models", "", "We accessed the hosted models through Vercel AI Gateway. Costs show model inference charges for the recorded inputs, excluding Vercel AI Gateway fees. API request times include network travel and routing; GPU-worker timings measure prediction after model loading.", "", "| Model | Median request time | p95 request time | Model cost / 1,000 priced requests |", "| --- | ---: | ---: | ---: |"]
     for r in summary["cost_timing"]:
         if r["serving"] != "api":
             continue

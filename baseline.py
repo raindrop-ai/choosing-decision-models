@@ -92,9 +92,17 @@ def validate(questions, predictions, model_ids):
                 raise ValueError("Invalid probability")
             if abs(sum(probabilities.values()) - 1) > .002:
                 raise ValueError("Probabilities do not sum to one")
-        for field in ("latency_ms", "billed_cost_usd"):
+        for field in ("latency_ms", "billed_cost_usd", "inference_cost_usd", "gateway_fee_usd"):
             if r.get(field) is not None and (not finite_number(r[field]) or r[field] < 0):
                 raise ValueError("Invalid " + field)
+        if "inference_cost_usd" in r or "gateway_fee_usd" in r:
+            parts = (r.get("inference_cost_usd"), r.get("gateway_fee_usd"))
+            if r.get("billed_cost_usd") is None:
+                if any(value is not None for value in parts):
+                    raise ValueError("Unknown charge cannot have known billing components")
+            elif any(value is None for value in parts) or not math.isclose(
+                    sum(parts), r["billed_cost_usd"], rel_tol=1e-12, abs_tol=1e-12):
+                raise ValueError("Billing components do not match the recorded charge")
     if len(seen) != 1005 * 13:
         raise ValueError("Missing outcomes: every question/model needs an explicit record")
     return by_id
@@ -137,15 +145,21 @@ def summarize(questions, predictions, models):
                            precision=ratio(counts["tp"], counts["tp"] + counts["fp"]),
                            recall=ratio(counts["tp"], counts["tp"] + counts["fn"])))
         times = sorted(r["latency_ms"] for r in answered if r.get("latency_ms") is not None and r.get("timing_included", True))
-        priced = [r for r in rows if r.get("billed_cost_usd") is not None]
-        total = sum((Decimal(str(r["billed_cost_usd"])) for r in priced), Decimal(0))
+        # A total charge alone cannot establish the model-only price. Use the
+        # saved inference component, retaining cache/output charges and refusals.
+        priced = [r for r in rows if r.get("inference_cost_usd") is not None]
+        total = sum((Decimal(str(r["inference_cost_usd"])) for r in priced), Decimal(0))
+        fees = sum((Decimal(str(r["gateway_fee_usd"])) for r in priced), Decimal(0))
+        reported = sum((Decimal(str(r["billed_cost_usd"])) for r in priced), Decimal(0))
         info = models[model]
         operating.append(dict(model=model, serving=info["serving"], gpu=info.get("gpu"),
                               timed=len(times), median_ms=statistics.median(times) if times else None,
                               p95_ms=percentile(times, .95, info.get("timing_percentile_method", "nearest_rank")),
                               priced_requests=len(priced), unknown_cost_requests=len(rows)-len(priced) if info["serving"] == "api" else None,
                               known_api_cost_usd=float(total) if priced else None,
-                              api_cost_per_1000_requests=float(total / len(priced) * 1000) if priced else None))
+                              api_cost_per_1000_requests=float(total / len(priced) * 1000) if priced else None,
+                              excluded_gateway_fees_usd=float(fees) if priced else None,
+                              recorded_api_charges_usd=float(reported) if priced else None))
     return dict(overall=overall, capabilities=capabilities, native_binary=binary, cost_timing=operating)
 
 

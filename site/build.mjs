@@ -5,7 +5,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { Marked } from 'marked';
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const repository = 'https://github.com/raindrop-ai/judgment-calls';
+const repository = 'https://github.com/raindrop-ai/choosing-decision-models';
 export const escape = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#39;');
 export const htmlPath = file => file.endsWith('/README.md') ? file.slice(0, -9) + 'index.html' : file === 'README.md' ? 'index.html' : file.replace(/\.md$/, '.html');
 export const slug = text => text.toLowerCase().replace(/<[^>]*>/g, '').replace(/[^\p{L}\p{N}\s-]/gu, '').trim().replace(/\s+/g, '-');
@@ -90,7 +90,7 @@ function document(source, current, inventory) {
 <meta name="robots" content="noindex,nofollow"><meta name="color-scheme" content="light dark"><title>${escape(title)} · Raindrop research</title>
 <link rel="icon" href="${rel('docs/assets/raindrop-logo.jpg')}"><link rel="stylesheet" href="${rel('site-assets/styles.css')}"><script defer src="${rel('site-assets/client.js')}"></script></head>
 <body data-search="${rel('site-assets/search.json')}" data-home="${rel('index.html')}"><a class="skip" href="#content">Skip to content</a>
-<header><a class="brand" href="${rel('index.html')}"><img src="${rel('docs/assets/raindrop-logo.jpg')}" width="38" height="38" alt="Raindrop"><span>The subtle art of making judgment calls</span></a><button id="search-open" type="button">Search questions & docs <kbd>/</kbd></button><a class="github" href="${repository}">GitHub ↗</a><button id="nav-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu</button></header>
+<header><a class="brand" href="${rel('index.html')}"><img src="${rel('docs/assets/raindrop-logo.jpg')}" width="38" height="38" alt="Raindrop"><span>Deciding between decision models</span></a><button id="search-open" type="button">Search questions & docs <kbd>/</kbd></button><a class="github" href="${repository}">GitHub ↗</a><button id="nav-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu</button></header>
 <div class="layout"><nav id="navigation" aria-label="Companion">${nav}</nav><main id="content"><div class="page-tools"><a href="${github}">View on GitHub ↗</a></div><article>${renderMarkdown(source,current,inventory)}</article><footer><a href="https://www.raindrop.ai/">Raindrop</a> · <a href="${rel('CONTRIBUTING.html')}">Questions or corrections?</a></footer></main><aside aria-label="On this page">${contents ? '<span>On this page</span>' + contents : ''}</aside></div>
 <dialog id="search-dialog"><div class="search-top"><label for="search-input">Search the companion</label><button id="search-close" type="button" aria-label="Close search">×</button></div><input id="search-input" type="search" placeholder="Try gift exchange, recall, or a question ID" autocomplete="off"><p id="search-status" role="status">Type to search questions, variants and documentation.</p><ol id="search-results"></ol></dialog></body></html>`;
 }

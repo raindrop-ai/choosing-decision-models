@@ -62,14 +62,47 @@ class BaselineTests(unittest.TestCase):
         self.assertEqual(len(adapted), 15)
 
     def test_unknown_api_cost_is_not_zero(self):
-        changed = [dict(r, billed_cost_usd=None) if r["model"] == "openai-decisions" else r for r in self.predictions]
+        changed = [dict(r, billed_cost_usd=None, inference_cost_usd=None, gateway_fee_usd=None)
+                   if r["model"] == "openai-decisions" else r for r in self.predictions]
         lone = next(i for i, r in enumerate(changed) if r["model"] == "openai-decisions")
-        changed[lone] = dict(changed[lone], billed_cost_usd=.001)
+        changed[lone] = dict(changed[lone], billed_cost_usd=.001, inference_cost_usd=.0009, gateway_fee_usd=.0001)
         summary = baseline.summarize(self.questions, changed, self.models)
         luna = next(r for r in summary["cost_timing"] if r["model"] == "openai-decisions")
         self.assertEqual(luna["priced_requests"], 1)
         self.assertEqual(luna["unknown_cost_requests"], 1004)
         self.assertGreater(luna["api_cost_per_1000_requests"], 0)
+
+    def test_model_costs_exclude_gateway_fees_and_reconcile_to_saved_totals(self):
+        from decimal import Decimal
+        summary = baseline.summarize(self.questions, self.predictions, self.models)
+        for model, info in self.models.items():
+            if info["serving"] != "api":
+                continue
+            rows = [r for r in self.predictions if r["model"] == model and r["billed_cost_usd"] is not None]
+            inference = sum(Decimal(str(r["inference_cost_usd"])) for r in rows)
+            fees = sum(Decimal(str(r["gateway_fee_usd"])) for r in rows)
+            recorded = sum(Decimal(str(r["billed_cost_usd"])) for r in rows)
+            self.assertEqual(inference + fees, recorded)
+            result = next(r for r in summary["cost_timing"] if r["model"] == model)
+            self.assertAlmostEqual(result["api_cost_per_1000_requests"], float(inference / len(rows) * 1000))
+            self.assertAlmostEqual(result["excluded_gateway_fees_usd"], float(fees))
+            self.assertGreater(fees, 0)
+        luna = next(r for r in summary["cost_timing"] if r["model"] == "openai-decisions")
+        # Model charges retain the recorded cache-write premium.
+        self.assertAlmostEqual(luna["known_api_cost_usd"], .045536075)
+
+    def test_inconsistent_billing_components_are_rejected(self):
+        row = next(r for r in self.predictions if r["model"] == "jev")
+        changed = [dict(r, inference_cost_usd=r["billed_cost_usd"]) if r is row else r for r in self.predictions]
+        with self.assertRaisesRegex(ValueError, "Billing components"):
+            baseline.validate(self.questions, changed, list(self.models))
+
+    def test_unseparated_total_charge_is_not_assumed_to_be_model_cost(self):
+        changed = [{k: v for k, v in r.items() if k not in {"inference_cost_usd", "gateway_fee_usd"}}
+                   if r["model"] == "jev" else r for r in self.predictions]
+        result = next(r for r in baseline.summarize(self.questions, changed, self.models)["cost_timing"] if r["model"] == "jev")
+        self.assertIsNone(result["api_cost_per_1000_requests"])
+        self.assertEqual(result["unknown_cost_requests"], 1005)
 
     def test_api_payloads_exclude_gold_and_capability_metadata(self):
         case = dict(state="Evidence", question="Question", choices={"B":"second", "A":"first"},

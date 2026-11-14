@@ -14,7 +14,9 @@ There are **13,065 records**: 1,005 questions × 13 models. Each record contains
 | `probabilities` | Native per-choice probabilities when the runtime supplied them; null for unavailable vectors. These are not assumed calibrated or comparable across providers. |
 | `latency_ms` | Saved timing observation; its scope differs between API and GPU-worker results |
 | `timing_included` | Optional; false keeps a startup observation out of timing summaries while retaining its answer for accuracy |
-| `billed_cost_usd` | Known reported API charge; null means unavailable, not zero-cost |
+| `billed_cost_usd` | Original recorded API charge, retained for reconciliation; may include Vercel AI Gateway fees. Null means unavailable, not zero-cost |
+| `inference_cost_usd` | Model inference charge used in cost summaries, including applicable output and cache charges, excluding Vercel AI Gateway fees |
+| `gateway_fee_usd` | Vercel AI Gateway portion of the original recorded charge, excluded from reported model costs; the two components sum to `billed_cost_usd` |
 | `configuration_id` | Key into `configs/result_configurations.json` for the configuration of this actual saved result |
 | `reused_result` | Whether an input- and configuration-matched prediction was reused |
 | `runtime_input_check` | Recorded input-fit checks, where available |

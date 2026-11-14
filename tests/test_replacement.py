@@ -73,6 +73,19 @@ class ReplacementTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             baseline.percentile([], .95, "unknown")
 
+    def test_seal_preserves_audited_workflow_but_rejects_private_files(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            name = ".github/workflows/companion-pages.yml"
+            (root / name).parent.mkdir(parents=True)
+            (root / name).write_text("name: companion\n")
+            (root / "MANIFEST.json").write_text(json.dumps({"sha256": {name: "previous"}}))
+            replacement.seal(root)
+            self.assertIn(name, json.loads((root / "MANIFEST.json").read_text())["sha256"])
+            (root / ".private").write_text("private")
+            with self.assertRaisesRegex(ValueError, "Private file"):
+                replacement.seal(root)
+
     def test_dry_run_and_apply_refresh_all_derived_outputs(self):
         with tempfile.TemporaryDirectory() as folder:
             tmp = Path(folder)

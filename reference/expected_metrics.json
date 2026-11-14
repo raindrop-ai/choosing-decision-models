@@ -2043,8 +2043,10 @@
       "p95_ms": 5801.003291999223,
       "priced_requests": 1005,
       "unknown_cost_requests": 0,
-      "known_api_cost_usd": 7.4561925,
-      "api_cost_per_1000_requests": 7.419097014925373
+      "known_api_cost_usd": 7.3556925,
+      "api_cost_per_1000_requests": 7.319097014925373,
+      "excluded_gateway_fees_usd": 0.1005,
+      "recorded_api_charges_usd": 7.4561925
     },
     {
       "model": "opus55",
@@ -2055,8 +2057,10 @@
       "p95_ms": 3906.0050420230255,
       "priced_requests": 1005,
       "unknown_cost_requests": 0,
-      "known_api_cost_usd": 4.756948,
-      "api_cost_per_1000_requests": 4.733281592039801
+      "known_api_cost_usd": 4.656448,
+      "api_cost_per_1000_requests": 4.633281592039801,
+      "excluded_gateway_fees_usd": 0.1005,
+      "recorded_api_charges_usd": 4.756948
     },
     {
       "model": "glide",
@@ -2068,7 +2072,9 @@
       "priced_requests": 0,
       "unknown_cost_requests": null,
       "known_api_cost_usd": null,
-      "api_cost_per_1000_requests": null
+      "api_cost_per_1000_requests": null,
+      "excluded_gateway_fees_usd": null,
+      "recorded_api_charges_usd": null
     },
     {
       "model": "decider11",
@@ -2080,7 +2086,9 @@
       "priced_requests": 0,
       "unknown_cost_requests": null,
       "known_api_cost_usd": null,
-      "api_cost_per_1000_requests": null
+      "api_cost_per_1000_requests": null,
+      "excluded_gateway_fees_usd": null,
+      "recorded_api_charges_usd": null
     },
     {
       "model": "jev",
@@ -2091,8 +2099,10 @@
       "p95_ms": 359.80266699334607,
       "priced_requests": 1005,
       "unknown_cost_requests": 0,
-      "known_api_cost_usd": 0.124118708,
-      "api_cost_per_1000_requests": 0.12350120199004976
+      "known_api_cost_usd": 0.028218708,
+      "api_cost_per_1000_requests": 0.02807831641791045,
+      "excluded_gateway_fees_usd": 0.0959,
+      "recorded_api_charges_usd": 0.124118708
     },
     {
       "model": "microsoft-decision-1",
@@ -2103,8 +2113,10 @@
       "p95_ms": 505.6325829937123,
       "priced_requests": 1004,
       "unknown_cost_requests": 1,
-      "known_api_cost_usd": 0.115796654,
-      "api_cost_per_1000_requests": 0.11533531274900398
+      "known_api_cost_usd": 0.015396654,
+      "api_cost_per_1000_requests": 0.015335312749003984,
+      "excluded_gateway_fees_usd": 0.1004,
+      "recorded_api_charges_usd": 0.115796654
     },
     {
       "model": "clef",
@@ -2116,7 +2128,9 @@
       "priced_requests": 0,
       "unknown_cost_requests": null,
       "known_api_cost_usd": null,
-      "api_cost_per_1000_requests": null
+      "api_cost_per_1000_requests": null,
+      "excluded_gateway_fees_usd": null,
+      "recorded_api_charges_usd": null
     },
     {
       "model": "openai-decisions",
@@ -2127,8 +2141,10 @@
       "p95_ms": 649.5100829924922,
       "priced_requests": 1004,
       "unknown_cost_requests": 1,
-      "known_api_cost_usd": 0.141336075,
-      "api_cost_per_1000_requests": 0.1407729830677291
+      "known_api_cost_usd": 0.045536075,
+      "api_cost_per_1000_requests": 0.04535465637450199,
+      "excluded_gateway_fees_usd": 0.0958,
+      "recorded_api_charges_usd": 0.141336075
     },
     {
       "model": "clef-flash",
@@ -2140,7 +2156,9 @@
       "priced_requests": 0,
       "unknown_cost_requests": null,
       "known_api_cost_usd": null,
-      "api_cost_per_1000_requests": null
+      "api_cost_per_1000_requests": null,
+      "excluded_gateway_fees_usd": null,
+      "recorded_api_charges_usd": null
     },
     {
       "model": "strands",
@@ -2152,7 +2170,9 @@
       "priced_requests": 0,
       "unknown_cost_requests": null,
       "known_api_cost_usd": null,
-      "api_cost_per_1000_requests": null
+      "api_cost_per_1000_requests": null,
+      "excluded_gateway_fees_usd": null,
+      "recorded_api_charges_usd": null
     },
     {
       "model": "gliner",
@@ -2164,7 +2184,9 @@
       "priced_requests": 0,
       "unknown_cost_requests": null,
       "known_api_cost_usd": null,
-      "api_cost_per_1000_requests": null
+      "api_cost_per_1000_requests": null,
+      "excluded_gateway_fees_usd": null,
+      "recorded_api_charges_usd": null
     },
     {
       "model": "laya",
@@ -2176,7 +2198,9 @@
       "priced_requests": 0,
       "unknown_cost_requests": null,
       "known_api_cost_usd": null,
-      "api_cost_per_1000_requests": null
+      "api_cost_per_1000_requests": null,
+      "excluded_gateway_fees_usd": null,
+      "recorded_api_charges_usd": null
     },
     {
       "model": "caldec",
@@ -2188,7 +2212,9 @@
       "priced_requests": 0,
       "unknown_cost_requests": null,
       "known_api_cost_usd": null,
-      "api_cost_per_1000_requests": null
+      "api_cost_per_1000_requests": null,
+      "excluded_gateway_fees_usd": null,
+      "recorded_api_charges_usd": null
     }
   ]
 }

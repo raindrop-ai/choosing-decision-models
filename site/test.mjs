@@ -11,7 +11,7 @@ test('Markdown links work from nested pages and directory indexes', () => {
   assert.equal(resolveLink('../questions/README.md#retrieval','docs/methods.md',files),'../questions/index.html#retrieval');
   assert.equal(resolveLink('../questions','docs/methods.md',files),'../questions/index.html');
   assert.equal(resolveLink('#scoring','docs/methods.md',files),'#scoring');
-  for (const base of ['https://private-site.pages.github.io/','https://raindrop-ai.github.io/judgment-calls/']) {
+  for (const base of ['https://private-site.pages.github.io/','https://raindrop-ai.github.io/choosing-decision-models/']) {
     const link = resolveLink('../../README.md','questions/retrieval/a.md',files);
     assert.equal(new URL(link,new URL(htmlPath('questions/retrieval/a.md'),base)).href,new URL('index.html',base).href);
   }
@@ -22,7 +22,7 @@ test('Unlisted, private and executable links cannot enter the website', () => {
   }
   assert.equal(resolveLink('https://tracker.invalid/pixel.png','README.md',files,true),null);
   assert.equal(resolveLink('docs/assets/raindrop-logo.jpg','README.md',files,true),'docs/assets/raindrop-logo.jpg');
-  assert.equal(resolveLink('results/baseline_predictions.csv','README.md',files),'https://github.com/raindrop-ai/judgment-calls/blob/main/results/baseline_predictions.csv');
+  assert.equal(resolveLink('results/baseline_predictions.csv','README.md',files),'https://github.com/raindrop-ai/choosing-decision-models/blob/main/results/baseline_predictions.csv');
 });
 test('Untrusted question markup is escaped while disclosures remain usable', () => {
   const rendered = renderMarkdown('<script>alert(1)</script>\n\n<img src=x onerror=alert(1)>\n\n<details><summary>Answers</summary>\n\n[unsafe](javascript:alert%281%29)\n\n</details>','README.md',files);
@@ -33,9 +33,9 @@ test('Untrusted question markup is escaped while disclosures remain usable', () 
   assert.ok(rendered.includes('</details>'));
 });
 test('Deployment verifies the internal repository and explicit private or public Pages settings', () => {
-  const repo = {full_name:'raindrop-ai/judgment-calls',visibility:'internal'};
+  const repo = {full_name:'raindrop-ai/choosing-decision-models',visibility:'internal'};
   const privateSite = {public:false,build_type:'workflow',html_url:'https://symmetrical-tribble-9e2vwqp.pages.github.io/'};
-  const publicSite = {public:true,build_type:'workflow',html_url:'https://raindrop-ai.github.io/judgment-calls/'};
+  const publicSite = {public:true,build_type:'workflow',html_url:'https://raindrop-ai.github.io/choosing-decision-models/'};
   for (const pages of [privateSite, publicSite, {...privateSite, public:true}]) {
     assert.doesNotThrow(() => checkPrivacy(repo,pages));
     for (const visibility of ['public','private',undefined]) assert.throws(() => checkPrivacy({...repo,visibility},pages));

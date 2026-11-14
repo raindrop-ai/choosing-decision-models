@@ -7,7 +7,7 @@ Recompute these tables with `python3 baseline.py summarize`. New CSVs go to `.lo
 - [`overall.csv`](overall.csv): correct/answered accuracy, selected count, coverage, errors, and refusals.
 - [`capabilities.csv`](capabilities.csv): the same accuracy and coverage breakdown for each capability.
 - [`native_binary.csv`](native_binary.csv): confusion counts, precision, and recall on the 214 source-defined binary questions, including 15 with adapted choice representations.
-- [`cost_timing.csv`](cost_timing.csv): saved timing and known API-charge summaries, with the shared GPU recorded for self-hosted models. See [measurement definitions](../docs/methods.md#saved-costs-and-timings).
+- [`cost_timing.csv`](cost_timing.csv): saved timings and model inference charges excluding Vercel AI Gateway fees, with original charges and excluded fees retained for reconciliation. The shared GPU is recorded for self-hosted models. See [measurement definitions](../docs/methods.md#saved-costs-and-timings).
 
 Accuracy is calculated over answered questions. Errors and refusals reduce coverage and are excluded from the binary confusion counts.
 

@@ -59,15 +59,15 @@ All eight models ran on the same physical NVIDIA A100 80GB PCIe, one prediction 
 
 ### Hosted models
 
-API request times include network travel and routing; GPU-worker timings measure prediction after model loading.
+We accessed the hosted models through Vercel AI Gateway. Costs show model inference charges for the recorded inputs, excluding Vercel AI Gateway fees. API request times include network travel and routing; GPU-worker timings measure prediction after model loading.
 
-| Model | Median request time | p95 request time | Cost / 1,000 priced requests |
+| Model | Median request time | p95 request time | Model cost / 1,000 priced requests |
 | --- | ---: | ---: | ---: |
-| Astra | 3217 ms | 5801 ms | $7.419 |
-| Opus 5.5 | 1753 ms | 3906 ms | $4.733 |
-| Jev | 219 ms | 360 ms | $0.124 |
-| Microsoft Decision-1 | 330 ms | 506 ms | $0.115 |
-| Luna Decisions | 375 ms | 650 ms | $0.141 |
+| Astra | 3217 ms | 5801 ms | $7.319 |
+| Opus 5.5 | 1753 ms | 3906 ms | $4.633 |
+| Jev | 219 ms | 360 ms | $0.028 |
+| Microsoft Decision-1 | 330 ms | 506 ms | $0.015 |
+| Luna Decisions | 375 ms | 650 ms | $0.045 |
 
 CSV downloads: [overall](../summaries/overall.csv), [by capability](../summaries/capabilities.csv), [binary outcomes](../summaries/native_binary.csv), [saved costs and timings](../summaries/cost_timing.csv).
 

@@ -1,6 +1,6 @@
 # Questions, corrections and contributions
 
-This is the research companion for Raindrop's *The subtle art of making judgment calls*. Use these guidelines to report a reproducible issue or propose a correction.
+This is the research companion for Raindrop's *Deciding between decision models*. Use these guidelines to report a reproducible issue or propose a correction.
 
 For questions, corrections or contributions, contact Afika Nyati at [afika@raindrop.ai](mailto:afika@raindrop.ai).
 

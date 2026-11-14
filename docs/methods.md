@@ -43,7 +43,7 @@ Open-weight models use their native choice runtimes and pinned checkpoints. Inpu
 
 ## Saved costs and timings
 
-API request times run from client request preparation through response receipt, including network routing and provider processing.
+We accessed hosted models through Vercel AI Gateway, a service that routes requests to model providers. API request times run from client request preparation through response receipt, including network routing and provider processing.
 
 All eight self-hosted models answered the same 1,005 questions on **one physical NVIDIA A100 80GB PCIe**, with two CPU cores, 64 GiB host memory, batch size one, seed zero and TF32 disabled. Each model ran in a fresh process with its pinned checkpoint and native runtime. Full settings are in [measurement conditions](../configs/measurement_conditions.json).
 
@@ -51,9 +51,9 @@ Self-hosted prediction times cover synchronized input encoding, the forward pass
 
 API request times and GPU prediction times measure different portions of serving and should be interpreted accordingly.
 
-API costs per 1,000 requests divide known reported charges by the number of requests with known prices; priced refusals are included and missing charges remain unknown.
+API costs per 1,000 requests divide the saved model inference charges by the number of requests with known inference charges. Vercel AI Gateway fees, including the zero-data-retention surcharge, are excluded; applicable output and cache charges and priced refusals are included. Missing charges remain unknown.
 
-The reported costs are hosted API charges. No per-prediction GPU cost is assigned.
+The result files retain the original reported charge as `billed_cost_usd`, with its model and Vercel AI Gateway components in `inference_cost_usd` and `gateway_fee_usd`. The cost summary CSV includes the excluded fees and original totals for reconciliation. These costs reflect the experiment's actual inputs, rather than a fixed per-request tariff. No per-prediction GPU cost is assigned.
 
 ## Context sensitivity
 

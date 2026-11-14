@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use these questions, recorded outcomes or scoring code, please cite the accompanying Raindrop post."
 type: dataset
-title: "The subtle art of making judgment calls: questions, results and scoring code"
+title: "Deciding between decision models: questions, results and scoring code"
 authors:
   - family-names: Nyati
     given-names: Afika
     affiliation: Raindrop
-url: "https://www.raindrop.ai/blog/judgment-calls/"
+url: "https://www.raindrop.ai/blog/choosing-decision-models/"
 keywords:
   - decision models
   - model evaluation

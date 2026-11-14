@@ -2,11 +2,11 @@
   <img src="docs/assets/raindrop-logo.jpg" alt="Raindrop" width="88" height="88">
 </a>
 
-# The subtle art of making judgment calls
+# Deciding between decision models
 
-Questions, model answers, and scoring code accompanying [Raindrop’s research post](https://www.raindrop.ai/blog/judgment-calls/). The study compares judgment accuracy across 15 capabilities and examines how changes in wording, framing and context affect those judgments. Inspect individual answers and reproduce the reported scores.
+Questions, model answers, and scoring code accompanying [Raindrop’s research post](https://www.raindrop.ai/blog/choosing-decision-models/). The study compares judgment accuracy across 15 capabilities and examines how changes in wording, framing and context affect those judgments. Inspect individual answers and reproduce the reported scores.
 
-[Read the post](https://www.raindrop.ai/blog/judgment-calls/) · [Browse questions](questions/README.md) · [Variants](variants/README.md) · [Results](docs/results.md) · [Methods](docs/methods.md) · [Reproduce](docs/reproduction.md)
+[Read the post](https://www.raindrop.ai/blog/choosing-decision-models/) · [Browse questions](questions/README.md) · [Variants](variants/README.md) · [Results](docs/results.md) · [Methods](docs/methods.md) · [Reproduce](docs/reproduction.md)
 
 | Original questions | Capability areas | Baseline models | Baseline outcomes |
 | ---: | ---: | ---: | ---: |
@@ -200,7 +200,7 @@ Third-party datasets, downloaded model code and weights, and Raindrop brand artw
 
 ## About this research
 
-Research by Afika Nyati at [Raindrop](https://www.raindrop.ai/), accompanying *The subtle art of making judgment calls* (2026). The [post](https://www.raindrop.ai/blog/judgment-calls/) explains the findings; the [methods](docs/methods.md) and saved question-level outcomes document what was measured.
+Research by Afika Nyati at [Raindrop](https://www.raindrop.ai/), accompanying *Deciding between decision models* (2026). The [post](https://www.raindrop.ai/blog/choosing-decision-models/) explains the findings; the [methods](docs/methods.md) and saved question-level outcomes document what was measured.
 
 ## Data format and scoring
 
@@ -210,15 +210,15 @@ The [scoring definitions](docs/methods.md#scoring) explain accuracy, coverage, p
 
 ## Citation
 
-Afika Nyati. *The subtle art of making judgment calls.* Raindrop, 2026. [Read the post](https://www.raindrop.ai/blog/judgment-calls/).
+Afika Nyati. *Deciding between decision models.* Raindrop, 2026. [Read the post](https://www.raindrop.ai/blog/choosing-decision-models/).
 
 ```bibtex
-@misc{nyati2026judgmentcalls,
+@misc{nyati2026decisionmodels,
   author = {Afika Nyati},
-  title = {The subtle art of making judgment calls},
+  title = {Deciding between decision models},
   year = {2026},
   howpublished = {Raindrop},
-  url = {https://www.raindrop.ai/blog/judgment-calls/}
+  url = {https://www.raindrop.ai/blog/choosing-decision-models/}
 }
 ```
 
