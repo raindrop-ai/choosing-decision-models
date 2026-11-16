@@ -6,7 +6,7 @@ The questions come from datasets with different licenses. We include full text w
 
 All 1,005 questions still have their IDs, reference answer keys and recorded model results included. You can verify the reported scores without downloading the missing texts.
 
-Start with the [gift exchange](state-tracking-and-updating/bbh-639b88b1fe80634a7d66.md), or choose a capability below.
+Choose a capability below to explore the questions and recorded model answers.
 
 | Capability | Questions | Question texts in this repo |
 | --- | ---: | ---: |
