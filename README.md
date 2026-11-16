@@ -16,7 +16,6 @@ Questions, model answers, and scoring code accompanying [Raindrop’s research p
 
 - **[Browse the questions](questions/README.md)** by capability, with an individual page for each question and every model's recorded answer.
 - **[Explore the 214-question binary subset](questions/binary-subset.md)** used for precision, recall, false alarms and missed detections.
-- **[Start with the gift exchange](questions/state-tracking-and-updating/bbh-639b88b1fe80634a7d66.md)** discussed in the post.
 - **[Read the baseline results](docs/results.md)** or download the [per-question model answers](results/baseline_predictions.csv).
 - **[Understand the experiment](docs/methods.md)**, including answer choices, scoring, and missing answers.
 - **[Recover all 1,005 inputs](docs/recovering-inputs.md)** using the bundled questions and original source files.

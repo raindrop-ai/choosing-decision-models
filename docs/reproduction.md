@@ -24,7 +24,7 @@ The repository includes 857 complete questions. [Recover the other 148 from thei
 python3 tools/assemble_inputs.py
 ```
 
-The output is `.local/questions.complete.jsonl`. Assembly checks the exact 1,005 question IDs, full text, ordered choices and reference answers. Complete recovery is required for the `--all` examples below. To try the single gift-exchange question, no recovery is needed: omit `--local-questions` from that example. You can also [run only the questions you have available](recovering-inputs.md#work-with-fewer-than-1005-questions).
+The output is `.local/questions.complete.jsonl`. Assembly checks the exact 1,005 question IDs, full text, ordered choices and reference answers. Complete recovery is required for the `--all` examples below. The single-question examples below use a bundled input, so no recovery is needed: omit `--local-questions` for those examples. You can also [run only the questions you have available](recovering-inputs.md#work-with-fewer-than-1005-questions).
 
 If you already have the full evaluated inputs in a JSONL file, import them instead:
 

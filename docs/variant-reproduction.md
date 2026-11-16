@@ -36,12 +36,12 @@ Recovery reads your original texts and the saved edit recipes, then reconstructs
 
 ## Select inputs for a fresh run
 
-For a small, fully included example, select the gift-exchange question's variants:
+For a small example, select the variants of one bundled question:
 
 ```bash
 python3 variants.py inputs --model jev \
   --original bbh/639b88b1fe80634a7d66 \
-  --output .local/jev-gift-variants.jsonl
+  --output .local/jev-example-variants.jsonl
 ```
 
 To select the full variant set that fits every recorded model, after recovery:
