@@ -69,6 +69,8 @@ export function renderMarkdown(source, current, inventory) {
   // The website supplies its own logo in the header. GitHub retains the README's image.
   if (current === 'README.md') {
     source = source.replace(/^<a href="https:\/\/www\.raindrop\.ai\/">[\s\S]*?<\/a>\s*/, '');
+    // The repository's website callout would link back to this same overview.
+    source = source.replace(/^\*\*\[Browse the companion website\]\(https:\/\/raindrop-ai\.github\.io\/choosing-decision-models\/\)\*\*\s*$/m, '');
   }
   if (navigationTitle) source = source.replace(/^# .+$/m, `# ${navigationTitle}`);
   const fallbackHeading = originalTitle ? '' : `<h1 id="${escape(slug(pageTitle(source, current)))}">${escape(pageTitle(source, current))}</h1>\n`;

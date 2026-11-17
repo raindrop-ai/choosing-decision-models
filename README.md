@@ -6,6 +6,8 @@
 
 Questions, model answers, and scoring code accompanying [Raindrop’s research post](https://www.raindrop.ai/blog/choosing-decision-models/). The study compares judgment accuracy across 15 capabilities and examines how changes in wording, framing and context affect those judgments. Inspect individual answers and reproduce the reported scores.
 
+**[Browse the companion website](https://raindrop-ai.github.io/choosing-decision-models/)**
+
 [Read the post](https://www.raindrop.ai/blog/choosing-decision-models/) · [Browse questions](questions/README.md) · [Variants](variants/README.md) · [Results](docs/results.md) · [Methods](docs/methods.md) · [Reproduce](docs/reproduction.md)
 
 | Original questions | Capability areas | Baseline models | Baseline outcomes |

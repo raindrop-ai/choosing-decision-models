@@ -53,13 +53,21 @@ test('Unmodified license text gets a readable page heading', () => {
   assert.ok(rendered.startsWith('<h1 id="mit-license">MIT License</h1>'));
   assert.ok(rendered.includes('Copyright (c) Example'));
 });
-test('Deployment verifies the internal repository and explicit private or public Pages settings', () => {
+test('The README website callout is shown on GitHub without a redundant link on the website', () => {
+  const source = '# Guide\n\n**[Browse the companion website](https://raindrop-ai.github.io/choosing-decision-models/)**\n\n[Read the post](https://www.raindrop.ai/blog/choosing-decision-models/)';
+  assert.ok(source.includes('Browse the companion website'));
+  const rendered = renderMarkdown(source, 'README.md', files);
+  assert.ok(!rendered.includes('Browse the companion website'));
+  assert.ok(rendered.includes('Read the post'));
+});
+test('Deployment accepts the planned public repository without changing access settings', () => {
   const repo = {full_name:'raindrop-ai/choosing-decision-models',visibility:'internal'};
+  assert.throws(() => checkPrivacy({...repo,full_name:'another/repository'}, {public:true,build_type:'workflow',html_url:'https://raindrop-ai.github.io/choosing-decision-models/'}));
   const privateSite = {public:false,build_type:'workflow',html_url:'https://symmetrical-tribble-9e2vwqp.pages.github.io/'};
   const publicSite = {public:true,build_type:'workflow',html_url:'https://raindrop-ai.github.io/choosing-decision-models/'};
   for (const pages of [privateSite, publicSite, {...privateSite, public:true}]) {
-    assert.doesNotThrow(() => checkPrivacy(repo,pages));
-    for (const visibility of ['public','private',undefined]) assert.throws(() => checkPrivacy({...repo,visibility},pages));
+    for (const visibility of ['internal','public']) assert.doesNotThrow(() => checkPrivacy({...repo,visibility},pages));
+    for (const visibility of ['private',undefined]) assert.throws(() => checkPrivacy({...repo,visibility},pages));
     for (const publicValue of [undefined,null,'true']) assert.throws(() => checkPrivacy(repo,{...pages,public:publicValue}));
     for (const html_url of ['https://example.com/', 'https://raindrop-ai.github.io/another-project/', 'https://symmetrical-tribble-9e2vwqp.pages.github.io/?unexpected=true']) assert.throws(() => checkPrivacy(repo,{...pages,html_url}));
     assert.throws(() => checkPrivacy(repo,{...pages,build_type:'legacy'}));

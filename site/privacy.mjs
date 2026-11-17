@@ -3,7 +3,7 @@ import { pathToFileURL } from 'node:url';
 
 export function checkPrivacy(repository, pages) {
   assert.equal(repository.full_name, 'raindrop-ai/choosing-decision-models', 'Unexpected deployment repository');
-  assert.equal(repository.visibility, 'internal', 'The repository must remain internal');
+  assert.ok(['internal', 'public'].includes(repository.visibility), 'Repository visibility must be internal before launch or public after launch');
   assert.equal(typeof pages.public, 'boolean', 'Pages visibility must be explicitly reported by GitHub');
   assert.equal(pages.build_type, 'workflow', 'Select GitHub Actions as the Pages build source');
   const url = new URL(pages.html_url);
@@ -28,5 +28,5 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   const repository = await github('');
   const pages = await github('/pages');
   checkPrivacy(repository, pages);
-  console.log(`Verified: internal repository, ${pages.public ? 'public' : 'private'} GitHub Pages, GitHub Actions build source.`);
+  console.log(`Verified: ${repository.visibility} repository, ${pages.public ? 'public' : 'private'} GitHub Pages, GitHub Actions build source.`);
 }

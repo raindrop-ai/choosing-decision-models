@@ -17,7 +17,7 @@ Open <http://127.0.0.1:3003/>. Stop the server with Ctrl+C. The build checks sou
 
 ## GitHub Pages
 
-The Actions workflow builds and tests pull requests and deploys updates to `main`. It verifies that the repository remains **Internal**, that GitHub reports the website’s visibility, and that **GitHub Actions** is the Pages build source. It accepts the companion’s private address or its public address, <https://raindrop-ai.github.io/choosing-decision-models/>.
+The Actions workflow builds and tests pull requests and deploys updates to `main`. It accepts an **Internal** repository before launch or a **Public** repository after launch, verifies that GitHub reports the website’s visibility, and requires **GitHub Actions** as the Pages build source. It accepts the companion’s private address or its public address, <https://raindrop-ai.github.io/choosing-decision-models/>. The workflow does not change repository visibility; an administrator makes the repository public at launch.
 
 Website access is separate from repository access. A **Public** Pages website can be read without a GitHub account while the repository stays internal. Code and download links on GitHub still require repository access. A **Private** website is restricted to people with read access to the repository.
 
