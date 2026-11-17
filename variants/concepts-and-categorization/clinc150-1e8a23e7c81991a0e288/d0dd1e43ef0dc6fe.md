@@ -22,156 +22,156 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **accept_reservations.** accept reservations
-- **account_blocked.** account blocked
+- **accept\_reservations.** accept reservations
+- **account\_blocked.** account blocked
 - **alarm.** alarm
-- **application_status.** application status
+- **application\_status.** application status
 - **apr.** apr
-- **are_you_a_bot.** are you a bot
+- **are\_you\_a\_bot.** are you a bot
 - **balance.** balance
-- **bill_balance.** bill balance
-- **bill_due.** bill due
-- **book_flight.** book flight
-- **book_hotel.** book hotel
+- **bill\_balance.** bill balance
+- **bill\_due.** bill due
+- **book\_flight.** book flight
+- **book\_hotel.** book hotel
 - **calculator.** calculator
 - **calendar.** calendar
-- **calendar_update.** calendar update
+- **calendar\_update.** calendar update
 - **calories.** calories
 - **cancel.** cancel
-- **cancel_reservation.** cancel reservation
-- **car_rental.** car rental
-- **card_declined.** card declined
-- **carry_on.** carry on
-- **change_accent.** change accent
-- **change_ai_name.** change ai name
-- **change_language.** change language
-- **change_speed.** change speed
-- **change_user_name.** change user name
-- **change_volume.** change volume
-- **confirm_reservation.** confirm reservation
-- **cook_time.** cook time
-- **credit_limit.** credit limit
-- **credit_limit_change.** credit limit change
-- **credit_score.** credit score
-- **current_location.** current location
-- **damaged_card.** damaged card
+- **cancel\_reservation.** cancel reservation
+- **car\_rental.** car rental
+- **card\_declined.** card declined
+- **carry\_on.** carry on
+- **change\_accent.** change accent
+- **change\_ai\_name.** change ai name
+- **change\_language.** change language
+- **change\_speed.** change speed
+- **change\_user\_name.** change user name
+- **change\_volume.** change volume
+- **confirm\_reservation.** confirm reservation
+- **cook\_time.** cook time
+- **credit\_limit.** credit limit
+- **credit\_limit\_change.** credit limit change
+- **credit\_score.** credit score
+- **current\_location.** current location
+- **damaged\_card.** damaged card
 - **date.** date
 - **definition.** definition
-- **direct_deposit.** direct deposit
+- **direct\_deposit.** direct deposit
 - **directions.** directions
 - **distance.** distance
-- **do_you_have_pets.** do you have pets
-- **exchange_rate.** exchange rate
-- **expiration_date.** expiration date
-- **find_phone.** find phone
-- **flight_status.** flight status
-- **flip_coin.** flip coin
-- **food_last.** food last
-- **freeze_account.** freeze account
-- **fun_fact.** fun fact
+- **do\_you\_have\_pets.** do you have pets
+- **exchange\_rate.** exchange rate
+- **expiration\_date.** expiration date
+- **find\_phone.** find phone
+- **flight\_status.** flight status
+- **flip\_coin.** flip coin
+- **food\_last.** food last
+- **freeze\_account.** freeze account
+- **fun\_fact.** fun fact
 - **gas.** gas
-- **gas_type.** gas type
+- **gas\_type.** gas type
 - **goodbye.** goodbye
 - **greeting.** greeting
-- **how_busy.** how busy
-- **how_old_are_you.** how old are you
-- **improve_credit_score.** improve credit score
+- **how\_busy.** how busy
+- **how\_old\_are\_you.** how old are you
+- **improve\_credit\_score.** improve credit score
 - **income.** income
-- **ingredient_substitution.** ingredient substitution
-- **ingredients_list.** ingredients list
+- **ingredient\_substitution.** ingredient substitution
+- **ingredients\_list.** ingredients list
 - **insurance.** insurance
-- **insurance_change.** insurance change
-- **interest_rate.** interest rate
-- **international_fees.** international fees
-- **international_visa.** international visa
-- **jump_start.** jump start
-- **last_maintenance.** last maintenance
-- **lost_luggage.** lost luggage
-- **make_call.** make call
+- **insurance\_change.** insurance change
+- **interest\_rate.** interest rate
+- **international\_fees.** international fees
+- **international\_visa.** international visa
+- **jump\_start.** jump start
+- **last\_maintenance.** last maintenance
+- **lost\_luggage.** lost luggage
+- **make\_call.** make call
 - **maybe.** maybe
-- **meal_suggestion.** meal suggestion
-- **meaning_of_life.** meaning of life
-- **measurement_conversion.** measurement conversion
-- **meeting_schedule.** meeting schedule
-- **min_payment.** min payment
+- **meal\_suggestion.** meal suggestion
+- **meaning\_of\_life.** meaning of life
+- **measurement\_conversion.** measurement conversion
+- **meeting\_schedule.** meeting schedule
+- **min\_payment.** min payment
 - **mpg.** mpg
-- **new_card.** new card
-- **next_holiday.** next holiday
-- **next_song.** next song
+- **new\_card.** new card
+- **next\_holiday.** next holiday
+- **next\_song.** next song
 - **no.** no
-- **nutrition_info.** nutrition info
-- **oil_change_how.** oil change how
-- **oil_change_when.** oil change when
+- **nutrition\_info.** nutrition info
+- **oil\_change\_how.** oil change how
+- **oil\_change\_when.** oil change when
 - **oos.** oos
 - **order.** order
-- **order_checks.** order checks
-- **order_status.** order status
-- **pay_bill.** pay bill
+- **order\_checks.** order checks
+- **order\_status.** order status
+- **pay\_bill.** pay bill
 - **payday.** payday
-- **pin_change.** pin change
-- **play_music.** play music
-- **plug_type.** plug type
-- **pto_balance.** pto balance
-- **pto_request.** pto request
-- **pto_request_status.** pto request status
-- **pto_used.** pto used
+- **pin\_change.** pin change
+- **play\_music.** play music
+- **plug\_type.** plug type
+- **pto\_balance.** pto balance
+- **pto\_request.** pto request
+- **pto\_request\_status.** pto request status
+- **pto\_used.** pto used
 - **recipe.** recipe
-- **redeem_rewards.** redeem rewards
+- **redeem\_rewards.** redeem rewards
 - **reminder.** reminder
-- **reminder_update.** reminder update
+- **reminder\_update.** reminder update
 - **repeat.** repeat
-- **replacement_card_duration.** replacement card duration
-- **report_fraud.** report fraud
-- **report_lost_card.** report lost card
-- **reset_settings.** reset settings
-- **restaurant_reservation.** restaurant reservation
-- **restaurant_reviews.** restaurant reviews
-- **restaurant_suggestion.** restaurant suggestion
-- **rewards_balance.** rewards balance
-- **roll_dice.** roll dice
-- **rollover_401k.** rollover 401k
+- **replacement\_card\_duration.** replacement card duration
+- **report\_fraud.** report fraud
+- **report\_lost\_card.** report lost card
+- **reset\_settings.** reset settings
+- **restaurant\_reservation.** restaurant reservation
+- **restaurant\_reviews.** restaurant reviews
+- **restaurant\_suggestion.** restaurant suggestion
+- **rewards\_balance.** rewards balance
+- **roll\_dice.** roll dice
+- **rollover\_401k.** rollover 401k
 - **routing.** routing
-- **schedule_maintenance.** schedule maintenance
-- **schedule_meeting.** schedule meeting
-- **share_location.** share location
-- **shopping_list.** shopping list
-- **shopping_list_update.** shopping list update
-- **smart_home.** smart home
+- **schedule\_maintenance.** schedule maintenance
+- **schedule\_meeting.** schedule meeting
+- **share\_location.** share location
+- **shopping\_list.** shopping list
+- **shopping\_list\_update.** shopping list update
+- **smart\_home.** smart home
 - **spelling.** spelling
-- **spending_history.** spending history
-- **sync_device.** sync device
+- **spending\_history.** spending history
+- **sync\_device.** sync device
 - **taxes.** taxes
-- **tell_joke.** tell joke
+- **tell\_joke.** tell joke
 - **text.** text
-- **thank_you.** thank you
+- **thank\_you.** thank you
 - **time.** time
 - **timer.** timer
 - **timezone.** timezone
-- **tire_change.** tire change
-- **tire_pressure.** tire pressure
-- **todo_list.** todo list
-- **todo_list_update.** todo list update
+- **tire\_change.** tire change
+- **tire\_pressure.** tire pressure
+- **todo\_list.** todo list
+- **todo\_list\_update.** todo list update
 - **traffic.** traffic
 - **transactions.** transactions
 - **transfer.** transfer
 - **translate.** translate
-- **travel_alert.** travel alert
-- **travel_notification.** travel notification
-- **travel_suggestion.** travel suggestion
+- **travel\_alert.** travel alert
+- **travel\_notification.** travel notification
+- **travel\_suggestion.** travel suggestion
 - **uber.** uber
-- **update_playlist.** update playlist
-- **user_name.** user name
+- **update\_playlist.** update playlist
+- **user\_name.** user name
 - **vaccines.** vaccines
 - **w2.** w2
 - **weather.** weather
-- **what_are_your_hobbies.** what are your hobbies
-- **what_can_i_ask_you.** what can i ask you
-- **what_is_your_name.** what is your name
-- **what_song.** what song
-- **where_are_you_from.** where are you from
-- **whisper_mode.** whisper mode
-- **who_do_you_work_for.** who do you work for
-- **who_made_you.** who made you
+- **what\_are\_your\_hobbies.** what are your hobbies
+- **what\_can\_i\_ask\_you.** what can i ask you
+- **what\_is\_your\_name.** what is your name
+- **what\_song.** what song
+- **where\_are\_you\_from.** where are you from
+- **whisper\_mode.** whisper mode
+- **who\_do\_you\_work\_for.** who do you work for
+- **who\_made\_you.** who made you
 - **yes.** yes
 
 **Reference answer:** `schedule_maintenance`.

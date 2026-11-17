@@ -23,9 +23,9 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **tool_call.** {&quot;name&quot;: &quot;Movies_1_FindMovies&quot;, &quot;arguments&quot;: {&quot;location&quot;: &quot;Santa Rosa, CA&quot;, &quot;genre&quot;: &quot;Animation&quot;, &quot;show_type&quot;: &quot;imax&quot;}}
-- **cannot_answer.** I&#x27;m sorry for the inconvenience, but I&#x27;m unable to provide real-time information or perform web searches. I recommend checking local listings for IMAX showtimes in Santa Rosa.
-- **request_for_info.** To help you with that, I&#x27;ll need to know the location of the theater. Could you please provide the city and state?
+- **tool\_call.** {&quot;name&quot;: &quot;Movies\_1\_FindMovies&quot;, &quot;arguments&quot;: {&quot;location&quot;: &quot;Santa Rosa, CA&quot;, &quot;genre&quot;: &quot;Animation&quot;, &quot;show\_type&quot;: &quot;imax&quot;}}
+- **cannot\_answer.** I&#x27;m sorry for the inconvenience, but I&#x27;m unable to provide real-time information or perform web searches. I recommend checking local listings for IMAX showtimes in Santa Rosa.
+- **request\_for\_info.** To help you with that, I&#x27;ll need to know the location of the theater. Could you please provide the city and state?
 - **direct.** Absolutely, I found an IMAX showing of &quot;The Secret Life of Pets 2&quot; at the Roxy Stadium 14 in Santa Rosa. It&#x27;s a fun, animated movie.
 
 **Reference answer:** `request_for_info`.

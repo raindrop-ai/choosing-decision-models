@@ -25,8 +25,8 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **0.** big blue triangle 
-- **1.** small black circle 
+- **0.** big blue triangle
+- **1.** small black circle
 - **2.** both of them
 - **3.** none of them
 

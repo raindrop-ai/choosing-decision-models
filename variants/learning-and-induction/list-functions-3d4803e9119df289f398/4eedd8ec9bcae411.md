@@ -27,10 +27,10 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **A.** [98]
-- **B.** [196]
-- **C.** [97]
-- **D.** [99]
+- **A.** \[98\]
+- **B.** \[196\]
+- **C.** \[97\]
+- **D.** \[99\]
 
 **Reference answer:** `A`.
 

@@ -29,13 +29,13 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **B.** \frac{1}{10}
+- **B.** \\frac{1}{10}
 - **A.** 0
-- **C.** \frac{1}{2}
-- **D.** \frac{19}{20}
+- **C.** \\frac{1}{2}
+- **D.** \\frac{19}{20}
 - **F.** 1
-- **E.** \frac{1}{20}
-- **G.** \frac{9}{10}
+- **E.** \\frac{1}{20}
+- **G.** \\frac{9}{10}
 
 **Reference answer:** `D`.
 

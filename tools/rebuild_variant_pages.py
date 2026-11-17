@@ -74,7 +74,7 @@ def main():
                 if len(c['state'])>1500:context='<details>\n<summary>Read the full context</summary>\n\n'+context+'\n\n</details>'
                 detail += ['## Context','',context,'']
             detail += ['## Question','',readable_quote(c['question']),'','## Answer choices','']
-            detail += ['- **'+html.escape(k)+'.** '+html.escape(v) for k,v in c['choices'].items()]
+            detail += ['- **'+md(k)+'.** '+md(v).rstrip() for k,v in c['choices'].items()]
             detail += ['', '**Reference answer:** `'+q['gold_choice']+'`.','',
                 '<details>','<summary>Exact evaluated input as JSON</summary>','',
                 fenced(json.dumps({k:c[k] for k in ('state','question','choices')},ensure_ascii=False,indent=2)),

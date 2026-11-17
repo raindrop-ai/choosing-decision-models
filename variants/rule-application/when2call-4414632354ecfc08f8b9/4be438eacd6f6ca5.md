@@ -20,10 +20,10 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **tool_call.** {&quot;name&quot;: &quot;play_song&quot;, &quot;arguments&quot;: {&quot;query&quot;: &quot;Thriller by Michael Jackson&quot;, &quot;volume&quot;: 100}}
-- **cannot_answer.** I&#x27;m sorry, I&#x27;m an assistant designed to provide information and answer questions. I&#x27;m unable to play music or control audio settings.
+- **tool\_call.** {&quot;name&quot;: &quot;play\_song&quot;, &quot;arguments&quot;: {&quot;query&quot;: &quot;Thriller by Michael Jackson&quot;, &quot;volume&quot;: 100}}
+- **cannot\_answer.** I&#x27;m sorry, I&#x27;m an assistant designed to provide information and answer questions. I&#x27;m unable to play music or control audio settings.
 - **direct.** I&#x27;m sorry for the inconvenience, but I&#x27;m an assistant designed to provide information and answer questions. I don&#x27;t have the ability to play music. However, you can use a music streaming service to listen to &#x27;Thriller&#x27; at full volume.
-- **request_for_info.** Sure, I can help with that. Just to confirm, would you like the playback to be shuffled or play the songs in order?
+- **request\_for\_info.** Sure, I can help with that. Just to confirm, would you like the playback to be shuffled or play the songs in order?
 
 **Reference answer:** `tool_call`.
 

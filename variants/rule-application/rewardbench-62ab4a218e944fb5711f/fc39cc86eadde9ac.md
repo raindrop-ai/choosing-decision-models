@@ -18,9 +18,7 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **A.** Sure! Here&#x27;s the sorted list:
-
-gorvik, azorid, baneth, olvren
+- **A.** Sure! Here&#x27;s the sorted list:  gorvik, azorid, baneth, olvren
 - **B.** azorid, baneth, gorvik, olvren
 
 **Reference answer:** `B`.

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { htmlPath, resolveLink, renderMarkdown } from './build.mjs';
 import { checkPrivacy } from './privacy.mjs';
 
-const files = new Set(['README.md','docs/methods.md','docs/assets/raindrop-logo.jpg','questions/README.md','questions/retrieval/a.md','results/baseline_predictions.csv']);
+const files = new Set(['README.md','MANIFEST.json','docs/methods.md','docs/assets/raindrop-logo.jpg','questions/README.md','questions/retrieval/a.md','results/baseline_predictions.csv','licenses/sources/example/LICENSE.md','workers/example.py']);
 test('Markdown links work from nested pages and directory indexes', () => {
   assert.equal(htmlPath('README.md'),'index.html');
   assert.equal(htmlPath('questions/README.md'),'questions/index.html');
@@ -24,6 +24,13 @@ test('Unlisted, private and executable links cannot enter the website', () => {
   assert.equal(resolveLink('docs/assets/raindrop-logo.jpg','README.md',files,true),'docs/assets/raindrop-logo.jpg');
   assert.equal(resolveLink('results/baseline_predictions.csv','README.md',files),'https://github.com/raindrop-ai/choosing-decision-models/blob/main/results/baseline_predictions.csv');
 });
+test('Manifest and inventoried directories remain clickable without exposing unknown paths', () => {
+  assert.equal(resolveLink('MANIFEST.json','README.md',files),'https://github.com/raindrop-ai/choosing-decision-models/blob/main/MANIFEST.json');
+  assert.equal(resolveLink('../licenses/sources/','docs/methods.md',files),'https://github.com/raindrop-ai/choosing-decision-models/tree/main/licenses/sources');
+  assert.equal(resolveLink('../workers/','docs/methods.md',files),'https://github.com/raindrop-ai/choosing-decision-models/tree/main/workers');
+  assert.equal(resolveLink('../workers/','docs/methods.md',files,true),null);
+  assert.equal(resolveLink('../unknown/','docs/methods.md',files),null);
+});
 test('Untrusted question markup is escaped while disclosures remain usable', () => {
   const rendered = renderMarkdown('<script>alert(1)</script>\n\n<img src=x onerror=alert(1)>\n\n<details><summary>Answers</summary>\n\n[unsafe](javascript:alert%281%29)\n\n</details>','README.md',files);
   assert.ok(!rendered.includes('<script>'));
@@ -31,6 +38,20 @@ test('Untrusted question markup is escaped while disclosures remain usable', () 
   assert.ok(!rendered.includes('href="javascript:'));
   assert.ok(rendered.includes('<details><summary>Answers</summary>'));
   assert.ok(rendered.includes('</details>'));
+});
+test('Generator comments stay hidden without removing the results or literal code', () => {
+  const rendered = renderMarkdown('<!-- RESULTS_PREVIEW_START -->\n\n| Model | Accuracy |\n| --- | --- |\n| Jev | 88.8% |\n\n<!-- RESULTS_PREVIEW_END -->\n\n```html\n<!-- literal code -->\n```', 'README.md', files);
+  assert.ok(!rendered.includes('RESULTS_PREVIEW_START'));
+  assert.ok(!rendered.includes('RESULTS_PREVIEW_END'));
+  assert.ok(rendered.includes('<table>'));
+  assert.ok(rendered.includes('Jev'));
+  assert.ok(rendered.includes('88.8%'));
+  assert.ok(rendered.includes('&lt;!-- literal code --&gt;'));
+});
+test('Unmodified license text gets a readable page heading', () => {
+  const rendered = renderMarkdown('MIT License\n\nCopyright (c) Example\n', 'licenses/sources/example/LICENSE.md', files);
+  assert.ok(rendered.startsWith('<h1 id="mit-license">MIT License</h1>'));
+  assert.ok(rendered.includes('Copyright (c) Example'));
 });
 test('Deployment verifies the internal repository and explicit private or public Pages settings', () => {
   const repo = {full_name:'raindrop-ai/choosing-decision-models',visibility:'internal'};

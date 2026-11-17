@@ -35,6 +35,10 @@ def readable_quote(text):
         line = html.escape(line, quote=False).replace("\\", "\\\\")
         for mark in ("`", "*", "_", "[", "]", "#"):
             line = line.replace(mark, "\\" + mark)
+        # Underlines in source documents must remain text, not Setext headings.
+        if re.fullmatch(r" {0,3}(?:=+|-+)\s*", line):
+            indent = len(line) - len(line.lstrip(" "))
+            line = line[:indent] + "\\" + line[indent:]
         return line
     return "\n".join("> " + escape(line) if line else ">" for line in text.splitlines())
 

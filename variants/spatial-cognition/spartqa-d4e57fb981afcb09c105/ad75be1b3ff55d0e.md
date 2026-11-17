@@ -181,14 +181,14 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **A.** [&quot;A&quot;, &quot;B&quot;]
-- **B.** [&quot;B&quot;]
-- **C.** [&quot;C&quot;]
-- **D.** [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;]
-- **E.** []
-- **F.** [&quot;A&quot;]
-- **G.** [&quot;A&quot;, &quot;C&quot;]
-- **H.** [&quot;B&quot;, &quot;C&quot;]
+- **A.** \[&quot;A&quot;, &quot;B&quot;\]
+- **B.** \[&quot;B&quot;\]
+- **C.** \[&quot;C&quot;\]
+- **D.** \[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;\]
+- **E.** \[\]
+- **F.** \[&quot;A&quot;\]
+- **G.** \[&quot;A&quot;, &quot;C&quot;\]
+- **H.** \[&quot;B&quot;, &quot;C&quot;\]
 
 **Reference answer:** `A`.
 

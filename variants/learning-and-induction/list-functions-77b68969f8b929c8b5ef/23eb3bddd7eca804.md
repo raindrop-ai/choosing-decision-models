@@ -18,10 +18,10 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **B.** [28, 3, 96]
-- **C.** [1, 2, 3]
-- **D.** [120, 2, 120]
-- **A.** [27, 1, 93]
+- **B.** \[28, 3, 96\]
+- **C.** \[1, 2, 3\]
+- **D.** \[120, 2, 120\]
+- **A.** \[27, 1, 93\]
 
 **Reference answer:** `B`.
 

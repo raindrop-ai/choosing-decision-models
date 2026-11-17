@@ -19,10 +19,14 @@ export function resolveLink(href, current, inventory, image = false) {
   if (href.startsWith('//') || href.startsWith('/')) return null;
   const match = href.match(/^([^?#]*)(.*)$/);
   let name;
-  try { name = path.posix.normalize(path.posix.join(path.posix.dirname(current), decodeURIComponent(match[1]))); }
+  try { name = path.posix.normalize(path.posix.join(path.posix.dirname(current), decodeURIComponent(match[1]))).replace(/\/+$/, ''); }
   catch { return null; }
   if (!inventory.has(name) && inventory.has(`${name}/README.md`)) name += '/README.md';
-  if (!inventory.has(name) || name.startsWith('../')) return null;
+  if (name.startsWith('../')) return null;
+  if (!inventory.has(name) && [...inventory].some(file => file.startsWith(name + '/'))) {
+    return image ? null : `${repository}/tree/main/${name.split('/').map(encodeURIComponent).join('/')}${match[2]}`;
+  }
+  if (!inventory.has(name)) return null;
   const suffix = match[2];
   const relative = target => path.posix.relative(path.posix.dirname(htmlPath(current)), target);
   if (name.endsWith('.md')) return image ? null : relative(htmlPath(name)) + suffix;
@@ -38,6 +42,8 @@ export function renderMarkdown(source, current, inventory) {
   const engine = new Marked({ gfm: true });
   engine.use({ renderer: {
     html({ text }) {
+      // HTML comments delimit generated source sections; they are not page content.
+      text = text.replace(/<!--[\s\S]*?-->/g, '');
       // Dataset passages are untrusted. Preserve only the disclosure tags used by our Markdown.
       return text.split(/(<[^>]*>)/).map(part => {
         if (!part.startsWith('<')) return escape(part);
@@ -65,7 +71,8 @@ export function renderMarkdown(source, current, inventory) {
     source = source.replace(/^<a href="https:\/\/www\.raindrop\.ai\/">[\s\S]*?<\/a>\s*/, '');
   }
   if (navigationTitle) source = source.replace(/^# .+$/m, `# ${navigationTitle}`);
-  return engine.parse(source);
+  const fallbackHeading = originalTitle ? '' : `<h1 id="${escape(slug(pageTitle(source, current)))}">${escape(pageTitle(source, current))}</h1>\n`;
+  return fallbackHeading + engine.parse(source);
 }
 
 export const sections = [
@@ -76,7 +83,7 @@ export const sections = [
   ['About', [['Licenses','licenses/README.md'],['Contribute & contact','CONTRIBUTING.md']]]
 ];
 const navigationTitles = new Map(sections.flatMap(([, items]) => items.map(([title, file]) => [file, title])));
-const pageTitle = (source, file) => navigationTitles.get(file) ?? (source.match(/^# (.+)$/m) || [])[1] ?? file;
+const pageTitle = (source, file) => navigationTitles.get(file) ?? (source.match(/^# (.+)$/m) || [])[1] ?? source.split('\n').find(line => line.trim())?.trim() ?? file;
 
 function document(source, current, inventory) {
   const rel = target => path.posix.relative(path.posix.dirname(htmlPath(current)), target);
@@ -110,6 +117,8 @@ export async function build() {
     const bytes = await readFile(sourcePath);
     if (createHash('sha256').update(bytes).digest('hex') !== inventory[file]) throw new Error(`Inventory mismatch: ${file}. Update MANIFEST.json before building.`);
   }
+  // The inventory cannot hash itself, but readers may open it on GitHub.
+  files.add('MANIFEST.json');
   await rm(output,{recursive:true,force:true});
   await mkdir(path.join(output,'site-assets'),{recursive:true});
   const search = []; let count = 0, size = 0;

@@ -184,9 +184,9 @@ This version keeps the original reference answer. Its context, question instruct
 ## Answer choices
 
 - **direct.** In Berlin, the Naturkundemuseum is a fantastic free attraction for kids, featuring a vast dinosaur exhibit. The LEGO Discovery Centre offers free entry for children under 3, with plenty of interactive activities. The Volkspark Friedrichshain is a great park with a fairytale fountain and playgrounds.
-- **cannot_answer.** Apologies, but I&#x27;m unable to provide specific recommendations as I don&#x27;t have real-time data or personal experiences. I suggest checking a reliable travel website for up-to-date information on free kid-friendly attractions in Berlin.
-- **tool_call.** {&quot;name&quot;: &quot;Travel_1_FindAttractions&quot;, &quot;arguments&quot;: {&quot;location&quot;: &quot;Berlin, Germany&quot;, &quot;free_entry&quot;: &quot;True&quot;, &quot;good_for_kids&quot;: &quot;True&quot;}}
-- **request_for_info.** To provide you with the best options, could you please specify the city or town you&#x27;re planning to visit?
+- **cannot\_answer.** Apologies, but I&#x27;m unable to provide specific recommendations as I don&#x27;t have real-time data or personal experiences. I suggest checking a reliable travel website for up-to-date information on free kid-friendly attractions in Berlin.
+- **tool\_call.** {&quot;name&quot;: &quot;Travel\_1\_FindAttractions&quot;, &quot;arguments&quot;: {&quot;location&quot;: &quot;Berlin, Germany&quot;, &quot;free\_entry&quot;: &quot;True&quot;, &quot;good\_for\_kids&quot;: &quot;True&quot;}}
+- **request\_for\_info.** To provide you with the best options, could you please specify the city or town you&#x27;re planning to visit?
 
 **Reference answer:** `request_for_info`.
 

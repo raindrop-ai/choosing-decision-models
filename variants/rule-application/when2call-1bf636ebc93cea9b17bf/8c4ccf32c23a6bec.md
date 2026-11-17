@@ -183,10 +183,10 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **request_for_info.** To help you find a movie, could you please specify the genre you&#x27;re interested in?
-- **tool_call.** {&quot;name&quot;: &quot;Movies_3_FindMovies&quot;, &quot;arguments&quot;: {&quot;cast&quot;: &quot;Ving Rhames&quot;}}
+- **request\_for\_info.** To help you find a movie, could you please specify the genre you&#x27;re interested in?
+- **tool\_call.** {&quot;name&quot;: &quot;Movies\_3\_FindMovies&quot;, &quot;arguments&quot;: {&quot;cast&quot;: &quot;Ving Rhames&quot;}}
 - **direct.** Sure, I recommend &quot;Mission: Impossible - Fallout&quot;. Ving Rhames plays the character Luther Stickell in this action-packed film. Enjoy!
-- **cannot_answer.** I&#x27;m sorry, I can&#x27;t provide movie recommendations based on specific actors as I don&#x27;t have that functionality. You may want to check a movie database for this information.
+- **cannot\_answer.** I&#x27;m sorry, I can&#x27;t provide movie recommendations based on specific actors as I don&#x27;t have that functionality. You may want to check a movie database for this information.
 
 **Reference answer:** `tool_call`.
 

@@ -18,14 +18,14 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **A.** [&quot;Varelin&quot;, &quot;Zorven&quot;]
-- **B.** [&quot;Varelin&quot;, &quot;Zorven&quot;, &quot;Kasel&quot;]
-- **C.** [&quot;Varelin&quot;]
-- **D.** [&quot;Zorven&quot;, &quot;Kasel&quot;]
-- **E.** [&quot;Kasel&quot;]
-- **F.** []
-- **G.** [&quot;Zorven&quot;]
-- **H.** [&quot;Varelin&quot;, &quot;Kasel&quot;]
+- **A.** \[&quot;Varelin&quot;, &quot;Zorven&quot;\]
+- **B.** \[&quot;Varelin&quot;, &quot;Zorven&quot;, &quot;Kasel&quot;\]
+- **C.** \[&quot;Varelin&quot;\]
+- **D.** \[&quot;Zorven&quot;, &quot;Kasel&quot;\]
+- **E.** \[&quot;Kasel&quot;\]
+- **F.** \[\]
+- **G.** \[&quot;Zorven&quot;\]
+- **H.** \[&quot;Varelin&quot;, &quot;Kasel&quot;\]
 
 **Reference answer:** `C`.
 

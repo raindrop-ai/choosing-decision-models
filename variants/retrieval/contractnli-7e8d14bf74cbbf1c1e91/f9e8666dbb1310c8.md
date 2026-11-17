@@ -35,14 +35,14 @@ This version keeps the original reference answer. Its context, question instruct
 > &lt;TABLE&gt;
 > &lt;S&gt; &lt;C&gt;
 > AGREED: PARTICIPANT: XIRCOM
-> -------------------------------------------
+> \-------------------------------------------
 > INTEL CORPORATION (Company Name, Division/Sub, if applicable)
 > 3065 Bowers Avenue
 > Santa Clara, CA 95052 26025 Mureau Road
-> --------------------------------------------------------
+> \--------------------------------------------------------
 > (Address)
 > Calabasas CA 91302
-> --------------------------------------------------------
+> \--------------------------------------------------------
 > (City) (State) (Zip)
 > /s/ CARL EVERETT /s/ JEROME P. CHERWINSKI
 > -------------------------------- --------------------------------------------------------

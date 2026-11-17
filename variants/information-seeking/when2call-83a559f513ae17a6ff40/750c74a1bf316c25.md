@@ -27,9 +27,9 @@ This version keeps the original reference answer. Its context, question instruct
 ## Answer choices
 
 - **direct.** The component UUID AB1010CD in project SUPERFANCY has been identified with vulnerability ef903ac-893-f00. This vulnerability is due to outdated software dependencies. Updating these dependencies should resolve the issue.
-- **tool_call.** {&quot;name&quot;: &quot;analysis_api.AnalysisApi.retrieve_analysis&quot;, &quot;arguments&quot;: {&quot;project&quot;: &quot;SUPERFANCY&quot;, &quot;component&quot;: &quot;AB1010CD&quot;, &quot;vulnerability&quot;: &quot;ef903ac-893-f00&quot;}}
-- **request_for_info.** To provide you with the detailed analysis trail, I&#x27;ll need the unique identifier (UUID) of the project associated with the component. Could you please provide that?
-- **cannot_answer.** I&#x27;m sorry for the inconvenience, but I&#x27;m unable to provide an analysis trail for your project SUPERFANCY with the specified component and vulnerability. I don&#x27;t have the capability to perform this task.
+- **tool\_call.** {&quot;name&quot;: &quot;analysis\_api.AnalysisApi.retrieve\_analysis&quot;, &quot;arguments&quot;: {&quot;project&quot;: &quot;SUPERFANCY&quot;, &quot;component&quot;: &quot;AB1010CD&quot;, &quot;vulnerability&quot;: &quot;ef903ac-893-f00&quot;}}
+- **request\_for\_info.** To provide you with the detailed analysis trail, I&#x27;ll need the unique identifier (UUID) of the project associated with the component. Could you please provide that?
+- **cannot\_answer.** I&#x27;m sorry for the inconvenience, but I&#x27;m unable to provide an analysis trail for your project SUPERFANCY with the specified component and vulnerability. I don&#x27;t have the capability to perform this task.
 
 **Reference answer:** `request_for_info`.
 

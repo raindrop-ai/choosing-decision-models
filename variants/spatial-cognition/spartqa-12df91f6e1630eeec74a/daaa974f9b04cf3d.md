@@ -18,14 +18,14 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **A.** [&quot;Apple&quot;, &quot;Castle&quot;]
-- **B.** [&quot;Apple&quot;, &quot;Bridge&quot;, &quot;Castle&quot;]
-- **C.** [&quot;Bridge&quot;, &quot;Castle&quot;]
-- **D.** [&quot;Apple&quot;]
-- **E.** [&quot;Castle&quot;]
-- **F.** [&quot;Bridge&quot;]
-- **G.** [&quot;Apple&quot;, &quot;Bridge&quot;]
-- **H.** []
+- **A.** \[&quot;Apple&quot;, &quot;Castle&quot;\]
+- **B.** \[&quot;Apple&quot;, &quot;Bridge&quot;, &quot;Castle&quot;\]
+- **C.** \[&quot;Bridge&quot;, &quot;Castle&quot;\]
+- **D.** \[&quot;Apple&quot;\]
+- **E.** \[&quot;Castle&quot;\]
+- **F.** \[&quot;Bridge&quot;\]
+- **G.** \[&quot;Apple&quot;, &quot;Bridge&quot;\]
+- **H.** \[\]
 
 **Reference answer:** `E`.
 

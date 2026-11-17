@@ -26,8 +26,8 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **0.** medium yellow square 
-- **1.** blue object that is touching the bottom edge of a block 
+- **0.** medium yellow square
+- **1.** blue object that is touching the bottom edge of a block
 - **2.** both of them
 - **3.** none of them
 

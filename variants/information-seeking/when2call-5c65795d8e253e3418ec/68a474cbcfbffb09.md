@@ -26,9 +26,9 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **cannot_answer.** I&#x27;m sorry for the inconvenience, but I&#x27;m currently unable to perform real estate searches. I recommend using a dedicated real estate website for your specific needs.
-- **tool_call.** {&quot;name&quot;: &quot;Homes_2_FindHomeByArea&quot;, &quot;arguments&quot;: {&quot;area&quot;: &quot;San Francisco, CA&quot;, &quot;intent&quot;: &quot;rent&quot;, &quot;number_of_beds&quot;: 2, &quot;number_of_baths&quot;: 1, &quot;in_unit_laundry&quot;: true}}
-- **request_for_info.** How many bedrooms would you like the rental property to have?
+- **cannot\_answer.** I&#x27;m sorry for the inconvenience, but I&#x27;m currently unable to perform real estate searches. I recommend using a dedicated real estate website for your specific needs.
+- **tool\_call.** {&quot;name&quot;: &quot;Homes\_2\_FindHomeByArea&quot;, &quot;arguments&quot;: {&quot;area&quot;: &quot;San Francisco, CA&quot;, &quot;intent&quot;: &quot;rent&quot;, &quot;number\_of\_beds&quot;: 2, &quot;number\_of\_baths&quot;: 1, &quot;in\_unit\_laundry&quot;: true}}
+- **request\_for\_info.** How many bedrooms would you like the rental property to have?
 - **direct.** I found a rental at 1234 Market St, San Francisco. It has two bedrooms, one bathroom, and in-unit laundry. No garage, but it&#x27;s close to public transportation.
 
 **Reference answer:** `request_for_info`.

@@ -37,9 +37,9 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **cannot_answer.** Apologies, but I&#x27;m unable to provide real-time event suggestions as I don&#x27;t have the capability to browse the internet or access current databases.
-- **tool_call.** {&quot;name&quot;: &quot;Events_3_FindEvents&quot;, &quot;arguments&quot;: {&quot;event_type&quot;: &quot;Music&quot;, &quot;city&quot;: &quot;New York, NY&quot;}}
-- **request_for_info.** To provide you with the most relevant suggestions, could you please specify the exact date you&#x27;re interested in?
+- **cannot\_answer.** Apologies, but I&#x27;m unable to provide real-time event suggestions as I don&#x27;t have the capability to browse the internet or access current databases.
+- **tool\_call.** {&quot;name&quot;: &quot;Events\_3\_FindEvents&quot;, &quot;arguments&quot;: {&quot;event\_type&quot;: &quot;Music&quot;, &quot;city&quot;: &quot;New York, NY&quot;}}
+- **request\_for\_info.** To provide you with the most relevant suggestions, could you please specify the exact date you&#x27;re interested in?
 - **direct.** Absolutely, the &quot;Summer Music Fest&quot; at Central Park is happening this weekend. It features a variety of genres and renowned artists. Enjoy!
 
 **Reference answer:** `cannot_answer`.

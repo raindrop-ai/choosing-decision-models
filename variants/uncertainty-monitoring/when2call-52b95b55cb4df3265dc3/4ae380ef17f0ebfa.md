@@ -26,9 +26,9 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **cannot_answer.** Apologies, I&#x27;m unable to provide real-time information on car rental options. I recommend checking with car rental companies or travel websites for the most accurate and up-to-date information.
-- **request_for_info.** To provide you with the most suitable options, could you please specify the type of car you prefer? Our choices include Hatchback, Sedan, SUV, or you can choose &#x27;dontcare&#x27; if you have no preference.
-- **tool_call.** {&quot;name&quot;: &quot;RentalCars_3_GetCarsAvailable&quot;, &quot;arguments&quot;: {&quot;city&quot;: &quot;Los Angeles, CA&quot;, &quot;start_date&quot;: &quot;2023-04-24&quot;, &quot;pickup_time&quot;: &quot;10:00&quot;, &quot;end_date&quot;: &quot;2023-04-28&quot;}}
+- **cannot\_answer.** Apologies, I&#x27;m unable to provide real-time information on car rental options. I recommend checking with car rental companies or travel websites for the most accurate and up-to-date information.
+- **request\_for\_info.** To provide you with the most suitable options, could you please specify the type of car you prefer? Our choices include Hatchback, Sedan, SUV, or you can choose &#x27;dontcare&#x27; if you have no preference.
+- **tool\_call.** {&quot;name&quot;: &quot;RentalCars\_3\_GetCarsAvailable&quot;, &quot;arguments&quot;: {&quot;city&quot;: &quot;Los Angeles, CA&quot;, &quot;start\_date&quot;: &quot;2023-04-24&quot;, &quot;pickup\_time&quot;: &quot;10:00&quot;, &quot;end\_date&quot;: &quot;2023-04-28&quot;}}
 - **direct.** Based on your dates, several car rental options are available in Los Angeles. Hertz, Enterprise, and Avis are popular choices. Prices vary, but you can find economy cars starting from around $30 per day. Please check their websites for the most accurate information.
 
 **Reference answer:** `cannot_answer`.

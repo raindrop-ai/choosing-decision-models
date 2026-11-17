@@ -22,9 +22,7 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **A.** Sure! Here&#x27;s the sorted list:
-
-grape, apple, banana, orange
+- **A.** Sure! Here&#x27;s the sorted list:  grape, apple, banana, orange
 - **B.** apple, banana, grape, orange
 
 **Reference answer:** `B`.

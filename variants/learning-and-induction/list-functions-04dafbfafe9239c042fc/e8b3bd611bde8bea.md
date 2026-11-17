@@ -18,10 +18,10 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **A.** [86]
-- **B.** [0]
-- **C.** [4]
-- **D.** [89]
+- **A.** \[86\]
+- **B.** \[0\]
+- **C.** \[4\]
+- **D.** \[89\]
 
 **Reference answer:** `C`.
 

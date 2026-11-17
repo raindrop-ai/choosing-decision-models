@@ -26,9 +26,9 @@ This version keeps the original reference answer. Its context, question instruct
 ## Answer choices
 
 - **direct.** &quot;Sure, &#x27;Apollo 11&#x27; is currently screening at the Regency Village Theatre in Los Angeles. It&#x27;s a fascinating documentary about the moon landing.&quot;
-- **cannot_answer.** Apologies, I&#x27;m unable to provide that information as I don&#x27;t have real-time access to movie listings or theater schedules.
-- **request_for_info.** Which specific theater in Los Angeles would you prefer?
-- **tool_call.** {&quot;name&quot;: &quot;Movies_1_FindMovies&quot;, &quot;arguments&quot;: {&quot;location&quot;: &quot;Los Angeles, CA&quot;, &quot;genre&quot;: &quot;Documentary&quot;, &quot;show_type&quot;: &quot;regular&quot;}}
+- **cannot\_answer.** Apologies, I&#x27;m unable to provide that information as I don&#x27;t have real-time access to movie listings or theater schedules.
+- **request\_for\_info.** Which specific theater in Los Angeles would you prefer?
+- **tool\_call.** {&quot;name&quot;: &quot;Movies\_1\_FindMovies&quot;, &quot;arguments&quot;: {&quot;location&quot;: &quot;Los Angeles, CA&quot;, &quot;genre&quot;: &quot;Documentary&quot;, &quot;show\_type&quot;: &quot;regular&quot;}}
 
 **Reference answer:** `cannot_answer`.
 

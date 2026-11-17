@@ -25,9 +25,9 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **cannot_answer.** I&#x27;m sorry, I&#x27;m currently unable to provide real-time event information. Please check a local events listing for the most accurate information.
-- **request_for_info.** To help you better, could you please specify the city where you&#x27;re interested in finding theater events?
-- **tool_call.** {&quot;name&quot;: &quot;Events_3_FindEvents&quot;, &quot;arguments&quot;: {&quot;event_type&quot;: &quot;Theater&quot;, &quot;city&quot;: &quot;London, UK&quot;}}
+- **cannot\_answer.** I&#x27;m sorry, I&#x27;m currently unable to provide real-time event information. Please check a local events listing for the most accurate information.
+- **request\_for\_info.** To help you better, could you please specify the city where you&#x27;re interested in finding theater events?
+- **tool\_call.** {&quot;name&quot;: &quot;Events\_3\_FindEvents&quot;, &quot;arguments&quot;: {&quot;event\_type&quot;: &quot;Theater&quot;, &quot;city&quot;: &quot;London, UK&quot;}}
 - **direct.** Absolutely, I found several theater events in London this weekend. &quot;The Lion King&quot; at the Lyceum Theatre and &quot;Wicked&quot; at the Apollo Victoria Theatre are highly recommended.
 
 **Reference answer:** `request_for_info`.

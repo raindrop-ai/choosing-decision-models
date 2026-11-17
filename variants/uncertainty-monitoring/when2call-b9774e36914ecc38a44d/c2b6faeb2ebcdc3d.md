@@ -25,10 +25,10 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **cannot_answer.** I&#x27;m sorry for the inconvenience, but I&#x27;m unable to provide that information as I can&#x27;t perform such tasks. I recommend using a search engine or a professional directory for this purpose.
+- **cannot\_answer.** I&#x27;m sorry for the inconvenience, but I&#x27;m unable to provide that information as I can&#x27;t perform such tasks. I recommend using a search engine or a professional directory for this purpose.
 - **direct.** Of course! Dr. Ellen Hendriks is a highly recommended psychologist in San Francisco. She specializes in cognitive-behavioral therapy and has over 15 years of experience. Her office is located at 1234 Market St.
-- **request_for_info.** Of course, I&#x27;d be happy to help. To ensure I find the best fit for you, could you please specify if you&#x27;re looking for a male or female psychologist?
-- **tool_call.** {&quot;name&quot;: &quot;Services_4_FindProvider&quot;, &quot;arguments&quot;: {&quot;city&quot;: &quot;San Francisco, CA&quot;, &quot;type&quot;: &quot;Psychologist&quot;}}
+- **request\_for\_info.** Of course, I&#x27;d be happy to help. To ensure I find the best fit for you, could you please specify if you&#x27;re looking for a male or female psychologist?
+- **tool\_call.** {&quot;name&quot;: &quot;Services\_4\_FindProvider&quot;, &quot;arguments&quot;: {&quot;city&quot;: &quot;San Francisco, CA&quot;, &quot;type&quot;: &quot;Psychologist&quot;}}
 
 **Reference answer:** `cannot_answer`.
 

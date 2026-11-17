@@ -29,33 +29,8 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **A.**     s = strings.ToLower(s)
-	vowels := map[int32]interface{}{&#x27;a&#x27;: nil, &#x27;e&#x27;: nil, &#x27;i&#x27;: nil, &#x27;o&#x27;: nil, &#x27;u&#x27;: nil}
-	count := 0
-	for _, i := range s {
-		if _, ok := vowels[i]; ok {
-			count++
-		}
-	}
-	if (s[len(s)-1]) == &#x27;y&#x27; {
-		count++
-	}
-	return count
-}
-
-
-- **B.**     s = strings.ToLower(s)
-	vowels := map[int32]interface{}{&#x27;a&#x27;: nil, &#x27;e&#x27;: nil, &#x27;i&#x27;: nil, &#x27;o&#x27;: nil, &#x27;u&#x27;: nil, &#x27;y&#x27;: nil}
-	count := 0
-	for _, i := range s {
-		if _, ok := vowels[i]; ok {
-			count++
-		}
-	}
-	return count
-}
-
-
+- **A.**     s = strings.ToLower(s) 	vowels := map\[int32\]interface{}{&#x27;a&#x27;: nil, &#x27;e&#x27;: nil, &#x27;i&#x27;: nil, &#x27;o&#x27;: nil, &#x27;u&#x27;: nil} 	count := 0 	for \_, i := range s { 		if \_, ok := vowels\[i\]; ok { 			count++ 		} 	} 	if (s\[len(s)-1\]) == &#x27;y&#x27; { 		count++ 	} 	return count }
+- **B.**     s = strings.ToLower(s) 	vowels := map\[int32\]interface{}{&#x27;a&#x27;: nil, &#x27;e&#x27;: nil, &#x27;i&#x27;: nil, &#x27;o&#x27;: nil, &#x27;u&#x27;: nil, &#x27;y&#x27;: nil} 	count := 0 	for \_, i := range s { 		if \_, ok := vowels\[i\]; ok { 			count++ 		} 	} 	return count }
 
 **Reference answer:** `A`.
 

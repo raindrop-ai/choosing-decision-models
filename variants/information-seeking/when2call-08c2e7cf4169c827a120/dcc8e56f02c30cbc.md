@@ -27,9 +27,9 @@ This version keeps the original reference answer. Its context, question instruct
 ## Answer choices
 
 - **direct.** Sure, I found a bus itinerary for you. There&#x27;s a Greyhound bus leaving Austin at 9:30 AM and arriving in Dallas at 1:45 PM on March 13th. The fare for three passengers is approximately $105.
-- **tool_call.** {&quot;name&quot;: &quot;Buses_3_FindBus&quot;, &quot;arguments&quot;: {&quot;from_city&quot;: &quot;Austin, TX&quot;, &quot;to_city&quot;: &quot;Dallas, TX&quot;, &quot;departure_date&quot;: &quot;2023-03-13&quot;, &quot;num_passengers&quot;: 3}}
-- **request_for_info.** To assist you better, could you please provide me with the desired departure date for your trip?
-- **cannot_answer.** I&#x27;m sorry for the inconvenience, but I&#x27;m currently unable to provide real-time travel itineraries or bookings. I recommend using a dedicated travel service for this task.
+- **tool\_call.** {&quot;name&quot;: &quot;Buses\_3\_FindBus&quot;, &quot;arguments&quot;: {&quot;from\_city&quot;: &quot;Austin, TX&quot;, &quot;to\_city&quot;: &quot;Dallas, TX&quot;, &quot;departure\_date&quot;: &quot;2023-03-13&quot;, &quot;num\_passengers&quot;: 3}}
+- **request\_for\_info.** To assist you better, could you please provide me with the desired departure date for your trip?
+- **cannot\_answer.** I&#x27;m sorry for the inconvenience, but I&#x27;m currently unable to provide real-time travel itineraries or bookings. I recommend using a dedicated travel service for this task.
 
 **Reference answer:** `request_for_info`.
 

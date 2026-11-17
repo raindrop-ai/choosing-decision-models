@@ -183,10 +183,10 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **cannot_answer.** I&#x27;m sorry for the inconvenience, but I&#x27;m unable to perform that task as I can&#x27;t browse the internet or access real-time data.
-- **tool_call.** {&quot;name&quot;: &quot;Services_1_FindProvider&quot;, &quot;arguments&quot;: {&quot;city&quot;: &quot;New York, NY&quot;, &quot;is_unisex&quot;: true}}
+- **cannot\_answer.** I&#x27;m sorry for the inconvenience, but I&#x27;m unable to perform that task as I can&#x27;t browse the internet or access real-time data.
+- **tool\_call.** {&quot;name&quot;: &quot;Services\_1\_FindProvider&quot;, &quot;arguments&quot;: {&quot;city&quot;: &quot;New York, NY&quot;, &quot;is\_unisex&quot;: true}}
 - **direct.** Absolutely, I found a highly rated unisex hair stylist in New York. &quot;Studio 57&quot; located at 123 5th Avenue is a great option. They offer a variety of services and have excellent reviews.
-- **request_for_info.** Sure, I can help with that. Do you have a preference for a specific area in New York City?
+- **request\_for\_info.** Sure, I can help with that. Do you have a preference for a specific area in New York City?
 
 **Reference answer:** `cannot_answer`.
 

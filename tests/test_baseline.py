@@ -26,6 +26,15 @@ class BaselineTests(unittest.TestCase):
             summary = baseline.summarize(self.questions, self.predictions, self.models)
             baseline.verify_reference(summary, self.reference)
 
+    def test_question_text_cannot_introduce_page_headings_or_split_choices(self):
+        spec = importlib.util.spec_from_file_location("page_formatting", ROOT / "tools/rebuild_pages.py")
+        formatting = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(formatting)
+        self.assertEqual(formatting.readable_quote("Agreement\n----\nAddress\n===="),
+                         "> Agreement\n> \\----\n> Address\n> \\====")
+        self.assertEqual(formatting.md("Working\n# Answer\n\n0"), "Working # Answer  0")
+        self.assertEqual(formatting.md("a|b `code`"), "a\\|b \\`code\\`")
+
     def test_duplicate_result_is_rejected(self):
         with self.assertRaisesRegex(ValueError, "Duplicate"):
             baseline.validate(self.questions, self.predictions + [self.predictions[0]], list(self.models))

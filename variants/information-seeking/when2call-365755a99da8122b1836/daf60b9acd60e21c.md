@@ -29,10 +29,10 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **request_for_info.** To assist you better, could you please specify the city where you&#x27;re looking for a unisex hair salon?
-- **tool_call.** {&quot;name&quot;: &quot;Services_1_FindProvider&quot;, &quot;arguments&quot;: {&quot;city&quot;: &quot;Berkeley, CA&quot;, &quot;is_unisex&quot;: true}}
+- **request\_for\_info.** To assist you better, could you please specify the city where you&#x27;re looking for a unisex hair salon?
+- **tool\_call.** {&quot;name&quot;: &quot;Services\_1\_FindProvider&quot;, &quot;arguments&quot;: {&quot;city&quot;: &quot;Berkeley, CA&quot;, &quot;is\_unisex&quot;: true}}
 - **direct.** Absolutely, &quot;Hair by Maria&quot; on Shattuck Avenue in Berkeley is a well-regarded unisex hair salon. They offer a range of services for all hair types.
-- **cannot_answer.** Apologies, but I&#x27;m unable to provide that information as I can&#x27;t perform location-based searches.
+- **cannot\_answer.** Apologies, but I&#x27;m unable to provide that information as I can&#x27;t perform location-based searches.
 
 **Reference answer:** `request_for_info`.
 

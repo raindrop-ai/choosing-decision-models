@@ -12,19 +12,19 @@ This version keeps the original reference answer. Its context, question instruct
 
 > @thecauseendures Everything goes to financial security to be able to afford decent  housing.
 >
-> ---
+> \---
 >
 > 2 + 3 = 5.
 >
-> ---
+> \---
 >
 > 7 + 8 = 15.
 >
-> ---
+> \---
 >
 > 4 + 5 = 9.
 >
-> ---
+> \---
 >
 > 6 + 7 = 13.
 

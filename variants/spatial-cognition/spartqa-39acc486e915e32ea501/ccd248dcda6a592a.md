@@ -31,14 +31,14 @@ This version keeps the original reference answer. Its context, question instruct
 
 ## Answer choices
 
-- **A.** [&quot;C&quot;]
-- **B.** [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;]
-- **C.** [&quot;A&quot;]
-- **D.** [&quot;B&quot;, &quot;C&quot;]
-- **E.** [&quot;A&quot;, &quot;C&quot;]
-- **F.** []
-- **G.** [&quot;B&quot;]
-- **H.** [&quot;A&quot;, &quot;B&quot;]
+- **A.** \[&quot;C&quot;\]
+- **B.** \[&quot;A&quot;, &quot;B&quot;, &quot;C&quot;\]
+- **C.** \[&quot;A&quot;\]
+- **D.** \[&quot;B&quot;, &quot;C&quot;\]
+- **E.** \[&quot;A&quot;, &quot;C&quot;\]
+- **F.** \[\]
+- **G.** \[&quot;B&quot;\]
+- **H.** \[&quot;A&quot;, &quot;B&quot;\]
 
 **Reference answer:** `G`.
 
