@@ -3,7 +3,7 @@
 [Back to Spatial cognition](README.md) · [All capabilities](../README.md)
 
 **Question ID:** `babi/279d5ca2bc6fc0dd794b`  
-**Source:** [bAbI](https://dl.fbaipublicfiles.com/babi/tasks_1-20_v1-2.tar.gz)  
+**Source:** [bAbI](https://s3.amazonaws.com/text-datasets/babi_tasks_1-20_v1-2.tar.gz)  
 **Input format:** adapted choices
 
 [Explore this question’s altered versions](../../variants/spatial-cognition/babi-279d5ca2bc6fc0dd794b/README.md)

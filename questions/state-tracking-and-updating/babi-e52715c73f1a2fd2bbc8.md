@@ -3,7 +3,7 @@
 [Back to State tracking and updating](README.md) · [All capabilities](../README.md)
 
 **Question ID:** `babi/e52715c73f1a2fd2bbc8`  
-**Source:** [bAbI](https://dl.fbaipublicfiles.com/babi/tasks_1-20_v1-2.tar.gz)  
+**Source:** [bAbI](https://s3.amazonaws.com/text-datasets/babi_tasks_1-20_v1-2.tar.gz)  
 **Input format:** adapted choices
 
 [Explore this question’s altered versions](../../variants/state-tracking-and-updating/babi-e52715c73f1a2fd2bbc8/README.md)
